@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "MalgunGothicRegular";
+    src: url("/fonts/Malgun-Gothic29381.woff2") format("woff2"),
+    url("/fonts/Malgun-Gothic29381.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "MalgunGothicRegular", "Helvetica", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+.header {
+    height: 5%;
+}
+
+.footer {
+    height: 3%;
+}
+
+.title {
+    font-size: 2.2rem;
+}
+
+.fa-lock {
+    width: 16px;
+    height: 16px;
+}
+
+@media (min-width: 576px) {
+    .w-30 {
+        width: 60%;
+    }
+}
+
+@media (min-width: 920px) {
+    .w-30 {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .w-30 {
+        width: 30%;
+    }
+}
+
+.form-items {
+    font-size: 0.9rem;
+}
+
+@media (min-width: 345px) {
+    .form-items {
+        font-size: 1rem;
+    }
+}
