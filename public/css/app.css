@@ -14016,20 +14016,32 @@ body {
 }
 
 @media (min-width: 576px) {
-  .w-30 {
+  .main-login {
+    width: 60%;
+  }
+
+  .reset-form {
     width: 60%;
   }
 }
 
 @media (min-width: 920px) {
-  .w-30 {
+  .main-login {
     width: 40%;
+  }
+
+  .reset-form {
+    width: 50%;
   }
 }
 
 @media (min-width: 1200px) {
-  .w-30 {
+  .main-login {
     width: 30%;
+  }
+
+  .reset-form {
+    width: 40%;
   }
 }
 
@@ -14041,5 +14053,23 @@ body {
   .form-items {
     font-size: 1rem;
   }
+}
+
+.reset-title {
+  font-size: 1.9rem;
+}
+
+.button-loginreturn {
+  background-color: #95999c;
+  color: #ffffff;
+}
+
+.button-loginreturn:hover {
+  color: #ffffff;
+  background-color: #6c757d;
+}
+
+.button-loginreturn:active {
+  background-color: #5a6268;
 }
 

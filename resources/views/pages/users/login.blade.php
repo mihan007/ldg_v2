@@ -1,7 +1,7 @@
 @extends('layouts.default')
 @section('content')
-    <main class="container w-30">
-        <div class="row align-items-center justify-content-center align-content-center h-100">
+    <main class="container main-login">
+        <div class="row h-100">
             <div class="col-sm-12 my-auto">
                 <div class="col-auto mx-auto text-center">
                     <picture>
@@ -22,7 +22,6 @@
                             <input class="form-control" type="email" id="inputEmail" placeholder="Email" required>
                             <div class="invalid-feedback">Пожалуйста, введите правильный адрес email</div>
                         </div>
-
                     </div>
                     <div class="form-group">
                         <label class="sr-only" for="inputPassword">Password</label>
@@ -33,7 +32,6 @@
                             <input class="form-control" type="password" id="inputPassword" placeholder="Пароль" required>
                             <div class="invalid-feedback">Пожалуйста, введите верный пароль</div>
                         </div>
-
                     </div>
                     <div class="form-group form-items d-flex justify-content-between">
                         <label class="form-check-label">
