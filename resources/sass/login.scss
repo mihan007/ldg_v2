@@ -83,21 +83,22 @@ html, body {
 .button-reset {
     font-size: 14px;
 }
+
 .button-login-return {
-    background-color: #95999c;
-    color: #ffffff;
+    background-color: $grey-button-bg;
+    color: $grey-button-text;
     font-size: 14px;
 }
 
 .button-login-return:hover {
-    color: #ffffff;
-    background-color: #6c757d;
+    color: $grey-button-text;
+    background-color: $grey-button-bg-hover;
 }
 
 .button-login-return:active {
-    background-color: #5a6268;
+    background-color: $grey-button-bg-active;
 }
 
 .alert-text {
-    color: #1d2124;
+    color: $reset-alert-text;
 }

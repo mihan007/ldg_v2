@@ -14065,12 +14065,12 @@ body {
 
 .button-login-return {
   background-color: #95999c;
-  color: #ffffff;
+  color: white;
   font-size: 14px;
 }
 
 .button-login-return:hover {
-  color: #ffffff;
+  color: white;
   background-color: #6c757d;
 }
 
