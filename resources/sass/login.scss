@@ -37,20 +37,32 @@ html, body {
 }
 
 @media (min-width: 576px) {
-    .w-30 {
+    .main-login {
+        width: 60%;
+    }
+
+    .reset-form {
         width: 60%;
     }
 }
 
 @media (min-width: 920px) {
-    .w-30 {
+    .main-login {
         width: 40%;
+    }
+
+    .reset-form {
+        width: 50%;
     }
 }
 
 @media (min-width: 1200px) {
-    .w-30 {
+    .main-login {
         width: 30%;
+    }
+
+    .reset-form {
+        width: 40%;
     }
 }
 
@@ -64,10 +76,29 @@ html, body {
     }
 }
 
-//.form-control:invalid {
-//    border: 1px solid red;
-//}
+.reset-title {
+    font-size: 1.9rem;
+}
 
-.form-control:valid {
-    border: 1px solid green;
+.button-reset {
+    font-size: 14px;
+}
+
+.button-login-return {
+    background-color: $grey-button-bg;
+    color: $grey-button-text;
+    font-size: 14px;
+}
+
+.button-login-return:hover {
+    color: $grey-button-text;
+    background-color: $grey-button-bg-hover;
+}
+
+.button-login-return:active {
+    background-color: $grey-button-bg-active;
+}
+
+.alert-text {
+    color: $reset-alert-text;
 }

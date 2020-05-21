@@ -15,7 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('pages.users.login');
-});
+})->name('users.login');
 Route::get('/users/reset-password', function () {
     return view('pages.users.reset-password');
 })->name('users.reset-password');
+Route::get('/users/reset-alert', function () {
+    return view('pages.users.reset-alert');
+})->name('users.reset-alert');
