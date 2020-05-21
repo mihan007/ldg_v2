@@ -19,11 +19,15 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary text-uppercase w-100" data-href="{{ route('users.reset-alert') }}">Сбросить пароль</button>
+                        <button type="submit" class="btn btn-primary text-uppercase w-100 button-reset"
+                                data-href="{{ route('users.reset-alert') }}">Сбросить пароль</button>
                     </div>
-                    <a class="text-decoration-none text-uppercase btn w-100 button-loginreturn" href="{{ route('users.login') }}">
+                    <div class="form-group">
+                    <a class="text-decoration-none text-uppercase btn w-100 button-login-return"
+                       href="{{ route('users.login') }}">
                         Вернуться на страницу входа
                     </a>
+                    </div>
                 </form>
             </div>
         </div>

@@ -14059,17 +14059,26 @@ body {
   font-size: 1.9rem;
 }
 
-.button-loginreturn {
-  background-color: #95999c;
-  color: #ffffff;
+.button-reset {
+  font-size: 14px;
 }
 
-.button-loginreturn:hover {
+.button-login-return {
+  background-color: #95999c;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.button-login-return:hover {
   color: #ffffff;
   background-color: #6c757d;
 }
 
-.button-loginreturn:active {
+.button-login-return:active {
   background-color: #5a6268;
+}
+
+.alert-text {
+  color: #1d2124;
 }
 
