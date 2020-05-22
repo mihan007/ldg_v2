@@ -6,13 +6,12 @@
                 <div class="w-100 mx-auto mb-4">
                     <h1 class="font-weight-bold text-center reset-title">Восстановление пароля</h1>
                 </div>
-                <div class="alert alert-primary col-sm-12 col-lg-6 text-center mx-auto" role="alert">
-                    Мы выслали Вам на почту ... инструкцию по смене пароля.
+                <div class="alert alert-primary text-center mx-auto col-lg-8" role="alert">
+                    Вы перешли по устаревшей ссылке. Выслать инструкцию по сбросу пароля повторно?
                 </div>
                 <div class="text-center mx-auto">
-                <a class="text-decoration-none text-uppercase btn button-login-return" href="{{ route('users.login') }}">
-                    ← На страницу входа
-                </a>
+                    <a class="btn btn-primary text-uppercase col-sm-6 col-lg-4" type="submit"
+                            href="{{ route('users.new-info-alert') }}">Выслать</a>
                 </div>
             </div>
         </div>
