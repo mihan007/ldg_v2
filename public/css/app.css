@@ -14059,14 +14059,9 @@ body {
   font-size: 1.9rem;
 }
 
-.button-reset {
-  font-size: 14px;
-}
-
 .button-login-return {
   background-color: #95999c;
   color: white;
-  font-size: 14px;
 }
 
 .button-login-return:hover {
@@ -14078,7 +14073,7 @@ body {
   background-color: #5a6268;
 }
 
-.alert-text {
-  color: #1d2124;
+.new-password-text {
+  font-size: 1.6rem;
 }
 

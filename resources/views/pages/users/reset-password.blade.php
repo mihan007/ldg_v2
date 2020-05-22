@@ -6,7 +6,7 @@
                 <div class="mx-auto mb-4">
                     <h1 class="font-weight-bold text-center reset-title">Восстановление пароля</h1>
                 </div>
-                <p class="text-center">Введите адрес электронной почты для восстановления пароля.</p>
+                <p class="text-center">Введите адрес электронной почты для восстановления пароля</p>
                 <form class="mx-auto needs-validation reset-form" method="post" action="/" novalidate>
                     <div class="form-group">
                         <label class="sr-only" for="inputEmail">Email</label>
@@ -19,13 +19,13 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary text-uppercase w-100 button-reset"
+                        <button type="submit" class="btn btn-primary text-uppercase w-100"
                                 data-href="{{ route('users.reset-alert') }}">Сбросить пароль</button>
                     </div>
                     <div class="form-group">
                     <a class="text-decoration-none text-uppercase btn w-100 button-login-return"
                        href="{{ route('users.login') }}">
-                        Вернуться на страницу входа
+                        ← На страницу входа
                     </a>
                     </div>
                 </form>
