@@ -10,14 +10,14 @@
                     Вы перешли по неверной ссылке.
                 </div>
                 <div class="mb-3 text-center mx-auto">
+                    <button type="submit" class="btn btn-primary text-uppercase main-login"
+                            data-href="{{ route('users.reset-password') }}">Восстановить пароль</button>
+                </div>
+                <div class="text-center mx-auto">
                     <a class="text-decoration-none text-uppercase btn button-login-return main-login"
                        href="{{ route('users.login') }}">
                         ← На страницу входа
                     </a>
-                </div>
-                <div class="text-center mx-auto">
-                    <button type="submit" class="btn btn-primary text-uppercase main-login"
-                            data-href="{{ route('users.reset-password') }}">Восстановить пароль</button>
                 </div>
             </div>
         </div>
