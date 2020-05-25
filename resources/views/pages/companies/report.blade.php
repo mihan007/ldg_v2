@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <main class="container main-login">
+    <main class="container">
         <div class="row h-100">
             <div class="col-sm-12 my-auto">
                 <div class="col-auto mx-auto text-center">
