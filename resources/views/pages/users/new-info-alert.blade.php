@@ -7,7 +7,7 @@
                     <h1 class="font-weight-bold text-center reset-title">Восстановление пароля</h1>
                 </div>
                 <div class="alert alert-primary text-center mx-auto col-lg-8" role="alert">
-                    На ваш ящик выслана новая инструкция по восстановлению пароля.
+                    На Вашу почту ... выслана новая инструкция по восстановлению пароля.
                 </div>
                 <div class="text-center mx-auto">
                     <a class="text-decoration-none text-uppercase btn button-login-return"
