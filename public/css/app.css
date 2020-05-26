@@ -14155,13 +14155,79 @@ html {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.settings-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.date-group {
+  display: flex;
+}
+
+.date-items {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  color: #212529;
+  background-color: #f8f9fa;
+}
+
 .date-range {
-  background: #fff;
+  background: #f8f9fa;
   cursor: pointer;
   padding: 5px 10px;
   border: 1px solid #ccc;
-  width: 300px;
-  /* для браузеров, не поддерживающих calc() */
-  width: calc(100% / 4);
+  width: 350px;
+  border-radius: 0.25rem;
+}
+
+.date-items button:hover,
+.date-range:hover {
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+
+.date-items button:focus {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+}
+
+.filter-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0;
+  padding-left: 0;
+  flex-wrap: wrap;
+  padding-bottom: 0.5rem;
+}
+
+.dashboard-buttons {
+  display: flex;
+  width: 10%;
+  justify-content: space-around;
+  padding-right: 15px;
+}
+
+.dashboard-button {
+  color: #212529;
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+}
+
+.dashboard-button:hover {
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+
+.dashboard-button:active {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 

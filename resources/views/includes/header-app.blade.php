@@ -16,7 +16,7 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Название аккаунта</a>
                     <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Пункт 1</a>
+                        <a href="#" class="dropdown-item disabled" >Пункт 1</a>
                         <a href="#" class="dropdown-item">Пункт 2</a>
                         <a href="#" class="dropdown-item">Пункт 3</a>
                         <a href="#" class="dropdown-item">Пункт 4</a>
@@ -46,20 +46,20 @@
                         <button class="dropdown-item">Выйти</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </nav>
     <nav class="navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav navbar-dark mr-auto sidenav text-center">
-            <li class="nav-item"><a class="nav-link active" data-toggle="tooltip" data-placement="right"
-                                    title="Главная страница" aria-label="Главная страница">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tooltip" data-placement="right" title="Главная страница"
+                   aria-label="Главная страница">
                     <i class="fa fa-home"></i>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"  data-toggle="tooltip" data-placement="right" title="Заявки"
-                   aria-label="Заявки" disabled>
+                   aria-label="Заявки">
                     <i class="fa fa-bars"></i>
                 </a>
             </li>
