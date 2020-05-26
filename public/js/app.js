@@ -30170,6 +30170,10 @@ module.exports = function(module) {
 global.$ = global.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 __webpack_require__(/*! ./validator.js */ "./resources/js/validator.js");
+
+__webpack_require__(/*! ./tooltip */ "./resources/js/tooltip.js");
+
+__webpack_require__(/*! ./date-range */ "./resources/js/date-range.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -30203,6 +30207,51 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/date-range.js":
+/*!************************************!*\
+  !*** ./resources/js/date-range.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(function () {
+  var start = moment().subtract(29, 'days');
+  var end = moment();
+
+  function cb(start, end) {
+    $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+  }
+
+  $('#reportrange').daterangepicker({
+    startDate: start,
+    endDate: end,
+    ranges: {
+      'Today': [moment(), moment()],
+      'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+      'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+      'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+      'This Month': [moment().startOf('month'), moment().endOf('month')],
+      'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+    }
+  }, cb);
+  cb(start, end);
+});
+
+/***/ }),
+
+/***/ "./resources/js/tooltip.js":
+/*!*********************************!*\
+  !*** ./resources/js/tooltip.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
 
 /***/ }),
 

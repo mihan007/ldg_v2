@@ -1,6 +1,16 @@
-.bg-grey {
-    background-color: #424242;
+html {
+    position: relative;
+    min-height: 100%;
 }
+
+.bg-grey {
+    background-color: #282016;
+}
+
+//.logo-image {
+//    width: 40px;
+//    height: auto;
+//}
 
 .project-title {
     font-size: 23px;
@@ -10,10 +20,72 @@
     font-size: 24px;
 }
 
+.cog-link:hover .fa-cog {
+    color: #ff9517;
+}
+
+.cog-link:active .fa-cog {
+    color: $grey-button-bg;
+}
+
+.dropdown-toggle::after {
+    vertical-align: 0;
+    border-top: 0.5em solid;
+}
+
 .login-wrapper {
     display: flex;
+    align-items: center;
 }
+
 .fa-user-o {
   color: #ffffff;
     font-size: 23px;
+}
+
+.login-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: calc(100vh - 3.5rem);
+    margin-top: 3.5rem;
+    background: #1b140f;
+    box-sizing: border-box;
+    flex-direction: column;
+    font-size: 26px;
+}
+
+.active .fa-home {
+    color: #ff9517;
+}
+
+.sidenav .nav-link {
+    color: $grey-button-text;
+}
+
+.nav-link:hover .fa-bars,
+.nav-link:hover .fa-cog,
+.nav-link:focus .fa-bars,
+.nav-link:focus .fa-cog {
+    color: #ff9517;
+}
+
+.nav-link:disabled .fa-bars,
+.nav-link:disabled .fa-cog {
+    color: hsla(0, 0, 0, 0.3);
+}
+
+.date-range {
+    background: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    width: 300px;             /* для браузеров, не поддерживающих calc() */
+    width: calc(100% / 4);
 }
