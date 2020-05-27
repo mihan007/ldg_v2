@@ -14155,6 +14155,11 @@ html {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.page-wrapper {
+  padding-right: 40px;
+  padding-left: 100px;
+}
+
 .settings-wrapper {
   display: flex;
   justify-content: space-between;
@@ -14166,6 +14171,7 @@ html {
 
 .date-group {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .date-items {
@@ -14178,10 +14184,11 @@ html {
 .date-range {
   background: #f8f9fa;
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 6px 12px 4px 12px;
   border: 1px solid #ccc;
   width: 350px;
   border-radius: 0.25rem;
+  box-sizing: border-box;
 }
 
 .date-items button:hover,
@@ -14210,7 +14217,7 @@ html {
   display: flex;
   width: 10%;
   justify-content: space-around;
-  padding-right: 15px;
+  padding-right: 3px;
 }
 
 .dashboard-button {
@@ -14229,5 +14236,15 @@ html {
   background-color: #e2e6ea;
   border-color: #dae0e5;
   box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+}
+
+.company-icon {
+  color: #ff9517;
+}
+
+.sigma-icon {
+  font-weight: 500;
+  padding-left: 2px;
+  padding-right: 13px;
 }
 

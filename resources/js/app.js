@@ -1,5 +1,7 @@
-require('./bootstrap');
 global.$ = global.jQuery = require('jquery');
+window.Popper = require('popper.js').default;
+require('bootstrap');
+require('./bootstrap');
 require('./validator.js');
-require('./tooltip');
-require('./date-range');
+require('./tooltip.js');
+require('./date-range.js');

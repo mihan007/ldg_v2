@@ -16,7 +16,7 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Название аккаунта</a>
                     <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item disabled" >Пункт 1</a>
+                        <a href="#" class="dropdown-item disabled">Пункт 1</a>
                         <a href="#" class="dropdown-item">Пункт 2</a>
                         <a href="#" class="dropdown-item">Пункт 3</a>
                         <a href="#" class="dropdown-item">Пункт 4</a>
@@ -37,7 +37,6 @@
             <div class="navbar-nav login-wrapper">
                 <i class="fa fa-user-o mr-2"></i>
                 <div class="nav-item dropdown">
-
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                         <span class=""> Виктор Емельянов 1@troiza.net</span>
                     </a>
