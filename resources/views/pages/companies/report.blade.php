@@ -53,7 +53,7 @@
 <div class="col-md-12 table-responsive">
     <table class="table table-bordered">
         <thead>
-        <tr class="table-primary">
+        <tr class="table-secondary">
             <th>
                 <i class="fa fa-bars mr-1"></i> Компания
             </th>
