@@ -14082,24 +14082,16 @@ html {
   min-height: 100%;
 }
 
+body {
+  position: relative;
+}
+
 .bg-grey {
   background-color: #282016;
 }
 
 .project-title {
   font-size: 23px;
-}
-
-.fa-cog::before {
-  font-size: 24px;
-}
-
-.cog-link:hover .fa-cog {
-  color: #ff9517;
-}
-
-.cog-link:active .fa-cog {
-  color: #95999c;
 }
 
 .dropdown-toggle::after {
@@ -14127,12 +14119,12 @@ html {
   top: 0;
   left: 0;
   width: 80px;
-  height: calc(100vh - 3.5rem);
+  height: calc(130vh - 3.5rem);
   margin-top: 3.5rem;
   background: #1b140f;
   box-sizing: border-box;
   flex-direction: column;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 .active .fa-home {
@@ -14156,7 +14148,7 @@ html {
 }
 
 .page-wrapper {
-  padding-right: 40px;
+  padding-right: 20px;
   padding-left: 100px;
 }
 
@@ -14204,20 +14196,24 @@ html {
   box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
+.date-item {
+  padding-left: 0.89rem;
+  padding-right: 0.89rem;
+}
+
 .filter-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-right: 0;
   padding-left: 0;
   flex-wrap: wrap;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
 }
 
 .dashboard-buttons {
   display: flex;
   width: 10%;
   justify-content: space-around;
-  padding-right: 3px;
+  margin-right: 10px;
 }
 
 .dashboard-button {
@@ -14238,13 +14234,43 @@ html {
   box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
-.company-icon {
+.search-form {
+  width: 330px;
+}
+
+.dark-stroke {
+  background-color: #eeeeee;
+}
+
+.company-icon-hover {
   color: #ff9517;
+}
+
+.company-icon {
+  color: #95999c;
 }
 
 .sigma-icon {
   font-weight: 500;
   padding-left: 2px;
   padding-right: 13px;
+  color: #95999c;
+}
+
+.fa-question-circle-o {
+  color: #95999c;
+}
+
+.company-table {
+  font-size: 14px;
+}
+
+.company-table thead th {
+  vertical-align: middle;
+}
+
+.company-table th,
+.company-table td {
+  padding: 0.5rem;
 }
 

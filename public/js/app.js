@@ -37237,6 +37237,8 @@ __webpack_require__(/*! ./validator.js */ "./resources/js/validator.js");
 __webpack_require__(/*! ./tooltip.js */ "./resources/js/tooltip.js");
 
 __webpack_require__(/*! ./date-range.js */ "./resources/js/date-range.js");
+
+__webpack_require__(/*! ./toast.js */ "./resources/js/toast.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -37301,6 +37303,24 @@ $(function () {
     }
   }, cb);
   cb(start, end);
+});
+
+/***/ }),
+
+/***/ "./resources/js/toast.js":
+/*!*******************************!*\
+  !*** ./resources/js/toast.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $(".show-toast").click(function () {
+    $("#myToast").toast({
+      delay: 3000
+    });
+    $("#myToast").toast('show');
+  });
 });
 
 /***/ }),

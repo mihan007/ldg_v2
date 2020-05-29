@@ -5,14 +5,8 @@
             <img class="align-top logo-image mr-2" src="/img/logo-index-duble.png" height="30" alt="Лидогенератор">
 {{--                        <span class="align-items-baseline text-uppercase project-title">Лидогенератор</span>--}}
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="#" class="nav-item nav-link active cog-link" alt="Настройки аккаунта" aria-label="Настройки аккаунта">
-                    <i class="fa fa-cog"></i>
-                </a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Название аккаунта</a>
                     <div class="dropdown-menu">
@@ -38,10 +32,13 @@
                 <i class="fa fa-user-o mr-2"></i>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                        <span class=""> Виктор Емельянов 1@troiza.net</span>
+                        <span>Виктор Емельянов 1@troiza.net</span>
                     </a>
                     <div class="dropdown-menu">
                         <a href="#" class="dropdown-item">Мой профиль</a>
+                        <a href="#" class="cog-link dropdown-item" alt="Настройки аккаунта">
+                            Настройки аккаунта
+                        </a>
                         <button class="dropdown-item">Выйти</button>
                     </div>
                 </div>
@@ -57,7 +54,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"  data-toggle="tooltip" data-placement="right" title="Заявки"
+                <a class="nav-link" href="#" data-toggle="tooltip" data-placement="right" title="Заявки"
                    aria-label="Заявки">
                     <i class="fa fa-bars"></i>
                 </a>
