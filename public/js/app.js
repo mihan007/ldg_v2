@@ -37239,6 +37239,8 @@ __webpack_require__(/*! ./tooltip.js */ "./resources/js/tooltip.js");
 __webpack_require__(/*! ./date-range.js */ "./resources/js/date-range.js");
 
 __webpack_require__(/*! ./toast.js */ "./resources/js/toast.js");
+
+__webpack_require__(/*! ./sorting.js */ "./resources/js/sorting.js"); //require('./fixtable.js');
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -37292,17 +37294,31 @@ $(function () {
 
   $('#reportrange').daterangepicker({
     startDate: start,
-    endDate: end,
-    ranges: {
-      'Today': [moment(), moment()],
-      'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-      'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-      'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-      'This Month': [moment().startOf('month'), moment().endOf('month')],
-      'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-    }
+    endDate: end // ranges: {
+    //     'Today': [moment(), moment()],
+    //     'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+    //     'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+    //     'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+    //     'This Month': [moment().startOf('month'), moment().endOf('month')],
+    //     'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+    // }
+
   }, cb);
   cb(start, end);
+});
+
+/***/ }),
+
+/***/ "./resources/js/sorting.js":
+/*!*********************************!*\
+  !*** ./resources/js/sorting.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $('#dtBasicExample').DataTable();
+  $('.dataTables_length').addClass('bs-select');
 });
 
 /***/ }),

@@ -29,17 +29,18 @@
                 </div>
             </div>
             <div class="navbar-nav login-wrapper">
-                <i class="fa fa-user-o mr-2"></i>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                        <span>Виктор Емельянов 1@troiza.net</span>
+                        <i class="fa fa-user-o mr-2"></i>
+                        <span>Виктор Емельянов</span>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Мой профиль</a>
+                        <a class="dropdown-item disabled">1@troiza.net</a>
+                        <a href="#" class="dropdown-item"><i class="fa fa-id-card-o mr-2"></i>Мой профиль</a>
                         <a href="#" class="cog-link dropdown-item" alt="Настройки аккаунта">
-                            Настройки аккаунта
+                            <i class="fa fa-cog mr-2"></i>Настройки аккаунта
                         </a>
-                        <button class="dropdown-item">Выйти</button>
+                        <button class="dropdown-item"><i class="fa fa-sign-out mr-2"></i>Выйти</button>
                     </div>
                 </div>
             </div>
@@ -48,7 +49,7 @@
     <nav class="navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav navbar-dark mr-auto sidenav text-center">
             <li class="nav-item">
-                <a class="nav-link active" data-toggle="tooltip" data-placement="right" title="Главная страница"
+                <a class="nav-link active" data-toggle="tooltip" data-placement="right" title="Компании"
                    aria-label="Главная страница">
                     <i class="fa fa-home"></i>
                 </a>

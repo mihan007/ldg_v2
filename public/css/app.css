@@ -14087,7 +14087,7 @@ body {
 }
 
 .bg-grey {
-  background-color: #282016;
+  background-color: #1e2229;
 }
 
 .project-title {
@@ -14102,6 +14102,7 @@ body {
 .login-wrapper {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .fa-user-o {
@@ -14118,13 +14119,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 80px;
+  width: 60px;
   height: calc(130vh - 3.5rem);
   margin-top: 3.5rem;
   background: #1b140f;
   box-sizing: border-box;
   flex-direction: column;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .active .fa-home {
@@ -14149,7 +14150,7 @@ body {
 
 .page-wrapper {
   padding-right: 20px;
-  padding-left: 100px;
+  padding-left: 80px;
 }
 
 .settings-wrapper {
@@ -14161,9 +14162,11 @@ body {
   flex-wrap: wrap;
 }
 
-.date-group {
+.index-buttons-wrapper {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0;
+  position: relative;
 }
 
 .date-items {
@@ -14171,6 +14174,9 @@ body {
   border-radius: 0.25rem;
   color: #212529;
   background-color: #f8f9fa;
+  margin-right: 1.2rem;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .date-range {
@@ -14178,9 +14184,11 @@ body {
   cursor: pointer;
   padding: 6px 12px 4px 12px;
   border: 1px solid #ccc;
-  width: 350px;
+  width: 348px;
   border-radius: 0.25rem;
   box-sizing: border-box;
+  font-size: 14px;
+  margin-right: 1.2rem;
 }
 
 .date-items button:hover,
@@ -14199,27 +14207,41 @@ body {
 .date-item {
   padding-left: 0.89rem;
   padding-right: 0.89rem;
+  font-size: 14px;
+}
+
+.add-button {
+  font-size: 14px;
+}
+
+.index-select {
+  font-size: 14px;
+  width: 47%;
+  cursor: pointer;
+}
+
+.index-select:first-child {
+  margin-right: 1.2rem;
+}
+
+.index-select-wrapper {
+  width: 350px;
 }
 
 .filter-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-left: 0;
+  padding-left: 15px;
   flex-wrap: wrap;
-  padding-bottom: 0.75rem;
-}
-
-.dashboard-buttons {
-  display: flex;
-  width: 10%;
-  justify-content: space-around;
-  margin-right: 10px;
+  padding-bottom: 0.7rem;
 }
 
 .dashboard-button {
   color: #212529;
   background-color: #ffffff;
   border: 1px solid #ced4da;
+  font-size: 14px;
+  margin-right: 1.2rem;
 }
 
 .dashboard-button:hover {
@@ -14234,12 +14256,31 @@ body {
   box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
+.update-button {
+  position: absolute;
+  bottom: 0;
+  right: -150px;
+}
+
 .search-form {
-  width: 330px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.button-search {
+  font-size: 14px;
+}
+
+.search-form-input {
+  font-size: 14px;
 }
 
 .dark-stroke {
   background-color: #eeeeee;
+}
+
+.dark-stroke tr:hover {
+  background-color: silver;
 }
 
 .company-icon-hover {
@@ -14263,14 +14304,31 @@ body {
 
 .company-table {
   font-size: 14px;
+  cursor: pointer;
+}
+
+.company-table tr:first-child th {
+  vertical-align: middle;
 }
 
 .company-table thead th {
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .company-table th,
 .company-table td {
   padding: 0.5rem;
+}
+
+.table-head {
+  cursor: pointer;
+}
+
+.company-table td:first-child {
+  width: 300px;
+}
+
+tbody tr:hover {
+  background-color: lightgray;
 }
 
