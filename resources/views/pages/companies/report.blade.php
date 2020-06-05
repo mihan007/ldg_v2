@@ -7,6 +7,7 @@
     <script src='https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js'></script>
     <main class="page-wrapper">
         <div class="row">
+            <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper">
                 <div class="index-buttons-wrapper mr-3">
                     <div id="reportrange" class=" date-range text-center mb-1" tabindex="0">
@@ -27,7 +28,7 @@
                     </button>
                     <button type="button" class="btn dashboard-button show-toast mb-1" data-toggle="tooltip"
                             data-placement="bottom"
-                            title="Последнее обновление ..." trigger="hover"
+                            title="Последнее обновление ..." data-trigger="hover"
                             aria-label="Обновление данных в таблице аналитики">
                         <i class="fa fa-refresh"></i>
                     </button>
@@ -76,74 +77,74 @@
                             <th colspan="3"  class="text-center rounded-table-right">Баланс сервисов</th>
                         </tr>
                         <tr class="table-grey text-center table-head ">
-                            <th class="company-td text-left border-top-0 company-col"><a data-toggle="tooltip"
-                                                                                         data-placement="bottom" data-delay='{"show":"1000", "hide":"1000"}'
+                            <th class="company-td text-left border-top-0 company-col">
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                    title="Название компании">
                                     <i class="fa fa-bars company-icon mr-2"></i>Компания
                                 </a>
                             </th>
                             <th scope="col" class="border-top-0 all-orders-col">
-                                <a data-toggle="tooltip" data-placement="bottom" data-delay='{"show":"1000", "hide":"1000"}'
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                    title="Общее количество входящих заявок">
                                     Все
                                 </a>
                             </th>
                             <th scope="col" class="border-top-0 cr-col">
-                                <a data-toggle="tooltip" data-placement="bottom" data-delay='{"show":"1000", "hide":"1000"}'
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                    title="Доля целевых заявок от общего количества заявок">
                                     CR %
                                 </a>
                             </th>
                             <th scope="col" class="border-top-0 target-col">
-                                <a data-toggle="tooltip" data-placement="bottom" data-delay='{"show":"1000", "hide":"1000"}'
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                    title="Заявки в статусе &laquo;Целевая заявка&raquo;">
                                     Целевые
                                 </a>
                             </th>
                             <th scope="col" class="border-top-0 cpl-col">
-                                <a data-toggle="tooltip" data-placement="bottom" data-delay='{"show":"1000", "hide":"1000"}'
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                    title="Средняя стоимость заявки (Расходы / Целевые заявки)">
                                     CPL
                                 </a>
                             </th>
                             <th scope="col" class="border-top-0 moderation-col">
-                                <a data-toggle="tooltip" data-placement="bottom" data-delay='{"show":"1000", "hide":"1000"}'
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                    title="Заявки в статусе модерации. Не согласовано">
                                     Проверка
                                 </a>
                             </th>
                             <th scope="col" class="border-top-0 gain-col">
-                                <a data-toggle="tooltip" data-placement="bottom" data-delay='{"show":"1000", "hide":"1000"}'
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                    title="Вознаграждение без учета расходов">
                                     Выручка
                                 </a>
                             </th>
                             <th scope="col" class="border-top-0 costs-col">
-                                <a data-toggle="tooltip" data-placement="bottom" data-delay='{"show":"1000", "hide":"1000"}'
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                    title="Рекламные расходы">
                                     Расходы
                                 </a>
                             </th>
                             <th scope="col" class="border-top-0 profit-col">
-                                <a data-toggle="tooltip" data-placement="bottom" data-delay='{"show":"1000", "hide":"1000"}'
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                    title="Выручка минус рекламные расходы, если настроен вычет расходов">
                                     Прибыль
                                 </a>
                             </th>
                             <th class="border-top-0 lidgen-col">
-                                <a data-toggle="tooltip" data-placement="bottom" data-delay='{"show":"1000", "hide":"1000"}'
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                    title="Баланс аккаунта компании Лидогенератор">
                                     Лидген
                                 </a>
                             </th>
                             <th scope="col" class="border-top-0 yandex-col">
-                                <a data-toggle="tooltip" data-placement="bottom" data-delay='{"show":"1000", "hide":"1000"}'
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                    title="Баланс аккаунтов Яндекс.Директ">
                                     Яндекс
                                 </a>
                             </th>
                             <th scope="col" class="border-top-0 google-col">
-                                <a data-toggle="tooltip" data-placement="bottom" data-delay='{"show":"1000", "hide":"1000"}'
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                    title="Баланс аккаунтов Google Ads">
                                     Google
                                 </a>
@@ -151,7 +152,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr class="sum-line">
+                        <tr class="sum-line template">
                             <td scope="row" class="company-col">
                                 <a data-toggle="tooltip" data-placement="right" data-delay='{"show":"1000", "hide":"1000"}'
                                    title="Подсчитывается по всем компаниям соответствующим

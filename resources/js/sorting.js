@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    $.fn.dataTableExt.afnFiltering.push(
+        function( oSettings, aData, iDataIndex ) {
+            var row = oSettings.aoData[iDataIndex].nTr;
+            return $(row).hasClass('template') ? false : true;
+        }
+    );
     window.table = $('.company-grid').DataTable({
         fixedHeader: {
             headerOffset: 52

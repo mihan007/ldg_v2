@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version
+*/
+
 html {
     position: relative;
     min-height: 100%;
@@ -8,34 +15,22 @@ body {
 }
 
 .bg-grey {
-    //background-color: #282016;
     background-color: #1d1d1d;
-    //    background-color: #1a140e;
+    min-width: 1270px;
 }
 
 .company-header {
     padding-left: 0;
 }
-//.logo-image {
-//    width: 40px;
-//    height: auto;
-//}
+
+.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+}
 
 .project-title {
     font-size: 23px;
 }
-
-//.fa-cog::before {
-//    font-size: 24px;
-//}
-//
-//.cog-link:hover .fa-cog {
-//    color: #ff9517;
-//}
-//
-//.cog-link:active .fa-cog {
-//    color: $grey-button-bg;
-//}
 
 .dropdown-toggle::after {
     vertical-align: 0;
@@ -43,7 +38,11 @@ body {
 }
 
 .login-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
 }
@@ -54,7 +53,12 @@ body {
 }
 
 .login-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -67,7 +71,11 @@ body {
     height: 230vh;
     margin-top: 3.5rem;
     background: #1d1d1d;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     font-size: 26px;
 }
@@ -98,27 +106,40 @@ body {
 
 .fa-sign-out,
 .cog-link .fa-cog {
-  margin-right: 0.9rem;
+    margin-right: 0.9rem;
 }
 
 .page-wrapper {
     padding-right: 20px;
     padding-left: 80px;
     min-width: 1340px;
-    margin-top: 60px;
+}
+
+.offset-block {
+    height: 60px;
 }
 
 .settings-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .index-buttons-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-left: 0;
     position: relative;
@@ -141,6 +162,7 @@ body {
     border: 1px solid #ccc;
     width: 348px;
     border-radius: 0.25rem;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 14px;
     margin-right: 1.2rem;
@@ -156,6 +178,7 @@ body {
     color: #212529;
     background-color: #e2e6ea;
     border-color: #dae0e5;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
@@ -185,9 +208,14 @@ body {
 }
 
 .filter-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-left: 15px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-bottom: 0.7rem;
 }
@@ -209,6 +237,7 @@ body {
     color: #212529;
     background-color: #e2e6ea;
     border-color: #dae0e5;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
@@ -220,7 +249,6 @@ body {
 }
 
 .search-form {
-    //width: 330px;
     padding-left: 0;
     padding-right: 0;
     width: 16%;
@@ -233,14 +261,6 @@ body {
 .search-form-input {
     font-size: 14px;
 }
-
-//.dark-stroke {
-//    background-color: #eeeeee;
-//}
-//
-//.tbody tr:hover {
-//    background-color: silver;
-//}
 
 .company-td {
     border-top: none;
@@ -267,12 +287,8 @@ body {
 .company-table {
     font-size: 14px;
     //table-layout: fixed;
-    ////border-collapse: collapse;
-    //height: 100vh;
-    //overflow: auto;
     cursor: pointer;
     table-layout: fixed;
-    //min-width: 1340px;
 }
 
 .company-table tr:first-child th {
@@ -283,18 +299,12 @@ body {
     vertical-align: top;
 }
 
-//
-//.sum-line {
-//    font-size: 12px;
-//}
-
 .company-table th, .company-table td {
     padding: 0.75rem 0.5rem;
 }
 
 .table-head {
     cursor: pointer;
-    //position: relative;
 }
 
 .company-table td:first-child,
@@ -310,34 +320,6 @@ body {
 .table thead th:last-child {
     border-right: none;
 }
-
-//работающие стили для фиксации заголовка
-//.table-fixed tbody {
-//    height: 300px;
-//    overflow-y: auto;
-//    width: 100%;
-//}
-//
-//.table-fixed thead,
-//.table-fixed tbody,
-//.table-fixed tr,
-//.table-fixed td,
-//.table-fixed th {
-//    display: block;
-//}
-//
-//.table-fixed tbody td,
-//.table-fixed tbody th,
-//.table-fixed thead > tr > th {
-//    float: left;
-//    position: relative;
-//
-//    &::after {
-//        content: '';
-//        clear: both;
-//        display: block;
-//    }
-//}
 
 tbody tr:hover {
     background-color: rgb(211, 211, 211);

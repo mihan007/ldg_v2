@@ -14077,6 +14077,13 @@ body {
   font-size: 1.6rem;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version
+*/
+
 html {
   position: relative;
   min-height: 100%;
@@ -14088,10 +14095,16 @@ body {
 
 .bg-grey {
   background-color: #1d1d1d;
+  min-width: 1270px;
 }
 
 .company-header {
   padding-left: 0;
+}
+
+.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .project-title {
@@ -14165,7 +14178,10 @@ body {
   padding-right: 20px;
   padding-left: 80px;
   min-width: 1340px;
-  margin-top: 60px;
+}
+
+.offset-block {
+  height: 60px;
 }
 
 .settings-wrapper {

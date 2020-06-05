@@ -6,7 +6,7 @@
 {{--                        <span class="align-items-baseline text-uppercase project-title">Лидогенератор</span>--}}
         </a>
 
-            <div class="navbar-nav">
+            <div class="navbar-nav scrollmenu">
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Название аккаунта</a>
                     <div class="dropdown-menu">
