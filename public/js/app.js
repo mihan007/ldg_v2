@@ -37240,7 +37240,9 @@ __webpack_require__(/*! ./date-range.js */ "./resources/js/date-range.js");
 
 __webpack_require__(/*! ./toast.js */ "./resources/js/toast.js");
 
-__webpack_require__(/*! ./sorting.js */ "./resources/js/sorting.js"); //require('./fixtable.js');
+__webpack_require__(/*! ./sorting.js */ "./resources/js/sorting.js");
+
+__webpack_require__(/*! ./fixtable.js */ "./resources/js/fixtable.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -37309,6 +37311,17 @@ $(function () {
 
 /***/ }),
 
+/***/ "./resources/js/fixtable.js":
+/*!**********************************!*\
+  !*** ./resources/js/fixtable.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./resources/js/sorting.js":
 /*!*********************************!*\
   !*** ./resources/js/sorting.js ***!
@@ -37317,7 +37330,29 @@ $(function () {
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  $('#dtBasicExample').DataTable();
+  window.table = $('.company-grid').DataTable({
+    fixedHeader: {
+      headerOffset: 52
+    },
+    paging: false,
+    searching: false,
+    info: false,
+    autoWidth: false // columns: [
+    //     { "width": "250px" },
+    //     { "width": "67px" },
+    //     { "width": "80px" },
+    //     { "width": "91px" },
+    //     { "width": "91px" },
+    //     { "width": "100px" },
+    //     { "width": "91px" },
+    //     { "width": "91px" },
+    //     { "width": "91px" },
+    //     { "width": "91px" },
+    //     { "width": "91px" },
+    //     { "width": "91px" }
+    // ]
+
+  });
   $('.dataTables_length').addClass('bs-select');
 });
 

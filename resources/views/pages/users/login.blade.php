@@ -42,7 +42,8 @@
                         </a>
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-primary text-uppercase w-100" type="submit">Войти</button>
+                        <button class="btn btn-primary text-uppercase w-100" type="submit"
+                                data-href="{{ route('companies.report') }}">Войти</button>
                     </div>
                 </form>
             </div>
