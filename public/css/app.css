@@ -14102,6 +14102,11 @@ body {
   padding-left: 0;
 }
 
+.scrollmenu {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
 .project-title {
   font-size: 23px;
 }
