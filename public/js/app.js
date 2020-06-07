@@ -37241,8 +37241,6 @@ __webpack_require__(/*! ./date-range.js */ "./resources/js/date-range.js");
 __webpack_require__(/*! ./toast.js */ "./resources/js/toast.js");
 
 __webpack_require__(/*! ./sorting.js */ "./resources/js/sorting.js");
-
-__webpack_require__(/*! ./fixtable.js */ "./resources/js/fixtable.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -37321,17 +37319,6 @@ $(function () {
   }, cb);
   cb(start, end);
 });
-
-/***/ }),
-
-/***/ "./resources/js/fixtable.js":
-/*!**********************************!*\
-  !*** ./resources/js/fixtable.js ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
 
 /***/ }),
 

@@ -7,4 +7,5 @@ require('./tooltip.js');
 require('./date-range.js');
 require('./toast.js');
 require('./sorting.js');
-require('./fixtable.js');
+
+

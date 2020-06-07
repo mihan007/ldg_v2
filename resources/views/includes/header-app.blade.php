@@ -1,15 +1,15 @@
 <header class="container-fluid bg-grey company-header fixed-top">
-    <nav class="navbar navbar-expand-md navbar-dark bg-grey">
+    <nav class="navbar navbar-expand navbar-dark bg-grey scrollmenu">
         <a href="#" class="navbar-brand ">
 {{--            <img class="align-top logo-image mr-2" src="/img/logo.png" height="25" alt="Лидогенератор">--}}
             <img class="align-top logo-image mr-2" src="/img/logo-index-duble.png" height="30" alt="Лидогенератор">
 {{--                        <span class="align-items-baseline text-uppercase project-title">Лидогенератор</span>--}}
         </a>
 
-            <div class="navbar-nav scrollmenu">
+            <div class="navbar-nav">
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Название аккаунта</a>
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu accounts-list">
                         <a href="#" class="dropdown-item disabled">Пункт 1</a>
                         <a href="#" class="dropdown-item">Пункт 2</a>
                         <a href="#" class="dropdown-item">Пункт 3</a>

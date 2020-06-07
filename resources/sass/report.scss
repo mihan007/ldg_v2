@@ -16,25 +16,57 @@ body {
 
 .bg-grey {
     background-color: #1d1d1d;
-    min-width: 1270px;
+    padding-right: 7px;
 }
 
 .company-header {
     padding-left: 0;
 }
 
-.scrollmenu {
-    overflow: auto;
-    white-space: nowrap;
-}
+//@media (min-width: 710px) {
+//    .company-header {
+//        position: fixed;
+//        top: 0;
+//        right: 0;
+//        left: 0;
+//        z-index: 1030;
+//    }
+//}
+//
+//@media (max-width: 709px) {
+//    .bg-grey {
+//        min-width: 1340px;
+//        position: absolute;
+//        top: 0;
+//        left: 0;
+//        right: 0;
+//        padding-right: 12px;
+//    }
+//}
+
+
+//.scrollmenu {
+//    overflow-x: auto;
+//    white-space: nowrap;
+//}
 
 .project-title {
     font-size: 23px;
 }
-
+//.header-menu {
+//    width: 60%;
+//    margin-right: auto;
+//    margin-left: auto;
+//}
 .dropdown-toggle::after {
     vertical-align: 0;
     border-top: 0.5em solid;
+}
+
+@media (max-width: 767px) {
+    .dropdown-list {
+        margin-left: 80px;
+    }
 }
 
 .login-wrapper {
@@ -78,6 +110,7 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     font-size: 26px;
+    z-index: 1032;
 }
 
 .active .fa-home {
@@ -289,6 +322,7 @@ body {
     //table-layout: fixed;
     cursor: pointer;
     table-layout: fixed;
+    font-weight: 400;
 }
 
 .company-table tr:first-child th {
@@ -300,7 +334,8 @@ body {
 }
 
 .company-table th, .company-table td {
-    padding: 0.75rem 0.5rem;
+    padding: 0.75rem 0.2rem;
+    font-weight: 400;
 }
 
 .table-head {
@@ -309,7 +344,8 @@ body {
 
 .company-table td:first-child,
 .company-table th:first-child {
-    width: 230px !important;
+    width: 200px !important;
+    font-weight: 400;
 }
 
 .table thead th {
@@ -338,9 +374,9 @@ tbody tr:hover {
     visibility: hidden;
 }
 
-.table.dataTable thead>tr>th.sorting {
-    padding-right: 0;
-}
+//.table.dataTable thead>tr>th.sorting {
+//    padding-right: 0;
+//}
 
 .table-grey, .table-grey > th, .table-grey > td {
     background-color: #e0e0e0;
