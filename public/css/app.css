@@ -14102,9 +14102,11 @@ body {
   padding-left: 0;
 }
 
-.scrollmenu {
-  overflow-x: auto;
-  white-space: nowrap;
+@media (max-width: 670px) {
+  .scrollmenu {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }
 
 .project-title {
