@@ -14102,9 +14102,9 @@ body {
   padding-left: 0;
 }
 
-@media (max-width: 670px) {
+@media (max-width: 693px) {
   .scrollmenu {
-    overflow-x: auto;
+    overflow: auto;
     white-space: nowrap;
   }
 }
