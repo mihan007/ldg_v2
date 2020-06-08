@@ -37240,7 +37240,7 @@ __webpack_require__(/*! ./date-range.js */ "./resources/js/date-range.js");
 
 __webpack_require__(/*! ./toast.js */ "./resources/js/toast.js");
 
-__webpack_require__(/*! ./sorting.js */ "./resources/js/sorting.js"); //require('./fixtable.js');
+__webpack_require__(/*! ./sorting.js */ "./resources/js/sorting.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -37285,16 +37285,29 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ (function(module, exports) {
 
 $(function () {
+  moment.locale('ru');
   var start = moment().subtract(29, 'days');
   var end = moment();
 
   function cb(start, end) {
-    $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+    $('#reportrange span').html(start.format('MMM D, YYYY') + ' - ' + end.format('MMM D, YYYY'));
   }
 
   $('#reportrange').daterangepicker({
     startDate: start,
-    endDate: end // ranges: {
+    endDate: end,
+    "locale": {
+      "format": "DD/MM/YYYY",
+      "separator": " - ",
+      "applyLabel": "Применить",
+      "cancelLabel": "Отмена",
+      "fromLabel": "От",
+      "toLabel": "До",
+      "customRangeLabel": "Свой период",
+      "daysOfWeek": ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+      "monthNames": ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"],
+      "firstDay": 1
+    } // ranges: {
     //     'Today': [moment(), moment()],
     //     'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
     //     'Last 7 Days': [moment().subtract(6, 'days'), moment()],
@@ -37317,7 +37330,33 @@ $(function () {
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  $('#dtBasicExample').DataTable();
+  $.fn.dataTableExt.afnFiltering.push(function (oSettings, aData, iDataIndex) {
+    var row = oSettings.aoData[iDataIndex].nTr;
+    return $(row).hasClass('template') ? false : true;
+  });
+  window.table = $('.company-grid').DataTable({
+    fixedHeader: {
+      headerOffset: 52
+    },
+    paging: false,
+    searching: false,
+    info: false,
+    autoWidth: false // columns: [
+    //     { "width": "250px" },
+    //     { "width": "67px" },
+    //     { "width": "80px" },
+    //     { "width": "91px" },
+    //     { "width": "91px" },
+    //     { "width": "100px" },
+    //     { "width": "91px" },
+    //     { "width": "91px" },
+    //     { "width": "91px" },
+    //     { "width": "91px" },
+    //     { "width": "91px" },
+    //     { "width": "91px" }
+    // ]
+
+  });
   $('.dataTables_length').addClass('bs-select');
 });
 
@@ -37349,7 +37388,7 @@ $(document).ready(function () {
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="tooltip"]').tooltip({});
 });
 
 /***/ }),
