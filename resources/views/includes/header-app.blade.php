@@ -1,17 +1,15 @@
 <header class="container-fluid bg-grey company-header fixed-top">
     <nav class="navbar navbar-expand navbar-dark bg-grey scrollmenu">
-        <a href="#" class="navbar-brand ">
-            {{--            <img class="align-top logo-image mr-2" src="/img/logo.png" height="25" alt="Лидогенератор">--}}
+        <a href="#" class="navbar-brand magic-hide">
             <img class="align-top logo-image mr-2" src="/img/logo-index-duble.png" height="30" alt="Лидогенератор">
-            {{--                        <span class="align-items-baseline text-uppercase project-title">Лидогенератор</span>--}}
         </a>
 
         <div class="navbar-nav">
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Название аккаунта</a>
+            <div class="nav-item dropdown magic-menu">
+                <a href="#" class="nav-link dropdown-toggle">Название аккаунта</a>
                 <div class="dropdown-menu accounts-list">
                     <a href="#" class="dropdown-item disabled">Пункт 1</a>
-                    <a href="#" class="dropdown-item">Пункт 2</a>
+                    <a href="#12344" class="dropdown-item">Пункт 2</a>
                     <a href="#" class="dropdown-item">Пункт 3</a>
                     <a href="#" class="dropdown-item">Пункт 4</a>
                     <a href="#" class="dropdown-item">Пункт 5</a>
@@ -29,8 +27,8 @@
             </div>
         </div>
         <div class="navbar-nav login-wrapper ml-auto">
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+            <div class="nav-item dropdown magic-menu">
+                <a href="#" class="nav-link dropdown-toggle">
                     <i class="fa fa-user-o mr-2"></i>
                     <span>Виктор Емельянов</span>
                 </a>
@@ -45,7 +43,7 @@
             </div>
         </div>
     </nav>
-    <nav class="navbar-collapse" id="navbarCollapse">
+    <nav class="navbar-collapse magic-hide" id="navbarCollapse">
         <ul class="navbar-nav navbar-dark mr-auto sidenav text-center position-fixed">
             <li class="nav-item">
                 <a class="nav-link active" data-toggle="tooltip" data-placement="right" title="Компании"
