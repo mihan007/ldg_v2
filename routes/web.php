@@ -44,3 +44,7 @@ Route::get('/users/new-info-alert', function () {
 Route::get('/users/error-login', function () {
     return view('pages.users.error-login');
 })->name('users.error-login');
+
+Route::get('/companies/report', function () {
+    return view('pages.companies.report');
+})->name('companies.report');

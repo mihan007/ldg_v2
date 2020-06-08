@@ -10,7 +10,7 @@
                     Вы перешли по устаревшей ссылке. Выслать инструкцию по сбросу пароля повторно?
                 </div>
                 <div class="text-center mx-auto">
-                    <a class="btn btn-primary text-uppercase col-sm-6 col-lg-4" type="submit"
+                    <a class="btn btn-primary text-uppercase col-sm-6 col-lg-4"
                             href="{{ route('users.new-info-alert') }}">Выслать</a>
                 </div>
             </div>
