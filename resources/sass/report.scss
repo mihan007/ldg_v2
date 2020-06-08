@@ -382,3 +382,24 @@ tbody tr:hover {
 .table-grey, .table-grey > th, .table-grey > td {
     background-color: #e0e0e0;
 }
+
+.rounded-table-left {
+    border-top-left-radius: 0.25rem;
+}
+
+.rounded-table-right {
+    border-top-right-radius: 0.25rem;
+}
+
+.sorting::before,
+.sorting::after {
+    visibility: hidden;
+}
+
+//.table.dataTable thead>tr>th.sorting {
+//    padding-right: 0;
+//}
+
+.table-grey, .table-grey > th, .table-grey > td {
+    background-color: #e0e0e0;
+}

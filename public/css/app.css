@@ -14404,3 +14404,34 @@ tbody tr:hover {
   background-color: #e0e0e0;
 }
 
+.rounded-table-left {
+  border-top-left-radius: 0.25rem;
+}
+
+.rounded-table-right {
+  border-top-right-radius: 0.25rem;
+}
+
+.sorting::before,
+.sorting::after {
+  visibility: hidden;
+}
+
+.table-grey,
+.table-grey > th,
+.table-grey > td {
+  background-color: #e0e0e0;
+}
+
+.directory-buttons {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.crm-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #eeeeee;
+}
+
