@@ -7,8 +7,10 @@ $(document).ready(function () {
         searching: false,
         info: false,
         autoWidth: false,
+        bSortCellsTop: true,
+        "order": [[ 1, 'desc' ]],
         columns: [
-            { 'orderSequence': ['asc', 'desc'] },
+            { "orderable": false },
             { 'orderSequence': ['desc', 'asc'] },
             { 'orderSequence': ['desc', 'asc'] },
             { 'orderSequence': ['desc', 'asc'] },
