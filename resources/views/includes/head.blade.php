@@ -7,4 +7,8 @@
 <script src="{{ mix('js/app.js') }}"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment-with-locales.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-
+<link href='https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css' rel='stylesheet'>
+<link href='https://cdn.datatables.net/fixedheader/3.1.7/css/fixedHeader.dataTables.min.css' rel='stylesheet'>
+<script src='https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js'></script>
+<script src='https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js'></script>
+<script src='https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js'></script>

@@ -37240,6 +37240,8 @@ __webpack_require__(/*! ./date-range.js */ "./resources/js/date-range.js");
 
 __webpack_require__(/*! ./toast.js */ "./resources/js/toast.js");
 
+__webpack_require__(/*! ./toast-button.js */ "./resources/js/toast-button.js");
+
 __webpack_require__(/*! ./sorting.js */ "./resources/js/sorting.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
@@ -37334,30 +37336,34 @@ $(document).ready(function () {
     var row = oSettings.aoData[iDataIndex].nTr;
     return $(row).hasClass('template') ? false : true;
   });
-  window.table = $('.company-grid').DataTable({
+  window.table = $('.data-grid').DataTable({
     fixedHeader: {
-      headerOffset: 52
+      headerOffset: 140
     },
     paging: false,
     searching: false,
     info: false,
-    autoWidth: false // columns: [
-    //     { "width": "250px" },
-    //     { "width": "67px" },
-    //     { "width": "80px" },
-    //     { "width": "91px" },
-    //     { "width": "91px" },
-    //     { "width": "100px" },
-    //     { "width": "91px" },
-    //     { "width": "91px" },
-    //     { "width": "91px" },
-    //     { "width": "91px" },
-    //     { "width": "91px" },
-    //     { "width": "91px" }
-    // ]
-
+    autoWidth: false
   });
   $('.dataTables_length').addClass('bs-select');
+});
+
+/***/ }),
+
+/***/ "./resources/js/toast-button.js":
+/*!**************************************!*\
+  !*** ./resources/js/toast-button.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $(".show-toast").click(function () {
+    $("#myToast-button").toast({
+      autohide: false
+    });
+    $("#myToast-button").toast('show');
+  });
 });
 
 /***/ }),

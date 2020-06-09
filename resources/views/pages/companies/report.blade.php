@@ -1,10 +1,5 @@
 @extends('layouts.app')
 @section('content')
-    <link href='https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css' rel='stylesheet'>
-    <link href='https://cdn.datatables.net/fixedheader/3.1.7/css/fixedHeader.dataTables.min.css' rel='stylesheet'>
-    <script src='https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js'></script>
-    <script src='https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js'></script>
-    <script src='https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js'></script>
     <main class="page-wrapper">
         <div class="row">
             <div class="col-md-12 offset-block"></div>
@@ -67,7 +62,7 @@
                 </form>
             </div>
             <div class="col-md-12 table-wrapper mb-5">
-                <table class="table company-table company-grid table-hover table-striped ">
+                <table class="table company-table data-grid table-hover table-striped ">
                     <thead class="table-bordered">
                         <tr class="table-grey table-head">
                             <th class="text-left rounded-table-left">Рабочая область

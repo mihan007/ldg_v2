@@ -6,6 +6,7 @@ require('./validator.js');
 require('./tooltip.js');
 require('./date-range.js');
 require('./toast.js');
+require('./toast-button.js');
 require('./sorting.js');
 
 

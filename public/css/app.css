@@ -14091,6 +14091,7 @@ html {
 
 body {
   position: relative;
+  color: #212529;
 }
 
 .bg-grey {
@@ -14187,6 +14188,7 @@ body {
   padding-right: 20px;
   padding-left: 80px;
   min-width: 1340px;
+  font-size: 14px;
 }
 
 .offset-block {
@@ -14425,13 +14427,73 @@ tbody tr:hover {
 
 .directory-buttons {
   font-weight: 500;
+  color: #212529;
   text-transform: uppercase;
+}
+
+.directory-button {
+  margin-right: 1.2rem;
+  color: #212529;
+  text-decoration: none;
+}
+
+.directory-buttons .active,
+.directory-buttons .active:hover {
+  color: #ff9517;
+}
+
+.directory-button:hover {
+  text-decoration: none;
+  color: #95999c;
+}
+
+.directory-button:active {
+  color: #5a6268;
+}
+
+.balance-info {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .crm-button {
   position: absolute;
-  bottom: 0;
+  top: 120%;
   left: 0;
+  transform: translateY(200%);
   background-color: #eeeeee;
+  max-width: 450px;
+  height: 210px;
+  overflow: auto;
+}
+
+.order-filter {
+  display: flex;
+  margin-right: auto;
+}
+
+.order-buttons {
+  display: flex;
+}
+
+.moderation-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  margin-right: 5px;
+  background-color: white;
+  border: 1px solid grey;
+  display: inline-block;
+}
+
+.crm-table {
+  font-size: 14px;
+  cursor: pointer;
+  table-layout: fixed;
+  font-weight: 400;
+}
+
+.crm-row {
+  background-color: white;
 }
 
