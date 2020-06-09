@@ -37228,6 +37228,8 @@ module.exports = function(module) {
 /* WEBPACK VAR INJECTION */(function(global) {global.$ = global.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js")["default"];
 
+__webpack_require__(/*! ./magic-menu */ "./resources/js/magic-menu.js");
+
 __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
@@ -37239,8 +37241,6 @@ __webpack_require__(/*! ./tooltip.js */ "./resources/js/tooltip.js");
 __webpack_require__(/*! ./date-range.js */ "./resources/js/date-range.js");
 
 __webpack_require__(/*! ./toast.js */ "./resources/js/toast.js");
-
-__webpack_require__(/*! ./toast-button.js */ "./resources/js/toast-button.js");
 
 __webpack_require__(/*! ./sorting.js */ "./resources/js/sorting.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
@@ -37324,6 +37324,46 @@ $(function () {
 
 /***/ }),
 
+/***/ "./resources/js/magic-menu.js":
+/*!************************************!*\
+  !*** ./resources/js/magic-menu.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).on('click', function (event) {
+  var $this = $(event.target);
+  $('.nav-item').removeClass('show');
+  $('.dropdown-menu').removeClass('show');
+  var switchCondition = $this.closest('.navbar-nav').length > 0;
+  switchCondition = switchCondition && !$this.closest('.navbar-nav').hasClass('sidenav');
+
+  if (switchCondition) {
+    $this.closest('.magic-menu').addClass('show');
+    $this.closest('.magic-menu').find('.dropdown-menu').addClass('show');
+
+    if ($(window).width() < 693) {
+      $('.scrollmenu').css('overflow', 'visible');
+      $('.magic-hide').hide();
+    }
+  } else {
+    if ($(window).width() < 693) {
+      $('.scrollmenu').css('overflow', 'auto');
+      $('.magic-hide').show();
+    }
+  }
+});
+$(window).resize(function () {
+  if ($(window).width() < 693) {
+    $('.scrollmenu').css('overflow', 'auto');
+  } else {
+    $('.scrollmenu').css('overflow', 'visible');
+    $('.magic-hide').show();
+  }
+});
+
+/***/ }),
+
 /***/ "./resources/js/sorting.js":
 /*!*********************************!*\
   !*** ./resources/js/sorting.js ***!
@@ -37332,38 +37372,43 @@ $(function () {
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  $.fn.dataTableExt.afnFiltering.push(function (oSettings, aData, iDataIndex) {
-    var row = oSettings.aoData[iDataIndex].nTr;
-    return $(row).hasClass('template') ? false : true;
-  });
-  window.table = $('.data-grid').DataTable({
+  window.table = $('.company-grid').DataTable({
     fixedHeader: {
-      headerOffset: 140
+      headerOffset: 52
     },
     paging: false,
     searching: false,
     info: false,
-    autoWidth: false
+    autoWidth: false,
+    bSortCellsTop: true,
+    "order": [[1, 'desc']],
+    columns: [{
+      "orderable": false
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }]
   });
   $('.dataTables_length').addClass('bs-select');
-});
-
-/***/ }),
-
-/***/ "./resources/js/toast-button.js":
-/*!**************************************!*\
-  !*** ./resources/js/toast-button.js ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-$(document).ready(function () {
-  $(".show-toast").click(function () {
-    $("#myToast-button").toast({
-      autohide: false
-    });
-    $("#myToast-button").toast('show');
-  });
 });
 
 /***/ }),

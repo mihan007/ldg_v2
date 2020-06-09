@@ -1,18 +1,28 @@
 $(document).ready(function () {
-    $.fn.dataTableExt.afnFiltering.push(
-        function( oSettings, aData, iDataIndex ) {
-            var row = oSettings.aoData[iDataIndex].nTr;
-            return $(row).hasClass('template') ? false : true;
-        }
-    );
-    window.table = $('.data-grid').DataTable({
+    window.table = $('.company-grid').DataTable({
         fixedHeader: {
-            headerOffset: 140
+            headerOffset: 52
         },
         paging: false,
         searching: false,
         info: false,
-        autoWidth: false
-    });
-    $('.dataTables_length').addClass('bs-select');
-});
+        autoWidth: false,
+        bSortCellsTop: true,
+        "order": [[ 1, 'desc' ]],
+        columns: [
+            { "orderable": false },
+            { 'orderSequence': ['desc', 'asc'] },
+            { 'orderSequence': ['desc', 'asc'] },
+            { 'orderSequence': ['desc', 'asc'] },
+            { 'orderSequence': ['desc', 'asc'] },
+            { 'orderSequence': ['desc', 'asc'] },
+            { 'orderSequence': ['desc', 'asc'] },
+            { 'orderSequence': ['desc', 'asc'] },
+            { 'orderSequence': ['desc', 'asc'] },
+            { 'orderSequence': ['desc', 'asc'] },
+            { 'orderSequence': ['desc', 'asc'] },
+            { 'orderSequence': ['desc', 'asc'] },
+        ]
+    })
+    $('.dataTables_length').addClass('bs-select')
+})

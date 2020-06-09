@@ -11,7 +11,7 @@
                 </div>
                 <div class="text-center mx-auto">
                     <a class="btn btn-primary text-uppercase main-login"
-                            href="{{ route('users.reset-password') }}">Восстановить пароль</a>
+                       href="{{ route('users.reset-password') }}">Восстановить пароль</a>
                 </div>
                 <div class="mb-3 text-center mx-auto">
                     <a class="text-decoration-none text-uppercase btn button-login-return main-login"

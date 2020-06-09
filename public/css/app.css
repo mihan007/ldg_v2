@@ -14077,21 +14077,12 @@ body {
   font-size: 1.6rem;
 }
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 2 version
-*/
-
 html {
-  position: relative;
   min-height: 100%;
 }
 
 body {
   position: relative;
-  color: #212529;
 }
 
 .bg-grey {
@@ -14110,19 +14101,9 @@ body {
   }
 }
 
-.project-title {
-  font-size: 23px;
-}
-
 .dropdown-toggle::after {
   vertical-align: 0;
   border-top: 0.5em solid;
-}
-
-@media (max-width: 767px) {
-  .dropdown-list {
-    margin-left: 80px;
-  }
 }
 
 .login-wrapper {
@@ -14136,17 +14117,12 @@ body {
   font-size: 23px;
 }
 
-.login-link {
-  display: flex;
-  flex-direction: column;
-}
-
 .sidenav {
   position: absolute;
   top: 0;
   left: 0;
   width: 60px;
-  height: 230vh;
+  height: 100vh;
   margin-top: 3.5rem;
   background: #1d1d1d;
   box-sizing: border-box;
@@ -14155,7 +14131,7 @@ body {
   z-index: 1032;
 }
 
-.active .fa-home {
+.sidenav .active {
   color: #ff9517;
 }
 
@@ -14188,7 +14164,6 @@ body {
   padding-right: 20px;
   padding-left: 80px;
   min-width: 1340px;
-  font-size: 14px;
 }
 
 .offset-block {
@@ -14306,7 +14281,7 @@ body {
   background-color: #eeeeee;
 }
 
-.search-form {
+.company-search-form {
   padding-left: 0;
   padding-right: 0;
   width: 16%;
@@ -14320,11 +14295,7 @@ body {
   font-size: 14px;
 }
 
-.company-td {
-  border-top: none;
-}
-
-.company-icon-hover {
+.company-icon-active {
   color: #ff9517;
 }
 
@@ -14336,10 +14307,6 @@ body {
   font-weight: 500;
   padding-left: 2px;
   padding-right: 13px;
-  color: #95999c;
-}
-
-.fa-question-circle-o {
   color: #95999c;
 }
 
@@ -14364,26 +14331,22 @@ body {
   font-weight: 400;
 }
 
-.table-head {
-  cursor: pointer;
-}
-
 .company-table td:first-child,
 .company-table th:first-child {
   width: 200px !important;
   font-weight: 400;
 }
 
-.table thead th {
+.company-table thead th {
   border-bottom: 2px solid #b3b7bb;
   border-right: 2px solid #b3b7bb;
 }
 
-.table thead th:last-child {
+.company-table thead th:last-child {
   border-right: none;
 }
 
-tbody tr:hover {
+.company-table tbody tr:hover {
   background-color: lightgray;
 }
 
@@ -14406,94 +14369,13 @@ tbody tr:hover {
   background-color: #e0e0e0;
 }
 
-.rounded-table-left {
-  border-top-left-radius: 0.25rem;
+.sum-line {
+  background-color: #fbfbfb;
+  border-bottom: none;
 }
 
-.rounded-table-right {
-  border-top-right-radius: 0.25rem;
-}
-
-.sorting::before,
-.sorting::after {
-  visibility: hidden;
-}
-
-.table-grey,
-.table-grey > th,
-.table-grey > td {
-  background-color: #e0e0e0;
-}
-
-.directory-buttons {
-  font-weight: 500;
-  color: #212529;
-  text-transform: uppercase;
-}
-
-.directory-button {
-  margin-right: 1.2rem;
-  color: #212529;
-  text-decoration: none;
-}
-
-.directory-buttons .active,
-.directory-buttons .active:hover {
-  color: #ff9517;
-}
-
-.directory-button:hover {
-  text-decoration: none;
-  color: #95999c;
-}
-
-.directory-button:active {
-  color: #5a6268;
-}
-
-.balance-info {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.crm-button {
-  position: absolute;
-  top: 120%;
-  left: 0;
-  transform: translateY(200%);
-  background-color: #eeeeee;
-  max-width: 450px;
-  height: 210px;
-  overflow: auto;
-}
-
-.order-filter {
-  display: flex;
-  margin-right: auto;
-}
-
-.order-buttons {
-  display: flex;
-}
-
-.moderation-circle {
-  width: 18px;
-  height: 18px;
-  border-radius: 9px;
-  margin-right: 5px;
-  background-color: white;
-  border: 1px solid grey;
-  display: inline-block;
-}
-
-.crm-table {
-  font-size: 14px;
-  cursor: pointer;
-  table-layout: fixed;
-  font-weight: 400;
-}
-
-.crm-row {
-  background-color: white;
+.table .sum-line th {
+  border-bottom: none;
+  border-right: none;
 }
 
