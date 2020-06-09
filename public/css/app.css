@@ -14077,15 +14077,7 @@ body {
   font-size: 1.6rem;
 }
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 2 version
-*/
-
 html {
-  position: relative;
   min-height: 100%;
 }
 
@@ -14109,19 +14101,9 @@ body {
   }
 }
 
-.project-title {
-  font-size: 23px;
-}
-
 .dropdown-toggle::after {
   vertical-align: 0;
   border-top: 0.5em solid;
-}
-
-@media (max-width: 767px) {
-  .dropdown-list {
-    margin-left: 80px;
-  }
 }
 
 .login-wrapper {
@@ -14135,17 +14117,12 @@ body {
   font-size: 23px;
 }
 
-.login-link {
-  display: flex;
-  flex-direction: column;
-}
-
 .sidenav {
   position: absolute;
   top: 0;
   left: 0;
   width: 60px;
-  height: 230vh;
+  height: 100vh;
   margin-top: 3.5rem;
   background: #1d1d1d;
   box-sizing: border-box;
@@ -14154,7 +14131,7 @@ body {
   z-index: 1032;
 }
 
-.active .fa-home {
+.sidenav .active {
   color: #ff9517;
 }
 
@@ -14304,7 +14281,7 @@ body {
   background-color: #eeeeee;
 }
 
-.search-form {
+.company-search-form {
   padding-left: 0;
   padding-right: 0;
   width: 16%;
@@ -14318,11 +14295,7 @@ body {
   font-size: 14px;
 }
 
-.company-td {
-  border-top: none;
-}
-
-.company-icon-hover {
+.company-icon-active {
   color: #ff9517;
 }
 
@@ -14334,10 +14307,6 @@ body {
   font-weight: 500;
   padding-left: 2px;
   padding-right: 13px;
-  color: #95999c;
-}
-
-.fa-question-circle-o {
   color: #95999c;
 }
 
@@ -14362,26 +14331,22 @@ body {
   font-weight: 400;
 }
 
-.table-head {
-  cursor: pointer;
-}
-
 .company-table td:first-child,
 .company-table th:first-child {
   width: 200px !important;
   font-weight: 400;
 }
 
-.table thead th {
+.company-table thead th {
   border-bottom: 2px solid #b3b7bb;
   border-right: 2px solid #b3b7bb;
 }
 
-.table thead th:last-child {
+.company-table thead th:last-child {
   border-right: none;
 }
 
-tbody tr:hover {
+.company-table tbody tr:hover {
   background-color: lightgray;
 }
 
@@ -14402,5 +14367,15 @@ tbody tr:hover {
 .table-grey > th,
 .table-grey > td {
   background-color: #e0e0e0;
+}
+
+.sum-line {
+  background-color: #fbfbfb;
+  border-bottom: none;
+}
+
+.table .sum-line th {
+  border-bottom: none;
+  border-right: none;
 }
 
