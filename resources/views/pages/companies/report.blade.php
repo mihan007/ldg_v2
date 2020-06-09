@@ -69,211 +69,147 @@
             <div class="col-md-12 table-wrapper mb-5">
                 <table class="table company-table company-grid table-hover table-striped ">
                     <thead class="table-bordered">
-                        <tr class="table-grey table-head">
-                            <th class="text-left rounded-table-left">Рабочая область
-                            </th>
-                            <th colspan="5"  class="text-center">Заявки</th>
-                            <th colspan="3"  class="text-center">Финансы</th>
-                            <th colspan="3"  class="text-center rounded-table-right">Баланс сервисов</th>
-                        </tr>
-                        <tr class="table-grey text-center table-head ">
-                            <th class="company-td text-left border-top-0 company-col">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Название компании">
-                                    <i class="fa fa-bars company-icon mr-2"></i>Компания
-                                </a>
-                            </th>
-                            <th scope="col" class="border-top-0 all-orders-col">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Общее количество входящих заявок">
-                                    Все
-                                </a>
-                            </th>
-                            <th scope="col" class="border-top-0 cr-col">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Доля целевых заявок от общего количества заявок">
-                                    CR %
-                                </a>
-                            </th>
-                            <th scope="col" class="border-top-0 target-col">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Заявки в статусе &laquo;Целевая заявка&raquo;">
-                                    Целевые
-                                </a>
-                            </th>
-                            <th scope="col" class="border-top-0 cpl-col">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Средняя стоимость заявки (Расходы / Целевые заявки)">
-                                    CPL
-                                </a>
-                            </th>
-                            <th scope="col" class="border-top-0 moderation-col">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Заявки в статусе модерации. Не согласовано">
-                                    Проверка
-                                </a>
-                            </th>
-                            <th scope="col" class="border-top-0 gain-col">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Вознаграждение без учета расходов">
-                                    Выручка
-                                </a>
-                            </th>
-                            <th scope="col" class="border-top-0 costs-col">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Рекламные расходы">
-                                    Расходы
-                                </a>
-                            </th>
-                            <th scope="col" class="border-top-0 profit-col">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Выручка минус рекламные расходы, если настроен вычет расходов">
-                                    Прибыль
-                                </a>
-                            </th>
-                            <th class="border-top-0 lidgen-col">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Баланс аккаунта компании Лидогенератор">
-                                    Лидген
-                                </a>
-                            </th>
-                            <th scope="col" class="border-top-0 yandex-col">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Баланс аккаунтов Яндекс.Директ">
-                                    Яндекс
-                                </a>
-                            </th>
-                            <th scope="col" class="border-top-0 google-col">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Баланс аккаунтов Google Ads">
-                                    Google
-                                </a>
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr class="sum-line template">
-                            <td scope="row" class="company-col">
-                                <a data-toggle="tooltip" data-placement="right" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Подсчитывается по всем компаниям соответствующим
+                    <tr class="table-grey table-head">
+                        <th class="text-left rounded-table-left">Рабочая область
+                        </th>
+                        <th colspan="5" class="text-center">Заявки</th>
+                        <th colspan="3" class="text-center">Финансы</th>
+                        <th colspan="3" class="text-center rounded-table-right">Баланс сервисов</th>
+                    </tr>
+                    <tr class="table-grey text-center table-head ">
+                        <th class="company-td text-left border-top-0 company-col">
+                            <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                               title="Название компании">
+                                <i class="fa fa-bars company-icon mr-2"></i>Компания
+                            </a>
+                        </th>
+                        <th scope="col" class="border-top-0 all-orders-col">
+                            <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                               title="Общее количество входящих заявок">
+                                Все
+                            </a>
+                        </th>
+                        <th scope="col" class="border-top-0 cr-col">
+                            <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                               title="Доля целевых заявок от общего количества заявок">
+                                CR %
+                            </a>
+                        </th>
+                        <th scope="col" class="border-top-0 target-col">
+                            <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                               title="Заявки в статусе &laquo;Целевая заявка&raquo;">
+                                Целевые
+                            </a>
+                        </th>
+                        <th scope="col" class="border-top-0 cpl-col">
+                            <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                               title="Средняя стоимость заявки (Расходы / Целевые заявки)">
+                                CPL
+                            </a>
+                        </th>
+                        <th scope="col" class="border-top-0 moderation-col">
+                            <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                               title="Заявки в статусе модерации. Не согласовано">
+                                Проверка
+                            </a>
+                        </th>
+                        <th scope="col" class="border-top-0 gain-col">
+                            <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                               title="Вознаграждение без учета расходов">
+                                Выручка
+                            </a>
+                        </th>
+                        <th scope="col" class="border-top-0 costs-col">
+                            <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                               title="Рекламные расходы">
+                                Расходы
+                            </a>
+                        </th>
+                        <th scope="col" class="border-top-0 profit-col">
+                            <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                               title="Выручка минус рекламные расходы, если настроен вычет расходов">
+                                Прибыль
+                            </a>
+                        </th>
+                        <th class="border-top-0 lidgen-col">
+                            <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                               title="Баланс аккаунта компании Лидогенератор">
+                                Лидген
+                            </a>
+                        </th>
+                        <th scope="col" class="border-top-0 yandex-col">
+                            <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                               title="Баланс аккаунтов Яндекс.Директ">
+                                Яндекс
+                            </a>
+                        </th>
+                        <th scope="col" class="border-top-0 google-col">
+                            <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                               title="Баланс аккаунтов Google Ads">
+                                Google
+                            </a>
+                        </th>
+                    </tr>
+                    <tr class="sum-line template">
+                        <th scope="row" class="company-col">
+                            <a data-toggle="tooltip" data-placement="right" data-delay='{"show":"1000", "hide":"1000"}'
+                               title="Подсчитывается по всем компаниям соответствующим
                     фильтру">
-                                    <span class="sigma-icon">&#931;</span>Итого / Среднее
-                                </a>
-                            </td>
-                            <td class="all-orders-col">6000</td>
-                            <td class="cr-col">15500</td>
-                            <td class="target-col">3000</td>
-                            <td class="cpl-col">300</td>
-                            <td class="moderation-col">150</td>
-                            <td class="gain-col">45</td>
-                            <td class="costs-col">1500</td>
-                            <td class="profit-col">4000</td>
-                            <td class="lidgen-col">1000</td>
-                            <td class="yandex-col">1000</td>
-                            <td class="google-col">1000</td>
-                        </tr>
-                        <tr class="dark-stroke">
-                            <td scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
-                            </td>
-                            <td>2000</td>
-                            <td>10000</td>
-                            <td>5000</td>
-                            <td>500</td>
-                            <td>250</td>
-                            <td>75</td>
-                            <td>2500</td>
-                            <td>4000</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Центр профессиональной юридической помощи.
-                                Тверь.
-                                Оказываем юридические услуги.
-                            </td>
-                            <td>2000</td>
-                            <td>10000</td>
-                            <td>5000</td>
-                            <td>500</td>
-                            <td>250</td>
-                            <td>75</td>
-                            <td>2500</td>
-                            <td>4000</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                        </tr>
-                        <tr class="dark-stroke">
-                            <td scope="row">
-                                <i class="fa fa-bars company-icon-hover mr-2"></i>Импульс
-                            </td>
-                            <td>2000</td>
-                            <td>10000</td>
-                            <td>5000</td>
-                            <td>500</td>
-                            <td>250</td>
-                            <td>75</td>
-                            <td>2500</td>
-                            <td>4000</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
-                            </th>
-                            <td>2000</td>
-                            <td>10000</td>
-                            <td>5000</td>
-                            <td>500</td>
-                            <td>250</td>
-                            <td>75</td>
-                            <td>2500</td>
-                            <td>4000</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                        </tr>
-                        <tr class="dark-stroke">
-                            <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
-                            </th>
-                            <td>2000</td>
-                            <td>10000</td>
-                            <td>5000</td>
-                            <td>500</td>
-                            <td>250</td>
-                            <td>75</td>
-                            <td>2500</td>
-                            <td>4000</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
-                            </th>
-                            <td>2000</td>
-                            <td>10000</td>
-                            <td>5000</td>
-                            <td>500</td>
-                            <td>250</td>
-                            <td>75</td>
-                            <td>2500</td>
-                            <td>4000</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                        </tr>
-                    <tr class="dark-stroke">
-                        <th scope="row">
-                            <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                                <span class="sigma-icon">&#931;</span>Итого / Среднее
+                            </a>
                         </th>
+                        <th class="all-orders-col">6000</th>
+                        <th class="cr-col">15500</th>
+                        <th class="target-col">3000</th>
+                        <th class="cpl-col">300</th>
+                        <th class="moderation-col">150</th>
+                        <th class="gain-col">45</th>
+                        <th class="costs-col">1500</th>
+                        <th class="profit-col">4000</th>
+                        <th class="lidgen-col">1000</th>
+                        <th class="yandex-col">1000</th>
+                        <th class="google-col">1000</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="dark-stroke">
+                        <td scope="row">
+                            <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                        </td>
+                        <td>2000</td>
+                        <td>10000</td>
+                        <td>5000</td>
+                        <td>500</td>
+                        <td>250</td>
+                        <td>75</td>
+                        <td>2500</td>
+                        <td>4000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">
+                            <i class="fa fa-bars company-icon mr-2"></i>Центр профессиональной юридической помощи.
+                            Тверь.
+                            Оказываем юридические услуги.
+                        </td>
+                        <td>20</td>
+                        <td>10000</td>
+                        <td>5000</td>
+                        <td>500</td>
+                        <td>250</td>
+                        <td>75</td>
+                        <td>2500</td>
+                        <td>4000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr class="dark-stroke">
+                        <td scope="row">
+                            <i class="fa fa-bars company-icon-hover mr-2"></i>Импульс
+                        </td>
                         <td>2000</td>
                         <td>10000</td>
                         <td>5000</td>
@@ -414,22 +350,86 @@
                         <td>2000</td>
                         <td>2000</td>
                     </tr>
-                        <tr class="dark-stroke">
-                            <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
-                            </th>
-                            <td>2000</td>
-                            <td>10000</td>
-                            <td>5000</td>
-                            <td>500</td>
-                            <td>250</td>
-                            <td>75</td>
-                            <td>2500</td>
-                            <td>4000</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                        </tr>
+                    <tr>
+                        <th scope="row">
+                            <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                        </th>
+                        <td>2000</td>
+                        <td>10000</td>
+                        <td>5000</td>
+                        <td>500</td>
+                        <td>250</td>
+                        <td>75</td>
+                        <td>2500</td>
+                        <td>4000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr class="dark-stroke">
+                        <th scope="row">
+                            <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                        </th>
+                        <td>2000</td>
+                        <td>10000</td>
+                        <td>5000</td>
+                        <td>500</td>
+                        <td>250</td>
+                        <td>75</td>
+                        <td>2500</td>
+                        <td>4000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                        </th>
+                        <td>2000</td>
+                        <td>10000</td>
+                        <td>5000</td>
+                        <td>500</td>
+                        <td>250</td>
+                        <td>75</td>
+                        <td>2500</td>
+                        <td>4000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr class="dark-stroke">
+                        <th scope="row">
+                            <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                        </th>
+                        <td>2000</td>
+                        <td>10000</td>
+                        <td>5000</td>
+                        <td>500</td>
+                        <td>250</td>
+                        <td>75</td>
+                        <td>2500</td>
+                        <td>4000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr class="dark-stroke">
+                        <th scope="row">
+                            <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                        </th>
+                        <td>2000</td>
+                        <td>10000</td>
+                        <td>5000</td>
+                        <td>500</td>
+                        <td>250</td>
+                        <td>75</td>
+                        <td>2500</td>
+                        <td>4000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                        <td>2000</td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
