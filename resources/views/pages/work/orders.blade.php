@@ -7,7 +7,7 @@
             </div>
             <div class="col-md-12 settings-wrapper directory-buttons">
                 <div class="">
-                    <a class="directory-button active">CRM</a>
+                    <a class="directory-button active" href="{{ route('work.orders') }}">CRM</a>
                     <a class="directory-button" href="#">Финансы</a>
                 </div>
                 <div class="">
@@ -24,7 +24,7 @@
                     </select>
 
                     <div id="reportrange" class=" date-range text-center">
-                        <i class="fa fa-calendar"></i>&nbsp;
+                        <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
                         <span></span> <i class="fa fa-caret-down"></i>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                     <button type="button" class="btn dashboard-button show-toast">Описание заявки</button>
                     <div class="toast crm-button" id="myToast-button">
 
-                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+                            <button type="button" class="close ml-2 mb-1 mr-1" data-dismiss="toast">
                                 <span aria-hidden="true">&times;</span>
                             </button>
 
@@ -52,7 +52,9 @@
                         </div>
                     </div>
 
-                    <a class="btn dashboard-button" href="#">CRM клиента <i class="fa fa-external-link"></i></a>
+                    <a class="btn dashboard-button" href="#">CRM клиента
+                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
                 </div>
                     <form class="search-form">
                         <div class="input-group">
@@ -68,296 +70,357 @@
             <div class="row">
                 <div class="col-md-12 mx-auto rounded">
             <div class="table-wrapper mb-5">
-                <table class="table crm-table data-grid table-hover table-striped">
-                    <thead class="table-bordered">
-                        <tr class="table-grey text-center table-head">
-                            <th class="company-td text-left border-top-0 company-col">
-                                    ID
+                <table class="table crm-table order-grid table-hover table-striped" data-offset="140">
+                    <thead>
+                        <tr class="table-grey text-center id-col">
+                            <th>ID
                             </th>
-                            <th scope="col" class="border-top-0 all-orders-col">
+                            <th class="time-col" scope="col">
                                 <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Дата и время в часовом поясе клиента">
-                                    Время
+                                   title="Дата и время в часовом поясе клиента">Время
                                 </a>
                             </th>
-                            <th scope="col" class="border-top-0 cr-col">
+                            <th class="title-col" scope="col">
                                 <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Название страницы или формы заявки">
-                                    Заголовок
+                                   title="Название страницы или формы заявки">Заголовок
                                 </a>
                             </th>
-                            <th scope="col" class="border-top-0 target-col">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="name + comment + advertising_platform + tag">
-                                    Информация
-                                </a>
+                            <th class="info-col" scope="col">Информация
                             </th>
-                            <th scope="col" class="border-top-0 cpl-col">
+                            <th class="phone-col" scope="col">
                                     Телефон
                             </th>
-                            <th scope="col" class="border-top-0 moderation-col">
+                            <th class="status-col" scope="col">
                                     Статус
                             </th>
-                            <th scope="col" class="border-top-0 gain-col">
+                            <th class="client-col" scope="col">
                                 <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                    title="Комментарий клиента">
                                     Комментарий
                                 </a>
                             </th>
-                            <th scope="col" class="border-top-0 costs-col">
+                            <th class="moderation-col" scope="col">
                                     Модерация
                             </th>
-                            <th scope="col" class="border-top-0 profit-col">
+                            <th class="comment-col" scope="col">
                                 <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                    title="Комментарий модератора">
                                     Комментарий
                                 </a>
                             </th>
-                            <th class="border-top-0 lidgen-col">
+                            <th class="buttons-col">
                             </th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="template">
-                            <td scope="row" class="company-col">
+                        <tr>
+                            <td class="id-col" scope="row">
                                 1
                             </td>
-                            <td class="all-orders-col">12.02.2020 13:00:00</td>
-                            <td class="cr-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td class="time-col text-left">11.01.2018 13:00:00</td>
+                            <td class="title-col">1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="target-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td class="info-col">1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="cpl-col">87777777777</td>
-                            <td class="moderation-col">Не дозвонились</td>
-                            <td class="gain-col">Lorem ipsum dolor</td>
-                            <td class="costs-col">
+                            <td class="phone-col text-center">85557777777</td>
+                            <td class="status-col">Целевой</td>
+                            <td class="client-col">3Lorem ipsum dolor</td>
+                            <td class="moderation-col text-center">
                                 <span class="moderation-circle circle-green"></span>
-                                <span class="moderation-circle circle-yellow"></span>
-                                <span class="moderation-circle circle-red"></span>
+                                <span class="moderation-circle"></span>
+                                <span class="moderation-circle"></span>
                             </td>
-                            <td class="profit-col">Lorem ipsum dolor</td>
-                            <td class="lidgen-col">
-                                восстановить, удалить
+                            <td class="comment-col">4Lorem ipsum dolor
+                                <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="text-center buttons-col">
+                                <button class="btn restore-button restore-button-hide" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <i class="fa fa-undo" aria-hidden="true"></i>
+                                </button>
+                                <button  class="btn reset-button reset-button-show" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
                             </td>
                         </tr>
-                        <tr class="template">
-                            <td scope="row" class="company-col">
+                        <tr class="reset-order">
+                            <td scope="row">
                                 111111
                             </td>
-                            <td class="all-orders-col">12.02.2020 13:00:00</td>
-                            <td class="cr-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td class="text-left">12.02.2020 13:00:00</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="target-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="cpl-col">87777777777</td>
-                            <td class="moderation-col">Не дозвонились</td>
-                            <td class="gain-col">Lorem ipsum dolor</td>
-                            <td class="costs-col">
-                                <span class="moderation-circle circle-green"></span>
+                            <td class="text-center">87777777777</td>
+                            <td>Не дозвонились</td>
+                            <td>Lorem ipsum dolor</td>
+                            <td class="text-center">
+                                <span class="moderation-circle"></span>
                                 <span class="moderation-circle circle-yellow"></span>
-                                <span class="moderation-circle circle-red"></span>
+                                <span class="moderation-circle"></span>
                             </td>
-                            <td class="profit-col">Lorem ipsum dolor</td>
-                            <td class="lidgen-col">
-                                восстановить, удалить
+                            <td>Lorem ipsum dolor
+                                <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <i class="fa fa-undo" aria-hidden="true"></i>
+                                </button>
+                                <button  class="btn reset-button reset-button-hide" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
                             </td>
                         </tr>
-                        <tr class="template">
-                            <td scope="row" class="company-col">
+                        <tr>
+                            <td scope="row">
                                 111111
                             </td>
-                            <td class="all-orders-col">12.02.2020 13:00:00</td>
-                            <td class="cr-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td class="text-left">12.02.2020 13:00:00</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="target-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="cpl-col">87777777777</td>
-                            <td class="moderation-col">Не дозвонились</td>
-                            <td class="gain-col">Lorem ipsum dolor</td>
-                            <td class="costs-col">
-                                <span class="moderation-circle circle-green"></span>
-                                <span class="moderation-circle circle-yellow"></span>
+                            <td class="text-center">87777777777</td>
+                            <td>Не дозвонились</td>
+                            <td>Lorem ipsum dolor</td>
+                            <td class="text-center">
+                                <span class="moderation-circle"></span>
+                                <span class="moderation-circle"></span>
                                 <span class="moderation-circle circle-red"></span>
                             </td>
-                            <td class="profit-col">Lorem ipsum dolor</td>
-                            <td class="lidgen-col">
-                                восстановить, удалить
+                            <td>Lorem ipsum dolor
+                                <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn restore-button restore-button-hide" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <i class="fa fa-undo" aria-hidden="true"></i>
+                                </button>
+                                <button  class="btn reset-button reset-button-show" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
                             </td>
                         </tr>
-                        <tr class="template">
-                            <td scope="row" class="company-col">
+                        <tr class="reset-order">
+                            <td scope="row">
                                 111111
                             </td>
-                            <td class="all-orders-col">12.02.2020 13:00:00</td>
-                            <td class="cr-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td class="text-left">12.02.2020 13:00:00</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="target-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="cpl-col">87777777777</td>
-                            <td class="moderation-col">Не дозвонились</td>
-                            <td class="gain-col">Lorem ipsum dolor</td>
-                            <td class="costs-col">
+                            <td class="text-center">87777777777</td>
+                            <td>Не дозвонились</td>
+                            <td>Lorem ipsum dolor</td>
+                            <td class="text-center">
                                 <span class="moderation-circle circle-green"></span>
                                 <span class="moderation-circle circle-yellow"></span>
-                                <span class="moderation-circle circle-red"></span>
+                                <span class="moderation-circle"></span>
                             </td>
-                            <td class="profit-col">Lorem ipsum dolor</td>
-                            <td class="lidgen-col">
-                                восстановить, удалить
+                            <td>Lorem ipsum dolor
+                                <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <i class="fa fa-undo" aria-hidden="true"></i>
+                                </button>
+                                <button  class="btn reset-button reset-button-hide" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
                             </td>
                         </tr>
-                        <tr class="template">
-                            <td scope="row" class="company-col">
+                        <tr>
+                            <td scope="row">
                                 111111
                             </td>
-                            <td class="all-orders-col">12.02.2020 13:00:00</td>
-                            <td class="cr-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td class="text-left">12.02.2020 13:00:00</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="target-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="cpl-col">87777777777</td>
-                            <td class="moderation-col">Не дозвонились</td>
-                            <td class="gain-col">Lorem ipsum dolor</td>
-                            <td class="costs-col">
-                                <span class="moderation-circle circle-green"></span>
+                            <td class="text-center">87777777777</td>
+                            <td>Не дозвонились</td>
+                            <td>Lorem ipsum dolor</td>
+                            <td class="text-center">
+                                <span class="moderation-circle"></span>
                                 <span class="moderation-circle circle-yellow"></span>
                                 <span class="moderation-circle circle-red"></span>
                             </td>
-                            <td class="profit-col">Lorem ipsum dolor</td>
-                            <td class="lidgen-col">
-                                восстановить, удалить
+                            <td>Lorem ipsum dolor
+                                <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn restore-button restore-button-hide" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <i class="fa fa-undo" aria-hidden="true"></i>
+                                </button>
+                                <button  class="btn reset-button reset-button-show" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
                             </td>
                         </tr>
-                        <tr class="template">
-                            <td scope="row" class="company-col">
+                        <tr class="reset-order">
+                            <td scope="row">
                                 111111
                             </td>
-                            <td class="all-orders-col">12.02.2020 13:00:00</td>
-                            <td class="cr-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td class="text-left">12.02.2020 13:00:00</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="target-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="cpl-col">87777777777</td>
-                            <td class="moderation-col">Не дозвонились</td>
-                            <td class="gain-col">Lorem ipsum dolor</td>
-                            <td class="costs-col">
-                                <span class="moderation-circle circle-green"></span>
-                                <span class="moderation-circle circle-yellow"></span>
-                                <span class="moderation-circle circle-red"></span>
+                            <td class="text-center">87777777777</td>
+                            <td>Не дозвонились</td>
+                            <td>Lorem ipsum dolor</td>
+                            <td class="text-center">
+                                <span class="moderation-circle"></span>
+                                <span class="moderation-circle"></span>
+                                <span class="moderation-circle"></span>
                             </td>
-                            <td class="profit-col">Lorem ipsum dolor</td>
-                            <td class="lidgen-col">
-                                восстановить, удалить
+                            <td>Lorem ipsum dolor
+                                <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <i class="fa fa-undo" aria-hidden="true"></i>
+                                </button>
+                                <button  class="btn reset-button reset-button-hide" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
                             </td>
                         </tr>
-                        <tr class="template">
-                            <td scope="row" class="company-col">
+                        <tr>
+                            <td scope="row">
                                 111111
                             </td>
-                            <td class="all-orders-col">12.02.2020 13:00:00</td>
-                            <td class="cr-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td class="text-left">12.02.2020 13:00:00</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="target-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="cpl-col">87777777777</td>
-                            <td class="moderation-col">Не дозвонились</td>
-                            <td class="gain-col">Lorem ipsum dolor</td>
-                            <td class="costs-col">
-                                <span class="moderation-circle circle-green"></span>
-                                <span class="moderation-circle circle-yellow"></span>
-                                <span class="moderation-circle circle-red"></span>
+                            <td class="text-center">87777777777</td>
+                            <td>Не дозвонились</td>
+                            <td>Lorem ipsum dolor</td>
+                            <td class="text-center">
+                                <span class="moderation-circle"></span>
+                                <span class="moderation-circle"></span>
+                                <span class="moderation-circle"></span>
                             </td>
-                            <td class="profit-col">Lorem ipsum dolor</td>
-                            <td class="lidgen-col">
-                                восстановить, удалить
+                            <td>Lorem ipsum dolor
+                                <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn restore-button restore-button-hide" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <i class="fa fa-undo" aria-hidden="true"></i>
+                                </button>
+                                <button  class="btn reset-button reset-button-show" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
                             </td>
                         </tr>
-                        <tr class="template">
-                            <td scope="row" class="company-col">
-                                11111
+                        <tr class="reset-order">
+                            <td scope="row">
+                                111111
                             </td>
-                            <td class="all-orders-col">12.02.2020 13:00:00</td>
-                            <td class="cr-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td class="text-left">12.02.2020 13:00:00</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="target-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="cpl-col">87777777777</td>
-                            <td class="moderation-col">Не дозвонились</td>
-                            <td class="gain-col">Lorem ipsum dolor</td>
-                            <td class="costs-col">
-                                <span class="moderation-circle circle-green"></span>
-                                <span class="moderation-circle circle-yellow"></span>
-                                <span class="moderation-circle circle-red"></span>
+                            <td class="text-center">87777777777</td>
+                            <td></td>
+                            <td>Lorem ipsum dolor</td>
+                            <td class="text-center">
+                                <span class="moderation-circle"></span>
+                                <span class="moderation-circle"></span>
+                                <span class="moderation-circle"></span>
                             </td>
-                            <td class="profit-col">Lorem ipsum dolor</td>
-                            <td class="lidgen-col">
-                                восстановить, <i class="fa fa-trash"></i>
+                            <td>Lorem ipsum dolor
+                                <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <i class="fa fa-undo" aria-hidden="true"></i>
+                                </button>
+                                <button  class="btn reset-button reset-button-hide" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
                             </td>
                         </tr>
-                        <tr class="template">
-                            <td scope="row" class="company-col">
-                                1111
+                        <tr>
+                            <td scope="row">
+                                111111
                             </td>
-                            <td class="all-orders-col">12.02.2020 13:00:00</td>
-                            <td class="cr-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td class="text-left">12.02.2020 13:00:00</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="target-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="cpl-col">87777777777</td>
-                            <td class="moderation-col">Не дозвонились</td>
-                            <td class="gain-col">Lorem ipsum dolor</td>
-                            <td class="costs-col">
-                                <span class="moderation-circle circle-green"></span>
-                                <span class="moderation-circle circle-yellow"></span>
-                                <span class="moderation-circle circle-red"></span>
+                            <td class="text-center">87777777777</td>
+                            <td>Не дозвонились</td>
+                            <td>Lorem ipsum dolor</td>
+                            <td class="text-center">
+                                <span class="moderation-circle"></span>
+                                <span class="moderation-circle"></span>
+                                <span class="moderation-circle"></span>
                             </td>
-                            <td class="profit-col">Lorem ipsum dolor</td>
-                            <td class="lidgen-col">
-                                восстановить, <i class="fa fa-trash" aria-hidden="true"></i>
+                            <td>Lorem ipsum dolor
+                                <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn restore-button restore-button-hide" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <i class="fa fa-undo" aria-hidden="true"></i>
+                                </button>
+                                <button  class="btn reset-button reset-button-show" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
                             </td>
                         </tr>
-                        <tr class="template">
-                            <td scope="row" class="company-col">
-                                111
+                        <tr class="reset-order">
+                            <td scope="row">
+                                111111
                             </td>
-                            <td class="all-orders-col">12.02.2020 13:00:00</td>
-                            <td class="cr-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td class="text-left">12.02.2020 13:00:00</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="target-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
-                            <td class="cpl-col">87777777777</td>
-                            <td class="moderation-col">Не дозвонились</td>
-                            <td class="gain-col">Lorem ipsum dolor</td>
-                            <td class="costs-col">
-                                <span class="moderation-circle circle-green"></span>
-                                <span class="moderation-circle circle-yellow"></span>
-                                <span class="moderation-circle circle-red"></span>
+                            <td class="text-center">87777777777</td>
+                            <td>Не дозвонились</td>
+                            <td>Lorem ipsum dolor</td>
+                            <td class="text-center">
+                                <span class="moderation-circle"></span>
+                                <span class="moderation-circle"></span>
+                                <span class="moderation-circle"></span>
                             </td>
-                            <td class="profit-col">Lorem ipsum dolor</td>
-                            <td class="lidgen-col">
-                                восстановить, удалить
+                            <td>Lorem ipsum dolor
+                                <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
                             </td>
-                        </tr>
-                        <tr class="template">
-                            <td scope="row" class="company-col">
-                                11
-                            </td>
-                            <td class="all-orders-col">12.02.2020 13:00:00</td>
-                            <td class="cr-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore</td>
-                            <td class="target-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore</td>
-                            <td class="cpl-col">87777777777</td>
-                            <td class="moderation-col">Не дозвонились</td>
-                            <td class="gain-col">Lorem ipsum dolor</td>
-                            <td class="costs-col">
-                                <span class="moderation-circle circle-green"></span>
-                                <span class="moderation-circle circle-yellow"></span>
-                                <span class="moderation-circle circle-red"></span>
-                            </td>
-                            <td class="profit-col">Lorem ipsum dolor</td>
-                            <td class="lidgen-col">
-                                восстановить, удалить
+                            <td class="text-center">
+                                <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <i class="fa fa-undo" aria-hidden="true"></i>
+                                </button>
+                                <button  class="btn reset-button reset-button-hide" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
                             </td>
                         </tr>
                     </tbody>

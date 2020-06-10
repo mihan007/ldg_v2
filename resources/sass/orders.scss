@@ -35,9 +35,11 @@
     left: 0;
     transform: translateY(200%);
     background-color: #eeeeee;
+    min-width: 200px;
     max-width: 450px;
     height: 210px;
     overflow: auto;
+    display: none;
 }
 
 .order-filter {
@@ -47,6 +49,36 @@
 
 .order-buttons {
     display: flex;
+}
+
+.crm-table {
+    font-size: 14px;
+    cursor: pointer;
+    table-layout: fixed;
+    font-weight: 400;
+}
+
+.crm-row {
+    background-color: white;
+}
+
+.crm-table tbody tr:hover {
+    background-color: rgb(211, 211, 211);
+}
+
+.crm-table thead th {
+    border-bottom: 2px solid #b3b7bb;
+    border-right: 2px solid #b3b7bb;
+}
+
+.crm-table thead th:last-child {
+    border-right: none;
+}
+
+.crm-table th,
+.crm-table td {
+    padding: 0.75rem 0.2rem;
+    font-weight: 400;
 }
 
 .moderation-circle {
@@ -59,13 +91,87 @@
     display: inline-block;
 }
 
-.crm-table {
-    font-size: 14px;
-    cursor: pointer;
-    table-layout: fixed;
-    font-weight: 400;
+.moderation-circle:last-child {
+    margin-right: 0;
 }
 
-.crm-row {
-  background-color: white;
+.circle-green {
+    background-color: rgb(0, 128, 0);
+}
+
+.circle-yellow {
+    background-color: rgb(255, 255, 0);
+}
+
+.circle-red {
+    background-color: rgb(255, 0, 0);
+}
+
+.crm-table td:first-child,
+.crm-table th:first-child,
+.crm-table td:nth-child(2),
+.crm-table th:nth-child(2) {
+    width: 6%;
+}
+
+.info-col {
+    width: 25%;
+}
+
+.title-col,
+.client-col,
+.comment-col {
+    width: 10%;
+}
+
+.phone-col,
+.status-col {
+  width: 8%;
+}
+
+
+.moderation-col {
+    width: 9%;
+}
+
+.buttons-col {
+    width: 4%;
+}
+
+.crm-correct-button {
+    padding: 0;
+    margin-left: 0.5rem;
+}
+
+.crm-table .restore-button,
+.crm-table .reset-button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.crm-table .correct-button:hover,
+.crm-table .restore-button:hover,
+.crm-table .reset-button:hover {
+    color: $grey-button-bg;
+}
+
+.crm-table .correct-button:active,
+.crm-table .restore-button:active,
+.crm-table .reset-button:active {
+    color: $grey-button-bg-active;
+}
+
+.crm-table .restore-button-show,
+.crm-table .reset-button-show {
+   display: block;
+}
+
+.crm-table .restore-button-hide,
+.crm-table .reset-button-hide {
+    display: none;
+}
+
+.crm-table .reset-order,
+.crm-table .reset-order:hover {
+    color: #bd2130;
 }

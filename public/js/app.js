@@ -37242,7 +37242,11 @@ __webpack_require__(/*! ./date-range.js */ "./resources/js/date-range.js");
 
 __webpack_require__(/*! ./toast.js */ "./resources/js/toast.js");
 
-__webpack_require__(/*! ./sorting.js */ "./resources/js/sorting.js");
+__webpack_require__(/*! ./toast-button.js */ "./resources/js/toast-button.js");
+
+__webpack_require__(/*! ./company-grid.js */ "./resources/js/company-grid.js");
+
+__webpack_require__(/*! ./order-grid.js */ "./resources/js/order-grid.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -37276,6 +37280,54 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/company-grid.js":
+/*!**************************************!*\
+  !*** ./resources/js/company-grid.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  window.table = $('.company-grid').DataTable({
+    fixedHeader: {
+      headerOffset: 52
+    },
+    paging: false,
+    searching: false,
+    info: false,
+    autoWidth: false,
+    bSortCellsTop: true,
+    "order": [[1, 'desc']],
+    columns: [{
+      "orderable": false
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }]
+  });
+});
 
 /***/ }),
 
@@ -37364,51 +37416,62 @@ $(window).resize(function () {
 
 /***/ }),
 
-/***/ "./resources/js/sorting.js":
-/*!*********************************!*\
-  !*** ./resources/js/sorting.js ***!
-  \*********************************/
+/***/ "./resources/js/order-grid.js":
+/*!************************************!*\
+  !*** ./resources/js/order-grid.js ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  window.table = $('.company-grid').DataTable({
+  window.table = $('.order-grid').DataTable({
     fixedHeader: {
-      headerOffset: 52
+      headerOffset: 140
     },
     paging: false,
     searching: false,
     info: false,
     autoWidth: false,
-    bSortCellsTop: true,
-    "order": [[1, 'desc']],
     columns: [{
+      'orderSequence': ['desc', 'asc']
+    }, {
       "orderable": false
     }, {
       'orderSequence': ['desc', 'asc']
     }, {
-      'orderSequence': ['desc', 'asc']
+      "orderable": false
     }, {
       'orderSequence': ['desc', 'asc']
     }, {
-      'orderSequence': ['desc', 'asc']
+      "orderable": false
     }, {
-      'orderSequence': ['desc', 'asc']
+      "orderable": false
     }, {
-      'orderSequence': ['desc', 'asc']
+      "orderable": false
     }, {
-      'orderSequence': ['desc', 'asc']
+      "orderable": false
     }, {
-      'orderSequence': ['desc', 'asc']
-    }, {
-      'orderSequence': ['desc', 'asc']
-    }, {
-      'orderSequence': ['desc', 'asc']
-    }, {
-      'orderSequence': ['desc', 'asc']
+      "orderable": false
     }]
   });
-  $('.dataTables_length').addClass('bs-select');
+});
+
+/***/ }),
+
+/***/ "./resources/js/toast-button.js":
+/*!**************************************!*\
+  !*** ./resources/js/toast-button.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $(".show-toast").click(function () {
+    $("#myToast-button").toast({
+      autohide: false
+    });
+    $("#myToast-button").toast('show');
+  });
 });
 
 /***/ }),

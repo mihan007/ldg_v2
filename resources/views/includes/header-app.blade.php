@@ -45,13 +45,13 @@
     <nav class="navbar-collapse magic-hide" id="navbarCollapse">
         <ul class="navbar-nav navbar-dark mr-auto sidenav text-center position-fixed">
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tooltip" data-placement="right" title="Компании"
+                <a class="nav-link" href="{{ route('companies.report') }}" data-toggle="tooltip" data-placement="right" title="Компании"
                    aria-label="Главная страница">
                     <i class="fa fa-home active"></i>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="tooltip" data-placement="right" title="Заявки"
+                <a class="nav-link" href="{{ route('work.orders') }}" data-toggle="tooltip" data-placement="right" title="Заявки"
                    aria-label="Заявки">
                     <i class="fa fa-bars"></i>
                 </a>
