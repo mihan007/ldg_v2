@@ -173,16 +173,16 @@
                                 Тверь. Оказываем юридические услуги.
                             </td>
                             <td>20</td>
-                            <td>10000</td>
-                            <td>5000</td>
-                            <td>500</td>
-                            <td>250</td>
+                            <td>10</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>25</td>
                             <td>75</td>
-                            <td>2500</td>
-                            <td>4000</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                            <td>2000</td>
+                            <td>2</td>
+                            <td>400</td>
+                            <td>200</td>
+                            <td>200</td>
+                            <td>20</td>
                         </tr>
                         <tr>
                             <td scope="row">
@@ -193,10 +193,10 @@
                             <td>5000</td>
                             <td>500</td>
                             <td>250</td>
-                            <td>75</td>
+                            <td>77</td>
                             <td>2500</td>
                             <td>4000</td>
-                            <td>2000</td>
+                            <td>230</td>
                             <td>2000</td>
                             <td>2000</td>
                         </tr>
@@ -204,17 +204,17 @@
                             <th scope="row">
                                 <i class="fa fa-bars company-icon mr-2"></i>Импульс
                             </th>
-                            <td>2000</td>
-                            <td>10000</td>
-                            <td>5000</td>
-                            <td>500</td>
-                            <td>250</td>
-                            <td>75</td>
+                            <td>12000</td>
+                            <td>110000</td>
+                            <td>15000</td>
+                            <td>1500</td>
+                            <td>1250</td>
+                            <td>175</td>
                             <td>2500</td>
-                            <td>4000</td>
-                            <td>2000</td>
-                            <td>2000</td>
-                            <td>2000</td>
+                            <td>1</td>
+                            <td>1000</td>
+                            <td>1000</td>
+                            <td>1000</td>
                         </tr>
                         <tr>
                             <th scope="row">
