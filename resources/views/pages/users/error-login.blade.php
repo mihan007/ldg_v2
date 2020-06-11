@@ -9,11 +9,11 @@
                 <div class="alert alert-primary text-center mx-auto col-sm-9 col-lg-6 main-login" role="alert">
                     Вы перешли по неверной ссылке.
                 </div>
-                <div class="text-center mx-auto">
+                <div class="text-center mx-auto mb-3 ">
                     <a class="btn btn-primary text-uppercase main-login"
                        href="{{ route('users.reset-password') }}">Восстановить пароль</a>
                 </div>
-                <div class="mb-3 text-center mx-auto">
+                <div class="text-center mx-auto">
                     <a class="text-decoration-none text-uppercase btn button-login-return main-login"
                        href="{{ route('users.login') }}">
                         ← На страницу входа

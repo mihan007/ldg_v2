@@ -4,11 +4,12 @@ html {
 
 body {
     position: relative;
+    color: $main-text-color;
 }
 
 .bg-grey {
-    background-color: #1d1d1d;
-    padding-right: 7px;
+    background-color: $header-bg;
+    padding-right: 0.43rem;
 }
 
 .company-header {
@@ -38,7 +39,7 @@ body {
 }
 
 .fa-user-o {
-    color: #ffffff;
+    color: $header-icon-color;
     font-size: 23px;
 }
 
@@ -49,7 +50,7 @@ body {
     width: 60px;
     height: 100vh;
     margin-top: 3.5rem;
-    background: #1d1d1d;
+    background-color: $header-bg;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-box-orient: vertical;
@@ -60,24 +61,24 @@ body {
     z-index: 1032;
 }
 
-.sidenav .active {
-    color: #ff9517;
+.sidenav .nav-link {
+    color: $header-icon-color;
 }
 
-.sidenav .nav-link {
-    color: $grey-button-text;
+.sidenav .active {
+    color: $sidenav-button-active;
 }
 
 .nav-link:hover .fa-bars,
 .nav-link:hover .fa-cog,
 .nav-link:focus .fa-bars,
 .nav-link:focus .fa-cog {
-    color: #ff9517;
+    color: $sidenav-button-active;
 }
 
 .nav-link:disabled .fa-bars,
 .nav-link:disabled .fa-cog {
-    color: hsla(0, 0, 0, 0.3);
+    color: $sidenav-button-disabled;
 }
 
 .fa-id-card-o {
@@ -126,20 +127,19 @@ body {
 }
 
 .date-items {
-    border: 1px solid #ced4da;
+    border: 1px solid $filter-button-border;
     border-radius: 0.25rem;
-    color: #212529;
-    background-color: #f8f9fa;
+    background-color: $filter-button-bg;
     margin-right: 1.2rem;
     padding-right: 0;
     padding-left: 0;
 }
 
 .date-range {
-    background: #f8f9fa;
+    background: $filter-button-bg;
     cursor: pointer;
     padding: 6px 12px 4px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid $filter-button-border;
     width: 348px;
     border-radius: 0.25rem;
     -webkit-box-sizing: border-box;
@@ -150,16 +150,15 @@ body {
 
 .date-items button:hover,
 .date-range:hover {
-    background-color: #e2e6ea;
-    border-color: #dae0e5;
+    background-color: $filter-button-bg-hover;
+    border-color: $filter-button-border-hover;
 }
 
 .date-items button:focus {
-    color: #212529;
-    background-color: #e2e6ea;
-    border-color: #dae0e5;
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
-    box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+    background-color: $filter-button-bg-hover;
+    border-color: $filter-button-border-hover;
+    -webkit-box-shadow: 0 0 0 0.2rem $filter-button-box-shadow;
+    box-shadow: 0 0 0 0.2rem $filter-button-box-shadow;
 }
 
 .date-item {
@@ -177,6 +176,7 @@ body {
     font-size: 14px;
     width: 47%;
     cursor: pointer;
+    color: $main-text-color;
 }
 
 .index-select:first-child {
@@ -201,31 +201,31 @@ body {
 }
 
 .dashboard-button {
-    color: #212529;
-    background-color: #ffffff;
-    border: 1px solid #ced4da;
+    color: $main-text-color;
+    background-color: $main-bg-color;
+    border: 1px solid $filter-button-border;
     font-size: 14px;
     margin-right: 1.2rem;
 }
 
 .dashboard-button:hover {
-    background-color: #e2e6ea;
-    border-color: #dae0e5;
+    background-color: $filter-button-bg-hover;
+    border-color: $filter-button-border-hover;
 }
 
 .dashboard-button:active {
-    color: #212529;
-    background-color: #e2e6ea;
-    border-color: #dae0e5;
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
-    box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+    color: $main-text-color;
+    background-color: $filter-button-bg-hover;
+    border-color: $filter-button-border-hover;
+    -webkit-box-shadow: 0 0 0 0.2rem $filter-button-box-shadow;
+    box-shadow: 0 0 0 0.2rem $filter-button-box-shadow;
 }
 
 .update-button {
     position: absolute;
     bottom: 0;
     right: -150px;
-    background-color: #eeeeee;
+    background-color: $toast-bg;
 }
 
 .company-search-form {
@@ -242,19 +242,19 @@ body {
     font-size: 14px;
 }
 
-.company-icon-active {
-    color: #ff9517;
+.company-icon {
+    color: $table-icon;
 }
 
-.company-icon {
-    color: $grey-button-bg;
+.company-icon-active {
+    color: $table-icon-active;
 }
 
 .sigma-icon {
     font-weight: 500;
     padding-left: 2px;
     padding-right: 13px;
-    color: $grey-button-bg;
+    color: $table-icon;
 }
 
 .company-table {
@@ -284,8 +284,8 @@ body {
 }
 
 .company-table thead th {
-    border-bottom: 2px solid #b3b7bb;
-    border-right: 2px solid #b3b7bb;
+    border-bottom: 2px solid $table-head-border;
+    border-right: 2px solid $table-head-border;
 }
 
 .company-table thead th:last-child {
@@ -293,7 +293,7 @@ body {
 }
 
 .company-table tbody tr:hover {
-    background-color: rgb(211, 211, 211);
+    background-color: $table-hover;
 }
 
 .rounded-table-left {
@@ -314,7 +314,7 @@ body {
 }
 
 .sum-line {
-    background-color: rgb(251, 251, 251);
+    background-color: $table-sum-line-bg;
     border-bottom: none;
 }
 

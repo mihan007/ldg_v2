@@ -14011,8 +14011,8 @@ body {
 }
 
 .fa-lock {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
 }
 
 @media (min-width: 576px) {
@@ -14083,11 +14083,12 @@ html {
 
 body {
   position: relative;
+  color: #212529;
 }
 
 .bg-grey {
   background-color: #1d1d1d;
-  padding-right: 7px;
+  padding-right: 0.43rem;
 }
 
 .company-header {
@@ -14113,7 +14114,7 @@ body {
 }
 
 .fa-user-o {
-  color: #ffffff;
+  color: white;
   font-size: 23px;
 }
 
@@ -14124,19 +14125,19 @@ body {
   width: 60px;
   height: 100vh;
   margin-top: 3.5rem;
-  background: #1d1d1d;
+  background-color: #1d1d1d;
   box-sizing: border-box;
   flex-direction: column;
   font-size: 26px;
   z-index: 1032;
 }
 
-.sidenav .active {
-  color: #ff9517;
-}
-
 .sidenav .nav-link {
   color: white;
+}
+
+.sidenav .active {
+  color: #ff9517;
 }
 
 .nav-link:hover .fa-bars,
@@ -14189,7 +14190,6 @@ body {
 .date-items {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  color: #212529;
   background-color: #f8f9fa;
   margin-right: 1.2rem;
   padding-right: 0;
@@ -14200,7 +14200,7 @@ body {
   background: #f8f9fa;
   cursor: pointer;
   padding: 6px 12px 4px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #ced4da;
   width: 348px;
   border-radius: 0.25rem;
   box-sizing: border-box;
@@ -14215,7 +14215,6 @@ body {
 }
 
 .date-items button:focus {
-  color: #212529;
   background-color: #e2e6ea;
   border-color: #dae0e5;
   box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
@@ -14236,6 +14235,7 @@ body {
   font-size: 14px;
   width: 47%;
   cursor: pointer;
+  color: #212529;
 }
 
 .index-select:first-child {
@@ -14256,7 +14256,7 @@ body {
 
 .dashboard-button {
   color: #212529;
-  background-color: #ffffff;
+  background-color: white;
   border: 1px solid #ced4da;
   font-size: 14px;
   margin-right: 1.2rem;
@@ -14295,12 +14295,12 @@ body {
   font-size: 14px;
 }
 
-.company-icon-active {
-  color: #ff9517;
-}
-
 .company-icon {
   color: #95999c;
+}
+
+.company-icon-active {
+  color: #ff9517;
 }
 
 .sigma-icon {
