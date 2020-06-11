@@ -32,8 +32,8 @@ html, body {
 }
 
 .fa-lock {
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
 }
 
 @media (min-width: 576px) {
@@ -81,17 +81,17 @@ html, body {
 }
 
 .button-login-return {
-    background-color: $grey-button-bg;
-    color: $grey-button-text;
+    background-color: $button-login-return-bg;
+    color: $button-login-return-text;
 }
 
 .button-login-return:hover {
-    color: $grey-button-text;
-    background-color: $grey-button-bg-hover;
+    color: $button-login-return-text;
+    background-color: $button-login-return-bg-hover;
 }
 
 .button-login-return:active {
-    background-color: $grey-button-bg-active;
+    background-color: $button-login-return-bg-active;
 }
 
 .new-password-text {
