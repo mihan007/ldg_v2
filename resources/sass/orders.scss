@@ -1,27 +1,26 @@
 .directory-buttons {
    font-weight: 500;
-    color: #212529;
     text-transform: uppercase;
 }
 
 .directory-button {
     margin-right: 1.2rem;
-    color: #212529;
+    color: $main-text-color;
     text-decoration: none;
 }
 
 .directory-buttons .active,
 .directory-buttons .active:hover {
-    color: #ff9517;
+    color: $directory-button-active;
 }
 
 .directory-button:hover {
     text-decoration: none;
-    color: $grey-button-bg;
+    color: $directory-button-hover;
 }
 
 .directory-button:active {
-    color: $grey-button-bg-active;
+    color: $directory-button-click;
 }
 
 .balance-info {
@@ -34,7 +33,7 @@
     top: 120%;
     left: 0;
     transform: translateY(200%);
-    background-color: #eeeeee;
+    background-color: $toast-bg;
     min-width: 200px;
     max-width: 450px;
     height: 210px;
@@ -63,12 +62,12 @@
 }
 
 .crm-table tbody tr:hover {
-    background-color: rgb(211, 211, 211);
+    background-color: $table-hover;
 }
 
 .crm-table thead th {
-    border-bottom: 2px solid #b3b7bb;
-    border-right: 2px solid #b3b7bb;
+    border-bottom: 2px solid $filter-button-border;
+    border-right: 2px solid $filter-button-border;
 }
 
 .crm-table thead th:last-child {
@@ -86,8 +85,8 @@
     height: 18px;
     border-radius: 9px;
     margin-right: 5px;
-    background-color: white;
-    border: 1px solid grey;
+    background-color: $main-bg-color;
+    border: 1px solid $moderation-circle-border;
     display: inline-block;
 }
 
@@ -96,21 +95,20 @@
 }
 
 .circle-green {
-    background-color: rgb(0, 128, 0);
+    background-color: $moderation-circle-green;
 }
 
 .circle-yellow {
-    background-color: rgb(255, 255, 0);
+    background-color: $moderation-circle-yellow;
 }
 
 .circle-red {
-    background-color: rgb(255, 0, 0);
+    background-color: $moderation-circle-red;
 }
 
 .crm-table td:first-child,
 .crm-table th:first-child,
-.crm-table td:nth-child(2),
-.crm-table th:nth-child(2) {
+.time-col {
     width: 6%;
 }
 
@@ -152,13 +150,13 @@
 .crm-table .correct-button:hover,
 .crm-table .restore-button:hover,
 .crm-table .reset-button:hover {
-    color: $grey-button-bg;
+    color: $crm-table-button-hover;
 }
 
 .crm-table .correct-button:active,
 .crm-table .restore-button:active,
 .crm-table .reset-button:active {
-    color: $grey-button-bg-active;
+    color: $crm-table-button-active;
 }
 
 .crm-table .restore-button-show,
