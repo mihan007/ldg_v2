@@ -26,6 +26,19 @@
 .balance-info {
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: $main-text-color;
+}
+
+.balance-info:hover {
+    color: $balance-info-button-hover;
+    text-decoration: none;
+}
+
+.balance-info:active {
+    color: $balance-info-button-active;
+    text-decoration: none;
 }
 
 //.crm-button {
@@ -57,33 +70,35 @@
 //    }
 //}
 
-@media (max-width: 690px) {
-    .crm-button {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        transform: translateY(15vh);
-        background-color: $crm-toast-bg;
-        min-width: 200px;
-        max-width: 280px;
-        height: 210px;
-        overflow: auto;
-        display: none;
-    }
-}
-
 .crm-button {
     position: absolute;
-    //top: 120%;
-    top: 100px;
+    bottom: 0;
     left: 0;
-    transform: translateY(45vh);
-    background-color: $toast-bg;
+    top: 0;
+    transform: translateY(58vh);
+    background-color: $crm-toast-bg;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.4);
     min-width: 200px;
     max-width: 450px;
     height: 210px;
     overflow: auto;
     display: none;
+}
+
+@media (max-width: 693px) {
+    .crm-button {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateY(50vh);
+        background-color: $crm-toast-bg;
+        min-width: 200px;
+        max-width: 250px;
+        height: 210px;
+        overflow: auto;
+        display: none;
+    }
 }
 
 .order-filter {
@@ -217,11 +232,50 @@
     display: none;
 }
 
-.crm-table .reset-order,
-.crm-table .reset-order:hover {
+.crm-table .reset-order td {
     background-color: $crm-table-deleted-order-bg;
 }
 
 .crm-main {
     position: relative;
+}
+
+.balance-actions {
+    background-color: $main-bg-color;
+}
+
+.balance-action-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.balance-action-button {
+   width: 30%;
+    text-transform: uppercase;
+}
+
+@media (max-width: 454px) {
+    .balance-action-button {
+        width: 60%;
+        margin: 0 auto 0.75rem auto;
+    }
+
+    .balance-action-buttons {
+       flex-direction: column;
+
+    }
+}
+
+.cancel-button {
+    background-color: $cancel-button-bg;
+    color: $cancel-button-text;
+}
+
+.cancel-button:hover {
+    background-color: $cancel-button-bg-hover;
+    color: $cancel-button-text;
+}
+
+.cancel-button:active {
+    background-color: $cancel-button-bg-active;
 }
