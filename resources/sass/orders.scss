@@ -28,11 +28,56 @@
     margin-bottom: 0;
 }
 
+//.crm-button {
+//    position: absolute;
+//    top: 120%;
+//    left: 0;
+//    transform: translateY(200%);
+//    background-color: $toast-bg;
+//    min-width: 200px;
+//    max-width: 450px;
+//    height: 210px;
+//    overflow: auto;
+//    display: none;
+//}
+
+//@media (max-width: 690px) {
+//    .crm-button {
+//        position: absolute;
+//        top: 100vh;
+//        transform: translateY(200%);
+//        //left: calc(70vw / 2 - 4 / 3 * 210px / 2.5);
+//        //bottom: calc(210px - 2rem);
+//        //transform: translate(calc(70vw / 3 - 4 / 3 * 210px / 2.5), 60%);
+//        left: 0;
+//        max-width: 280px;
+//        height: 210px;
+//        overflow: auto;
+//        display: none;
+//    }
+//}
+
+@media (max-width: 690px) {
+    .crm-button {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        transform: translateY(15vh);
+        background-color: $crm-toast-bg;
+        min-width: 200px;
+        max-width: 280px;
+        height: 210px;
+        overflow: auto;
+        display: none;
+    }
+}
+
 .crm-button {
     position: absolute;
-    top: 120%;
+    //top: 120%;
+    top: 100px;
     left: 0;
-    transform: translateY(200%);
+    transform: translateY(45vh);
     background-color: $toast-bg;
     min-width: 200px;
     max-width: 450px;
@@ -52,17 +97,12 @@
 
 .crm-table {
     font-size: 14px;
-    cursor: pointer;
     table-layout: fixed;
     font-weight: 400;
 }
 
 .crm-row {
     background-color: white;
-}
-
-.crm-table tbody tr:hover {
-    background-color: $table-hover;
 }
 
 .crm-table thead th {
@@ -88,6 +128,7 @@
     background-color: $main-bg-color;
     border: 1px solid $moderation-circle-border;
     display: inline-block;
+    cursor: pointer;
 }
 
 .moderation-circle:last-child {
@@ -127,6 +168,13 @@
   width: 8%;
 }
 
+.status-col td {
+    color: $non-target-status;
+}
+
+.target-status {
+    color: $crm-table-target-status;
+}
 
 .moderation-col {
     width: 9%;
@@ -171,5 +219,9 @@
 
 .crm-table .reset-order,
 .crm-table .reset-order:hover {
-    color: #bd2130;
+    background-color: $crm-table-deleted-order-bg;
+}
+
+.crm-main {
+    position: relative;
 }

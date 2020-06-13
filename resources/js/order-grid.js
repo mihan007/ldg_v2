@@ -7,6 +7,7 @@ $(document).ready(function () {
         searching: false,
         info: false,
         autoWidth: false,
+        order: [[ 0, 'desc' ]],
         columns: [
             { 'orderSequence': ['desc', 'asc'] },
             { "orderable": false },

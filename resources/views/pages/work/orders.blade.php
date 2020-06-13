@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <main class="page-wrapper">
+    <main class="page-wrapper crm-main">
         <div class="container-fluid">
         <div class="row sticky-top crm-row">
             <div class="col-md-12 offset-block">
@@ -11,7 +11,7 @@
                     <a class="directory-button" href="#">Финансы</a>
                 </div>
                 <div class="">
-                    <p class="balance-info">Баланс 2000 p</p>
+                    <p class="balance-info">Баланс 2000 &#8381;</p>
                 </div>
             </div>
             <div class="col-md-12 filter-wrapper">
@@ -68,12 +68,12 @@
             </div>
         </div>
             <div class="row">
-                <div class="col-md-12 mx-auto rounded">
+                <div class="col-md-12 mx-auto">
             <div class="table-wrapper mb-5">
-                <table class="table crm-table order-grid table-hover table-striped" data-offset="140">
+                <table class="table crm-table order-grid table-striped" data-offset="140">
                     <thead>
                         <tr class="table-grey text-center id-col">
-                            <th>ID
+                            <th class="rounded-table-left">ID
                             </th>
                             <th class="time-col" scope="col">
                                 <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
@@ -108,7 +108,7 @@
                                     Комментарий
                                 </a>
                             </th>
-                            <th class="buttons-col">
+                            <th class="buttons-col rounded-table-right">
                             </th>
                         </tr>
                     </thead>
@@ -123,12 +123,21 @@
                             <td class="info-col">1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
                             <td class="phone-col text-center">85557777777</td>
-                            <td class="status-col">Целевой</td>
+                            <td class="status-col target-status">Целевой</td>
                             <td class="client-col">3Lorem ipsum dolor</td>
                             <td class="moderation-col text-center">
-                                <span class="moderation-circle circle-green"></span>
-                                <span class="moderation-circle"></span>
-                                <span class="moderation-circle"></span>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Согласны">
+                                    <span class="moderation-circle circle-green"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="На модерации" aria-label="На модерации">
+                                    <span class="moderation-circle"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Не согласны">
+                                    <span class="moderation-circle"></span>
+                                </a>
                             </td>
                             <td class="comment-col">4Lorem ipsum dolor
                                 <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
@@ -154,12 +163,21 @@
                             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
                             <td class="text-center">87777777777</td>
-                            <td>Не дозвонились</td>
+                            <td class="status-col">Не дозвонились</td>
                             <td>Lorem ipsum dolor</td>
                             <td class="text-center">
-                                <span class="moderation-circle"></span>
-                                <span class="moderation-circle circle-yellow"></span>
-                                <span class="moderation-circle"></span>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Согласны" aria-label="Согласны">
+                                    <span class="moderation-circle"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="На модерации" aria-label="На модерации">
+                                    <span class="moderation-circle circle-yellow"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Не согласны">
+                                    <span class="moderation-circle"></span>
+                                </a>
                             </td>
                             <td>Lorem ipsum dolor
                                 <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
@@ -185,11 +203,97 @@
                             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
                             <td class="text-center">87777777777</td>
-                            <td>Не дозвонились</td>
+                            <td class="status-col">Не дозвонились</td>
                             <td>Lorem ipsum dolor</td>
                             <td class="text-center">
-                                <span class="moderation-circle"></span>
-                                <span class="moderation-circle"></span>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Согласны" aria-label="Согласны">
+                                    <span class="moderation-circle"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="На модерации" aria-label="На модерации">
+                                    <span class="moderation-circle"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Не согласны">
+                                    <span class="moderation-circle circle-red"></span>
+                                </a>
+                            </td>
+                            <td>Lorem ipsum dolor
+                                <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn restore-button restore-button-hide" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <i class="fa fa-undo" aria-hidden="true"></i>
+                                </button>
+                                <button  class="btn reset-button reset-button-show" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="reset-order">
+                            <td scope="row">
+                                111111
+                            </td>
+                            <td class="text-left">12.02.2020 13:00:00</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore</td>
+                            <td class="text-center">87777777777</td>
+                            <td class="status-col target-status">Целевой</td>
+                            <td>Lorem ipsum dolor</td>
+                            <td class="text-center">
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Согласны" aria-label="Согласны">
+                                    <span class="moderation-circle circle-green"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="На модерации" aria-label="На модерации">
+                                    <span class="moderation-circle circle-yellow"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Не согласны">
+                                    <span class="moderation-circle"></span>
+                                </a>
+                            </td>
+                            <td>Lorem ipsum dolor
+                                <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <i class="fa fa-undo" aria-hidden="true"></i>
+                                </button>
+                                <button  class="btn reset-button reset-button-hide" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                111111
+                            </td>
+                            <td class="text-left">12.02.2020 13:00:00</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore</td>
+                            <td class="text-center">87777777777</td>
+                            <td class="status-col">Не дозвонились</td>
+                            <td>Lorem ipsum dolor</td>
+                            <td class="text-center">
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Согласны" aria-label="Согласны">
+                                    <span class="moderation-circle"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="На модерации" aria-label="На модерации">
+                                    <span class="moderation-circle circle-yellow"></span>
+                                </a>
                                 <span class="moderation-circle circle-red"></span>
                             </td>
                             <td>Lorem ipsum dolor
@@ -216,12 +320,21 @@
                             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
                             <td class="text-center">87777777777</td>
-                            <td>Не дозвонились</td>
+                            <td class="status-col">Не дозвонились</td>
                             <td>Lorem ipsum dolor</td>
                             <td class="text-center">
-                                <span class="moderation-circle circle-green"></span>
-                                <span class="moderation-circle circle-yellow"></span>
-                                <span class="moderation-circle"></span>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Согласны" aria-label="Согласны">
+                                    <span class="moderation-circle"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="На модерации" aria-label="На модерации">
+                                    <span class="moderation-circle"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Не согласны">
+                                    <span class="moderation-circle"></span>
+                                </a>
                             </td>
                             <td>Lorem ipsum dolor
                                 <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
@@ -247,12 +360,21 @@
                             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
                             <td class="text-center">87777777777</td>
-                            <td>Не дозвонились</td>
+                            <td class="status-col">Не дозвонились</td>
                             <td>Lorem ipsum dolor</td>
                             <td class="text-center">
-                                <span class="moderation-circle"></span>
-                                <span class="moderation-circle circle-yellow"></span>
-                                <span class="moderation-circle circle-red"></span>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Согласны" aria-label="Согласны">
+                                    <span class="moderation-circle"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="На модерации" aria-label="На модерации">
+                                    <span class="moderation-circle"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Не согласны">
+                                    <span class="moderation-circle"></span>
+                                </a>
                             </td>
                             <td>Lorem ipsum dolor
                                 <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
@@ -278,12 +400,21 @@
                             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
                             <td class="text-center">87777777777</td>
-                            <td>Не дозвонились</td>
+                            <td class="status-col"></td>
                             <td>Lorem ipsum dolor</td>
                             <td class="text-center">
-                                <span class="moderation-circle"></span>
-                                <span class="moderation-circle"></span>
-                                <span class="moderation-circle"></span>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Согласны" aria-label="Согласны">
+                                    <span class="moderation-circle"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="На модерации" aria-label="На модерации">
+                                    <span class="moderation-circle"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Не согласны">
+                                    <span class="moderation-circle"></span>
+                                </a>
                             </td>
                             <td>Lorem ipsum dolor
                                 <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
@@ -309,12 +440,24 @@
                             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
                             <td class="text-center">87777777777</td>
-                            <td>Не дозвонились</td>
+                            <td class="status-col">Не дозвонились</td>
                             <td>Lorem ipsum dolor</td>
                             <td class="text-center">
-                                <span class="moderation-circle"></span>
-                                <span class="moderation-circle"></span>
-                                <span class="moderation-circle"></span>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Согласны" aria-label="Согласны">
+                                    <span class="moderation-circle"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="На модерации" aria-label="На модерации">
+                                    <span class="moderation-circle"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Не согласны">
+                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="Не согласны">
+                                        <span class="moderation-circle"></span>
+                                    </a>
+                                </a>
                             </td>
                             <td>Lorem ipsum dolor
                                 <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
@@ -340,74 +483,21 @@
                             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore</td>
                             <td class="text-center">87777777777</td>
-                            <td></td>
+                            <td class="status-col">Не дозвонились</td>
                             <td>Lorem ipsum dolor</td>
                             <td class="text-center">
-                                <span class="moderation-circle"></span>
-                                <span class="moderation-circle"></span>
-                                <span class="moderation-circle"></span>
-                            </td>
-                            <td>Lorem ipsum dolor
-                                <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
-                                    <i class="fa fa-pencil" aria-hidden="true"></i>
-                                </button>
-                            </td>
-                            <td class="text-center">
-                                <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
-                                    <i class="fa fa-undo" aria-hidden="true"></i>
-                                </button>
-                                <button  class="btn reset-button reset-button-hide" type="reset" value="Удаление" aria-label="Удалить заявку">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">
-                                111111
-                            </td>
-                            <td class="text-left">12.02.2020 13:00:00</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore</td>
-                            <td class="text-center">87777777777</td>
-                            <td>Не дозвонились</td>
-                            <td>Lorem ipsum dolor</td>
-                            <td class="text-center">
-                                <span class="moderation-circle"></span>
-                                <span class="moderation-circle"></span>
-                                <span class="moderation-circle"></span>
-                            </td>
-                            <td>Lorem ipsum dolor
-                                <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
-                                    <i class="fa fa-pencil" aria-hidden="true"></i>
-                                </button>
-                            </td>
-                            <td class="text-center">
-                                <button class="btn restore-button restore-button-hide" type="button" value="Восстановление" aria-label="Восстановить данные">
-                                    <i class="fa fa-undo" aria-hidden="true"></i>
-                                </button>
-                                <button  class="btn reset-button reset-button-show" type="reset" value="Удаление" aria-label="Удалить заявку">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="reset-order">
-                            <td scope="row">
-                                111111
-                            </td>
-                            <td class="text-left">12.02.2020 13:00:00</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore</td>
-                            <td class="text-center">87777777777</td>
-                            <td>Не дозвонились</td>
-                            <td>Lorem ipsum dolor</td>
-                            <td class="text-center">
-                                <span class="moderation-circle"></span>
-                                <span class="moderation-circle"></span>
-                                <span class="moderation-circle"></span>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Согласны" aria-label="Согласны">
+                                    <span class="moderation-circle"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="На модерации" aria-label="На модерации">
+                                    <span class="moderation-circle"></span>
+                                </a>
+                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Не согласны">
+                                    <span class="moderation-circle"></span>
+                                </a>
                             </td>
                             <td>Lorem ipsum dolor
                                 <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">

@@ -59,7 +59,7 @@
                 </form>
             </div>
             <div class="col-md-12 table-wrapper mb-5">
-                <table class="table company-table company-grid table-hover table-striped">
+                <table class="table company-table company-grid table-striped">
                     <thead>
                         <tr class="table-grey">
                             <th class="text-left rounded-table-left">Рабочая область</th>
