@@ -31,12 +31,19 @@
     color: $main-text-color;
 }
 
-.balance-info:hover {
+.balance-info .fa-rub,
+.balance-actions .fa-rub{
+    color: $main-text-color;
+}
+
+.balance-info:hover,
+.balance-info:hover .fa-rub {
     color: $balance-info-button-hover;
     text-decoration: none;
 }
 
-.balance-info:active {
+.balance-info:active,
+.balance-info:active .fa-rub {
     color: $balance-info-button-active;
     text-decoration: none;
 }

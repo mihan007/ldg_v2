@@ -14413,12 +14413,19 @@ body {
   color: #212529;
 }
 
-.balance-info:hover {
+.balance-info .fa-rub,
+.balance-actions .fa-rub {
+  color: #212529;
+}
+
+.balance-info:hover,
+.balance-info:hover .fa-rub {
   color: #6c757d;
   text-decoration: none;
 }
 
-.balance-info:active {
+.balance-info:active,
+.balance-info:active .fa-rub {
   color: #5a6268;
   text-decoration: none;
 }

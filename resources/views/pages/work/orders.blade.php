@@ -11,7 +11,9 @@
                         <a class="directory-button" href="#">Финансы</a>
                     </div>
                     <div class="">
-                        <a href="#myModal" role="button" class="balance-info" data-toggle="modal">Баланс 2000 &#8381;</a>
+                        <a href="#myModal" role="button" class="balance-info" data-toggle="modal">Баланс 2000
+                            <i class="fa fa-rub" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-12 filter-wrapper">
@@ -529,7 +531,7 @@
                                     <div class="invalid-feedback">Пожалуйста, введите сумму
                                     </div>
                                     <div class="input-group-append">
-                                        <span class="input-group-text">&#8381;</span>
+                                        <span class="input-group-text"><i class="fa fa-rub" aria-hidden="true"></i></span>
                                     </div>
                                 </div>
                             </div>
