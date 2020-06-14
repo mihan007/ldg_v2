@@ -183,11 +183,13 @@
   width: 8%;
 }
 
-.status-col td {
+.order-line .non-target-status,
+.reset-order .non-target-status {
     color: $non-target-status;
 }
 
-.target-status {
+.order-line .target-status,
+.reset-order .target-status {
     color: $crm-table-target-status;
 }
 

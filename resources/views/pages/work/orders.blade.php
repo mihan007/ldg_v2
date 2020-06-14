@@ -107,7 +107,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr class="order-line">
                                     <td class="id-col" scope="row">
                                         1
                                     </td>
@@ -157,7 +157,7 @@
                                     <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
                                     <td class="text-center">87777777777</td>
-                                    <td class="status-col">Не дозвонились</td>
+                                    <td class="status-col non-target-status">Не дозвонились</td>
                                     <td>Lorem ipsum dolor</td>
                                     <td class="text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
@@ -187,7 +187,7 @@
                                         </button>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="order-line">
                                     <td scope="row">
                                         111111
                                     </td>
@@ -197,7 +197,7 @@
                                     <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
                                     <td class="text-center">87777777777</td>
-                                    <td class="status-col">Не дозвонились</td>
+                                    <td class="status-col non-target-status">Не дозвонились</td>
                                     <td>Lorem ipsum dolor</td>
                                     <td class="text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
@@ -267,7 +267,7 @@
                                         </button>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="order-line">
                                     <td scope="row">
                                         111111
                                     </td>
@@ -277,7 +277,7 @@
                                     <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
                                     <td class="text-center">87777777777</td>
-                                    <td class="status-col">Не дозвонились</td>
+                                    <td class="status-col non-target-status">Не дозвонились</td>
                                     <td>Lorem ipsum dolor</td>
                                     <td class="text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
@@ -314,7 +314,7 @@
                                     <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
                                     <td class="text-center">87777777777</td>
-                                    <td class="status-col">Не дозвонились</td>
+                                    <td class="status-col non-target-status">Не дозвонились</td>
                                     <td>Lorem ipsum dolor</td>
                                     <td class="text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
@@ -344,7 +344,7 @@
                                         </button>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="order-line">
                                     <td scope="row">
                                         111111
                                     </td>
@@ -354,7 +354,7 @@
                                     <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
                                     <td class="text-center">87777777777</td>
-                                    <td class="status-col">Не дозвонились</td>
+                                    <td class="status-col non-target-status">Не дозвонились</td>
                                     <td>Lorem ipsum dolor</td>
                                     <td class="text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
@@ -394,7 +394,7 @@
                                     <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
                                     <td class="text-center">87777777777</td>
-                                    <td class="status-col"></td>
+                                    <td class="status-col non-target-status"></td>
                                     <td>Lorem ipsum dolor</td>
                                     <td class="text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
@@ -424,7 +424,7 @@
                                         </button>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="order-line">
                                     <td scope="row">
                                         111111
                                     </td>
@@ -434,7 +434,7 @@
                                     <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
                                     <td class="text-center">87777777777</td>
-                                    <td class="status-col">Не дозвонились</td>
+                                    <td class="status-col non-target-status">Не дозвонились</td>
                                     <td>Lorem ipsum dolor</td>
                                     <td class="text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
@@ -477,7 +477,7 @@
                                     <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
                                     <td class="text-center">87777777777</td>
-                                    <td class="status-col">Не дозвонились</td>
+                                    <td class="status-col non-target-status">Не дозвонились</td>
                                     <td>Lorem ipsum dolor</td>
                                     <td class="text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'

@@ -14536,11 +14536,13 @@ body {
   width: 8%;
 }
 
-.status-col td {
+.order-line .non-target-status,
+.reset-order .non-target-status {
   color: #e52515;
 }
 
-.target-status {
+.order-line .target-status,
+.reset-order .target-status {
   color: green;
 }
 
