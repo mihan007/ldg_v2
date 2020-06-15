@@ -37240,9 +37240,9 @@ __webpack_require__(/*! ./tooltip.js */ "./resources/js/tooltip.js");
 
 __webpack_require__(/*! ./date-range.js */ "./resources/js/date-range.js");
 
-__webpack_require__(/*! ./toast.js */ "./resources/js/toast.js");
+__webpack_require__(/*! ./update-toast.js */ "./resources/js/update-toast.js");
 
-__webpack_require__(/*! ./toast-button.js */ "./resources/js/toast-button.js");
+__webpack_require__(/*! ./order-description-toast.js */ "./resources/js/order-description-toast.js");
 
 __webpack_require__(/*! ./company-grid.js */ "./resources/js/company-grid.js");
 
@@ -37417,6 +37417,43 @@ $(window).resize(function () {
 
 /***/ }),
 
+/***/ "./resources/js/order-description-toast.js":
+/*!*************************************************!*\
+  !*** ./resources/js/order-description-toast.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  var isToastShown = false;
+  $(".js-order-description-toast").toast({
+    autohide: false
+  });
+  $(".show-toast").click(function () {
+    if (isToastShown) {
+      $(".js-order-description-toast").toast('hide');
+    } else {
+      $(".js-order-description-toast").toast('show');
+    }
+
+    $('.js-order-description-toast').on('shown.bs.toast', function () {
+      isToastShown = true;
+
+      if ($(window).width() < 693) {
+        setTimeout(function () {
+          var leftPosition = $(window).scrollLeft();
+          $('.js-order-description-toast').css("left", leftPosition + "px");
+        }, 10);
+      }
+    });
+    $('.js-order-description-toast').on('hidden.bs.toast', function () {
+      isToastShown = false;
+    });
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/js/order-grid.js":
 /*!************************************!*\
   !*** ./resources/js/order-grid.js ***!
@@ -37460,61 +37497,6 @@ $(document).ready(function () {
 
 /***/ }),
 
-/***/ "./resources/js/toast-button.js":
-/*!**************************************!*\
-  !*** ./resources/js/toast-button.js ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-$(document).ready(function () {
-  var isToastShown = false;
-  $("#myToast-button").toast({
-    autohide: false
-  });
-  $(".show-toast").click(function () {
-    if (isToastShown) {
-      $("#myToast-button").toast('hide');
-    } else {
-      $("#myToast-button").toast('show');
-    }
-
-    $('#myToast-button').on('shown.bs.toast', function () {
-      isToastShown = true;
-
-      if ($(window).width() < 693) {
-        setTimeout(function () {
-          var leftPosition = $(window).scrollLeft();
-          $('#myToast-button').css("left", leftPosition + "px");
-        }, 10);
-      }
-    });
-    $('#myToast-button').on('hidden.bs.toast', function () {
-      isToastShown = false;
-    });
-  });
-});
-
-/***/ }),
-
-/***/ "./resources/js/toast.js":
-/*!*******************************!*\
-  !*** ./resources/js/toast.js ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-$(document).ready(function () {
-  $(".show-toast").click(function () {
-    $("#myToast").toast({
-      delay: 3000
-    });
-    $("#myToast").toast('show');
-  });
-});
-
-/***/ }),
-
 /***/ "./resources/js/tooltip.js":
 /*!*********************************!*\
   !*** ./resources/js/tooltip.js ***!
@@ -37524,6 +37506,24 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip({});
+});
+
+/***/ }),
+
+/***/ "./resources/js/update-toast.js":
+/*!**************************************!*\
+  !*** ./resources/js/update-toast.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $(".show-toast").click(function () {
+    $(".js-update-toast").toast({
+      delay: 3000
+    });
+    $(".js-update-toast").toast('show');
+  });
 });
 
 /***/ }),

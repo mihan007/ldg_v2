@@ -32,7 +32,7 @@
                     </div>
                     <div class="order-buttons">
                         <button type="button" class="btn page-button show-toast">Описание заявки</button>
-                        <div class="toast crm-button" id="myToast-button">
+                        <div class="toast crm-button js-order-description-toast">
                             <button type="button" class="close ml-2 mb-1 mr-1" data-dismiss="toast">
                                 <span aria-hidden="true">&times;</span>
                             </button>
