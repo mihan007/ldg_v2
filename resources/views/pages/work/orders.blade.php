@@ -18,7 +18,7 @@
                 </div>
                 <div class="col-md-12 filter-wrapper">
                     <div class="order-filter">
-                        <select class="custom-select index-select ">
+                        <select class="custom-select index-select">
                             <option selected>Все заявки</option>
                             <option value="1">Целевые заявки</option>
                             <option value="2">Нецелевые заявки</option>
@@ -57,7 +57,9 @@
                         <div class="input-group">
                             <input type="text" class="form-control search-form-input" placeholder="Поиск">
                             <div class="input-group-append">
-                                <button type="button" class="btn btn-secondary button-search"><i class="fa fa-search"></i></button>
+                                <button type="button" class="btn btn-secondary button-search">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -68,8 +70,8 @@
                     <div class="table-wrapper mb-5">
                         <table class="table crm-table order-grid table-striped" data-offset="140">
                             <thead>
-                                <tr class="table-grey text-center id-col">
-                                    <th class="rounded-table-left">ID
+                                <tr class="table-grey text-center ">
+                                    <th class="rounded-table-left id-col">ID
                                     </th>
                                     <th class="time-col" scope="col">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
@@ -150,18 +152,18 @@
                                     </td>
                                 </tr>
                                 <tr class="reset-order">
-                                    <td scope="row">
+                                    <td class="id-col" scope="row">
                                         111111
                                     </td>
-                                    <td class="text-left">12.02.2020 13:00:00</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="text-left time-col">12.02.2020 13:00:00</td>
+                                    <td  class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td class="text-center">87777777777</td>
+                                    <td class="phone-col text-center">87777777777</td>
                                     <td class="status-col non-target-status">Не дозвонились</td>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td class="text-center">
+                                    <td class="client-col">Lorem ipsum dolor</td>
+                                    <td class="moderation-col text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                            title="Согласны" aria-label="Согласны">
                                             <span class="moderation-circle"></span>
@@ -175,12 +177,12 @@
                                             <span class="moderation-circle"></span>
                                         </a>
                                     </td>
-                                    <td>Lorem ipsum dolor
+                                    <td class="comment-col">Lorem ipsum dolor
                                         <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
                                             <i class="fa fa-pencil" aria-hidden="true"></i>
                                         </button>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="buttons-col text-center">
                                         <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
                                             <i class="fa fa-undo" aria-hidden="true"></i>
                                         </button>
@@ -190,18 +192,18 @@
                                     </td>
                                 </tr>
                                 <tr class="order-line">
-                                    <td scope="row">
+                                    <td class="id-col" scope="row">
                                         111111
                                     </td>
-                                    <td class="text-left">12.02.2020 13:00:00</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="text-left time-col">12.02.2020 13:00:00</td>
+                                    <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td class="text-center">87777777777</td>
+                                    <td class="phone-col text-center">87777777777</td>
                                     <td class="status-col non-target-status">Не дозвонились</td>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td class="text-center">
+                                    <td class="client-col">Lorem ipsum dolor</td>
+                                    <td class="moderation-col text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                            title="Согласны" aria-label="Согласны">
                                             <span class="moderation-circle"></span>
@@ -215,12 +217,12 @@
                                             <span class="moderation-circle circle-red"></span>
                                         </a>
                                     </td>
-                                    <td>Lorem ipsum dolor
+                                    <td class="comment-col">Lorem ipsum dolor
                                         <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
                                             <i class="fa fa-pencil" aria-hidden="true"></i>
                                         </button>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="buttons-col text-center">
                                         <button class="btn restore-button restore-button-hide" type="button" value="Восстановление" aria-label="Восстановить данные">
                                             <i class="fa fa-undo" aria-hidden="true"></i>
                                         </button>
@@ -230,18 +232,18 @@
                                     </td>
                                 </tr>
                                 <tr class="reset-order">
-                                    <td scope="row">
+                                    <td class="id-col" scope="row">
                                         111111
                                     </td>
-                                    <td class="text-left">12.02.2020 13:00:00</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="text-left time-col">12.02.2020 13:00:00</td>
+                                    <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td class="text-center">87777777777</td>
+                                    <td class="phone-col text-center">87777777777</td>
                                     <td class="status-col target-status">Целевой</td>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td class="text-center">
+                                    <td class="client-col">Lorem ipsum dolor</td>
+                                    <td class="moderation-col text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                            title="Согласны" aria-label="Согласны">
                                             <span class="moderation-circle circle-green"></span>
@@ -255,12 +257,12 @@
                                             <span class="moderation-circle"></span>
                                         </a>
                                     </td>
-                                    <td>Lorem ipsum dolor
+                                    <td class="comment-col">Lorem ipsum dolor
                                         <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
                                             <i class="fa fa-pencil" aria-hidden="true"></i>
                                         </button>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="buttons-col text-center">
                                         <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
                                             <i class="fa fa-undo" aria-hidden="true"></i>
                                         </button>
@@ -270,18 +272,18 @@
                                     </td>
                                 </tr>
                                 <tr class="order-line">
-                                    <td scope="row">
+                                    <td class="id-col" scope="row">
                                         111111
                                     </td>
-                                    <td class="text-left">12.02.2020 13:00:00</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="text-left time-col">12.02.2020 13:00:00</td>
+                                    <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td class="text-center">87777777777</td>
+                                    <td class="phone-col text-center">87777777777</td>
                                     <td class="status-col non-target-status">Не дозвонились</td>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td class="text-center">
+                                    <td class="client-col">Lorem ipsum dolor</td>
+                                    <td class="moderation-col text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                            title="Согласны" aria-label="Согласны">
                                             <span class="moderation-circle"></span>
@@ -292,12 +294,12 @@
                                         </a>
                                         <span class="moderation-circle"></span>
                                     </td>
-                                    <td>Lorem ipsum dolor
+                                    <td class="comment-col">Lorem ipsum dolor
                                         <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
                                             <i class="fa fa-pencil" aria-hidden="true"></i>
                                         </button>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="buttons-col text-center">
                                         <button class="btn restore-button restore-button-hide" type="button" value="Восстановление" aria-label="Восстановить данные">
                                             <i class="fa fa-undo" aria-hidden="true"></i>
                                         </button>
@@ -307,18 +309,18 @@
                                     </td>
                                 </tr>
                                 <tr class="reset-order">
-                                    <td scope="row">
+                                    <td class="id-col" scope="row">
                                         111111
                                     </td>
-                                    <td class="text-left">12.02.2020 13:00:00</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="text-left time-col">12.02.2020 13:00:00</td>
+                                    <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td class="text-center">87777777777</td>
+                                    <td class="phone-col text-center">87777777777</td>
                                     <td class="status-col non-target-status">Не дозвонились</td>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td class="text-center">
+                                    <td class="client-col">Lorem ipsum dolor</td>
+                                    <td class="moderation-col text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                            title="Согласны" aria-label="Согласны">
                                             <span class="moderation-circle"></span>
@@ -332,12 +334,12 @@
                                             <span class="moderation-circle"></span>
                                         </a>
                                     </td>
-                                    <td>Lorem ipsum dolor
+                                    <td class="comment-col">Lorem ipsum dolor
                                         <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
                                             <i class="fa fa-pencil" aria-hidden="true"></i>
                                         </button>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="buttons-col text-center">
                                         <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
                                             <i class="fa fa-undo" aria-hidden="true"></i>
                                         </button>
@@ -347,18 +349,18 @@
                                     </td>
                                 </tr>
                                 <tr class="order-line">
-                                    <td scope="row">
+                                    <td class="id-col" scope="row">
                                         111111
                                     </td>
-                                    <td class="text-left">12.02.2020 13:00:00</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="text-left time-col">12.02.2020 13:00:00</td>
+                                    <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td class="text-center">87777777777</td>
+                                    <td class="phone-col text-center">87777777777</td>
                                     <td class="status-col non-target-status">Не дозвонились</td>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td class="text-center">
+                                    <td class="client-col">Lorem ipsum dolor</td>
+                                    <td class="moderation-col text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                            title="Согласны" aria-label="Согласны">
                                             <span class="moderation-circle"></span>
@@ -372,12 +374,12 @@
                                             <span class="moderation-circle"></span>
                                         </a>
                                     </td>
-                                    <td>Lorem ipsum dolor
+                                    <td class="comment-col">Lorem ipsum dolor
                                         <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
                                             <i class="fa fa-pencil" aria-hidden="true"></i>
                                         </button>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="buttons-col text-center">
                                         <button class="btn restore-button restore-button-hide" type="button" value="Восстановление" aria-label="Восстановить данные">
                                             <i class="fa fa-undo" aria-hidden="true"></i>
                                         </button>
@@ -387,18 +389,18 @@
                                     </td>
                                 </tr>
                                 <tr class="reset-order">
-                                    <td scope="row">
+                                    <td class="id-col" scope="row">
                                         111111
                                     </td>
-                                    <td class="text-left">12.02.2020 13:00:00</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="text-left time-col">12.02.2020 13:00:00</td>
+                                    <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td class="text-center">87777777777</td>
+                                    <td class="phone-col text-center">87777777777</td>
                                     <td class="status-col non-target-status"></td>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td class="text-center">
+                                    <td class="client-col">Lorem ipsum dolor</td>
+                                    <td class="moderation-col text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                            title="Согласны" aria-label="Согласны">
                                             <span class="moderation-circle"></span>
@@ -412,12 +414,12 @@
                                             <span class="moderation-circle"></span>
                                         </a>
                                     </td>
-                                    <td>Lorem ipsum dolor
+                                    <td class="comment-col">Lorem ipsum dolor
                                         <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
                                             <i class="fa fa-pencil" aria-hidden="true"></i>
                                         </button>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="buttons-col text-center">
                                         <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
                                             <i class="fa fa-undo" aria-hidden="true"></i>
                                         </button>
@@ -427,18 +429,18 @@
                                     </td>
                                 </tr>
                                 <tr class="order-line">
-                                    <td scope="row">
+                                    <td class="id-col" scope="row">
                                         111111
                                     </td>
-                                    <td class="text-left">12.02.2020 13:00:00</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="text-left time-col">12.02.2020 13:00:00</td>
+                                    <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td class="text-center">87777777777</td>
+                                    <td class="phone-col text-center">87777777777</td>
                                     <td class="status-col non-target-status">Не дозвонились</td>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td class="text-center">
+                                    <td class="client-col">Lorem ipsum dolor</td>
+                                    <td class="moderation-col text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                            title="Согласны" aria-label="Согласны">
                                             <span class="moderation-circle"></span>
@@ -455,12 +457,12 @@
                                             </a>
                                         </a>
                                     </td>
-                                    <td>Lorem ipsum dolor
+                                    <td class="comment-col">Lorem ipsum dolor
                                         <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
                                             <i class="fa fa-pencil" aria-hidden="true"></i>
                                         </button>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="buttons-col text-center">
                                         <button class="btn restore-button restore-button-hide" type="button" value="Восстановление" aria-label="Восстановить данные">
                                             <i class="fa fa-undo" aria-hidden="true"></i>
                                         </button>
@@ -470,18 +472,18 @@
                                     </td>
                                 </tr>
                                 <tr class="reset-order">
-                                    <td scope="row">
+                                    <td class="id-col" scope="row">
                                         111111
                                     </td>
-                                    <td class="text-left">12.02.2020 13:00:00</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="text-left time-col">12.02.2020 13:00:00</td>
+                                    <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore</td>
-                                    <td class="text-center">87777777777</td>
+                                    <td class="phone-col text-center">87777777777</td>
                                     <td class="status-col non-target-status">Не дозвонились</td>
-                                    <td>Lorem ipsum dolor</td>
-                                    <td class="text-center">
+                                    <td class="client-col">Lorem ipsum dolor</td>
+                                    <td class="moderation-col text-center">
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                            title="Согласны" aria-label="Согласны">
                                             <span class="moderation-circle"></span>
@@ -495,12 +497,12 @@
                                             <span class="moderation-circle"></span>
                                         </a>
                                     </td>
-                                    <td>Lorem ipsum dolor
+                                    <td class="comment-col">Lorem ipsum dolor
                                         <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
                                             <i class="fa fa-pencil" aria-hidden="true"></i>
                                         </button>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="buttons-col text-center">
                                         <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
                                             <i class="fa fa-undo" aria-hidden="true"></i>
                                         </button>
@@ -527,7 +529,7 @@
                             <div class="form-group">
                                 <label class="sr-only" for="inputEmail">Сумма</label>
                                 <div class="input-group">
-                                    <input class="form-control" type="number" min=0 id="inputSumBalance" placeholder="Сумма" required>
+                                    <input class="form-control" type="number" min="0" id="inputSumBalance" placeholder="Сумма" required>
                                     <div class="invalid-feedback">Пожалуйста, введите сумму
                                     </div>
                                     <div class="input-group-append">

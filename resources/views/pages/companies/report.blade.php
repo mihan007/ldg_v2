@@ -6,8 +6,8 @@
             <div class="col-md-12 settings-wrapper">
                 <div class="index-buttons-wrapper mr-3">
                     <div id="reportrange" class="date-range text-center mb-1" tabindex="0">
-                        <i class="fa fa-calendar"></i>&nbsp;
-                        <span></span> <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+                        <span></span> <i class="fa fa-caret-down" aria-hidden="true"></i>
                     </div>
                     <div class="btn-group date-items mb-1">
                         <button type="button" class="btn date-item">Сегодня</button>
@@ -17,12 +17,12 @@
                         <button type="button" class="btn date-item">Месяц</button>
                     </div>
                     <button type="button" class="btn dashboard-button mb-1" aria-label="Показать дашборд">
-                        <i class="fa fa-line-chart"></i>
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
                     </button>
                     <button type="button" class="btn dashboard-button show-toast mb-1" data-toggle="tooltip"
                             data-placement="bottom" title="Последнее обновление ..." data-trigger="hover"
                             aria-label="Обновление данных в таблице аналитики">
-                        <i class="fa fa-refresh"></i>
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
                     </button>
                     <div class="toast update-button" id="myToast">
                         <div class="toast-body">
@@ -52,7 +52,7 @@
                         <input type="text" class="form-control search-form-input" placeholder="Поиск">
                         <div class="input-group-append">
                             <button type="button" class="btn btn-secondary button-search">
-                                <i class="fa fa-search"></i>
+                                <i class="fa fa-search" aria-hidden="true"></i>
                             </button>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                             <th class="text-left">
                                 <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                    title="Название компании">
-                                    <i class="fa fa-bars company-icon mr-2"></i>Компания
+                                    <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Компания
                                 </a>
                             </th>
                             <th scope="col">
@@ -153,7 +153,7 @@
                     <tbody>
                         <tr>
                             <td scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                                <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
                             </td>
                             <td>2000</td>
                             <td>10000</td>
@@ -169,7 +169,7 @@
                         </tr>
                         <tr>
                             <td scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Центр профессиональной юридической помощи.
+                                <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Центр профессиональной юридической помощи.
                                 Тверь. Оказываем юридические услуги.
                             </td>
                             <td>20</td>
@@ -186,7 +186,7 @@
                         </tr>
                         <tr>
                             <td scope="row">
-                                <i class="fa fa-bars company-icon-active mr-2"></i>Импульс
+                                <i class="fa fa-bars company-icon-active mr-2" aria-hidden="true"></i>Импульс
                             </td>
                             <td>2000</td>
                             <td>10000</td>
@@ -202,7 +202,7 @@
                         </tr>
                         <tr>
                             <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                                <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
                             </th>
                             <td>12000</td>
                             <td>110000</td>
@@ -218,7 +218,7 @@
                         </tr>
                         <tr>
                             <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                                <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
                             </th>
                             <td>2000</td>
                             <td>10000</td>
@@ -234,7 +234,7 @@
                         </tr>
                         <tr>
                             <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                                <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
                             </th>
                             <td>2000</td>
                             <td>10000</td>
@@ -250,7 +250,7 @@
                         </tr>
                         <tr>
                             <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                                <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
                             </th>
                             <td>2000</td>
                             <td>10000</td>
@@ -266,7 +266,7 @@
                         </tr>
                         <tr>
                             <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                                <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
                             </th>
                             <td>2000</td>
                             <td>10000</td>
@@ -282,7 +282,7 @@
                         </tr>
                         <tr>
                             <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                                <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
                             </th>
                             <td>2000</td>
                             <td>10000</td>
@@ -298,7 +298,7 @@
                         </tr>
                         <tr>
                             <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                                <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
                             </th>
                             <td>2000</td>
                             <td>10000</td>
@@ -314,7 +314,7 @@
                         </tr>
                         <tr>
                             <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                                <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
                             </th>
                             <td>2000</td>
                             <td>10000</td>
@@ -330,7 +330,7 @@
                         </tr>
                         <tr>
                             <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                                <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
                             </th>
                             <td>2000</td>
                             <td>10000</td>
@@ -346,7 +346,7 @@
                         </tr>
                         <tr>
                             <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                                <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
                             </th>
                             <td>2000</td>
                             <td>10000</td>
@@ -362,7 +362,7 @@
                         </tr>
                         <tr>
                             <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                                <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
                             </th>
                             <td>2000</td>
                             <td>10000</td>
@@ -378,7 +378,7 @@
                         </tr>
                         <tr>
                             <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                                <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
                             </th>
                             <td>2000</td>
                             <td>10000</td>
@@ -394,7 +394,7 @@
                         </tr>
                         <tr>
                             <th scope="row">
-                                <i class="fa fa-bars company-icon mr-2"></i>Импульс
+                                <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
                             </th>
                             <td>2000</td>
                             <td>10000</td>
