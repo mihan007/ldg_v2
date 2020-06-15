@@ -5,7 +5,7 @@
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper">
                 <div class="index-buttons-wrapper mr-3">
-                    <div id="reportrange" class="date-range text-center mb-1" tabindex="0">
+                    <div class="date-range js-date-range text-center mb-1" tabindex="0">
                         <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
                         <span></span> <i class="fa fa-caret-down" aria-hidden="true"></i>
                     </div>
@@ -16,10 +16,10 @@
                         <button type="button" class="btn date-item">30 дней</button>
                         <button type="button" class="btn date-item">Месяц</button>
                     </div>
-                    <button type="button" class="btn dashboard-button mb-1" aria-label="Показать дашборд">
+                    <button type="button" class="btn page-button mb-1" aria-label="Показать дашборд">
                         <i class="fa fa-line-chart" aria-hidden="true"></i>
                     </button>
-                    <button type="button" class="btn dashboard-button show-toast mb-1" data-toggle="tooltip"
+                    <button type="button" class="btn page-button show-toast mb-1" data-toggle="tooltip"
                             data-placement="bottom" title="Последнее обновление ..." data-trigger="hover"
                             aria-label="Обновление данных в таблице аналитики">
                         <i class="fa fa-refresh" aria-hidden="true"></i>

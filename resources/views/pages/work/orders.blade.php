@@ -24,13 +24,13 @@
                             <option value="2">Нецелевые заявки</option>
                             <option value="3">На модерации</option>
                         </select>
-                        <div id="reportrange" class=" date-range text-center">
+                        <div class="date-range js-date-range text-center">
                             <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
                             <span></span> <i class="fa fa-caret-down"></i>
                         </div>
                     </div>
                     <div class="order-buttons">
-                        <button type="button" class="btn dashboard-button show-toast">Описание заявки</button>
+                        <button type="button" class="btn page-button show-toast">Описание заявки</button>
                         <div class="toast crm-button" id="myToast-button">
                             <button type="button" class="close ml-2 mb-1 mr-1" data-dismiss="toast">
                                 <span aria-hidden="true">&times;</span>
@@ -49,7 +49,7 @@
                                 <p>Максимальный срок согласования заявки 7 дней</p>
                             </div>
                         </div>
-                        <a class="btn dashboard-button" href="#">CRM клиента
+                        <a class="btn page-button" href="#">CRM клиента
                             <i class="fa fa-external-link" aria-hidden="true"></i>
                         </a>
                     </div>

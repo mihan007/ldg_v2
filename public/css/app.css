@@ -14269,6 +14269,26 @@ body {
   background-color: white;
 }
 
+.page-button {
+  color: #212529;
+  background-color: white;
+  border: 1px solid #ced4da;
+  font-size: 14px;
+  margin-right: 1.2rem;
+}
+
+.page-button:hover {
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+
+.page-button:active {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+}
+
 .index-buttons-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -14320,26 +14340,6 @@ body {
 
 .index-select-wrapper {
   width: 350px;
-}
-
-.dashboard-button {
-  color: #212529;
-  background-color: white;
-  border: 1px solid #ced4da;
-  font-size: 14px;
-  margin-right: 1.2rem;
-}
-
-.dashboard-button:hover {
-  background-color: #e2e6ea;
-  border-color: #dae0e5;
-}
-
-.dashboard-button:active {
-  color: #212529;
-  background-color: #e2e6ea;
-  border-color: #dae0e5;
-  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
 .update-button {

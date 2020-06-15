@@ -42,7 +42,7 @@
             </div>
         </div>
     </nav>
-    <nav class="navbar-collapse magic-hide" id="navbarCollapse">
+    <nav class="navbar-collapse magic-hide">
         <ul class="navbar-nav navbar-dark mr-auto sidenav text-center position-fixed">
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('companies.report') }}" data-toggle="tooltip" data-placement="right" title="Компании"

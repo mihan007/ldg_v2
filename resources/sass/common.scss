@@ -225,3 +225,24 @@ body {
 .directory-row {
     background-color: white;
 }
+
+.page-button {
+    color: $main-text-color;
+    background-color: $main-bg-color;
+    border: 1px solid $filter-button-border;
+    font-size: 14px;
+    margin-right: 1.2rem;
+}
+
+.page-button:hover {
+    background-color: $filter-button-bg-hover;
+    border-color: $filter-button-border-hover;
+}
+
+.page-button:active {
+    color: $main-text-color;
+    background-color: $filter-button-bg-hover;
+    border-color: $filter-button-border-hover;
+    -webkit-box-shadow: 0 0 0 0.2rem $filter-button-box-shadow;
+    box-shadow: 0 0 0 0.2rem $filter-button-box-shadow;
+}

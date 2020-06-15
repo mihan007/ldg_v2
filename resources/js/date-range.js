@@ -4,10 +4,10 @@ $(function () {
     var end = moment();
 
     function cb(start, end) {
-        $('#reportrange span').html(start.format('MMM D, YYYY') + ' - ' + end.format('MMM D, YYYY'));
+        $('.js-date-range span').html(start.format('MMM D, YYYY') + ' - ' + end.format('MMM D, YYYY'));
     }
 
-    $('#reportrange').daterangepicker({
+    $('.js-date-range').daterangepicker({
         startDate: start,
         endDate: end,
         "locale": {
@@ -46,7 +46,7 @@ $(function () {
         }
     }, cb);
 
-    $('#reportrange').on('showCalendar.daterangepicker', function (ev, picker) {
+    $('.js-date-range').on('showCalendar.daterangepicker', function (ev, picker) {
         if ($(window).width() < 693) {
             setTimeout(function () {
                 let leftPosition = $(window).scrollLeft();
