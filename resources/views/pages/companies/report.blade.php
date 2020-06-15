@@ -7,7 +7,8 @@
                 <div class="index-buttons-wrapper mr-3">
                     <div class="date-range js-date-range text-center mb-1" tabindex="0">
                         <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
-                        <span></span> <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        <span class="js-date-range-span"></span>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                     </div>
                     <div class="btn-group date-items mb-1">
                         <button type="button" class="btn date-item">Сегодня</button>

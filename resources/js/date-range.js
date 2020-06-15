@@ -4,7 +4,7 @@ $(function () {
     var end = moment();
 
     function cb(start, end) {
-        $('.js-date-range span').html(start.format('MMM D, YYYY') + ' - ' + end.format('MMM D, YYYY'));
+        $('.js-date-range .js-date-range-span').html(start.format('MMM D, YYYY') + ' - ' + end.format('MMM D, YYYY'));
     }
 
     $('.js-date-range').daterangepicker({

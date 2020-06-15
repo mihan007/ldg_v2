@@ -26,7 +26,8 @@
                         </select>
                         <div class="date-range js-date-range text-center">
                             <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
-                            <span></span> <i class="fa fa-caret-down"></i>
+                            <span class="js-date-range-span"></span>
+                            <i class="fa fa-caret-down"></i>
                         </div>
                     </div>
                     <div class="order-buttons">
