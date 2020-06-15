@@ -14445,7 +14445,7 @@ body {
   bottom: 20px;
   left: 0;
   top: 0;
-  transform: translateY(50vh);
+  transform: translateY(200%);
   background-color: #fdfdfd;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.4);
   min-width: 200px;
@@ -14461,7 +14461,7 @@ body {
     top: 0;
     bottom: 0;
     left: 0;
-    transform: translateY(45vh);
+    transform: translateY(130%);
     background-color: #fdfdfd;
     min-width: 200px;
     max-width: 250px;
