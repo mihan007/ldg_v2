@@ -10,9 +10,9 @@
                     </picture>
                 </div>
                 <div class="w-100 mx-auto mb-4">
-                    <h1 class="text-uppercase font-weight-bold text-center title">Лидогенератор</h1>
+                    <h1 class="text-uppercase font-weight-bold text-center title-login">Лидогенератор</h1>
                 </div>
-                <form class="needs-validation" method="post" action="/" novalidate>
+                <form class="login-form needs-validation" method="post" action="/" novalidate>
                     <div class="form-group">
                         <label class="sr-only" for="inputEmail">Email</label>
                         <div class="input-group">

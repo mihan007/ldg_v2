@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "MalgunGothicRegular";
+    src: url("/fonts/Malgun-Gothic29381.woff2") format("woff2"),
+    url("/fonts/Malgun-Gothic29381.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "MalgunGothicRegular", "Helvetica", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
