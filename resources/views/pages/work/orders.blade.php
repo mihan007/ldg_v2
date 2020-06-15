@@ -248,7 +248,7 @@
                                         </a>
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                            title="На модерации" aria-label="На модерации">
-                                            <span class="moderation-circle circle-yellow"></span>
+                                            <span class="moderation-circle"></span>
                                         </a>
                                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                            title="Не согласны">
@@ -290,7 +290,7 @@
                                            title="На модерации" aria-label="На модерации">
                                             <span class="moderation-circle circle-yellow"></span>
                                         </a>
-                                        <span class="moderation-circle circle-red"></span>
+                                        <span class="moderation-circle"></span>
                                     </td>
                                     <td>Lorem ipsum dolor
                                         <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
@@ -527,7 +527,7 @@
                             <div class="form-group">
                                 <label class="sr-only" for="inputEmail">Сумма</label>
                                 <div class="input-group">
-                                    <input class="form-control" type="number" id="inputSumBalance" placeholder="Сумма" required>
+                                    <input class="form-control" type="number" min=0 id="inputSumBalance" placeholder="Сумма" required>
                                     <div class="invalid-feedback">Пожалуйста, введите сумму
                                     </div>
                                     <div class="input-group-append">

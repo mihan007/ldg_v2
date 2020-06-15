@@ -1,5 +1,5 @@
 .directory-buttons {
-   font-weight: 500;
+   font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -79,10 +79,10 @@
 
 .crm-button {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 0;
     top: 0;
-    transform: translateY(58vh);
+    transform: translateY(50vh);
     background-color: $crm-toast-bg;
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.4);
     min-width: 200px;
@@ -98,7 +98,7 @@
         top: 0;
         bottom: 0;
         left: 0;
-        transform: translateY(50vh);
+        transform: translateY(45vh);
         background-color: $crm-toast-bg;
         min-width: 200px;
         max-width: 250px;
@@ -130,6 +130,7 @@
 .crm-table thead th {
     border-bottom: 2px solid $filter-button-border;
     border-right: 2px solid $filter-button-border;
+    font-weight: 600;
 }
 
 .crm-table thead th:last-child {
@@ -260,7 +261,6 @@
 
 .balance-action-button {
    width: 30%;
-    text-transform: uppercase;
 }
 
 @media (max-width: 454px) {

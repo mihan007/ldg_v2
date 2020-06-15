@@ -269,24 +269,24 @@ body {
     vertical-align: middle;
 }
 
-.company-table thead th {
-    vertical-align: top;
-}
-
 .company-table th, .company-table td {
     padding: 0.75rem 0.2rem;
     font-weight: 400;
 }
 
-.company-table td:first-child,
+.company-table tbody td:first-child,
 .company-table th:first-child {
     width: 200px !important;
+}
+
+.company-table tbody td:first-child {
     font-weight: 400;
 }
 
 .company-table thead th {
     border-bottom: 2px solid $table-head-border;
     border-right: 2px solid $table-head-border;
+    vertical-align: top;
 }
 
 .company-table thead th:last-child {
@@ -312,6 +312,7 @@ body {
 
 .table-grey, .table-grey > th, .table-grey > td {
     background-color: #e0e0e0;
+    font-weight: 600;
 }
 
 .sum-line {
@@ -322,4 +323,5 @@ body {
 .table .sum-line th {
     border-bottom: none;
     border-right: none;
+    font-weight: 400;
 }
