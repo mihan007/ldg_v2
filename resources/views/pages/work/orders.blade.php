@@ -2,7 +2,7 @@
 @section('content')
     <main class="page-wrapper crm-main">
         <div class="container-fluid">
-            <div class="row sticky-top crm-row">
+            <div class="row sticky-top directory-row">
                 <div class="col-md-12 offset-block">
                 </div>
                 <div class="col-md-12 settings-wrapper directory-buttons">

@@ -14181,6 +14181,94 @@ body {
   flex-wrap: wrap;
 }
 
+.date-range {
+  background: #f8f9fa;
+  cursor: pointer;
+  padding: 6px 12px 4px 12px;
+  border: 1px solid #ced4da;
+  width: 348px;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-right: 1.2rem;
+}
+
+.date-range:hover {
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+
+.filter-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  flex-wrap: wrap;
+  padding-bottom: 0.7rem;
+}
+
+.company-search-form {
+  padding-left: 0;
+  padding-right: 0;
+  width: 16%;
+}
+
+.button-search {
+  font-size: 14px;
+}
+
+.search-form-input {
+  font-size: 14px;
+}
+
+.sorting::before,
+.sorting::after {
+  visibility: hidden;
+}
+
+.rounded-table-left {
+  border-top-left-radius: 0.25rem;
+}
+
+.rounded-table-right {
+  border-top-right-radius: 0.25rem;
+}
+
+.table-grey,
+.table-grey > th,
+.table-grey > td {
+  background-color: #e0e0e0;
+  font-weight: 600;
+}
+
+.directory-buttons {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.directory-button {
+  margin-right: 1.2rem;
+  color: #212529;
+  text-decoration: none;
+}
+
+.directory-buttons .active,
+.directory-buttons .active:hover {
+  color: #ff9517;
+}
+
+.directory-button:hover {
+  text-decoration: none;
+  color: #95999c;
+}
+
+.directory-button:active {
+  color: #5a6268;
+}
+
+.directory-row {
+  background-color: white;
+}
+
 .index-buttons-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -14197,20 +14285,7 @@ body {
   padding-left: 0;
 }
 
-.date-range {
-  background: #f8f9fa;
-  cursor: pointer;
-  padding: 6px 12px 4px 12px;
-  border: 1px solid #ced4da;
-  width: 348px;
-  border-radius: 0.25rem;
-  box-sizing: border-box;
-  font-size: 14px;
-  margin-right: 1.2rem;
-}
-
-.date-items button:hover,
-.date-range:hover {
+.date-items button:hover {
   background-color: #e2e6ea;
   border-color: #dae0e5;
 }
@@ -14247,14 +14322,6 @@ body {
   width: 350px;
 }
 
-.filter-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 15px;
-  flex-wrap: wrap;
-  padding-bottom: 0.7rem;
-}
-
 .dashboard-button {
   color: #212529;
   background-color: white;
@@ -14280,20 +14347,6 @@ body {
   bottom: 0;
   right: -150px;
   background-color: #eeeeee;
-}
-
-.company-search-form {
-  padding-left: 0;
-  padding-right: 0;
-  width: 16%;
-}
-
-.button-search {
-  font-size: 14px;
-}
-
-.search-form-input {
-  font-size: 14px;
 }
 
 .company-icon {
@@ -14351,26 +14404,6 @@ body {
   background-color: lightgray;
 }
 
-.rounded-table-left {
-  border-top-left-radius: 0.25rem;
-}
-
-.rounded-table-right {
-  border-top-right-radius: 0.25rem;
-}
-
-.sorting::before,
-.sorting::after {
-  visibility: hidden;
-}
-
-.table-grey,
-.table-grey > th,
-.table-grey > td {
-  background-color: #e0e0e0;
-  font-weight: 600;
-}
-
 .sum-line {
   background-color: #fbfbfb;
   border-bottom: none;
@@ -14380,31 +14413,6 @@ body {
   border-bottom: none;
   border-right: none;
   font-weight: 400;
-}
-
-.directory-buttons {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.directory-button {
-  margin-right: 1.2rem;
-  color: #212529;
-  text-decoration: none;
-}
-
-.directory-buttons .active,
-.directory-buttons .active:hover {
-  color: #ff9517;
-}
-
-.directory-button:hover {
-  text-decoration: none;
-  color: #95999c;
-}
-
-.directory-button:active {
-  color: #5a6268;
 }
 
 .balance-info {
@@ -14476,10 +14484,6 @@ body {
   font-size: 14px;
   table-layout: fixed;
   font-weight: 400;
-}
-
-.crm-row {
-  background-color: white;
 }
 
 .crm-table thead th {

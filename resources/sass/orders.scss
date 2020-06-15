@@ -1,28 +1,3 @@
-.directory-buttons {
-   font-weight: 700;
-    text-transform: uppercase;
-}
-
-.directory-button {
-    margin-right: 1.2rem;
-    color: $main-text-color;
-    text-decoration: none;
-}
-
-.directory-buttons .active,
-.directory-buttons .active:hover {
-    color: $directory-button-active;
-}
-
-.directory-button:hover {
-    text-decoration: none;
-    color: $directory-button-hover;
-}
-
-.directory-button:active {
-    color: $directory-button-click;
-}
-
 .balance-info {
     margin-top: 0;
     margin-bottom: 0;
@@ -121,10 +96,6 @@
     font-size: 14px;
     table-layout: fixed;
     font-weight: 400;
-}
-
-.crm-row {
-    background-color: white;
 }
 
 .crm-table thead th {
