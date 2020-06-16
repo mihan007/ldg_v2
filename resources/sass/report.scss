@@ -55,8 +55,6 @@
     width: 350px;
 }
 
-
-
 .update-button {
     position: absolute;
     bottom: 0;
@@ -108,6 +106,7 @@
     border-bottom: 2px solid $table-head-border;
     border-right: 2px solid $table-head-border;
     vertical-align: top;
+    font-weight: 600;
 }
 
 .company-table thead th:last-child {

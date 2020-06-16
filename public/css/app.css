@@ -14394,6 +14394,7 @@ body {
   border-bottom: 2px solid #b3b7bb;
   border-right: 2px solid #b3b7bb;
   vertical-align: top;
+  font-weight: 600;
 }
 
 .company-table thead th:last-child {
@@ -14453,6 +14454,7 @@ body {
   height: 210px;
   overflow: auto;
   display: none;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 693px) {
@@ -14468,6 +14470,7 @@ body {
     height: 210px;
     overflow: auto;
     display: none;
+    padding-bottom: 50px;
   }
 }
 
