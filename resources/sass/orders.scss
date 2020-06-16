@@ -23,43 +23,15 @@
     text-decoration: none;
 }
 
-//.crm-button {
-//    position: absolute;
-//    top: 120%;
-//    left: 0;
-//    transform: translateY(200%);
-//    background-color: $toast-bg;
-//    min-width: 200px;
-//    max-width: 450px;
-//    height: 210px;
-//    overflow: auto;
-//    display: none;
-//}
-
-//@media (max-width: 690px) {
-//    .crm-button {
-//        position: absolute;
-//        top: 100vh;
-//        transform: translateY(200%);
-//        //left: calc(70vw / 2 - 4 / 3 * 210px / 2.5);
-//        //bottom: calc(210px - 2rem);
-//        //transform: translate(calc(70vw / 3 - 4 / 3 * 210px / 2.5), 60%);
-//        left: 0;
-//        max-width: 280px;
-//        height: 210px;
-//        overflow: auto;
-//        display: none;
-//    }
-//}
-
 .crm-button {
     position: absolute;
     bottom: 20px;
     left: 0;
     top: 0;
-    //transform: translateY(50vh);
+    -webkit-transform: translateY(170%);
     transform: translateY(170%);
     background-color: $crm-toast-bg;
+    -webkit-box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.4);
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.4);
     min-width: 200px;
     max-width: 450px;
@@ -75,7 +47,7 @@
         top: 0;
         bottom: 0;
         left: 0;
-        //transform: translateY(40vh);
+        -webkit-transform: translateY(120%);
         transform: translateY(120%);
         background-color: $crm-toast-bg;
         min-width: 200px;
@@ -88,11 +60,15 @@
 }
 
 .order-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-right: auto;
 }
 
 .order-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -163,7 +139,7 @@
 
 .phone-col,
 .status-col {
-  width: 8%;
+    width: 8%;
 }
 
 .order-line .non-target-status,
@@ -209,7 +185,7 @@
 
 .crm-table .restore-button-show,
 .crm-table .reset-button-show {
-   display: block;
+    display: block;
 }
 
 .crm-table .restore-button-hide,
@@ -230,12 +206,16 @@
 }
 
 .balance-action-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .balance-action-button {
-   width: 30%;
+    width: 30%;
 }
 
 @media (max-width: 454px) {
@@ -245,7 +225,10 @@
     }
 
     .balance-action-buttons {
-       flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
 
     }
 }

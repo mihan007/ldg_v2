@@ -9,6 +9,8 @@
 
 body {
     font-family: "MalgunGothicRegular", "Helvetica", sans-serif;
+    position: relative;
+    color: $main-text-color;
 }
 
 html, body {
@@ -17,11 +19,6 @@ html, body {
 
 html {
     min-height: 100%;
-}
-
-body {
-    position: relative;
-    color: $main-text-color;
 }
 
 .bg-grey {

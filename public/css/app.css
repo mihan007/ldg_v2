@@ -14070,6 +14070,8 @@ a.text-dark:focus {
 
 body {
   font-family: "MalgunGothicRegular", "Helvetica", sans-serif;
+  position: relative;
+  color: #212529;
 }
 
 html,
@@ -14079,11 +14081,6 @@ body {
 
 html {
   min-height: 100%;
-}
-
-body {
-  position: relative;
-  color: #212529;
 }
 
 .bg-grey {
