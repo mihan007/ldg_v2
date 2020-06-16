@@ -48,3 +48,7 @@ Route::get('/users/error-login', function () {
 Route::get('/companies/report', function () {
     return view('pages.companies.report');
 })->name('companies.report');
+
+Route::get('/work/orders', function () {
+    return view('pages.work.orders');
+})->name('work.orders');

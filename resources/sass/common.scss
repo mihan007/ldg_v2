@@ -1,0 +1,245 @@
+@font-face {
+    font-family: "MalgunGothicRegular";
+    src: url("/fonts/Malgun-Gothic29381.woff2") format("woff2"),
+    url("/fonts/Malgun-Gothic29381.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "MalgunGothicRegular", "Helvetica", sans-serif;
+    position: relative;
+    color: $main-text-color;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    min-height: 100%;
+}
+
+.bg-grey {
+    background-color: $header-bg;
+    padding-right: 0.43rem;
+}
+
+.company-header {
+    padding-left: 0;
+}
+
+@media (max-width: 693px) {
+    .scrollmenu {
+        overflow: auto;
+        white-space: nowrap;
+    }
+}
+
+.dropdown-toggle::after {
+    vertical-align: 0;
+    border-top: 0.5em solid;
+}
+
+.login-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fa-user-o {
+    color: $header-icon-color;
+    font-size: 23px;
+}
+
+.sidenav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    margin-top: 3.5rem;
+    background-color: $header-bg;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 26px;
+    z-index: 1032;
+}
+
+.sidenav .nav-link {
+    color: $header-icon-color;
+}
+
+.sidenav .active {
+    color: $sidenav-button-active;
+}
+
+.nav-link:hover .fa-bars,
+.nav-link:hover .fa-cog,
+.nav-link:focus .fa-bars,
+.nav-link:focus .fa-cog {
+    color: $sidenav-button-active;
+}
+
+.nav-link:disabled .fa-bars,
+.nav-link:disabled .fa-cog {
+    color: $sidenav-button-disabled;
+}
+
+.fa-id-card-o {
+    margin-right: 0.55rem;
+}
+
+.fa-sign-out,
+.cog-link .fa-cog {
+    margin-right: 0.9rem;
+}
+
+.page-wrapper {
+    padding-right: 20px;
+    padding-left: 80px;
+    min-width: 1340px;
+    font-size: 14px;
+}
+
+.offset-block {
+    height: 60px;
+}
+
+.settings-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.date-range {
+    background: $filter-button-bg;
+    cursor: pointer;
+    padding: 6px 12px 4px 12px;
+    border: 1px solid $filter-button-border;
+    width: 348px;
+    border-radius: 0.25rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-right: 1.2rem;
+}
+
+.date-range:hover {
+    background-color: $filter-button-bg-hover;
+    border-color: $filter-button-border-hover;
+}
+
+.filter-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 15px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 0.7rem;
+}
+
+.company-search-form {
+    padding-left: 0;
+    padding-right: 0;
+    width: 16%;
+}
+
+.button-search {
+    font-size: 14px;
+}
+
+.search-form-input {
+    font-size: 14px;
+}
+
+.sorting::before,
+.sorting::after {
+    visibility: hidden;
+}
+
+.rounded-table-left {
+    border-top-left-radius: 0.25rem;
+}
+
+.rounded-table-right {
+    border-top-right-radius: 0.25rem;
+}
+
+.table-grey, .table-grey > th, .table-grey > td {
+    background-color: #e0e0e0;
+    font-weight: 600;
+}
+
+.directory-buttons {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.directory-button {
+    margin-right: 1.2rem;
+    color: $main-text-color;
+    text-decoration: none;
+}
+
+.directory-buttons .active,
+.directory-buttons .active:hover {
+    color: $directory-button-active;
+}
+
+.directory-button:hover {
+    text-decoration: none;
+    color: $directory-button-hover;
+}
+
+.directory-button:active {
+    color: $directory-button-click;
+}
+
+.directory-row {
+    background-color: white;
+}
+
+.page-button {
+    color: $main-text-color;
+    background-color: $main-bg-color;
+    border: 1px solid $filter-button-border;
+    font-size: 14px;
+    margin-right: 1.2rem;
+}
+
+.page-button:hover {
+    background-color: $filter-button-bg-hover;
+    border-color: $filter-button-border-hover;
+}
+
+.page-button:active {
+    color: $main-text-color;
+    background-color: $filter-button-bg-hover;
+    border-color: $filter-button-border-hover;
+    -webkit-box-shadow: 0 0 0 0.2rem $filter-button-box-shadow;
+    box-shadow: 0 0 0 0.2rem $filter-button-box-shadow;
+}

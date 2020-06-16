@@ -24,5 +24,4 @@ $(document).ready(function () {
             { 'orderSequence': ['desc', 'asc'] },
         ]
     })
-    $('.dataTables_length').addClass('bs-select')
 })

@@ -37240,9 +37240,13 @@ __webpack_require__(/*! ./tooltip.js */ "./resources/js/tooltip.js");
 
 __webpack_require__(/*! ./date-range.js */ "./resources/js/date-range.js");
 
-__webpack_require__(/*! ./toast.js */ "./resources/js/toast.js");
+__webpack_require__(/*! ./update-toast.js */ "./resources/js/update-toast.js");
 
-__webpack_require__(/*! ./sorting.js */ "./resources/js/sorting.js");
+__webpack_require__(/*! ./order-description-toast.js */ "./resources/js/order-description-toast.js");
+
+__webpack_require__(/*! ./company-grid.js */ "./resources/js/company-grid.js");
+
+__webpack_require__(/*! ./order-grid.js */ "./resources/js/order-grid.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -37279,6 +37283,54 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/js/company-grid.js":
+/*!**************************************!*\
+  !*** ./resources/js/company-grid.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  window.table = $('.company-grid').DataTable({
+    fixedHeader: {
+      headerOffset: 52
+    },
+    paging: false,
+    searching: false,
+    info: false,
+    autoWidth: false,
+    bSortCellsTop: true,
+    "order": [[1, 'desc']],
+    columns: [{
+      "orderable": false
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }]
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/js/date-range.js":
 /*!************************************!*\
   !*** ./resources/js/date-range.js ***!
@@ -37292,10 +37344,10 @@ $(function () {
   var end = moment();
 
   function cb(start, end) {
-    $('#reportrange span').html(start.format('MMM D, YYYY') + ' - ' + end.format('MMM D, YYYY'));
+    $('.js-date-range .js-date-range-span').html(start.format('MMM D, YYYY') + ' - ' + end.format('MMM D, YYYY'));
   }
 
-  $('#reportrange').daterangepicker({
+  $('.js-date-range').daterangepicker({
     startDate: start,
     endDate: end,
     "locale": {
@@ -37306,19 +37358,20 @@ $(function () {
       "fromLabel": "От",
       "toLabel": "До",
       "customRangeLabel": "Свой период",
+      "opens": "right",
       "daysOfWeek": ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
       "monthNames": ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"],
       "firstDay": 1
-    } // ranges: {
-    //     'Today': [moment(), moment()],
-    //     'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-    //     'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-    //     'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-    //     'This Month': [moment().startOf('month'), moment().endOf('month')],
-    //     'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-    // }
-
+    }
   }, cb);
+  $('.js-date-range').on('showCalendar.daterangepicker', function (ev, picker) {
+    if ($(window).width() < 693) {
+      setTimeout(function () {
+        var leftPosition = $(window).scrollLeft();
+        $('.daterangepicker').css("right", "-" + leftPosition + "px");
+      }, 1);
+    }
+  });
   cb(start, end);
 });
 
@@ -37364,68 +37417,81 @@ $(window).resize(function () {
 
 /***/ }),
 
-/***/ "./resources/js/sorting.js":
-/*!*********************************!*\
-  !*** ./resources/js/sorting.js ***!
-  \*********************************/
+/***/ "./resources/js/order-description-toast.js":
+/*!*************************************************!*\
+  !*** ./resources/js/order-description-toast.js ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  window.table = $('.company-grid').DataTable({
+  var isToastShown = false;
+  $(".js-order-description-toast").toast({
+    autohide: false
+  });
+  $(".show-toast").click(function () {
+    if (isToastShown) {
+      $(".js-order-description-toast").toast('hide');
+    } else {
+      $(".js-order-description-toast").toast('show');
+    }
+
+    $('.js-order-description-toast').on('shown.bs.toast', function () {
+      isToastShown = true;
+
+      if ($(window).width() < 693) {
+        setTimeout(function () {
+          var leftPosition = $(window).scrollLeft();
+          $('.js-order-description-toast').css("left", leftPosition + "px");
+        }, 10);
+      }
+    });
+    $('.js-order-description-toast').on('hidden.bs.toast', function () {
+      isToastShown = false;
+    });
+  });
+});
+
+/***/ }),
+
+/***/ "./resources/js/order-grid.js":
+/*!************************************!*\
+  !*** ./resources/js/order-grid.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  window.table = $('.order-grid').DataTable({
     fixedHeader: {
-      headerOffset: 52
+      headerOffset: 140
     },
     paging: false,
     searching: false,
     info: false,
     autoWidth: false,
-    bSortCellsTop: true,
-    "order": [[1, 'desc']],
+    order: [[0, 'desc']],
     columns: [{
+      'orderSequence': ['desc', 'asc']
+    }, {
       "orderable": false
     }, {
       'orderSequence': ['desc', 'asc']
     }, {
-      'orderSequence': ['desc', 'asc']
+      "orderable": false
     }, {
       'orderSequence': ['desc', 'asc']
     }, {
-      'orderSequence': ['desc', 'asc']
+      "orderable": false
     }, {
-      'orderSequence': ['desc', 'asc']
+      "orderable": false
     }, {
-      'orderSequence': ['desc', 'asc']
+      "orderable": false
     }, {
-      'orderSequence': ['desc', 'asc']
+      "orderable": false
     }, {
-      'orderSequence': ['desc', 'asc']
-    }, {
-      'orderSequence': ['desc', 'asc']
-    }, {
-      'orderSequence': ['desc', 'asc']
-    }, {
-      'orderSequence': ['desc', 'asc']
+      "orderable": false
     }]
-  });
-  $('.dataTables_length').addClass('bs-select');
-});
-
-/***/ }),
-
-/***/ "./resources/js/toast.js":
-/*!*******************************!*\
-  !*** ./resources/js/toast.js ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-$(document).ready(function () {
-  $(".show-toast").click(function () {
-    $("#myToast").toast({
-      delay: 3000
-    });
-    $("#myToast").toast('show');
   });
 });
 
@@ -37440,6 +37506,24 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip({});
+});
+
+/***/ }),
+
+/***/ "./resources/js/update-toast.js":
+/*!**************************************!*\
+  !*** ./resources/js/update-toast.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $(".show-toast").click(function () {
+    $(".js-update-toast").toast({
+      delay: 3000
+    });
+    $(".js-update-toast").toast('show');
+  });
 });
 
 /***/ }),

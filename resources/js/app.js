@@ -6,7 +6,9 @@ require('./bootstrap');
 require('./validator.js');
 require('./tooltip.js');
 require('./date-range.js');
-require('./toast.js');
-require('./sorting.js');
+require('./update-toast.js');
+require('./order-description-toast.js');
+require('./company-grid.js');
+require('./order-grid.js');
 
 

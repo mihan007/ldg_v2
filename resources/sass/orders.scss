@@ -1,0 +1,248 @@
+.balance-info {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: $main-text-color;
+}
+
+.balance-info .fa-rub,
+.balance-actions .fa-rub{
+    color: $main-text-color;
+}
+
+.balance-info:hover,
+.balance-info:hover .fa-rub {
+    color: $balance-info-button-hover;
+    text-decoration: none;
+}
+
+.balance-info:active,
+.balance-info:active .fa-rub {
+    color: $balance-info-button-active;
+    text-decoration: none;
+}
+
+.crm-button {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    top: 0;
+    -webkit-transform: translateY(170%);
+    transform: translateY(170%);
+    background-color: $crm-toast-bg;
+    -webkit-box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.4);
+    min-width: 200px;
+    max-width: 450px;
+    height: 210px;
+    overflow: auto;
+    display: none;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 693px) {
+    .crm-button {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        -webkit-transform: translateY(120%);
+        transform: translateY(120%);
+        background-color: $crm-toast-bg;
+        min-width: 200px;
+        max-width: 250px;
+        height: 210px;
+        overflow: auto;
+        display: none;
+        padding-bottom: 50px;
+    }
+}
+
+.order-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+}
+
+.order-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.crm-table {
+    font-size: 14px;
+    table-layout: fixed;
+    font-weight: 400;
+}
+
+.crm-table thead th {
+    border-bottom: 2px solid $filter-button-border;
+    border-right: 2px solid $filter-button-border;
+    font-weight: 600;
+}
+
+.crm-table thead th:last-child {
+    border-right: none;
+}
+
+.crm-table th,
+.crm-table td {
+    padding: 0.75rem 0.2rem;
+    font-weight: 400;
+}
+
+.moderation-circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    margin-right: 5px;
+    background-color: $main-bg-color;
+    border: 1px solid $moderation-circle-border;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.moderation-circle:last-child {
+    margin-right: 0;
+}
+
+.circle-green {
+    background-color: $moderation-circle-green;
+}
+
+.circle-yellow {
+    background-color: $moderation-circle-yellow;
+}
+
+.circle-red {
+    background-color: $moderation-circle-red;
+}
+
+.crm-table td:first-child,
+.crm-table th:first-child,
+.time-col {
+    width: 6%;
+}
+
+.info-col {
+    width: 25%;
+}
+
+.title-col,
+.client-col,
+.comment-col {
+    width: 10%;
+}
+
+.phone-col,
+.status-col {
+    width: 8%;
+}
+
+.order-line .non-target-status,
+.reset-order .non-target-status {
+    color: $non-target-status;
+}
+
+.order-line .target-status,
+.reset-order .target-status {
+    color: $crm-table-target-status;
+}
+
+.moderation-col {
+    width: 9%;
+}
+
+.buttons-col {
+    width: 4%;
+}
+
+.crm-correct-button {
+    padding: 0;
+    margin-left: 0.5rem;
+}
+
+.crm-table .restore-button,
+.crm-table .reset-button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.crm-table .correct-button:hover,
+.crm-table .restore-button:hover,
+.crm-table .reset-button:hover {
+    color: $crm-table-button-hover;
+}
+
+.crm-table .correct-button:active,
+.crm-table .restore-button:active,
+.crm-table .reset-button:active {
+    color: $crm-table-button-active;
+}
+
+.crm-table .restore-button-show,
+.crm-table .reset-button-show {
+    display: block;
+}
+
+.crm-table .restore-button-hide,
+.crm-table .reset-button-hide {
+    display: none;
+}
+
+.crm-table .reset-order td {
+    background-color: $crm-table-deleted-order-bg;
+}
+
+.crm-main {
+    position: relative;
+}
+
+.balance-actions {
+    background-color: $main-bg-color;
+}
+
+.balance-action-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.balance-action-button {
+    width: 30%;
+}
+
+@media (max-width: 454px) {
+    .balance-action-button {
+        width: 60%;
+        margin: 0 auto 0.75rem auto;
+    }
+
+    .balance-action-buttons {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+    }
+}
+
+.cancel-button {
+    background-color: $cancel-button-bg;
+    color: $cancel-button-text;
+}
+
+.cancel-button:hover {
+    background-color: $cancel-button-bg-hover;
+    color: $cancel-button-text;
+}
+
+.cancel-button:active {
+    background-color: $cancel-button-bg-active;
+}
