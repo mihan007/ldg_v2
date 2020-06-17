@@ -1,24 +1,26 @@
 @extends('layouts.app')
 @section('content')
     <main class="page-wrapper crm-main">
-        <div class="container-fluid">
+{{--        <div class="container-fluid">--}}
             <div class="row sticky-top directory-row">
                 <div class="col-md-12 offset-block">
                 </div>
                 <div class="col-md-12 settings-wrapper directory-buttons">
-                    <div class="">
+                    <div>
                         <a class="directory-button active" href="{{ route('work.orders') }}">CRM</a>
-                        <a class="directory-button" href="#">Финансы</a>
+                        <a class="directory-button" href="{{ route('work.finance') }}">Финансы</a>
                     </div>
-                    <div class="">
-                        <a href="#myModal" role="button" class="balance-info" data-toggle="modal">Баланс 2000
+                    <div>
+                        <a href=".js-balance-modal" role="button" class="balance-info" data-toggle="modal">
+                            <i class="fa fa-plus-square" aria-hidden="true"></i>
+                            Баланс 2000
                             <i class="fa fa-rub" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-12 filter-wrapper">
                     <div class="order-filter">
-                        <select class="custom-select index-select">
+                        <select class="custom-select select-item">
                             <option selected>Все заявки</option>
                             <option value="1">Целевые заявки</option>
                             <option value="2">Нецелевые заявки</option>
@@ -69,7 +71,7 @@
             <div class="row">
                 <div class="col-md-12 mx-auto">
                     <div class="table-wrapper mb-5">
-                        <table class="table crm-table order-grid table-striped" data-offset="140">
+                        <table class="table crm-table common-table order-grid table-striped" data-offset="140">
                             <thead>
                                 <tr class="table-grey text-center ">
                                     <th class="rounded-table-left id-col">ID
@@ -518,7 +520,7 @@
                 </div>
             </div>
         </div>
-        <div id="myModal" class="modal fade" tabindex="-1">
+        <div class="modal fade js-balance-modal" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -549,6 +551,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+{{--        </div>--}}
     </main>
 @stop

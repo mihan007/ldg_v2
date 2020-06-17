@@ -1,7 +1,7 @@
 $(document).ready(function () {
     window.table = $('.order-grid').DataTable({
         fixedHeader: {
-            headerOffset: 140
+            headerOffset: 144
         },
         paging: false,
         searching: false,

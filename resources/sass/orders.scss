@@ -1,3 +1,7 @@
+.crm-main {
+    position: relative;
+}
+
 .balance-info {
     margin-top: 0;
     margin-bottom: 0;
@@ -72,27 +76,27 @@
     display: flex;
 }
 
-.crm-table {
-    font-size: 14px;
-    table-layout: fixed;
-    font-weight: 400;
-}
-
-.crm-table thead th {
-    border-bottom: 2px solid $filter-button-border;
-    border-right: 2px solid $filter-button-border;
-    font-weight: 600;
-}
-
-.crm-table thead th:last-child {
-    border-right: none;
-}
-
-.crm-table th,
-.crm-table td {
-    padding: 0.75rem 0.2rem;
-    font-weight: 400;
-}
+//.crm-table {
+//    font-size: 14px;
+//    table-layout: fixed;
+//    font-weight: 400;
+//}
+//
+//.crm-table thead th {
+//    border-bottom: 2px solid $filter-button-border;
+//    border-right: 2px solid $filter-button-border;
+//    font-weight: 600;
+//}
+//
+//.crm-table thead th:last-child {
+//    border-right: none;
+//}
+//
+//.crm-table th,
+//.crm-table td {
+//    padding: 0.75rem 0.2rem;
+//    font-weight: 400;
+//}
 
 .moderation-circle {
     width: 18px;
@@ -195,54 +199,4 @@
 
 .crm-table .reset-order td {
     background-color: $crm-table-deleted-order-bg;
-}
-
-.crm-main {
-    position: relative;
-}
-
-.balance-actions {
-    background-color: $main-bg-color;
-}
-
-.balance-action-buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.balance-action-button {
-    width: 30%;
-}
-
-@media (max-width: 454px) {
-    .balance-action-button {
-        width: 60%;
-        margin: 0 auto 0.75rem auto;
-    }
-
-    .balance-action-buttons {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-
-    }
-}
-
-.cancel-button {
-    background-color: $cancel-button-bg;
-    color: $cancel-button-text;
-}
-
-.cancel-button:hover {
-    background-color: $cancel-button-bg-hover;
-    color: $cancel-button-text;
-}
-
-.cancel-button:active {
-    background-color: $cancel-button-bg-active;
 }

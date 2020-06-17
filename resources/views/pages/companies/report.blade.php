@@ -35,20 +35,20 @@
             </div>
             <div class="col-md-12 filter-wrapper mb-1">
                 <div class="index-select-wrapper d-flex mr-auto">
-                    <select class="custom-select index-select">
+                    <select class="custom-select select-item">
                         <option selected>Все проекты</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
-                    <select class="custom-select index-select">
+                    <select class="custom-select select-item">
                         <option selected>Все менеджеры</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
                 </div>
-                <form class="company-search-form">
+                <form class="search-form">
                     <div class="input-group">
                         <input type="text" class="form-control search-form-input" placeholder="Поиск">
                         <div class="input-group-append">
@@ -60,7 +60,7 @@
                 </form>
             </div>
             <div class="col-md-12 table-wrapper mb-5">
-                <table class="table company-table company-grid table-striped">
+                <table class="table company-table common-table company-grid table-striped">
                     <thead>
                         <tr class="table-grey">
                             <th class="text-left rounded-table-left">Рабочая область</th>

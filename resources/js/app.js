@@ -10,5 +10,5 @@ require('./update-toast.js');
 require('./order-description-toast.js');
 require('./company-grid.js');
 require('./order-grid.js');
-
+require('./finance-grid.js');
 

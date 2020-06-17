@@ -14079,10 +14079,6 @@ body {
   height: 100%;
 }
 
-html {
-  min-height: 100%;
-}
-
 .bg-grey {
   background-color: #1d1d1d;
   padding-right: 0.43rem;
@@ -14203,7 +14199,7 @@ html {
   padding-bottom: 0.7rem;
 }
 
-.company-search-form {
+.search-form {
   padding-left: 0;
   padding-right: 0;
   width: 16%;
@@ -14222,6 +14218,28 @@ html {
   visibility: hidden;
 }
 
+.common-table {
+  font-size: 14px;
+  table-layout: fixed;
+  font-weight: 400;
+}
+
+.common-table thead th {
+  border-bottom: 2px solid #ced4da;
+  border-right: 2px solid #ced4da;
+  font-weight: 600;
+}
+
+.common-table thead th:last-child {
+  border-right: none;
+}
+
+.common-table th,
+.common-table td {
+  padding: 0.75rem 0.2rem;
+  font-weight: 400;
+}
+
 .rounded-table-left {
   border-top-left-radius: 0.25rem;
 }
@@ -14235,6 +14253,26 @@ html {
 .table-grey > td {
   background-color: #e0e0e0;
   font-weight: 600;
+}
+
+.page-button {
+  color: #212529;
+  background-color: white;
+  border: 1px solid #ced4da;
+  font-size: 14px;
+  margin-right: 1.2rem;
+}
+
+.page-button:hover {
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+
+.page-button:active {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
 .directory-buttons {
@@ -14266,24 +14304,63 @@ html {
   background-color: white;
 }
 
-.page-button {
-  color: #212529;
-  background-color: white;
-  border: 1px solid #ced4da;
+.select-item {
   font-size: 14px;
+  width: 47%;
+  cursor: pointer;
+  color: #212529;
+}
+
+.select-item:first-child,
+.finance-filter .select-item {
   margin-right: 1.2rem;
 }
 
-.page-button:hover {
-  background-color: #e2e6ea;
-  border-color: #dae0e5;
+.balance-info-wrapper {
+  width: 212px;
 }
 
-.page-button:active {
-  color: #212529;
-  background-color: #e2e6ea;
-  border-color: #dae0e5;
-  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+.balance-info-button {
+  width: 100%;
+  margin-right: 0;
+}
+
+.balance-actions {
+  background-color: white;
+}
+
+.balance-action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.balance-action-button {
+  width: 30%;
+}
+
+@media (max-width: 454px) {
+  .balance-action-button {
+    width: 60%;
+    margin: 0 auto 0.75rem auto;
+  }
+
+  .balance-action-buttons {
+    flex-direction: column;
+  }
+}
+
+.cancel-button {
+  background-color: #95999c;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancel-button:active {
+  background-color: #5a6268;
 }
 
 .index-buttons-wrapper {
@@ -14324,17 +14401,6 @@ html {
   width: 16%;
 }
 
-.index-select {
-  font-size: 14px;
-  width: 47%;
-  cursor: pointer;
-  color: #212529;
-}
-
-.index-select:first-child {
-  margin-right: 1.2rem;
-}
-
 .index-select-wrapper {
   width: 350px;
 }
@@ -14362,20 +14428,11 @@ html {
 }
 
 .company-table {
-  font-size: 14px;
   cursor: pointer;
-  table-layout: fixed;
-  font-weight: 400;
 }
 
 .company-table tr:first-child th {
   vertical-align: middle;
-}
-
-.company-table th,
-.company-table td {
-  padding: 0.75rem 0.2rem;
-  font-weight: 400;
 }
 
 .company-table tbody td:first-child,
@@ -14385,17 +14442,6 @@ html {
 
 .company-table tbody td:first-child {
   font-weight: 400;
-}
-
-.company-table thead th {
-  border-bottom: 2px solid #b3b7bb;
-  border-right: 2px solid #b3b7bb;
-  vertical-align: top;
-  font-weight: 600;
-}
-
-.company-table thead th:last-child {
-  border-right: none;
 }
 
 .company-table tbody tr:hover {
@@ -14411,6 +14457,10 @@ html {
   border-bottom: none;
   border-right: none;
   font-weight: 400;
+}
+
+.crm-main {
+  position: relative;
 }
 
 .balance-info {
@@ -14478,28 +14528,6 @@ html {
 
 .order-buttons {
   display: flex;
-}
-
-.crm-table {
-  font-size: 14px;
-  table-layout: fixed;
-  font-weight: 400;
-}
-
-.crm-table thead th {
-  border-bottom: 2px solid #ced4da;
-  border-right: 2px solid #ced4da;
-  font-weight: 600;
-}
-
-.crm-table thead th:last-child {
-  border-right: none;
-}
-
-.crm-table th,
-.crm-table td {
-  padding: 0.75rem 0.2rem;
-  font-weight: 400;
 }
 
 .moderation-circle {
@@ -14605,45 +14633,53 @@ html {
   background-color: rgba(229, 37, 21, 0.1);
 }
 
-.crm-main {
-  position: relative;
+.finance-filter {
+  display: flex;
+  margin-right: auto;
 }
 
-.balance-actions {
+.finance-buttons {
+  display: flex;
+}
+
+.filter-select-wrapper {
+  width: 350px;
+  display: flex;
+}
+
+.income-expense-wrapper {
+  margin-right: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.finance-time-col {
+  width: 15%;
+}
+
+.finance-info-col {
+  width: 25%;
+}
+
+.finance-sum-col,
+.finance-operation-col {
+  width: 15%;
+}
+
+.finance-history-col {
+  width: 15%;
+}
+
+.bill-actions {
   background-color: white;
 }
 
-.balance-action-buttons {
+.bill-action-buttons {
   display: flex;
   justify-content: space-between;
 }
 
-.balance-action-button {
-  width: 30%;
-}
-
-@media (max-width: 454px) {
-  .balance-action-button {
-    width: 60%;
-    margin: 0 auto 0.75rem auto;
-  }
-
-  .balance-action-buttons {
-    flex-direction: column;
-  }
-}
-
-.cancel-button {
-  background-color: #95999c;
-  color: white;
-}
-
-.cancel-button:hover {
-  background-color: #6c757d;
-  color: white;
-}
-
-.cancel-button:active {
-  background-color: #5a6268;
+.bill-action-button {
+  width: 45%;
 }
 

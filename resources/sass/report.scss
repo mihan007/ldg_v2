@@ -40,17 +40,6 @@
     width: 16%;
 }
 
-.index-select {
-    font-size: 14px;
-    width: 47%;
-    cursor: pointer;
-    color: $main-text-color;
-}
-
-.index-select:first-child {
-    margin-right: 1.2rem;
-}
-
 .index-select-wrapper {
     width: 350px;
 }
@@ -78,20 +67,20 @@
 }
 
 .company-table {
-    font-size: 14px;
+    //font-size: 14px;
     cursor: pointer;
-    table-layout: fixed;
-    font-weight: 400;
+    //table-layout: fixed;
+    //font-weight: 400;
 }
 
 .company-table tr:first-child th {
     vertical-align: middle;
 }
 
-.company-table th, .company-table td {
-    padding: 0.75rem 0.2rem;
-    font-weight: 400;
-}
+//.company-table th, .company-table td {
+//    padding: 0.75rem 0.2rem;
+//    font-weight: 400;
+//}
 
 .company-table tbody td:first-child,
 .company-table th:first-child {
@@ -102,16 +91,16 @@
     font-weight: 400;
 }
 
-.company-table thead th {
-    border-bottom: 2px solid $table-head-border;
-    border-right: 2px solid $table-head-border;
-    vertical-align: top;
-    font-weight: 600;
-}
-
-.company-table thead th:last-child {
-    border-right: none;
-}
+//.company-table thead th {
+//    border-bottom: 2px solid $table-head-border;
+//    border-right: 2px solid $table-head-border;
+//    vertical-align: top;
+//    font-weight: 600;
+//}
+//
+//.company-table thead th:last-child {
+//    border-right: none;
+//}
 
 .company-table tbody tr:hover {
     background-color: $table-hover;
