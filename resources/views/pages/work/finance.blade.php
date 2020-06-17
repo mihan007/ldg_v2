@@ -74,14 +74,14 @@
                     </div>
                 </form>
             </div>
-            <div class="alert alert-primary col-md-6 text-center mx-auto" role="alert">
+            <div class="alert alert-primary finance-balance-alert" role="alert">
                 Тут будет уведомление об ошибке работы финансовой подсистемы
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 mx-auto">
                 <div class="table-wrapper mb-5">
-                    <table class="table finance-table common-table finance-grid table-striped" data-offset="207">
+                    <table class="table finance-table common-table finance-grid table-striped" data-offset="198">
                         <thead>
                             <tr class="table-grey text-center ">
                                 <th class="rounded-table-left finance-time-col" scope="col">

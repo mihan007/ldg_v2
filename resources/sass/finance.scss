@@ -61,3 +61,15 @@
 .bill-action-button {
     width: 45%;
 }
+
+.finance-balance-alert {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 693px) {
+.finance-balance-alert {
+    margin-right: auto;
+}
+}
