@@ -74,16 +74,18 @@
                     </div>
                 </form>
             </div>
-            <div class="col-md-6 text-center mx-auto">
+            <!-- Алерт об ошибке финансовой системы -->
+            <div class="col-md-6 text-center mx-auto balance-alert-wrapper">
                 <div class="alert alert-primary finance-balance-alert w-auto" role="alert">
                     Тут будет уведомление об ошибке работы финансовой подсистемы
+                    <button type="button" class="close balance-alert-close" data-dismiss="alert">&times;</button>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 mx-auto">
                 <div class="table-wrapper mb-5">
-                    <table class="table finance-table common-table finance-grid table-striped" data-offset="198">
+                    <table class="table finance-table common-table finance-grid table-striped" data-offset="144">
                         <thead>
                             <tr class="table-grey text-center ">
                                 <th class="rounded-table-left finance-time-col" scope="col">
@@ -252,7 +254,7 @@
                             <label class="sr-only" for="inputEmail">Сумма</label>
                             <div class="input-group">
                                 <input class="form-control" type="number" min="0" id="inputSumBalance" placeholder="Сумма" required>
-                                <div class="invalid-feedback">Пожалуйста, введите сумму
+                                <div class="invalid-feedback">Сообщение об ошибке
                                 </div>
                                 <div class="input-group-append">
                                     <span class="input-group-text"><i class="fa fa-rub" aria-hidden="true"></i></span>
@@ -284,7 +286,7 @@
                             <label class="sr-only" for="inputEmail">Сумма</label>
                             <div class="input-group">
                                 <input class="form-control" type="number" min="0" id="inputSumBill" placeholder="Сумма" required>
-                                <div class="invalid-feedback">Пожалуйста, введите сумму
+                                <div class="invalid-feedback">Сообщение об ошибке
                                 </div>
                                 <div class="input-group-append">
                                     <span class="input-group-text"><i class="fa fa-rub" aria-hidden="true"></i></span>
@@ -295,12 +297,16 @@
                             <label class="sr-only" for="inputEmail">Наименование организации</label>
                             <div class="input-group">
                                 <input class="form-control" type="text" id="inputCompanyBill" placeholder="Наименование организации" required>
+                                <div class="invalid-feedback">Сообщение об ошибке
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="inputEmail">Инн</label>
                             <div class="input-group">
                                 <input class="form-control" type="text" id="inputTaxesNumber" placeholder="ИНН" required>
+                                <div class="invalid-feedback">Сообщение об ошибке
+                                </div>
                             </div>
                         </div>
                         <div class="form-group bill-action-buttons">

@@ -14687,3 +14687,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.balance-alert-wrapper {
+  display: none;
+}
+

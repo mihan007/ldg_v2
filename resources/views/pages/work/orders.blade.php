@@ -533,7 +533,7 @@
                                 <label class="sr-only" for="inputEmail">Сумма</label>
                                 <div class="input-group">
                                     <input class="form-control" type="number" min="0" id="inputSumBalance" placeholder="Сумма" required>
-                                    <div class="invalid-feedback">Пожалуйста, введите сумму
+                                    <div class="invalid-feedback">Сообщение об ошибке
                                     </div>
                                     <div class="input-group-append">
                                         <span class="input-group-text"><i class="fa fa-rub" aria-hidden="true"></i></span>

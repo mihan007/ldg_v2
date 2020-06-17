@@ -37402,7 +37402,7 @@ $(document).ready(function () {
   $.fn.dataTable.moment('DD.MM.YYYY HH:mm');
   window.table = $('.finance-grid').DataTable({
     fixedHeader: {
-      headerOffset: 198
+      headerOffset: 144
     },
     paging: false,
     searching: false,
