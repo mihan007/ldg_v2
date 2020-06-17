@@ -74,8 +74,10 @@
                     </div>
                 </form>
             </div>
-            <div class="alert alert-primary finance-balance-alert" role="alert">
-                Тут будет уведомление об ошибке работы финансовой подсистемы
+            <div class="col-md-6 text-center mx-auto">
+                <div class="alert alert-primary finance-balance-alert w-auto" role="alert">
+                    Тут будет уведомление об ошибке работы финансовой подсистемы
+                </div>
             </div>
         </div>
         <div class="row">
