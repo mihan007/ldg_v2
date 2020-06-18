@@ -17,9 +17,9 @@ html, body {
     height: 100%;
 }
 
-html {
-    min-height: 100%;
-}
+//html {
+//    min-height: 100%;
+//}
 
 .bg-grey {
     background-color: $header-bg;
@@ -162,7 +162,7 @@ html {
     padding-bottom: 0.7rem;
 }
 
-.company-search-form {
+.search-form {
     padding-left: 0;
     padding-right: 0;
     width: 16%;
@@ -181,6 +181,28 @@ html {
     visibility: hidden;
 }
 
+.common-table {
+    font-size: 14px;
+    table-layout: fixed;
+    font-weight: 400;
+}
+
+.common-table thead th {
+    border-bottom: 2px solid $filter-button-border;
+    border-right: 2px solid $filter-button-border;
+    font-weight: 600;
+}
+
+.common-table thead th:last-child {
+    border-right: none;
+}
+
+.common-table th,
+.common-table td {
+    padding: 0.75rem 0.2rem;
+    font-weight: 400;
+}
+
 .rounded-table-left {
     border-top-left-radius: 0.25rem;
 }
@@ -192,6 +214,27 @@ html {
 .table-grey, .table-grey > th, .table-grey > td {
     background-color: #e0e0e0;
     font-weight: 600;
+}
+
+.page-button {
+    color: $main-text-color;
+    background-color: $main-bg-color;
+    border: 1px solid $filter-button-border;
+    font-size: 14px;
+    margin-right: 1.2rem;
+}
+
+.page-button:hover {
+    background-color: $filter-button-bg-hover;
+    border-color: $filter-button-border-hover;
+}
+
+.page-button:active {
+    color: $main-text-color;
+    background-color: $filter-button-bg-hover;
+    border-color: $filter-button-border-hover;
+    -webkit-box-shadow: 0 0 0 0.2rem $filter-button-box-shadow;
+    box-shadow: 0 0 0 0.2rem $filter-button-box-shadow;
 }
 
 .directory-buttons {
@@ -223,23 +266,69 @@ html {
     background-color: white;
 }
 
-.page-button {
-    color: $main-text-color;
-    background-color: $main-bg-color;
-    border: 1px solid $filter-button-border;
+.select-item {
     font-size: 14px;
+    width: 47%;
+    cursor: pointer;
+    color: $main-text-color;
+}
+
+.select-item:first-child,
+.finance-filter .select-item {
     margin-right: 1.2rem;
 }
 
-.page-button:hover {
-    background-color: $filter-button-bg-hover;
-    border-color: $filter-button-border-hover;
+.balance-info-wrapper {
+    width: 212px;
 }
 
-.page-button:active {
-    color: $main-text-color;
-    background-color: $filter-button-bg-hover;
-    border-color: $filter-button-border-hover;
-    -webkit-box-shadow: 0 0 0 0.2rem $filter-button-box-shadow;
-    box-shadow: 0 0 0 0.2rem $filter-button-box-shadow;
+.balance-info-button {
+    width: 100%;
+    margin-right: 0;
+}
+
+.balance-actions {
+    background-color: $main-bg-color;
+}
+
+.balance-action-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.balance-action-button {
+    width: 30%;
+}
+
+@media (max-width: 454px) {
+    .balance-action-button {
+        width: 60%;
+        margin: 0 auto 0.75rem auto;
+    }
+
+    .balance-action-buttons {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+    }
+}
+
+.cancel-button {
+    background-color: $cancel-button-bg;
+    color: $cancel-button-text;
+}
+
+.cancel-button:hover {
+    background-color: $cancel-button-bg-hover;
+    color: $cancel-button-text;
+}
+
+.cancel-button:active {
+    background-color: $cancel-button-bg-active;
 }

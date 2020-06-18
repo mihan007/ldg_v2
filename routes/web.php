@@ -52,3 +52,7 @@ Route::get('/companies/report', function () {
 Route::get('/work/orders', function () {
     return view('pages.work.orders');
 })->name('work.orders');
+
+Route::get('/work/finance', function () {
+    return view('pages.work.finance');
+})->name('work.finance');

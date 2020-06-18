@@ -1,0 +1,73 @@
+.finance-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+}
+
+.finance-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.filter-select-wrapper {
+    width: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.income-expense-wrapper {
+    margin-right: 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.finance-time-col {
+    width: 15%;
+}
+
+.finance-info-col {
+    width: 25%;
+}
+
+.finance-sum-col,
+.finance-operation-col {
+    width: 15%;
+}
+
+.finance-history-col {
+    width: 15%;
+}
+
+.bill-actions {
+    background-color: $main-bg-color;
+}
+
+.bill-action-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.bill-action-button {
+    width: 45%;
+}
+
+.finance-balance-alert {
+    //margin-right: auto;
+    //margin-left: auto;
+    margin-bottom: 0.5rem;
+}
+
+.balance-alert-wrapper {
+    display: none;
+}

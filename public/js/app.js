@@ -37247,6 +37247,8 @@ __webpack_require__(/*! ./order-description-toast.js */ "./resources/js/order-de
 __webpack_require__(/*! ./company-grid.js */ "./resources/js/company-grid.js");
 
 __webpack_require__(/*! ./order-grid.js */ "./resources/js/order-grid.js");
+
+__webpack_require__(/*! ./finance-grid.js */ "./resources/js/finance-grid.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -37377,6 +37379,52 @@ $(function () {
 
 /***/ }),
 
+/***/ "./resources/js/finance-grid.js":
+/*!**************************************!*\
+  !*** ./resources/js/finance-grid.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $.fn.dataTable.moment = function (format, locale) {
+    var types = $.fn.dataTable.ext.type; // Add type detection
+
+    types.detect.unshift(function (d) {
+      return moment(d, format, locale, true).isValid() ? 'moment-' + format : null;
+    }); // Add sorting method - use an integer for the sorting
+
+    types.order['moment-' + format + '-pre'] = function (d) {
+      return moment(d, format, locale, true).unix();
+    };
+  };
+
+  $.fn.dataTable.moment('DD.MM.YYYY HH:mm');
+  window.table = $('.finance-grid').DataTable({
+    fixedHeader: {
+      headerOffset: 144
+    },
+    paging: false,
+    searching: false,
+    info: false,
+    autoWidth: false,
+    order: [[0, 'desc']],
+    columns: [{
+      'orderSequence': ['desc', 'asc']
+    }, {
+      "orderable": ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      "orderable": ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }]
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/js/magic-menu.js":
 /*!************************************!*\
   !*** ./resources/js/magic-menu.js ***!
@@ -37464,7 +37512,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   window.table = $('.order-grid').DataTable({
     fixedHeader: {
-      headerOffset: 140
+      headerOffset: 144
     },
     paging: false,
     searching: false,
