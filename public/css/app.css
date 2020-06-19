@@ -14125,23 +14125,21 @@ body {
   z-index: 1032;
 }
 
-.sidenav .nav-link {
+.sidenav-link .sidenav-icon {
   color: white;
 }
 
-.sidenav .active {
+.sidenav-link.active .sidenav-icon {
   color: #ff9517;
 }
 
-.nav-link:hover .fa-bars,
-.nav-link:hover .fa-cog,
-.nav-link:focus .fa-bars,
-.nav-link:focus .fa-cog {
+.sidenav-link:hover .sidenav-icon,
+.sidenav-link:active .sidenav-icon,
+.sidenav-link:focus .sidenav-icon {
   color: #ff9517;
 }
 
-.nav-link:disabled .fa-bars,
-.nav-link:disabled .fa-cog {
+.sidenav-link:disabled .sidenav-icon {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -14414,17 +14412,19 @@ body {
 
 .company-icon {
   color: #95999c;
+  font-size: 14px;
 }
 
-.company-icon-active {
+.company-dashboard-button:hover .company-icon,
+.company-dashboard-button.active .company-icon {
   color: #ff9517;
 }
 
 .sigma-icon {
   font-weight: 500;
-  padding-left: 2px;
   padding-right: 13px;
   color: #95999c;
+  margin-left: 0.75rem;
 }
 
 .company-table {

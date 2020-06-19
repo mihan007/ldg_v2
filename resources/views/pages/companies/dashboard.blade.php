@@ -111,7 +111,7 @@
                         </div>
                         <div class="custom-control custom-checkbox mt-2">
                             <input type="checkbox" class="custom-control-input" name="customCheck" id="google-balance">
-                            <label class="custom-control-label" for="google-balance">Баланс Goggle</label>
+                            <label class="custom-control-label" for="google-balance">Баланс Google</label>
                         </div>
                     </form>
                 </div>

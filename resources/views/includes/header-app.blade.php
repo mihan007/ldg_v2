@@ -45,21 +45,21 @@
     <nav class="navbar-collapse magic-hide">
         <ul class="navbar-nav navbar-dark mr-auto sidenav text-center position-fixed">
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('companies.report') }}" data-toggle="tooltip" data-placement="right" title="Компании"
+                <a class="nav-link sidenav-link active" href="{{ route('companies.report') }}" data-toggle="tooltip" data-placement="right" title="Компании"
                    aria-label="Главная страница">
-                    <i class="fa fa-home active" aria-hidden="true"></i>
+                    <i class="fa fa-home sidenav-icon " aria-hidden="true"></i>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('work.orders') }}" data-toggle="tooltip" data-placement="right" title="Заявки"
+                <a class="nav-link sidenav-link" href="{{ route('work.orders') }}" data-toggle="tooltip" data-placement="right" title="Заявки"
                    aria-label="Заявки">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <i class="fa fa-bars sidenav-icon" aria-hidden="true"></i>
                 </a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item sidenav-link">
                 <a class="nav-link" href="#" data-toggle="tooltip" data-placement="right" title="Настройки"
                    aria-label="Настройки">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    <i class="fa fa-cog sidenav-icon" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>

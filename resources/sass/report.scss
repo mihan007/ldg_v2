@@ -53,17 +53,19 @@
 
 .company-icon {
     color: $table-icon;
+    font-size: 14px;
 }
 
-.company-icon-active {
+.company-dashboard-button:hover .company-icon,
+.company-dashboard-button.active .company-icon {
     color: $table-icon-active;
 }
 
 .sigma-icon {
     font-weight: 500;
-    padding-left: 2px;
     padding-right: 13px;
     color: $table-icon;
+    margin-left: 0.75rem;
 }
 
 .company-table {
