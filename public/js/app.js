@@ -74715,7 +74715,7 @@ window.chartColors = {
   grey: 'rgb(201, 203, 207)'
 };
 $(function () {
-  var ctx = document.getElementById('myChart').getContext('2d');
+  var ctx = document.getElementById('js-dashboard').getContext('2d');
   var timeFormat = 'DD/MM/YYYY HH:mm';
   var chart = new chart_js__WEBPACK_IMPORTED_MODULE_0___default.a(ctx, {
     // The type of chart we want to create

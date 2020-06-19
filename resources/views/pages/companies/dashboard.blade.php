@@ -63,7 +63,7 @@
                 <div>
                     <div class="card company-dashboard">
                         <div class="card-body">
-                            <canvas id="myChart" height="400px" width="1090px"></canvas>
+                            <canvas id="js-dashboard" height="400px" width="1090px"></canvas>
                         </div>
                     </div>
                 </div>
