@@ -14695,3 +14695,18 @@ body {
   display: none;
 }
 
+.dashboard-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.7rem;
+}
+
+.company-dashboard {
+  width: 1090px;
+  height: 400px;
+}
+
+.dashboard-checkbox-wrapper {
+  width: 214px;
+}
+

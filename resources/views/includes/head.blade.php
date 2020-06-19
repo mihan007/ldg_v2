@@ -12,3 +12,6 @@
 <script src='https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js'></script>
 <script src='https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js'></script>
 <script src='https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.css">

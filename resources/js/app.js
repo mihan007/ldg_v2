@@ -11,4 +11,4 @@ require('./order-description-toast.js');
 require('./company-grid.js');
 require('./order-grid.js');
 require('./finance-grid.js');
-
+require('./dashboard.js');
