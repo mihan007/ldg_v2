@@ -14444,6 +14444,10 @@ body {
   font-weight: 400;
 }
 
+.company-table thead th {
+  vertical-align: top;
+}
+
 .company-table tbody tr:hover {
   background-color: lightgray;
 }

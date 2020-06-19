@@ -9,41 +9,31 @@
                     <a class="directory-button" href="{{ route('work.orders') }}">CRM</a>
                     <a class="directory-button active" href="{{ route('work.finance') }}">Финансы</a>
                 </div>
-{{--                    <div class="balance-info-wrapper">--}}
                 <div>
                     <a href=".js-balance-modal" role="button" class="balance-info" data-toggle="modal">
-{{--                            <i class="fa fa-plus-square-o" aria-hidden="true">--}}
                         <i class="fa fa-plus-square" aria-hidden="true"></i>
-{{--                            <i class="fa fa-plus" aria-hidden="true"></i>--}}
-                        </i> Баланс 2000
+                        Баланс 2000
                         <i class="fa fa-rub" aria-hidden="true"></i>
                     </a>
-{{--                        <a href=".js-balance-modal" role="button" class="btn page-button balance-info-button" data-toggle="modal">--}}
-{{--                            --}}{{--                            <i class="fa fa-plus-square-o" aria-hidden="true">--}}
-{{--                            --}}{{--                            <i class="fa fa-plus-square" aria-hidden="true"></i>--}}
-{{--                            <i class="fa fa-plus" aria-hidden="true"></i>--}}
-{{--                            </i> Баланс 2000--}}
-{{--                            <i class="fa fa-rub" aria-hidden="true"></i>--}}
-{{--                        </a>--}}
                 </div>
             </div>
             <div class="col-md-12 filter-wrapper">
                 <div class="finance-filter">
                     <div class="filter-select-wrapper">
-                    <select class="custom-select select-item">
-                        <option selected>Операции</option>
-                        <option value="1">Пополнения</option>
-                        <option value="2">Списания</option>
-                        <option value="3">Возврат</option>
-                        <option value="4">Не оплачено</option>
-                    </select>
-                    <select class="custom-select select-item">
-                        <option selected>Источник</option>
-                        <option value="1">Банковская карта</option>
-                        <option value="2">Яндекс.Деньги</option>
-                        <option value="3">Расчетный счет</option>
-                        <option value="4">Пополнение вручную</option>
-                    </select>
+                        <select class="custom-select select-item">
+                            <option selected>Операции</option>
+                            <option value="1">Пополнения</option>
+                            <option value="2">Списания</option>
+                            <option value="3">Возврат</option>
+                            <option value="4">Не оплачено</option>
+                        </select>
+                        <select class="custom-select select-item">
+                            <option selected>Источник</option>
+                            <option value="1">Банковская карта</option>
+                            <option value="2">Яндекс.Деньги</option>
+                            <option value="3">Расчетный счет</option>
+                            <option value="4">Пополнение вручную</option>
+                        </select>
                     </div>
                     <div class="date-range js-date-range text-center">
                         <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
@@ -57,11 +47,9 @@
                         <span>/</span>
                         <span class="expense-finance-info">+2000</span>
                     </div>
-{{--                        <a href=".js-balance-modal" role="button" class="btn page-button finance-operation-button"--}}
-{{--                           data-toggle="modal">Выполнить операцию--}}
-{{--                        </a>--}}
                     <a href=".js-bill-modal" role="button" class="btn page-button bill-button" data-toggle="modal">
-                        Выставить счет</a>
+                        Выставить счет
+                    </a>
                 </div>
                 <form class="search-form">
                     <div class="input-group">
@@ -88,148 +76,121 @@
                     <table class="table finance-table common-table finance-grid table-striped" data-offset="144">
                         <thead>
                             <tr class="table-grey text-center ">
-                                <th class="rounded-table-left finance-time-col" scope="col">
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Дата и время в часовом поясе клиента">Время
-                                    </a>
-                                </th>
-                                <th class="finance-operation-col" scope="col">
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Название страницы или формы заявки">Операция
-                                    </a>
-                                </th>
-                                <th class="finance-info-co" scope="col">Информация
-                                </th>
-                                <th class="finance-sum-col" scope="col">Сумма
-                                </th>
-                                <th class="finance-history-col rounded-table-right" scope="col">История счета
-                                </th>
+                                <th class="rounded-table-left finance-time-col" scope="col">Время</th>
+                                <th class="finance-operation-col" scope="col">Операция</th>
+                                <th class="finance-info-co" scope="col">Информация</th>
+                                <th class="finance-sum-col" scope="col">Сумма</th>
+                                <th class="finance-history-col rounded-table-right" scope="col">История счета</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="finance-time-col text-left" scope="row">11.02.2018 13:00:00
-                                </td>
+                                <td class="finance-time-col text-left" scope="row">11.02.2018 13:00:00</td>
                                 <td class="finance-operation-col">Пополнение</td>
                                 <td class="finance-info-col">Емельянов Виктор</td>
                                 <td class="finance-sum-col">+-2.00</td>
                                 <td class="finance-history-col">85557</td>
                             </tr>
                             <tr>
-                                <td class="text-left" scope="row">11.03.2018 13:00:00
-                                </td>
+                                <td class="text-left" scope="row">11.03.2018 13:00:00</td>
                                 <td>Списание</td>
                                 <td>Целевая заявка №26061</td>
                                 <td>-100.00</td>
                                 <td>7777</td>
                             </tr>
                             <tr>
-                                <td class="text-left" scope="row">11.04.2018 13:00:00
-                                </td>
+                                <td class="text-left" scope="row">11.04.2018 13:00:00</td>
                                 <td>Списание</td>
                                 <td>Возврат средств за дубль заявки №24697</td>
                                 <td>+100.00</td>
                                 <td>55</td>
                             </tr>
                             <tr>
-                                <td class="finance-time-col text-left" scope="row">11.05.2018 13:00:00
-                                </td>
+                                <td class="finance-time-col text-left" scope="row">11.05.2018 13:00:00</td>
                                 <td class="finance-operation-col">Пополнение</td>
                                 <td class="finance-info-col">Емельянов Виктор</td>
                                 <td class="finance-sum-col">+-2.00</td>
                                 <td class="finance-history-col">85557</td>
                             </tr>
                             <tr>
-                                <td class="text-left" scope="row">11.06.2018 13:00:00
-                                </td>
+                                <td class="text-left" scope="row">11.06.2018 13:00:00</td>
                                 <td>Списание</td>
                                 <td>Целевая заявка №26061</td>
                                 <td>-100.00</td>
                                 <td>7777</td>
                             </tr>
                             <tr>
-                                <td class="text-left" scope="row">11.07.2018 13:00:00
-                                </td>
+                                <td class="text-left" scope="row">11.07.2018 13:00:00</td>
                                 <td>Списание</td>
                                 <td>Возврат средств за дубль заявки №24697</td>
                                 <td>+100.00</td>
                                 <td>55</td>
                             </tr>
                             <tr>
-                                <td class="finance-time-col text-left" scope="row">11.08.2018 13:00:00
-                                </td>
+                                <td class="finance-time-col text-left" scope="row">11.08.2018 13:00:00</td>
                                 <td class="finance-operation-col">Пополнение</td>
                                 <td class="finance-info-col">Емельянов Виктор</td>
                                 <td class="finance-sum-col">+-2.00</td>
                                 <td class="finance-history-col">85557</td>
                             </tr>
                             <tr>
-                                <td class="text-left" scope="row">11.09.2018 13:00:00
-                                </td>
+                                <td class="text-left" scope="row">11.09.2018 13:00:00</td>
                                 <td>Списание</td>
                                 <td>Целевая заявка №26061</td>
                                 <td>-100.00</td>
                                 <td>7777</td>
                             </tr>
                             <tr>
-                                <td class="text-left" scope="row">11.10.2018 13:00:00
-                                </td>
+                                <td class="text-left" scope="row">11.10.2018 13:00:00</td>
                                 <td>Списание</td>
                                 <td>Возврат средств за дубль заявки №24697</td>
                                 <td>+100.00</td>
                                 <td>55</td>
                             </tr>
                             <tr>
-                                <td class="text-left" scope="row">11.11.2018 13:00:00
-                                </td>
+                                <td class="text-left" scope="row">11.11.2018 13:00:00</td>
                                 <td>Списание</td>
                                 <td>Возврат средств за дубль заявки №24697</td>
                                 <td>+100.00</td>
                                 <td>55</td>
                             </tr>
                             <tr>
-                                <td class="text-left" scope="row">11.12.2018 13:00:00
-                                </td>
+                                <td class="text-left" scope="row">11.12.2018 13:00:00</td>
                                 <td>Списание</td>
                                 <td>Целевая заявка №26061</td>
                                 <td>-100.00</td>
                                 <td>7777</td>
                             </tr>
                             <tr>
-                                <td class="text-left" scope="row">11.01.2019 13:00:00
-                                </td>
+                                <td class="text-left" scope="row">11.01.2019 13:00:00</td>
                                 <td>Списание</td>
                                 <td>Возврат средств за дубль заявки №24697</td>
                                 <td>+100.00</td>
                                 <td>55</td>
                             </tr>
                             <tr>
-                                <td class="text-left" scope="row">11.01.2020 13:00:00
-                                </td>
+                                <td class="text-left" scope="row">11.01.2020 13:00:00</td>
                                 <td>Списание</td>
                                 <td>Целевая заявка №26061</td>
                                 <td>-100.00</td>
                                 <td>7777</td>
                             </tr>
                             <tr>
-                                <td class="text-left" scope="row">11.02.2020 13:00:00
-                                </td>
+                                <td class="text-left" scope="row">11.02.2020 13:00:00</td>
                                 <td>Списание</td>
                                 <td>Возврат средств за дубль заявки №24697</td>
                                 <td>+100.00</td>
                                 <td>55</td>
                             </tr>
                             <tr>
-                                <td class="text-left" scope="row">11.03.2020 13:00:00
-                                </td>
+                                <td class="text-left" scope="row">11.03.2020 13:00:00</td>
                                 <td>Списание</td>
                                 <td>Целевая заявка №26061</td>
                                 <td>-100.00</td>
                                 <td>7777</td>
                             </tr>
                             <tr>
-                                <td class="text-left" scope="row">11.04.2020 13:00:00
-                                </td>
+                                <td class="text-left" scope="row">11.04.2020 13:00:00</td>
                                 <td>Списание</td>
                                 <td>Возврат средств за дубль заявки №24697</td>
                                 <td>+100.00</td>
