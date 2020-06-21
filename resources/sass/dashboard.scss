@@ -6,13 +6,20 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding-bottom: 0.7rem;
+
 }
 
 .company-dashboard {
-    width: 1090px;
+    width: 1030px;
     height: 400px;
+    //margin-right: 20px;
 }
 
 .dashboard-checkbox-wrapper {
-    width: 214px;
+    width: 16%;
+}
+
+.dashboard-checkbox-wrapper .custom-control-label,
+.dashboard-checkbox-wrapper .custom-control-input {
+    cursor: pointer;
 }

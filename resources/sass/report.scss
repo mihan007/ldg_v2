@@ -93,6 +93,10 @@
     background-color: $table-hover;
 }
 
+.company-table tbody td {
+    vertical-align: middle;
+}
+
 .sum-line {
     background-color: $table-sum-line-bg;
     border-bottom: none;

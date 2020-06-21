@@ -14452,6 +14452,10 @@ body {
   background-color: lightgray;
 }
 
+.company-table tbody td {
+  vertical-align: middle;
+}
+
 .sum-line {
   background-color: #fbfbfb;
   border-bottom: none;
@@ -14702,11 +14706,16 @@ body {
 }
 
 .company-dashboard {
-  width: 1090px;
+  width: 1030px;
   height: 400px;
 }
 
 .dashboard-checkbox-wrapper {
-  width: 214px;
+  width: 16%;
+}
+
+.dashboard-checkbox-wrapper .custom-control-label,
+.dashboard-checkbox-wrapper .custom-control-input {
+  cursor: pointer;
 }
 

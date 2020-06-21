@@ -63,7 +63,7 @@
                 <div>
                     <div class="card company-dashboard">
                         <div class="card-body">
-                            <canvas id="js-dashboard" height="400px" width="1090px"></canvas>
+                            <canvas id="js-dashboard" height="400px" width="1030px"></canvas>
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                         </div>
                         <div class="custom-control custom-checkbox mt-2">
                             <input type="checkbox" class="custom-control-input" name="customCheck" id="moderation">
-                            <label class="custom-control-label" for="moderation">Модерация</label>
+                            <label class="custom-control-label" for="moderation">Проверка</label>
                         </div>
                         <div class="custom-control custom-checkbox mt-2">
                             <input type="checkbox" class="custom-control-input" name="customCheck" id="gain" checked>
