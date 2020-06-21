@@ -14442,6 +14442,7 @@ body {
 
 .company-table tbody td:first-child {
   font-weight: 400;
+  vertical-align: middle;
 }
 
 .company-table thead th {
@@ -14452,7 +14453,8 @@ body {
   background-color: lightgray;
 }
 
-.company-table tbody td {
+.company-table tbody td,
+.company-table tbody th {
   vertical-align: middle;
 }
 
