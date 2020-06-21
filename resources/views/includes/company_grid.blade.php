@@ -114,7 +114,7 @@
             <button class="btn company-dashboard-button">
                 <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
             </button>
-            Центр профессиональной юридической помощи. Тверь. Оказываем юридические услуги.
+            Центр профессиональной юридической помощи. Тверь.
         </td>
         <td>20</td>
         <td>10</td>
@@ -168,7 +168,7 @@
         <th scope="row">
             <button class="btn company-dashboard-button">
                 <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
-            </button>Импульс
+            </button>Центр профессиональной юридической помощи. Тверь.
         </th>
         <td>2000</td>
         <td>10000</td>
@@ -204,7 +204,7 @@
         <th scope="row">
             <button class="btn company-dashboard-button">
                 <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
-            </button>Импульс
+            </button>Центр профессиональной юридической помощи. Тверь.
         </th>
         <td>2000</td>
         <td>10000</td>

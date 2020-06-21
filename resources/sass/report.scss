@@ -70,6 +70,7 @@
 
 .company-table {
     cursor: pointer;
+    font-size: 12px;
 }
 
 .company-table tr:first-child th {
@@ -78,7 +79,7 @@
 
 .company-table tbody td:first-child,
 .company-table th:first-child {
-    width: 200px !important;
+    width: 280px !important;
 }
 
 .company-table tbody td:first-child {
