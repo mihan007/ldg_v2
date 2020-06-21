@@ -53,21 +53,24 @@
 
 .company-icon {
     color: $table-icon;
+    font-size: 14px;
 }
 
-.company-icon-active {
+.company-dashboard-button:hover .company-icon,
+.company-dashboard-button.active .company-icon {
     color: $table-icon-active;
 }
 
 .sigma-icon {
     font-weight: 500;
-    padding-left: 2px;
     padding-right: 13px;
     color: $table-icon;
+    margin-left: 0.75rem;
 }
 
 .company-table {
     cursor: pointer;
+    font-size: 12px;
 }
 
 .company-table tr:first-child th {
@@ -76,11 +79,12 @@
 
 .company-table tbody td:first-child,
 .company-table th:first-child {
-    width: 200px !important;
+    width: 280px !important;
 }
 
 .company-table tbody td:first-child {
     font-weight: 400;
+    vertical-align: middle;
 }
 
 .company-table thead th {
@@ -89,6 +93,11 @@
 
 .company-table tbody tr:hover {
     background-color: $table-hover;
+}
+
+.company-table tbody td,
+.company-table tbody th {
+    vertical-align: middle;
 }
 
 .sum-line {

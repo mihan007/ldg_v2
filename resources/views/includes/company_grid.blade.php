@@ -92,7 +92,10 @@
     <tbody>
     <tr>
         <td scope="row">
-            <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
+            <button class="btn company-dashboard-button">
+                <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
+            </button>
+            Импульс
         </td>
         <td>2000</td>
         <td>10000</td>
@@ -108,8 +111,10 @@
     </tr>
     <tr>
         <td scope="row">
-            <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Центр профессиональной юридической помощи.
-            Тверь. Оказываем юридические услуги.
+            <button class="btn company-dashboard-button">
+                <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
+            </button>
+            Центр профессиональной юридической помощи. Тверь.
         </td>
         <td>20</td>
         <td>10</td>
@@ -125,7 +130,9 @@
     </tr>
     <tr>
         <td scope="row">
-            <i class="fa fa-bars company-icon-active mr-2" aria-hidden="true"></i>Импульс
+            <button class="btn company-dashboard-button active">
+                <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
+            </button>Импульс
         </td>
         <td>2000</td>
         <td>10000</td>
@@ -141,7 +148,9 @@
     </tr>
     <tr>
         <th scope="row">
-            <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
+            <button class="btn company-dashboard-button">
+                <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
+            </button>Импульс
         </th>
         <td>12000</td>
         <td>110000</td>
@@ -157,7 +166,9 @@
     </tr>
     <tr>
         <th scope="row">
-            <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
+            <button class="btn company-dashboard-button">
+                <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
+            </button>Центр профессиональной юридической помощи. Тверь.
         </th>
         <td>2000</td>
         <td>10000</td>
@@ -173,7 +184,9 @@
     </tr>
     <tr>
         <th scope="row">
-            <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
+            <button class="btn company-dashboard-button">
+                <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
+            </button>Импульс
         </th>
         <td>2000</td>
         <td>10000</td>
@@ -189,7 +202,9 @@
     </tr>
     <tr>
         <th scope="row">
-            <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
+            <button class="btn company-dashboard-button">
+                <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
+            </button>Центр профессиональной юридической помощи. Тверь.
         </th>
         <td>2000</td>
         <td>10000</td>
@@ -205,7 +220,9 @@
     </tr>
     <tr>
         <th scope="row">
-            <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
+            <button class="btn company-dashboard-button">
+                <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
+            </button>Импульс
         </th>
         <td>2000</td>
         <td>10000</td>
@@ -221,7 +238,9 @@
     </tr>
     <tr>
         <th scope="row">
-            <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
+            <button class="btn company-dashboard-button">
+                <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
+            </button>Импульс
         </th>
         <td>2000</td>
         <td>10000</td>
@@ -237,7 +256,9 @@
     </tr>
     <tr>
         <th scope="row">
-            <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
+            <button class="btn company-dashboard-button">
+                <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
+            </button>Импульс
         </th>
         <td>2000</td>
         <td>10000</td>
@@ -253,7 +274,9 @@
     </tr>
     <tr>
         <th scope="row">
-            <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
+            <button class="btn company-dashboard-button">
+                <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
+            </button>Импульс
         </th>
         <td>2000</td>
         <td>10000</td>
@@ -269,7 +292,9 @@
     </tr>
     <tr>
         <th scope="row">
-            <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
+            <button class="btn company-dashboard-button">
+                <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
+            </button>Импульс
         </th>
         <td>2000</td>
         <td>10000</td>
@@ -285,7 +310,9 @@
     </tr>
     <tr>
         <th scope="row">
-            <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
+            <button class="btn company-dashboard-button">
+                <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
+            </button>Импульс
         </th>
         <td>2000</td>
         <td>10000</td>
@@ -301,7 +328,9 @@
     </tr>
     <tr>
         <th scope="row">
-            <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
+            <button class="btn company-dashboard-button">
+                <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
+            </button>Импульс
         </th>
         <td>2000</td>
         <td>10000</td>
@@ -317,7 +346,9 @@
     </tr>
     <tr>
         <th scope="row">
-            <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
+            <button class="btn company-dashboard-button">
+                <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
+            </button>Импульс
         </th>
         <td>2000</td>
         <td>10000</td>
@@ -333,7 +364,9 @@
     </tr>
     <tr>
         <th scope="row">
-            <i class="fa fa-bars company-icon mr-2" aria-hidden="true"></i>Импульс
+            <button class="btn company-dashboard-button">
+                <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
+            </button>Импульс
         </th>
         <td>2000</td>
         <td>10000</td>

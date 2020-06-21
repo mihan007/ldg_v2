@@ -71,23 +71,21 @@ html, body {
     z-index: 1032;
 }
 
-.sidenav .nav-link {
+.sidenav-link .sidenav-icon {
     color: $header-icon-color;
 }
 
-.sidenav .active {
+.sidenav-link.active .sidenav-icon {
     color: $sidenav-button-active;
 }
 
-.nav-link:hover .fa-bars,
-.nav-link:hover .fa-cog,
-.nav-link:focus .fa-bars,
-.nav-link:focus .fa-cog {
+.sidenav-link:hover .sidenav-icon,
+.sidenav-link:active .sidenav-icon,
+.sidenav-link:focus .sidenav-icon {
     color: $sidenav-button-active;
 }
 
-.nav-link:disabled .fa-bars,
-.nav-link:disabled .fa-cog {
+.sidenav-link:disabled .sidenav-icon {
     color: $sidenav-button-disabled;
 }
 
