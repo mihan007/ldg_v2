@@ -170,29 +170,19 @@
                             <th class="rounded-table-left i-col" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                 title="Включает / выключает доступ и рассылку">Активность
                             </th>
-                            <th class="email-col" scope="col">
-                                Почта
+                            <th class="email-col" scope="col">Почта
                             </th>
-                            <th class="titl-col" scope="col">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Название страницы или формы заявки">Доступ в CRM
-                                </a>
+                            <th class="titl-col" scope="col">Доступ в CRM
                             </th>
                             <th class="inf-col" scope="col">Оповещение о заявках
                             </th>
                             <th class="phon-col" scope="col">Лидогенератор баланс
                             </th>
-                            <th class="stats-col" scope="col">
-                                Яндекс баланс
+                            <th class="stats-col" scope="col">Яндекс баланс
                             </th>
-                            <th class="clien-col" scope="col">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Комментарий клиента">
-                                    Google баланс
-                                </a>
+                            <th class="clien-col" scope="col">Google баланс
                             </th>
-                            <th class="moderatio-col" scope="col">
-                                Roistat баланс
+                            <th class="moderatio-col" scope="col">Roistat баланс
                             </th>
                             <th class="commen-col" scope="col">
                                 <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
