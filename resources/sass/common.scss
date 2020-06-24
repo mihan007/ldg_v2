@@ -17,6 +17,21 @@ html, body {
     height: 100%;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .bg-grey {
     background-color: $header-bg;
     padding-right: 0.43rem;
@@ -242,8 +257,8 @@ html, body {
     text-decoration: none;
 }
 
-.directory-buttons .active,
-.directory-buttons .active:hover {
+.directory-button.active,
+.directory-button.active:hover {
     color: $directory-button-active;
 }
 
@@ -254,10 +269,6 @@ html, body {
 
 .directory-button:active {
     color: $directory-button-click;
-}
-
-.directory-row {
-    background-color: white;
 }
 
 .select-item {
@@ -325,4 +336,8 @@ html, body {
 
 .cancel-button:active {
     background-color: $cancel-button-bg-active;
+}
+
+.settings-select-item {
+    font-size: 14px;
 }

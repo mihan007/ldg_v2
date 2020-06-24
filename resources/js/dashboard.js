@@ -13,7 +13,11 @@ window.chartColors = {
     grey: 'rgb(201, 203, 207)'
 };
 $(function () {
-    var ctx = document.getElementById('js-dashboard').getContext('2d');
+    let dashboardElement = document.getElementById('js-dashboard');
+    if (!dashboardElement) {
+        return
+    }
+    var ctx = dashboardElement.getContext('2d');
     var timeFormat = 'DD/MM/YYYY HH:mm';
     var chart = new Chart(ctx, {
         // The type of chart we want to create

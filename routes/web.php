@@ -60,3 +60,7 @@ Route::get('/work/finance', function () {
 Route::get('/companies/dashboard', function () {
     return view('pages.companies.dashboard');
 })->name('companies.dashboard');
+
+Route::get('/settings/workspace', function () {
+    return view('pages.settings.workspace');
+})->name('settings.workspace');

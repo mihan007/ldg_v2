@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <main class="page-wrapper">
-        <div class="row sticky-top directory-row">
+        <div class="row sticky-top bg-white">
             <div class="col-md-12 offset-block">
             </div>
             <div class="col-md-12 settings-wrapper directory-buttons">
