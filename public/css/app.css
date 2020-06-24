@@ -14373,6 +14373,15 @@ input[type=radio].visually-hidden {
   background-color: #5a6268;
 }
 
+.modal-action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-action-button {
+  width: 45%;
+}
+
 .settings-select-item {
   font-size: 14px;
 }
@@ -14701,15 +14710,6 @@ input[type=radio].visually-hidden {
   background-color: white;
 }
 
-.bill-action-buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.bill-action-button {
-  width: 45%;
-}
-
 .finance-balance-alert {
   margin-bottom: 0.5rem;
 }
@@ -14754,19 +14754,21 @@ input[type=radio].visually-hidden {
 .orders-agreement-group {
   min-width: 330px;
   height: 100%;
-  margin-top: 1rem;
+  margin-top: 0.7rem;
 }
 
 .orders-agreement-input {
-  padding: 0.55rem 0.75rem;
+  padding: 0.45rem 0.75rem;
   font-size: 14px;
 }
 
 .description-example-button {
-  margin-bottom: 1rem;
   font-size: 14px;
   background-color: #95999c;
   color: white;
+  padding: 3px 7px;
+  margin-left: 15px;
+  margin-bottom: 3px;
 }
 
 .description-example-button:hover {
@@ -14846,5 +14848,23 @@ input[type=radio].visually-hidden {
 
 .workspace-reset-button {
   margin-top: -0.45rem;
+}
+
+.workspace-reset-button:hover {
+  color: #95999c;
+}
+
+.workspace-reset-button:active {
+  color: #5a6268;
+}
+
+.subscription-login-text {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.subscription-login-link {
+  text-decoration: underline;
+  margin-left: 5px;
 }
 

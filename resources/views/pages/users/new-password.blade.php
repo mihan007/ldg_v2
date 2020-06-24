@@ -9,7 +9,7 @@
             <h2 class="text-left mb-4 new-password-text">Введите новый пароль</h2>
             <form class="needs-validation" method="post" action="/" novalidate>
                 <div class="form-group">
-                    <label for="inputEmail">Новый пароль:</label>
+                    <label for="inputPassword">Новый пароль:</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-lock"></i></span>
@@ -18,12 +18,12 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputEmail">Повторите пароль:</label>
+                    <label for="inputPassword-repeat">Повторите пароль:</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-lock"></i></span>
                         </div>
-                        <input class="form-control" type="password" id="inputPassword" placeholder="Пароль" required>
+                        <input class="form-control" type="password" id="inputPassword-repeat" placeholder="Пароль" required>
                         <div class="invalid-feedback">Введенные значения не совпадают. Попробуйте еще раз.</div>
                     </div>
                 </div>

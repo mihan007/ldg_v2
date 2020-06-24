@@ -64,3 +64,11 @@ Route::get('/companies/dashboard', function () {
 Route::get('/settings/workspace', function () {
     return view('pages.settings.workspace');
 })->name('settings.workspace');
+
+Route::get('/settings/first-subscription', function () {
+    return view('pages.settings.first-subscription');
+})->name('settings.first-subscription');
+
+Route::get('/settings/workspace-invite', function () {
+    return view('pages.settings.workspace-invite');
+})->name('settings.workspace-invite');

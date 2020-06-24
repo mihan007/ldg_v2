@@ -270,9 +270,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group bill-action-buttons">
-                            <button class="btn btn-primary bill-action-button" type="submit">Создать</button>
-                            <button class="btn cancel-button bill-action-button" data-dismiss="modal"
+                        <div class="form-group modal-action-buttons">
+                            <button class="btn btn-primary modal-action-button" type="submit">Создать</button>
+                            <button class="btn cancel-button modal-action-button" data-dismiss="modal"
                                     type="button">Отменить
                             </button>
                         </div>

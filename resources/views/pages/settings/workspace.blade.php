@@ -25,26 +25,22 @@
             </div>
             <div class="col-md-12 border-bottom">
                 <form class="d-flex">
-                    <div class="d-flex flex-column workspace-form-column">
+                    <div class="d-flex flex-column workspace-form-column justify-content-between">
                         <div class="form-group company-name-group">
-                            <label class="workspace-form-label" for="company-name">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Эта информация будет видна клиенту">
+                            <label class="workspace-form-label" for="company-name" data-toggle="tooltip" data-placement="top"
+                                   data-delay='{"show":"1000", "hide":"1000"}' title="Эта информация будет видна клиенту">
                                     1. Название компании
                                     <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-                                </a>
                             </label>
                             <input class="form-control company-name-input" type="text" id="company-name" required>
                         </div>
                         <div class="d-flex align-items-end">
                             <div class="form-group max-cpl-group">
-                                <label class="workspace-form-label" for="max-cpl">
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Отправим оповещение о превышении CPL за прошлые сутки ответственному менеджеру.
-                                       Оставьте 0 рублей, чтобы не получать уведомления">
+                                <label class="workspace-form-label" for="max-cpl" data-toggle="tooltip" data-placement="top"
+                                       data-delay='{"show":"1000", "hide":"1000"}' title="Отправим оповещение о превышении
+                                       CPL за прошлые сутки ответственному менеджеру. Оставьте 0 рублей, чтобы не получать уведомления">
                                         5. Максимально допустимый CPL
                                         <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-                                    </a>
                                 </label>
                                 <div class="input-group">
                                     <input class="form-control max-cpl-input" type="number" id="max-cpl" min="0" placeholder="0">
@@ -54,12 +50,11 @@
                                 </div>
                             </div>
                             <div class="form-group balance-limit-group">
-                                <label class="workspace-form-label" for="balance-limit">
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Отправим оповещение компании о необходимости пополнить баланс">
+                                <label class="workspace-form-label" for="balance-limit" data-toggle="tooltip" data-placement="top"
+                                       data-delay='{"show":"1000", "hide":"1000"}' title="Отправим оповещение компании о
+                                       необходимости пополнить баланс">
                                         6. Уведомлять об окончании баланса Лидогенератора при
                                         <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-                                    </a>
                                 </label>
                                 <div class="input-group">
                                     <input class="form-control balance-limit-input" type="number" id="balance-limit" min="0" placeholder="0">
@@ -72,22 +67,20 @@
                     </div>
                     <div class="d-flex flex-column workspace-form-column justify-content-between">
                         <div class="form-group project-group">
-                            <label class="workspace-form-label" for="project">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Разделяйте лидогенерацию по нишам. Пример: окна, юристы, строительство">
+                            <label class="workspace-form-label" for="project" data-toggle="tooltip" data-placement="top"
+                                   data-delay='{"show":"1000", "hide":"1000"}' title="Разделяйте лидогенерацию по нишам.
+                                   Пример: окна, юристы, строительство">
                                     2. Проект
                                     <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-                                </a>
                             </label>
                             <input class="form-control project-input" type="text" id="project" required>
                         </div>
                         <div class="form-group data-hide-group">
-                            <label class="workspace-form-label" for="data-hide">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Система скроет данные заявки при балансе ниже этого значения">
+                            <label class="workspace-form-label" for="data-hide" data-toggle="tooltip" data-placement="top"
+                                   data-delay='{"show":"1000", "hide":"1000"}' title="Система скроет данные заявки при
+                                   балансе ниже этого значения">
                                     7. Скрывать данные заявок при балансе Лидогенератора менее
                                     <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-                                </a>
                             </label>
                             <div class="input-group">
                                 <input class="form-control data-hide-input" type="number" id="data-hide" min="0" placeholder="0">
@@ -99,12 +92,10 @@
                     </div>
                     <div class="d-flex flex-column workspace-form-column justify-content-between">
                         <div class="form-group base-cost-group">
-                            <label class="workspace-form-label" for="base-cost">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Ваше вознаграждение за целевую заявку">
+                            <label class="workspace-form-label" for="base-cost" data-toggle="tooltip" data-placement="top"
+                                   data-delay='{"show":"1000", "hide":"1000"}' title="Ваше вознаграждение за целевую заявку">
                                     3. Базовая цена заявки для клиента
                                     <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-                                </a>
                             </label>
                             <div class="input-group">
                                 <input class="form-control base-cost-input" type="number" id="base-cost" min="0"
@@ -115,49 +106,54 @@
                             </div>
                         </div>
                         <div class="form-group moderation-period-group">
-                            <label class="workspace-form-label" for="moderation-period">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Количество дней в течение которых клиент может изменить статус заявки.
-                                   Максимальный период 45 дней">
+                            <label class="workspace-form-label" for="moderation-period" data-toggle="tooltip"
+                                   data-placement="top" data-delay='{"show":"1000", "hide":"1000"}' title="Количество
+                                   дней в течение которых клиент может изменить статус заявки. Максимальный период 45 дней">
                                     8. Максимальный период модерации заявок клиентом
                                     <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-                                </a>
                             </label>
                             <input class="form-control moderation-period-input" type="number" id="moderation-period" placeholder="7"
                                    min="1" max="45">
                         </div>
                     </div>
-                    <div class="d-flex flex-column justify-content-between">
+{{--                    <div class="d-flex flex-column justify-content-between">--}}
                         <div class="form-group orders-agreement-group">
-                            <label class="workspace-form-label" for="orders-agreement">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Соглашение о том, какие заявки считаются нецелевыми или целевыми">
+                            <label class="workspace-form-label" for="orders-agreement" data-toggle="tooltip"
+                                   data-placement="top" data-delay='{"show":"1000", "hide":"1000"}' title="Соглашение о
+                                   том, какие заявки считаются нецелевыми или целевыми">
                                     4. Описание соглашения по заявкам
                                     <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-                                </a>
                             </label>
-                            <textarea class="form-control orders-agreement-input" rows="4" type="text" id="orders-agreement"
+                            <button class="btn description-example-button" data-toggle="tooltip"
+                                    data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                    title="Вставить стандартное описание">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </button>
+                            <textarea class="form-control orders-agreement-input" rows="7" type="text" id="orders-agreement"
                                   placeholder="Пример: Не оплачивается и считается некачественной заявка, если: 1. Клиент
                                   не интересуется услугой. 2. Не смогли дозвониться с 4-х попыток
                                   3. Клиент не в вашем ГЕО работы
                                   4. Дубль заявки от клиента в нашей CRM"
                                       required></textarea>
                         </div>
-                        <button class="btn description-example-button w-75 mx-auto">Вставить стандартное описание</button>
-                    </div>
+{{--                    </div>--}}
                 </form>
             </div>
             <div class="col-md-12 mb-1 mt-1 settings-wrapper">
                 <div>
                     <span>9. Доступ клиента к заявкам и уведомления</span>
-                    <button class="btn client-acсess-button">
+                    <a class="btn client-acсess-button" href="#" aria-label="Ссылка на внешнее администрирование">
                         <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </button>
+                    </a>
                 </div>
                 <form class="form-inline workspace-email-form">
                     <div class="form-group workspace-email-group">
                         <label class="sr-only" for="workspace-email">Почта</label>
-                        <input class="form-control workspace-email-input" type="email" id="workspace-email" placeholder="Почта">
+                        <div class="input-group">
+                            <input class="form-control workspace-email-input" type="email" id="workspace-email" placeholder="Почта">
+                            <div class="invalid-feedback workspace-email-invalid-feedback">Вы можете добавить не более 20 доступов за 2 часа.
+                            </div>
+                        </div>
                     </div>
                     <button type="submit" class="btn btn-primary email-add-button">Добавить
                         <i class="fa fa-plus" aria-hidden="true"></i>
@@ -171,12 +167,11 @@
                     <table class="table workspace-table common-table workspace-grid" data-offset="140">
                         <thead>
                         <tr class="table-grey text-center">
-                            <th class="rounded-table-left i-col">Активность
+                            <th class="rounded-table-left i-col" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                title="Включает / выключает доступ и рассылку">Активность
                             </th>
                             <th class="email-col" scope="col">
-                                <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Дата и время в часовом поясе клиента">Почта
-                                </a>
+                                Почта
                             </th>
                             <th class="titl-col" scope="col">
                                 <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
@@ -201,7 +196,7 @@
                             </th>
                             <th class="commen-col" scope="col">
                                 <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                   title="Комментарий модератора">
+                                   title="Наделяет правами управления рассылкой для текущих и новых пользователей">
                                    Администратор
                                 </a>
                             </th>
@@ -230,25 +225,31 @@
                             </td>
                             <td class="ino-col text-center">
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input custom-control-input-warning"
+                                    <input type="checkbox" class="custom-control-input custom-control-input-success"
                                            id="orders-message" name="example1" checked>
                                     <label class="custom-control-label" for="orders-message" aria-label="Оповещение о
-                                    заявках"></label>
+                                    заявках" data-toggle="tooltip" data-placement="top"
+                                           data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка включена + время
+                                           изменения статуса"></label>
                                 </div>
                             </td>
                             <td class="phne-col text-center">
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input custom-control-input-danger"
+                                    <input type="checkbox" class="custom-control-input custom-control-input-success"
                                            id="ldg-balance" name="example1" checked>
-                                    <label class="custom-control-label custom-control-label-cross" for="ldg-balance"
-                                           aria-label="Лидогенератор баланс"></label>
+                                    <label class="custom-control-label" for="ldg-balance"
+                                           aria-label="Лидогенератор баланс" data-toggle="tooltip" data-placement="top"
+                                           data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка включена + время
+                                           изменения статуса"></label>
                                 </div>
                             </td>
                             <td class="staus-col target-status text-center">
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input custom-control-input-success"
                                            id="yandex-balance" name="example1" checked>
-                                    <label class="custom-control-label" for="yandex-balance" aria-label="Яндекс баланс">
+                                    <label class="custom-control-label" for="yandex-balance" aria-label="Яндекс баланс"
+                                           data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                           title="Рассылка включена + время изменения статуса">
                                     </label>
                                 </div>
                             </td>
@@ -256,7 +257,9 @@
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input custom-control-input-warning"
                                            name="example1" id="google-balance" checked>
-                                    <label class="custom-control-label" for="google-balance" aria-label="Google баланс">
+                                    <label class="custom-control-label" for="google-balance" aria-label="Google баланс"
+                                           data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                           title="Рассылка ожидает подтверждения + время изменения статуса">
                                     </label>
                                 </div>
                             </td>
@@ -265,7 +268,9 @@
                                     <input type="checkbox" class="custom-control-input custom-control-input-danger"
                                            name="customCheck" id="roistat-balance" checked>
                                     <label class="custom-control-label custom-control-label-cross" for="roistat-balance"
-                                           aria-label="Roistat баланс"></label>
+                                           aria-label="Roistat баланс" data-toggle="tooltip" data-placement="top"
+                                           data-delay='{"show":"1000", "hide":"1000"}'
+                                           title="Отказ от рассылки + время изменения статуса"></label>
                                 </div>
                             </td>
                             <td class="coment-col text-center">
@@ -277,10 +282,10 @@
                                 </div>
                             </td>
                             <td class="workspace-buttons-col text-center">
-                                <button  class="btn reset-button reset-button-show workspace-reset-button" type="reset"
-                                         value="Удаление" aria-label="Удалить заявку">
+                                <a  class="btn workspace-reset-button" value="Удаление" aria-label="Удалить заявку"
+                                    href=".js-workspace-reset-modal" role="button" data-toggle="modal">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
-                                </button>
+                                </a>
                             </td>
                         </tr>
                         <tr class="order-line">
@@ -295,38 +300,55 @@
                             <td class="email-col text-center">1@troiza.net</td>
                             <td class="tite-col text-center">
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" name="customCheck" id="crm-access2">
+                                    <input type="checkbox" class="custom-control-input" name="customCheck" id="crm-access2"
+                                    checked>
                                     <label class="custom-control-label" for="crm-access2" aria-label="Доступ в CRM клиента"></label>
                                 </div>
                             </td>
                             <td class="ino-col text-center">
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input custom-control-input-warning" id="orders-message2" name="example1">
-                                    <label class="custom-control-label" for="orders-message2" aria-label="Оповещение о заявках"></label>
+                                    <input type="checkbox" class="custom-control-input custom-control-input-success" id="orders-message2" name="example1"
+                                    checked>
+                                    <label class="custom-control-label" for="orders-message2" aria-label="Оповещение о заявках"
+                                           data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                           title="Рассылка включена + время изменения статуса"></label>
                                 </div>
                             </td>
                             <td class="phne-col text-center">
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input custom-control-input-danger" id="ldg-balance2" name="example1">
-                                    <label class="custom-control-label custom-control-label-cross" for="ldg-balance2" aria-label="Лидогенератор баланс"></label>
+                                    <input type="checkbox" class="custom-control-input custom-control-input-success"
+                                           id="ldg-balance2" name="example1" checked>
+                                    <label class="custom-control-label" for="ldg-balance2"
+                                           aria-label="Лидогенератор баланс" data-toggle="tooltip" data-placement="top"
+                                           data-delay='{"show":"1000", "hide":"1000"}'
+                                           title="Рассылка включена + время изменения статуса"></label>
                                 </div>
                             </td>
                             <td class="staus-col target-status text-center">
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input custom-control-input-success" id="yandex-balance2" name="example1">
-                                    <label class="custom-control-label" for="yandex-balance2" aria-label="Яндекс баланс"></label>
+                                    <input type="checkbox" class="custom-control-input custom-control-input-success"
+                                           id="yandex-balance2" name="example1">
+                                    <label class="custom-control-label" for="yandex-balance2" aria-label="Яндекс баланс"
+                                           data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                           title="Рассылка включена + время изменения статуса"></label>
                                 </div>
                             </td>
                             <td class="clint-col text-center">
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input custom-control-input-warning" name="example1" id="google-balance2">
-                                    <label class="custom-control-label" for="google-balance2" aria-label="Google баланс"></label>
+                                    <input type="checkbox" class="custom-control-input custom-control-input-warning"
+                                           name="example1" id="google-balance2">
+                                    <label class="custom-control-label" for="google-balance2" aria-label="Google баланс"
+                                           data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                    title="Рассылка ожидает подтверждения + время изменения статуса"></label>
                                 </div>
                             </td>
                             <td class="modration-col text-center">
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input custom-control-input-danger" name="customCheck" id="roistat-balance2">
-                                    <label class="custom-control-label custom-control-label-cross" for="roistat-balance2" aria-label="Roistat баланс"></label>
+                                    <label class="custom-control-label custom-control-label-cross" for="roistat-balance2"
+                                           aria-label="Roistat баланс" data-toggle="tooltip" data-placement="top"
+                                           data-delay='{"show":"1000", "hide":"1000"}'
+                                           title="Отказ от рассылки + время изменения статуса"></label>
                                 </div>
                             </td>
                             <td class="coment-col text-center">
@@ -336,102 +358,34 @@
                                 </div>
                             </td>
                             <td class="workspace-buttons-col text-center">
-                                <button  class="btn reset-button reset-button-show workspace-reset-button" type="reset"
-                                         value="Удаление" aria-label="Удалить заявку">
+                                <a  class="btn workspace-reset-button" value="Удаление" aria-label="Удалить заявку"
+                                    href=".js-workspace-reset-modal" role="button" data-toggle="modal">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
-                                </button>
+                                </a>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-        <div class="modal fade js-balance-modal" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Операции с балансом</h5>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <form class="balance-actions" method="post" action="/" novalidate>
-                            <div class="form-group">
-                                <label class="sr-only" for="inputEmail">Сумма</label>
-                                <div class="input-group">
-                                    <input class="form-control" type="number" min="0" id="inputSumBalance" placeholder="Сумма" required>
-                                    <div class="invalid-feedback">Сообщение об ошибке
-                                    </div>
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fa fa-rub" aria-hidden="true"></i></span>
-                                    </div>
+            <div class="modal fade js-workspace-reset-modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Удаление доступа и рассылок</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Вы действительно хотите удалить доступ к проекту?</p>
+                                <div class="workspace-reset-modal-buttons modal-action-buttons">
+                                    <button class="btn btn-danger modal-action-button" type="submit">Удалить</button>
+                                    <button class="btn cancel-button modal-action-button" data-dismiss="modal"
+                                            type="button">Отменить
+                                    </button>
                                 </div>
-                            </div>
-                            <div class="form-group balance-action-buttons">
-                                <button class="btn btn-primary balance-action-button" type="submit">Пополнить</button>
-                                <button class="btn btn-primary balance-action-button" type="submit">Списать</button>
-                                <button class="btn cancel-button balance-action-button" data-dismiss="modal"
-                                        type="button">Отменить
-                                </button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-
-            <div class="form-group">
-                <label class="form-check-label"><input type="checkbox"> Remember me</label>
-            </div>
-
-
-            <div class="order-filter">
-                <select class="custom-select select-item">
-                    <option selected>Все заявки</option>
-                    <option value="1">Целевые заявки</option>
-                    <option value="2">Нецелевые заявки</option>
-                    <option value="3">На модерации</option>
-                </select>
-                <div class="date-range js-date-range text-center">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
-                    <span class="js-date-range-span"></span>
-                    <i class="fa fa-caret-down"></i>
-                </div>
-            </div>
-            <div class="order-buttons">
-                <button type="button" class="btn page-button show-toast">Описание заявки</button>
-                <div class="toast crm-button js-order-description-toast">
-                    <button type="button" class="close ml-2 mb-1 mr-1" data-dismiss="toast">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <div class="toast-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet sit
-                            amet. Id aliquet lectus proin nibh nisl condimentum. Aliquam sem fringilla ut morbi
-                            tincidunt augue interdum. Integer vitae justo eget magna fermentum iaculis eu.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet sit
-                            amet. Id aliquet lectus proin nibh nisl condimentum. Aliquam sem fringilla ut morbi
-                            tincidunt augue interdum. Integer vitae justo eget magna fermentum iaculis eu.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet sit
-                            amet. Id aliquet lectus proin nibh nisl condimentum. Aliquam sem fringilla ut morbi
-                            tincidunt augue interdum. Integer vitae justo eget magna fermentum iaculis eu.</p>
-                        <p>Максимальный срок согласования заявки 7 дней</p>
-                    </div>
-                </div>
-                <a class="btn page-button" href="#">CRM клиента
-                    <i class="fa fa-external-link" aria-hidden="true"></i>
-                </a>
-            </div>
-            <form class="search-form">
-                <div class="input-group">
-                    <input type="text" class="form-control search-form-input" placeholder="Поиск">
-                    <div class="input-group-append">
-                        <button type="button" class="btn btn-secondary button-search">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-            </form>
-
     </main>
 @stop

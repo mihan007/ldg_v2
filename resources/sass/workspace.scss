@@ -26,19 +26,22 @@
 .orders-agreement-group {
     min-width: 330px;
     height: 100%;
-    margin-top: 1rem;
+    margin-top: 0.7rem;
 }
 
 .orders-agreement-input {
-    padding: 0.55rem 0.75rem;
+    padding: 0.45rem 0.75rem;
     font-size: 14px;
 }
 
 .description-example-button {
-    margin-bottom: 1rem;
+    //margin-bottom: 1rem;
     font-size: 14px;
     background-color: $description-example-button-bg;
     color: $description-example-button-text;
+    padding: 3px 7px;
+    margin-left: 15px;
+    margin-bottom: 3px;
 }
 
 .description-example-button:hover {
@@ -69,6 +72,7 @@ cursor: pointer;
 .workspace-form-column input {
     font-size: 14px;
 }
+
 .client-acсess-button {
     font-size: 14px;
 }
@@ -118,4 +122,22 @@ cursor: pointer;
 
 .workspace-reset-button {
     margin-top: -0.45rem;
+}
+
+.workspace-reset-button:hover {
+    color: $crm-table-button-hover;
+}
+
+.workspace-reset-button:active {
+    color: $crm-table-button-active;
+}
+
+.subscription-login-text {
+   display: inline-block;
+    margin-bottom: 0;
+}
+
+.subscription-login-link {
+    text-decoration: underline;
+    margin-left: 5px;
 }

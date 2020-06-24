@@ -12,7 +12,7 @@
                 <div class="w-100 mx-auto mb-4">
                     <h1 class="text-uppercase font-weight-bold text-center title-login">Лидогенератор</h1>
                 </div>
-                <div class="alert alert-primary col-sm-12 mx-auto form-items">
+                <div class="alert alert-primary col-sm-12 mx-auto">
                     Новый пароль успешно установлен. Используйте его для входа.
                 </div>
                 <form class="login-form needs-validation" method="post" action="/" novalidate>
