@@ -158,6 +158,10 @@ input[type="radio"].visually-hidden {
     border-color: $filter-button-border-hover;
 }
 
+.index-buttons-wrapper .date-range {
+    margin-bottom: 0.25rem;
+}
+
 .filter-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;

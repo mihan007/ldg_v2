@@ -31,7 +31,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="btn btn-primary text-uppercase mb-1 add-button">Создать</a>
+                <a class="btn btn-primary text-uppercase mb-1 add-button" href="#" >Создать</a>
             </div>
             <div class="col-md-12 filter-wrapper mb-1">
                 <div class="index-select-wrapper d-flex mr-auto">
@@ -48,11 +48,11 @@
                         <option value="3">Three</option>
                     </select>
                 </div>
-                <form class="search-form">
+                <form class="search-form" method="post" action="#">
                     <div class="input-group">
-                        <input type="text" class="form-control search-form-input" placeholder="Поиск">
+                        <input class="form-control search-form-input" type="text" placeholder="Поиск">
                         <div class="input-group-append">
-                            <button type="button" class="btn btn-secondary button-search">
+                            <button class="btn btn-secondary button-search" type="button" >
                                 <i class="fa fa-search" aria-hidden="true"></i>
                             </button>
                         </div>
@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <div class="dashboard-checkbox-wrapper">
-                    <form>
+                    <form method="post" action="#">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" name="customCheck" id="all-orders">
                             <label class="custom-control-label" for="all-orders">Все заявки</label>

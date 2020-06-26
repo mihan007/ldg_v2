@@ -14205,6 +14205,10 @@ input[type=radio].visually-hidden {
   border-color: #dae0e5;
 }
 
+.index-buttons-wrapper .date-range {
+  margin-bottom: 0.25rem;
+}
+
 .filter-wrapper {
   display: flex;
   justify-content: space-between;
@@ -14738,21 +14742,25 @@ input[type=radio].visually-hidden {
   cursor: pointer;
 }
 
+.settings-select-item {
+  width: 180px;
+}
+
 .company-name-group {
   width: 100%;
 }
 
 .max-cpl-group,
-.balance-limit-group {
+.base-cost-group {
   width: 48%;
 }
 
-.max-cpl-group {
+.base-cost-group {
   margin-right: 1.2rem;
 }
 
 .orders-agreement-group {
-  min-width: 330px;
+  min-width: 302px;
   height: 100%;
   margin-top: 0.7rem;
 }
@@ -14763,11 +14771,11 @@ input[type=radio].visually-hidden {
 }
 
 .description-example-button {
-  font-size: 14px;
+  font-size: 11px;
   background-color: #95999c;
   color: white;
   padding: 3px 7px;
-  margin-left: 15px;
+  margin-left: 10px;
   margin-bottom: 3px;
 }
 
@@ -14784,6 +14792,9 @@ input[type=radio].visually-hidden {
   margin-right: 1.2rem;
   width: 30%;
   margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .workspace-form-column:first-child {
@@ -14791,8 +14802,13 @@ input[type=radio].visually-hidden {
   width: 40%;
 }
 
+.workspace-form-column:nth-child(3) {
+  width: 380px;
+}
+
 .workspace-form-label {
   cursor: pointer;
+  font-weight: 600;
 }
 
 .workspace-form-column input {
@@ -14807,6 +14823,7 @@ input[type=radio].visually-hidden {
   width: 68%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0;
 }
 
 .workspace-email-form {

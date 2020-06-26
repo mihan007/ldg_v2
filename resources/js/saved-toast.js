@@ -1,0 +1,8 @@
+$(document).ready(function(){
+    $(".show-toast").click(function(){
+        $(".js-saved-toast").toast({
+            delay: 3000
+        });
+        $(".js-saved-toast").toast('show');
+    });
+});

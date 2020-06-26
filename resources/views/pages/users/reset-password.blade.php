@@ -7,14 +7,14 @@
                     <h1 class="font-weight-bold text-center reset-title">Восстановление пароля</h1>
                 </div>
                 <p class="text-center">Введите адрес электронной почты для восстановления пароля</p>
-                <form class="mx-auto needs-validation reset-form" method="post" action="/" novalidate>
+                <form class="mx-auto needs-validation reset-form" method="post" action="#" novalidate>
                     <div class="form-group">
-                        <label class="sr-only" for="inputEmail">Email</label>
+                        <label class="sr-only" for="input-reset-email">Email</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fa fa-envelope"></i></span>
                             </div>
-                            <input class="form-control" type="email" id="inputEmail" placeholder="Email" required>
+                            <input class="form-control" type="email" id="input-reset-email" placeholder="Email" required>
                             <div class="invalid-feedback">Пожалуйста, введите верный адрес электронной почты</div>
                         </div>
                     </div>

@@ -5,11 +5,7 @@
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper">
                 <div class="index-buttons-wrapper mr-3">
-                    <div class="date-range js-date-range text-center mb-1" tabindex="0">
-                        <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
-                        <span class="js-date-range-span"></span>
-                        <i class="fa fa-caret-down" aria-hidden="true"></i>
-                    </div>
+                    @include('includes.date-range')
                     <div class="btn-group date-items mb-1">
                         <button type="button" class="btn date-item">Сегодня</button>
                         <button type="button" class="btn date-item">Вчера</button>
@@ -48,16 +44,7 @@
                         <option value="3">Three</option>
                     </select>
                 </div>
-                <form class="search-form">
-                    <div class="input-group">
-                        <input type="text" class="form-control search-form-input" placeholder="Поиск">
-                        <div class="input-group-append">
-                            <button type="button" class="btn btn-secondary button-search">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+                @include('includes.search-form')
             </div>
             <div class="col-md-12 table-wrapper mb-5">
                 @include('includes.company_grid')

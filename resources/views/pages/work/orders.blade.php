@@ -2,21 +2,7 @@
 @section('content')
     <main class="page-wrapper crm-main">
         <div class="row sticky-top bg-white">
-            <div class="col-md-12 offset-block">
-            </div>
-            <div class="col-md-12 settings-wrapper directory-buttons">
-                <div>
-                    <a class="directory-button active" href="{{ route('work.orders') }}">CRM</a>
-                    <a class="directory-button" href="{{ route('work.finance') }}">Финансы</a>
-                </div>
-                <div>
-                    <a href=".js-balance-modal" role="button" class="balance-info" data-toggle="modal">
-                        <i class="fa fa-plus-square" aria-hidden="true"></i>
-                        Баланс 2000
-                        <i class="fa fa-rub" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
+            @include('includes.orders-directory-links', ['step'=>'crm'])
             <div class="col-md-12 filter-wrapper">
                 <div class="order-filter">
                     <select class="custom-select select-item">
@@ -25,11 +11,7 @@
                         <option value="2">Нецелевые заявки</option>
                         <option value="3">На модерации</option>
                     </select>
-                    <div class="date-range js-date-range text-center">
-                        <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
-                        <span class="js-date-range-span"></span>
-                        <i class="fa fa-caret-down"></i>
-                    </div>
+                    @include('includes.date-range')
                 </div>
                 <div class="order-buttons">
                     <button type="button" class="btn page-button show-toast">Описание заявки</button>
@@ -55,16 +37,7 @@
                         <i class="fa fa-external-link" aria-hidden="true"></i>
                     </a>
                 </div>
-                <form class="search-form">
-                    <div class="input-group">
-                        <input type="text" class="form-control search-form-input" placeholder="Поиск">
-                        <div class="input-group-append">
-                            <button type="button" class="btn btn-secondary button-search">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+                @include('includes.search-form')
             </div>
         </div>
         <div class="row">
@@ -518,37 +491,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal fade js-balance-modal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Операции с балансом</h5>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <form class="balance-actions" method="post" action="/" novalidate>
-                        <div class="form-group">
-                            <label class="sr-only" for="inputEmail">Сумма</label>
-                            <div class="input-group">
-                                <input class="form-control" type="number" min="0" id="inputSumBalance" placeholder="Сумма" required>
-                                <div class="invalid-feedback">Сообщение об ошибке
-                                </div>
-                                <div class="input-group-append">
-                                    <span class="input-group-text"><i class="fa fa-rub" aria-hidden="true"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group balance-action-buttons">
-                            <button class="btn btn-primary balance-action-button" type="submit">Пополнить</button>
-                            <button class="btn btn-primary balance-action-button" type="submit">Списать</button>
-                            <button class="btn cancel-button balance-action-button" data-dismiss="modal"
-                                    type="button">Отменить
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        @include('includes.balance-modal')
     </main>
 @stop
