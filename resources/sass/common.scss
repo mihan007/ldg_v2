@@ -17,6 +17,21 @@ html, body {
     height: 100%;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .bg-grey {
     background-color: $header-bg;
     padding-right: 0.43rem;
@@ -143,6 +158,10 @@ html, body {
     border-color: $filter-button-border-hover;
 }
 
+.index-buttons-wrapper .date-range {
+    margin-bottom: 0.25rem;
+}
+
 .filter-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -242,8 +261,8 @@ html, body {
     text-decoration: none;
 }
 
-.directory-buttons .active,
-.directory-buttons .active:hover {
+.directory-button.active,
+.directory-button.active:hover {
     color: $directory-button-active;
 }
 
@@ -254,10 +273,6 @@ html, body {
 
 .directory-button:active {
     color: $directory-button-click;
-}
-
-.directory-row {
-    background-color: white;
 }
 
 .select-item {
@@ -325,4 +340,33 @@ html, body {
 
 .cancel-button:active {
     background-color: $cancel-button-bg-active;
+}
+
+.modal-action-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.modal-action-button {
+    width: 45%;
+}
+
+.settings-select-item {
+    font-size: 14px;
+}
+
+.function-button {
+  color: $main-text-color;
+}
+
+.function-button:hover {
+    color: $function-button-hover;
+}
+
+.function-button:active {
+    color: $function-button-active;
 }

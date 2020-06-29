@@ -57,7 +57,7 @@
                 </a>
             </li>
             <li class="nav-item sidenav-link">
-                <a class="nav-link" href="#" data-toggle="tooltip" data-placement="right" title="Настройки"
+                <a class="nav-link" href="{{ route('settings.workspace') }}" data-toggle="tooltip" data-placement="right" title="Настройки"
                    aria-label="Настройки">
                     <i class="fa fa-cog sidenav-icon" aria-hidden="true"></i>
                 </a>

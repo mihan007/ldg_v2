@@ -49,19 +49,6 @@
     background-color: $main-bg-color;
 }
 
-.bill-action-buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.bill-action-button {
-    width: 45%;
-}
-
 .finance-balance-alert {
     margin-bottom: 0.5rem;
 }

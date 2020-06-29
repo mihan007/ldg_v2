@@ -1,0 +1,245 @@
+.settings-select-item {
+    width: 180px;
+}
+
+.company-name-group {
+    width: 100%;
+}
+
+.project-group,
+.base-cost-group {
+}
+
+.max-cpl-group,
+.base-cost-group {
+    width: 48%;
+}
+
+.base-cost-group {
+    margin-right: 1.2rem;
+}
+
+.moderation-period-group {
+    //width: 272px;
+    //margin-right: 1.2rem;
+}
+
+.orders-agreement-group {
+    min-width: 330px;
+    height: 100%;
+    margin-top: 12px;
+}
+
+.orders-agreement-input {
+    padding: 0.45rem 0.75rem;
+    font-size: 14px;
+}
+
+.description-example-button {
+    //margin-bottom: 1rem;
+    //font-size: 11px;
+    font-size: 14px;
+    //background-color: $description-example-button-bg;
+    //color: $description-example-button-text;
+    padding: 3px 7px;
+    //margin-left: 10px;
+    margin-bottom: 3px;
+    //color: $main-text-color;
+    //margin-left: 5px;
+}
+
+//.description-example-button:hover {
+//    //background-color: $description-example-button-bg-hover;
+//    //color: $description-example-button-text;
+//    color: $description-button-hover;
+//}
+//
+//.description-example-button:active {
+//    //background-color: $description-example-button-bg-active;
+//    color: $description-button-active;
+//}
+
+.workspace-form .input-group-text {
+    font-size: 14px;
+}
+
+.workspace-form-column {
+    margin-right: 1.2rem;
+    width: 25%;
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.workspace-form-column:first-child {
+    margin-right: 1.2rem;
+    width: 35%;
+}
+
+.workspace-form-column:nth-child(3) {
+    width: 380px;
+}
+
+.workspace-form-label {
+cursor: pointer;
+    //padding-left: 10px;
+    font-weight: 600;
+}
+
+.workspace-form-column input {
+    font-size: 14px;
+}
+
+.workspace-project-dropdown .dropdown-toggle {
+    //font-size: 14px;
+    color: $main-text-color;
+}
+
+.client-acсess-button {
+    font-size: 14px;
+}
+
+.workspace-table thead th {
+    border-top: none;
+}
+
+.workspace-email-group {
+    width: 68%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.workspace-email-form {
+    width: 330px;
+}
+
+.workspace-email-form .workspace-email-input {
+    //margin-right: 1.2rem;
+    width: 68%;
+    font-size: 14px;
+}
+
+.email-add-button {
+    font-size: 14px;
+}
+
+.email-col {
+    width: 10%;
+}
+
+.custom-control-input-success:checked ~ .custom-control-label::before {
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+}
+
+.custom-control-input-danger:checked ~ .custom-control-label::before {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+}
+
+.custom-control-input-warning:checked ~ .custom-control-label::before {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label-cross::after {
+    background-image: url("data:image/svg+xml,%3Csvg height='8px' viewBox='0 0 365.71733 365' width='8px' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff'%3E%3Cpath d='m356.339844 296.347656-286.613282-286.613281c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503906-12.5 32.769532 0 45.25l286.613281 286.613282c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082032c12.523438-12.480468 12.523438-32.75.019532-45.25zm0 0'/%3E%3Cpath d='m295.988281 9.734375-286.613281 286.613281c-12.5 12.5-12.5 32.769532 0 45.25l15.082031 15.082032c12.503907 12.5 32.769531 12.5 45.25 0l286.632813-286.59375c12.503906-12.5 12.503906-32.765626 0-45.246094l-15.082032-15.082032c-12.5-12.523437-32.765624-12.523437-45.269531-.023437zm0 0'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.workspace-reset-button {
+    margin-top: -0.45rem;
+}
+
+//.workspace-reset-button:hover {
+//    color: $workspace-reset-button-hover;
+//}
+//
+//.workspace-reset-button:active {
+//    color: $workspace-reset-button-active;
+//}
+
+.subscription-login-text {
+   display: inline-block;
+    margin-bottom: 0;
+}
+
+.subscription-login-link {
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.saved-toast {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    background-color: $toast-bg;
+    z-index: 1050;
+}
+
+//.settings-wrapper {
+//    display: -webkit-box;
+//    display: -ms-flexbox;
+//    display: flex;
+//    -webkit-box-pack: justify;
+//    -ms-flex-pack: justify;
+//    justify-content: space-between;
+//    -webkit-box-align: center;
+//    -ms-flex-align: center;
+//    align-items: center;
+//    padding-top: 0.7rem;
+//    padding-bottom: 0.7rem;
+//    -ms-flex-wrap: wrap;
+//    flex-wrap: wrap;
+//}
+
+//.select2-container .select2-selection--single .select2-selection__rendered {
+//    padding: 0.375rem 0.75rem;
+//    font-size: 14px;
+//}
+//.select2-container--default:focus .select2-search--dropdown .select2-search__field,
+//.select2-container--default:focus .select2-selection--single .select2-selection__rendered {
+//    border-color: #80bdff;
+//    outline: 0;
+//    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+//    border-radius: 0.25rem;
+//}
+
+//.select2-container .select2-selection--single {
+//    height: calc(1.5em + 0.75rem + 2px) !important;
+//}
+//.select2-container--default .select2-selection--single {
+//    border: 1px solid #ced4da !important;
+//}
+//.select2-container--default .select2-selection--single .select2-selection__rendered {
+//    line-height: 34px !important;
+//}
+//.select2-container--default .select2-selection--single .select2-selection__arrow {
+//    height: 34px !important;
+//}
+.select2-container--bootstrap .select2-selection--single {
+    height: 35px !important;
+}
+
+.select2-container--bootstrap .select2-selection {
+    border: 1px solid #ced4da !important;
+}
+
+.select2-container--bootstrap.select2-container--focus .select2-selection,
+.select2-container--bootstrap.select2-container--open .select2-selection {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+    border-color: #80bdff !important;
+}

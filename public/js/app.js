@@ -74604,6 +74604,12 @@ __webpack_require__(/*! ./order-grid.js */ "./resources/js/order-grid.js");
 __webpack_require__(/*! ./finance-grid.js */ "./resources/js/finance-grid.js");
 
 __webpack_require__(/*! ./dashboard.js */ "./resources/js/dashboard.js");
+
+__webpack_require__(/*! ./saved-toast */ "./resources/js/saved-toast.js");
+
+__webpack_require__(/*! ./workspace-save-modal */ "./resources/js/workspace-save-modal.js");
+
+__webpack_require__(/*! ./workspace-form-project */ "./resources/js/workspace-form-project.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -74715,7 +74721,13 @@ window.chartColors = {
   grey: 'rgb(201, 203, 207)'
 };
 $(function () {
-  var ctx = document.getElementById('js-dashboard').getContext('2d');
+  var dashboardElement = document.getElementById('js-dashboard');
+
+  if (!dashboardElement) {
+    return;
+  }
+
+  var ctx = dashboardElement.getContext('2d');
   var timeFormat = 'DD/MM/YYYY HH:mm';
   var chart = new chart_js__WEBPACK_IMPORTED_MODULE_0___default.a(ctx, {
     // The type of chart we want to create
@@ -75008,6 +75020,21 @@ $(document).ready(function () {
 
 /***/ }),
 
+/***/ "./resources/js/saved-toast.js":
+/*!*************************************!*\
+  !*** ./resources/js/saved-toast.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $('.workspace-form input').on('change', function () {
+    $(".js-saved-toast").toast('show');
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/js/tooltip.js":
 /*!*********************************!*\
   !*** ./resources/js/tooltip.js ***!
@@ -75017,6 +75044,10 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip({});
+  $(document).on('click', '[data-toggle="click-tooltip"]', function () {
+    $(this).tooltip('toggle'); // }).on('mouseleave', '[data-toggle="click-tooltip"]', function () {
+    //     $(this).tooltip('hide')
+  });
 });
 
 /***/ }),
@@ -75068,6 +75099,37 @@ $(document).ready(function () {
     });
   }, false);
 })();
+
+/***/ }),
+
+/***/ "./resources/js/workspace-form-project.js":
+/*!************************************************!*\
+  !*** ./resources/js/workspace-form-project.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $.fn.select2.defaults.set("theme", "bootstrap");
+  $('.js-project-select').select2({
+    placeholder: "Выберите из списка"
+  });
+});
+
+/***/ }),
+
+/***/ "./resources/js/workspace-save-modal.js":
+/*!**********************************************!*\
+  !*** ./resources/js/workspace-save-modal.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $('.orders-agreement-input').on('focus', function () {
+    $('.js-workspace-save-modal').modal('show');
+  });
+});
 
 /***/ }),
 

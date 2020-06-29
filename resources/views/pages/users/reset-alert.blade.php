@@ -10,9 +10,9 @@
                     Мы выслали Вам на почту ... инструкцию по смене пароля.
                 </div>
                 <div class="text-center mx-auto">
-                <a class="text-decoration-none text-uppercase btn button-login-return" href="{{ route('users.login') }}">
-                    ← На страницу входа
-                </a>
+                    <a class="text-decoration-none text-uppercase btn button-login-return" href="{{ route('users.login') }}">
+                        ← На страницу входа
+                    </a>
                 </div>
             </div>
         </div>
