@@ -11,10 +11,10 @@
                         <label class="sr-only" for="input-sum-balance">Сумма</label>
                         <div class="input-group">
                             <input class="form-control" type="number" min="0" id="input-sum-balance" placeholder="Сумма" required>
-                            <div class="invalid-feedback">Сообщение об ошибке
-                            </div>
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fa fa-rub" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="invalid-feedback balance-invalid-feedback">Сообщение об ошибке
                             </div>
                         </div>
                     </div>

@@ -7,11 +7,11 @@
                 <div class="index-buttons-wrapper mr-3">
                     @include('includes.date-range')
                     <div class="btn-group date-items mb-1">
-                        <button type="button" class="btn date-item">Сегодня</button>
-                        <button type="button" class="btn date-item">Вчера</button>
-                        <button type="button" class="btn date-item">7 дней</button>
-                        <button type="button" class="btn date-item">30 дней</button>
-                        <button type="button" class="btn date-item">Месяц</button>
+                        <button class="btn date-item" type="button">Сегодня</button>
+                        <button class="btn date-item" type="button">Вчера</button>
+                        <button class="btn date-item" type="button">7 дней</button>
+                        <button class="btn date-item" type="button">30 дней</button>
+                        <button class="btn date-item" type="button">Месяц</button>
                     </div>
                     <button type="button" class="btn page-button mb-1" aria-label="Показать дашборд">
                         <i class="fa fa-line-chart" aria-hidden="true"></i>
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="btn btn-primary text-uppercase mb-1 add-button">Создать</a>
+                <a class="btn btn-primary text-uppercase mb-1 add-button" href="#" >Создать</a>
             </div>
             <div class="col-md-12 filter-wrapper mb-1">
                 <div class="index-select-wrapper d-flex mr-auto">

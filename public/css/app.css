@@ -14390,6 +14390,18 @@ input[type=radio].visually-hidden {
   font-size: 14px;
 }
 
+.function-button {
+  color: #212529;
+}
+
+.function-button:hover {
+  color: #95999c;
+}
+
+.function-button:active {
+  color: #5a6268;
+}
+
 .index-buttons-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -14647,18 +14659,6 @@ input[type=radio].visually-hidden {
   margin-right: auto;
 }
 
-.crm-table .correct-button:hover,
-.crm-table .restore-button:hover,
-.crm-table .reset-button:hover {
-  color: #95999c;
-}
-
-.crm-table .correct-button:active,
-.crm-table .restore-button:active,
-.crm-table .reset-button:active {
-  color: #5a6268;
-}
-
 .crm-table .restore-button-show,
 .crm-table .reset-button-show {
   display: block;
@@ -14760,9 +14760,9 @@ input[type=radio].visually-hidden {
 }
 
 .orders-agreement-group {
-  min-width: 302px;
+  min-width: 330px;
   height: 100%;
-  margin-top: 0.7rem;
+  margin-top: 12px;
 }
 
 .orders-agreement-input {
@@ -14771,26 +14771,18 @@ input[type=radio].visually-hidden {
 }
 
 .description-example-button {
-  font-size: 11px;
-  background-color: #95999c;
-  color: white;
+  font-size: 14px;
   padding: 3px 7px;
-  margin-left: 10px;
   margin-bottom: 3px;
 }
 
-.description-example-button:hover {
-  background-color: #6c757d;
-  color: white;
-}
-
-.description-example-button:active {
-  background-color: #5a6268;
+.workspace-form .input-group-text {
+  font-size: 14px;
 }
 
 .workspace-form-column {
   margin-right: 1.2rem;
-  width: 30%;
+  width: 25%;
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
@@ -14799,7 +14791,7 @@ input[type=radio].visually-hidden {
 
 .workspace-form-column:first-child {
   margin-right: 1.2rem;
-  width: 40%;
+  width: 35%;
 }
 
 .workspace-form-column:nth-child(3) {
@@ -14815,8 +14807,16 @@ input[type=radio].visually-hidden {
   font-size: 14px;
 }
 
+.workspace-project-dropdown .dropdown-toggle {
+  color: #212529;
+}
+
 .client-acсess-button {
   font-size: 14px;
+}
+
+.workspace-table thead th {
+  border-top: none;
 }
 
 .workspace-email-group {
@@ -14831,8 +14831,7 @@ input[type=radio].visually-hidden {
 }
 
 .workspace-email-form .workspace-email-input {
-  margin-right: 1.2rem;
-  width: 100%;
+  width: 68%;
   font-size: 14px;
 }
 
@@ -14867,14 +14866,6 @@ input[type=radio].visually-hidden {
   margin-top: -0.45rem;
 }
 
-.workspace-reset-button:hover {
-  color: #95999c;
-}
-
-.workspace-reset-button:active {
-  color: #5a6268;
-}
-
 .subscription-login-text {
   display: inline-block;
   margin-bottom: 0;
@@ -14883,5 +14874,27 @@ input[type=radio].visually-hidden {
 .subscription-login-link {
   text-decoration: underline;
   margin-left: 5px;
+}
+
+.saved-toast {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  background-color: #eeeeee;
+  z-index: 1050;
+}
+
+.select2-container--bootstrap .select2-selection--single {
+  height: 35px !important;
+}
+
+.select2-container--bootstrap .select2-selection {
+  border: 1px solid #ced4da !important;
+}
+
+.select2-container--bootstrap.select2-container--focus .select2-selection,
+.select2-container--bootstrap.select2-container--open .select2-selection {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+  border-color: #80bdff !important;
 }
 

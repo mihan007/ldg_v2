@@ -39,7 +39,7 @@
             <div class="col-md-6 text-center mx-auto balance-alert-wrapper">
                 <div class="alert alert-primary finance-balance-alert w-auto" role="alert">
                     Тут будет уведомление об ошибке работы финансовой подсистемы
-                    <button type="button" class="close balance-alert-close" data-dismiss="alert">&times;</button>
+                    <button class="close balance-alert-close" type="button" data-dismiss="alert">&times;</button>
                 </div>
             </div>
         </div>

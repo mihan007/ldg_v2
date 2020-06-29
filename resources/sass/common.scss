@@ -358,3 +358,15 @@ input[type="radio"].visually-hidden {
 .settings-select-item {
     font-size: 14px;
 }
+
+.function-button {
+  color: $main-text-color;
+}
+
+.function-button:hover {
+    color: $function-button-hover;
+}
+
+.function-button:active {
+    color: $function-button-active;
+}

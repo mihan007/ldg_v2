@@ -5,7 +5,7 @@
             <span class="input-group-text"><i class="fa fa-envelope"></i></span>
         </div>
         <input class="form-control" type="email" id="input-email" placeholder="Email" required>
-        <div class="invalid-feedback">Пожалуйста, введите правильный адрес email</div>
+        <div class="invalid-feedback login-email-invalid-feedback">Пожалуйста, введите правильный адрес email</div>
     </div>
 </div>
 <div class="form-group">
@@ -15,7 +15,7 @@
             <span class="input-group-text"><i class="fa fa-lock"></i></span>
         </div>
         <input class="form-control" type="password" id="input-password" placeholder="Пароль" required>
-        <div class="invalid-feedback">Пожалуйста, введите верный пароль</div>
+        <div class="invalid-feedback login-password-invalid-feedback">Пожалуйста, введите верный пароль</div>
     </div>
 </div>
 <div class="form-group form-items d-flex justify-content-between">

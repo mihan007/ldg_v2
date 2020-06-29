@@ -1,16 +1,13 @@
 .settings-select-item {
-  width: 180px;
+    width: 180px;
 }
 
 .company-name-group {
     width: 100%;
-    //margin-right: 1.2rem;
 }
 
 .project-group,
 .base-cost-group {
-   //width: 20%;
-   // margin-right: 1.2rem;
 }
 
 .max-cpl-group,
@@ -28,9 +25,9 @@
 }
 
 .orders-agreement-group {
-    min-width: 302px;
+    min-width: 330px;
     height: 100%;
-    margin-top: 0.7rem;
+    margin-top: 12px;
 }
 
 .orders-agreement-input {
@@ -40,35 +37,51 @@
 
 .description-example-button {
     //margin-bottom: 1rem;
-    font-size: 11px;
-    background-color: $description-example-button-bg;
-    color: $description-example-button-text;
+    //font-size: 11px;
+    font-size: 14px;
+    //background-color: $description-example-button-bg;
+    //color: $description-example-button-text;
     padding: 3px 7px;
-    margin-left: 10px;
+    //margin-left: 10px;
     margin-bottom: 3px;
+    //color: $main-text-color;
+    //margin-left: 5px;
 }
 
-.description-example-button:hover {
-    background-color: $description-example-button-bg-hover;
-    color: $description-example-button-text;
-}
+//.description-example-button:hover {
+//    //background-color: $description-example-button-bg-hover;
+//    //color: $description-example-button-text;
+//    color: $description-button-hover;
+//}
+//
+//.description-example-button:active {
+//    //background-color: $description-example-button-bg-active;
+//    color: $description-button-active;
+//}
 
-.description-example-button:active {
-    background-color: $description-example-button-bg-active;
+.workspace-form .input-group-text {
+    font-size: 14px;
 }
 
 .workspace-form-column {
     margin-right: 1.2rem;
-    width: 30%;
+    width: 25%;
     margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .workspace-form-column:first-child {
     margin-right: 1.2rem;
-    width: 40%;
+    width: 35%;
 }
 
 .workspace-form-column:nth-child(3) {
@@ -85,13 +98,26 @@ cursor: pointer;
     font-size: 14px;
 }
 
+.workspace-project-dropdown .dropdown-toggle {
+    //font-size: 14px;
+    color: $main-text-color;
+}
+
 .client-acсess-button {
     font-size: 14px;
 }
 
+.workspace-table thead th {
+    border-top: none;
+}
+
 .workspace-email-group {
     width: 68%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 0;
 }
@@ -101,8 +127,8 @@ cursor: pointer;
 }
 
 .workspace-email-form .workspace-email-input {
-    margin-right: 1.2rem;
-    width: 100%;
+    //margin-right: 1.2rem;
+    width: 68%;
     font-size: 14px;
 }
 
@@ -137,13 +163,13 @@ cursor: pointer;
     margin-top: -0.45rem;
 }
 
-.workspace-reset-button:hover {
-    color: $crm-table-button-hover;
-}
-
-.workspace-reset-button:active {
-    color: $crm-table-button-active;
-}
+//.workspace-reset-button:hover {
+//    color: $workspace-reset-button-hover;
+//}
+//
+//.workspace-reset-button:active {
+//    color: $workspace-reset-button-active;
+//}
 
 .subscription-login-text {
    display: inline-block;
@@ -153,4 +179,67 @@ cursor: pointer;
 .subscription-login-link {
     text-decoration: underline;
     margin-left: 5px;
+}
+
+.saved-toast {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    background-color: $toast-bg;
+    z-index: 1050;
+}
+
+//.settings-wrapper {
+//    display: -webkit-box;
+//    display: -ms-flexbox;
+//    display: flex;
+//    -webkit-box-pack: justify;
+//    -ms-flex-pack: justify;
+//    justify-content: space-between;
+//    -webkit-box-align: center;
+//    -ms-flex-align: center;
+//    align-items: center;
+//    padding-top: 0.7rem;
+//    padding-bottom: 0.7rem;
+//    -ms-flex-wrap: wrap;
+//    flex-wrap: wrap;
+//}
+
+//.select2-container .select2-selection--single .select2-selection__rendered {
+//    padding: 0.375rem 0.75rem;
+//    font-size: 14px;
+//}
+//.select2-container--default:focus .select2-search--dropdown .select2-search__field,
+//.select2-container--default:focus .select2-selection--single .select2-selection__rendered {
+//    border-color: #80bdff;
+//    outline: 0;
+//    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+//    border-radius: 0.25rem;
+//}
+
+//.select2-container .select2-selection--single {
+//    height: calc(1.5em + 0.75rem + 2px) !important;
+//}
+//.select2-container--default .select2-selection--single {
+//    border: 1px solid #ced4da !important;
+//}
+//.select2-container--default .select2-selection--single .select2-selection__rendered {
+//    line-height: 34px !important;
+//}
+//.select2-container--default .select2-selection--single .select2-selection__arrow {
+//    height: 34px !important;
+//}
+.select2-container--bootstrap .select2-selection--single {
+    height: 35px !important;
+}
+
+.select2-container--bootstrap .select2-selection {
+    border: 1px solid #ced4da !important;
+}
+
+.select2-container--bootstrap.select2-container--focus .select2-selection,
+.select2-container--bootstrap.select2-container--open .select2-selection {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+    border-color: #80bdff !important;
 }

@@ -113,15 +113,15 @@
                                     </a>
                                 </td>
                                 <td class="comment-col">4Lorem ipsum dolor
-                                    <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
                                 <td class="text-center buttons-col">
-                                    <button class="btn restore-button restore-button-hide" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <button class="btn restore-button restore-button-hide function-button" type="button" value="Восстановление" aria-label="Восстановить данные">
                                         <i class="fa fa-undo" aria-hidden="true"></i>
                                     </button>
-                                    <button  class="btn reset-button reset-button-show" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <button  class="btn reset-button reset-button-show function-button" type="reset" value="Удаление" aria-label="Удалить заявку">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -153,15 +153,15 @@
                                     </a>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
                                 <td class="buttons-col text-center">
-                                    <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <button class="btn restore-button restore-button-show function-button" type="button" value="Восстановление" aria-label="Восстановить данные">
                                         <i class="fa fa-undo" aria-hidden="true"></i>
                                     </button>
-                                    <button  class="btn reset-button reset-button-hide" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <button  class="btn reset-button reset-button-hide function-button" type="reset" value="Удаление" aria-label="Удалить заявку">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -193,15 +193,15 @@
                                     </a>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
                                 <td class="buttons-col text-center">
-                                    <button class="btn restore-button restore-button-hide" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <button class="btn restore-button restore-button-hide function-button" type="button" value="Восстановление" aria-label="Восстановить данные">
                                         <i class="fa fa-undo" aria-hidden="true"></i>
                                     </button>
-                                    <button  class="btn reset-button reset-button-show" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <button  class="btn reset-button reset-button-show function-button" type="reset" value="Удаление" aria-label="Удалить заявку">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -233,15 +233,15 @@
                                     </a>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
                                 <td class="buttons-col text-center">
-                                    <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <button class="btn restore-button restore-button-show function-button" type="button" value="Восстановление" aria-label="Восстановить данные">
                                         <i class="fa fa-undo" aria-hidden="true"></i>
                                     </button>
-                                    <button  class="btn reset-button reset-button-hide" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <button  class="btn reset-button reset-button-hide function-button" type="reset" value="Удаление" aria-label="Удалить заявку">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -270,15 +270,15 @@
                                     <span class="moderation-circle"></span>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
                                 <td class="buttons-col text-center">
-                                    <button class="btn restore-button restore-button-hide" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <button class="btn restore-button restore-button-hide function-button" type="button" value="Восстановление" aria-label="Восстановить данные">
                                         <i class="fa fa-undo" aria-hidden="true"></i>
                                     </button>
-                                    <button  class="btn reset-button reset-button-show" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <button  class="btn reset-button reset-button-show function-button" type="reset" value="Удаление" aria-label="Удалить заявку">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -310,15 +310,15 @@
                                     </a>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
                                 <td class="buttons-col text-center">
-                                    <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <button class="btn restore-button restore-button-show function-button" type="button" value="Восстановление" aria-label="Восстановить данные">
                                         <i class="fa fa-undo" aria-hidden="true"></i>
                                     </button>
-                                    <button  class="btn reset-button reset-button-hide" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <button  class="btn reset-button reset-button-hide function-button" type="reset" value="Удаление" aria-label="Удалить заявку">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -350,15 +350,15 @@
                                     </a>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
                                 <td class="buttons-col text-center">
-                                    <button class="btn restore-button restore-button-hide" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <button class="btn restore-button restore-button-hide function-button" type="button" value="Восстановление" aria-label="Восстановить данные">
                                         <i class="fa fa-undo" aria-hidden="true"></i>
                                     </button>
-                                    <button  class="btn reset-button reset-button-show" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <button  class="btn reset-button reset-button-show function-button" type="reset" value="Удаление" aria-label="Удалить заявку">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -390,15 +390,15 @@
                                     </a>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
                                 <td class="buttons-col text-center">
-                                    <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <button class="btn restore-button restore-button-show function-button" type="button" value="Восстановление" aria-label="Восстановить данные">
                                         <i class="fa fa-undo" aria-hidden="true"></i>
                                     </button>
-                                    <button  class="btn reset-button reset-button-hide" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <button  class="btn reset-button reset-button-hide function-button" type="reset" value="Удаление" aria-label="Удалить заявку">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -433,15 +433,15 @@
                                     </a>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
                                 <td class="buttons-col text-center">
-                                    <button class="btn restore-button restore-button-hide" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <button class="btn restore-button restore-button-hide function-button" type="button" value="Восстановление" aria-label="Восстановить данные">
                                         <i class="fa fa-undo" aria-hidden="true"></i>
                                     </button>
-                                    <button  class="btn reset-button reset-button-show" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <button  class="btn reset-button reset-button-show function-button" type="reset" value="Удаление" aria-label="Удалить заявку">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -473,15 +473,15 @@
                                     </a>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
                                 <td class="buttons-col text-center">
-                                    <button class="btn restore-button restore-button-show" type="button" value="Восстановление" aria-label="Восстановить данные">
+                                    <button class="btn restore-button restore-button-show function-button" type="button" value="Восстановление" aria-label="Восстановить данные">
                                         <i class="fa fa-undo" aria-hidden="true"></i>
                                     </button>
-                                    <button  class="btn reset-button reset-button-hide" type="reset" value="Удаление" aria-label="Удалить заявку">
+                                    <button  class="btn reset-button reset-button-hide function-button" type="reset" value="Удаление" aria-label="Удалить заявку">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </button>
                                 </td>

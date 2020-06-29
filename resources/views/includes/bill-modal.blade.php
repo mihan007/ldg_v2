@@ -11,10 +11,10 @@
                         <label class="sr-only" for="input-sum-bill">Сумма</label>
                         <div class="input-group">
                             <input class="form-control" type="number" min="0" id="input-sum-bill" placeholder="Сумма" required>
-                            <div class="invalid-feedback">Сообщение об ошибке
-                            </div>
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fa fa-rub" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="invalid-feedback bill-sum-invalid-feedback">Сообщение об ошибке
                             </div>
                         </div>
                     </div>
@@ -22,7 +22,7 @@
                         <label class="sr-only" for="input-company-bill">Наименование организации</label>
                         <div class="input-group">
                             <input class="form-control" type="text" id="input-company-bill" placeholder="Наименование организации" required>
-                            <div class="invalid-feedback">Сообщение об ошибке
+                            <div class="invalid-feedback bill-company-invalid-feedback">Сообщение об ошибке
                             </div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@
                         <label class="sr-only" for="input-taxes-number">Инн</label>
                         <div class="input-group">
                             <input class="form-control" type="text" id="input-taxes-number" placeholder="ИНН" required>
-                            <div class="invalid-feedback">Сообщение об ошибке
+                            <div class="invalid-feedback bill-taxes-invalid-feedback">Сообщение об ошибке
                             </div>
                         </div>
                     </div>

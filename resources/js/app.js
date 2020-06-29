@@ -12,3 +12,6 @@ require('./company-grid.js');
 require('./order-grid.js');
 require('./finance-grid.js');
 require('./dashboard.js');
+require('./saved-toast');
+require('./workspace-save-modal');
+require('./workspace-form-project');
