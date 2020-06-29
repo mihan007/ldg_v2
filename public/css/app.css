@@ -14839,8 +14839,17 @@ input[type=radio].visually-hidden {
   font-size: 14px;
 }
 
+.activity-col {
+  width: 8%;
+}
+
 .email-col {
-  width: 10%;
+  width: 22%;
+  overflow: hidden;
+}
+
+.workspace-buttons-col {
+  width: 4%;
 }
 
 .custom-control-input-success:checked ~ .custom-control-label::before {
@@ -14879,7 +14888,7 @@ input[type=radio].visually-hidden {
 .saved-toast {
   position: absolute;
   top: 5px;
-  right: 30px;
+  right: 220px;
   background-color: #eeeeee;
   z-index: 1050;
 }
@@ -14896,5 +14905,10 @@ input[type=radio].visually-hidden {
 .select2-container--bootstrap.select2-container--open .select2-selection {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
   border-color: #80bdff !important;
+}
+
+.workspace-table .custom-control-label::before,
+.workspace-table .custom-control-label::after {
+  cursor: pointer;
 }
 

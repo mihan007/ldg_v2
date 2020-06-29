@@ -10,8 +10,8 @@
                             <label class="workspace-form-label" for="company-name">
                                     1. Название компании клиента
                                     <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
-                                       data-toggle="click-tooltip" data-placement="top" title="Эта информация будет видна
-                                       клиенту"></i>
+                                       data-toggle="click-tooltip" data-placement="top" data-title="Эта информация будет
+                                       видна клиенту"></i>
                             </label>
                             <input class="form-control company-name-input" type="text" id="company-name" required>
                             <div class="invalid-feedback company-name-invalid-feedback">Сообщение об ошибке</div>
@@ -21,7 +21,7 @@
                                 <label class="workspace-form-label" for="base-cost" >
                                     5. Базовая цена заявки для клиента
                                     <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
-                                       data-toggle="click-tooltip" data-placement="top" title="Ваше вознаграждение за
+                                       data-toggle="click-tooltip" data-placement="top" data-title="Ваше вознаграждение за
                                        целевую заявку"></i>
                                 </label>
                                 <div class="input-group">
@@ -37,7 +37,7 @@
                                 <label class="workspace-form-label" for="max-cpl">
                                         6. Максимально допустимый CPL
                                         <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
-                                           data-toggle="click-tooltip" data-placement="top" title="Отправим оповещение о
+                                           data-toggle="click-tooltip" data-placement="top" data-title="Отправим оповещение о
                                            превышении CPL за прошлые сутки ответственному менеджеру. Оставьте 0 рублей,
                                            чтобы не получать уведомления"></i>
                                 </label>
@@ -57,7 +57,7 @@
                             <label class="workspace-form-label" for="project">
                                     2. Проект
                                     <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
-                                       data-toggle="click-tooltip" data-placement="top" title="Разделяйте лидогенерацию
+                                       data-toggle="click-tooltip" data-placement="top" data-title="Разделяйте лидогенерацию
                                        по нишам. Пример: окна, юристы, строительство"></i>
                             </label>
                             <select class="form-control js-project-select project-input" data-placeholder="Выберите
@@ -92,7 +92,7 @@
                             <label class="workspace-form-label" for="balance-limit">
                                 7. Уведомлять об окончании баланса Лидгена при
                                 <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
-                                   data-toggle="click-tooltip" data-placement="top" title="Отправим оповещение клиенту о
+                                   data-toggle="click-tooltip" data-placement="top" data-title="Отправим оповещение клиенту о
                                    необходимости пополнить баланс"></i>
                             </label>
                             <div class="input-group">
@@ -110,8 +110,8 @@
                             <label class="workspace-form-label" for="moderation-period">
                                 3. Максимальный период модерации
                                 <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
-                                   data-toggle="click-tooltip" data-placement="top" title="Количество дней, в течение которых
-                                   клиент может изменить статус заявки. Максимальный период 45 дней"></i>
+                                   data-toggle="click-tooltip" data-placement="top" data-title="Количество дней, в
+                                   течение которых клиент может изменить статус заявки. Максимальный период 45 дней"></i>
                             </label>
                             <input class="form-control moderation-period-input" type="number" id="moderation-period"
                                    placeholder="7" min="1" max="45">
@@ -122,11 +122,12 @@
                             <label class="workspace-form-label" for="data-hide">
                                 8. Скрывать данные заявок при балансе Лидгена менее
                                 <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
-                                   data-toggle="click-tooltip" data-placement="top" title="Система скроет данные заявки при
-                                   балансе ниже этого значения"></i>
+                                   data-toggle="click-tooltip" data-placement="top" data-title="Система скроет данные
+                                   заявки при балансе ниже этого значения"></i>
                             </label>
                             <div class="input-group">
-                                <input class="form-control data-hide-input" type="number" id="data-hide" min="0" placeholder="0">
+                                <input class="form-control data-hide-input" type="number" id="data-hide" min="0"
+                                       placeholder="0">
                                 <div class="input-group-append">
                                     <span class="input-group-text"><i class="fa fa-rub" aria-hidden="true"></i></span>
                                 </div>
@@ -138,7 +139,7 @@
                         <label class="workspace-form-label" for="orders-agreement">
                                 4. Описание соглашения по заявкам
                                 <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
-                                   data-toggle="click-tooltip" data-placement="top" title="Соглашение о том, какие
+                                   data-toggle="click-tooltip" data-placement="top" data-title="Соглашение о том, какие
                                    заявки считаются нецелевыми или целевыми"></i>
                         </label>
                         <button class="btn description-example-button function-button" data-toggle="tooltip"
@@ -146,15 +147,14 @@
                                 title="Вставить стандартное описание">
                             <i class="fa fa-clipboard" aria-hidden="true"></i>
                         </button>
-                        <textarea class="form-control orders-agreement-input" rows="6" type="text" id="orders-agreement">
-                        </textarea>
+                        <textarea class="form-control orders-agreement-input" rows="6" id="orders-agreement"></textarea>
                         <div class="invalid-feedback orders-agreement-invalid-feedback">Сообщение об ошибке</div>
                     </div>
                 </form>
             </div>
             <div class="col-md-12 mb-1 mt-1 settings-wrapper align-items-start">
                 <div>
-                    <span class="workspace-form-label">9. Доступ клиента к заявкам и уведомления</span>
+                    <label class="workspace-form-label" for="workspace-email">9. Доступ клиента к заявкам и уведомления</label>
                     <a class="btn client-acсess-button" href="#" aria-label="Ссылка на внешнее администрирование">
                         <i class="fa fa-external-link" aria-hidden="true"></i>
                     </a>
@@ -190,8 +190,9 @@
                     <table class="table workspace-table common-table" data-offset="140">
                         <thead>
                             <tr class="table-grey text-center">
-                                <th class="rounded-table-left activity-col" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                    title="Включает / выключает доступ и рассылку">Активность
+                                <th class="rounded-table-left activity-col" data-toggle="tooltip" data-placement="top"
+                                    data-delay='{"show":"1000", "hide":"1000"}' title="Включает / выключает доступ и
+                                    рассылку">Активность
                                 </th>
                                 <th class="email-col" scope="col">Почта
                                 </th>
@@ -219,7 +220,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="text-center" scope="row">
+                                <td class="activity-col text-center">
                                     <div class="custom-control custom-switch">
                                         <input class="custom-control-input custom-control-input-success" id="active-switch"
                                                type="checkbox" checked>
@@ -294,14 +295,14 @@
                                     </div>
                                 </td>
                                 <td class="text-center">
-                                    <a  class="btn workspace-reset-button function-button" value="Удаление" aria-label="Удалить доступ"
+                                    <a  class="btn workspace-reset-button function-button" aria-label="Удалить доступ"
                                         href=".js-workspace-reset-modal" role="button" data-toggle="modal">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </a>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="text-center" scope="row">
+                                <td class="activity-col text-center">
                                     <div class="custom-control custom-switch">
                                         <input class="custom-control-input custom-control-input-success" id="active-switch2"
                                                type="checkbox">
@@ -375,7 +376,7 @@
                                     </div>
                                 </td>
                                 <td class="workspace-buttons-col text-center">
-                                    <a  class="btn workspace-reset-button function-button" value="Удаление" aria-label="Удалить доступ"
+                                    <a  class="btn workspace-reset-button function-button" aria-label="Удалить доступ"
                                         href=".js-workspace-reset-modal" role="button" data-toggle="modal">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </a>
