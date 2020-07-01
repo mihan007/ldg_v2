@@ -19,7 +19,7 @@
                         <div class="d-flex align-items-end">
                             <div class="form-group base-cost-group">
                                 <label class="workspace-form-label" for="base-cost" >
-                                    5. Базовая цена заявки для клиента&nbsp;
+                                    5. Базовая цена заявки для клиента
                                     <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                        data-toggle="click-tooltip" data-placement="top" data-title="Ваше вознаграждение за
                                        целевую заявку"></i>
@@ -107,8 +107,8 @@
                     </div>
                     <div class="workspace-form-column">
                         <div class="form-group moderation-period-group">
-                            <label class="workspace-form-label" for="moderation-period">
-                                3. Максимальный период модерации&nbsp;
+                            <label class="workspace-form-label form-label-nowrap" for="moderation-period">
+                                3. Максимальный период модерации
                                 <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                    data-toggle="click-tooltip" data-placement="top" data-title="Количество дней, в
                                    течение которых клиент может изменить статус заявки. Максимальный период 45 дней"></i>

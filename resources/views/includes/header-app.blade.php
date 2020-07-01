@@ -70,4 +70,4 @@
         </ul>
     </nav>
 </header>
-@include('includes.save-result-modal'))
+@include('includes.save-result-modal')

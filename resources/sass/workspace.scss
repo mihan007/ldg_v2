@@ -59,6 +59,10 @@
 //    color: $description-button-active;
 //}
 
+//.workspace-form {
+//    min-width: 1255px;
+//}
+
 .workspace-form .input-group-text {
     font-size: 14px;
 }
@@ -85,7 +89,11 @@
 }
 
 .workspace-form-column:nth-child(3) {
-    width: 385px;
+    width: 378px;
+}
+
+.form-label-nowrap {
+    white-space: nowrap;
 }
 
 .workspace-form-label {
@@ -135,9 +143,11 @@ cursor: pointer;
 .email-add-button {
     font-size: 14px;
 }
+
 .activity-col {
     width: 8%;
 }
+
 .email-col {
     width: 22%;
     overflow: hidden;
@@ -281,6 +291,8 @@ cursor: pointer;
 
 .page-footer {
     padding: 2px 0;
+    background-color: $page-footer-bg;
+    z-index: 1029;
 }
 
 @media (max-width: 767px) {

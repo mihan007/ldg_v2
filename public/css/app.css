@@ -14826,7 +14826,11 @@ input[type=radio].visually-hidden {
 }
 
 .workspace-form-column:nth-child(3) {
-  width: 385px;
+  width: 378px;
+}
+
+.form-label-nowrap {
+  white-space: nowrap;
 }
 
 .workspace-form-label {
@@ -14962,6 +14966,8 @@ input[type=radio].visually-hidden {
 
 .page-footer {
   padding: 2px 0;
+  background-color: rgba(105, 105, 105, 0.5);
+  z-index: 1029;
 }
 
 @media (max-width: 767px) {
