@@ -97,7 +97,7 @@
 }
 
 .workspace-form-label {
-cursor: pointer;
+    cursor: pointer;
     //padding-left: 10px;
     font-weight: 600;
 }
@@ -189,7 +189,7 @@ cursor: pointer;
 //}
 
 .subscription-login-text {
-   display: inline-block;
+    display: inline-block;
     margin-bottom: 0;
 }
 
@@ -266,27 +266,9 @@ cursor: pointer;
     cursor: pointer;
 }
 
-
-.sidenav .save-button-item {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 0;
-}
-
-@media (min-width: 768px) {
-    .sidenav .save-button-item {
-        //display: flex;
-        //align-items: center;
-        //margin-right: auto;
-        //margin-left: auto;
-        //padding: 0.5rem 0;
-        display: none;
-    }
-}
-
 .unsaved-text {
     color: white;
+    font-size: 18px;
 }
 
 .page-footer {
@@ -310,9 +292,14 @@ cursor: pointer;
 //}
 
 .js-save-result-modal.modal.show .modal-dialog {
+    -webkit-transform: translateY(70vh);
     transform: translateY(70vh);
 }
 
 .workspace-save-button {
     font-size: 15px;
+}
+
+.footer-save-button {
+    font-size: 14px;
 }
