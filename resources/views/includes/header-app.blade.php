@@ -65,7 +65,7 @@
                 </a>
             </li>
             <li class="nav-item sidenav-link save-button-item">
-                <button class="btn btn-light save-result-button">Сохранить</button>
+                <button class="btn btn-primary save-result-button">Сохранить</button>
             </li>
         </ul>
     </nav>
