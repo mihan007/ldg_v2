@@ -64,6 +64,12 @@
                     <i class="fa fa-cog sidenav-icon" aria-hidden="true"></i>
                 </a>
             </li>
+            <li class="nav-item sidenav-link save-button-item">
+                <button class="btn btn-light show-save-toast" type="submit" data-toggle="tooltip" data-placement="right"
+                        title="Сохранить" aria-label="Кнопка Сохранить">
+                    <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                </button>
+            </li>
         </ul>
     </nav>
 </header>

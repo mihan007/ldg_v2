@@ -255,3 +255,22 @@ cursor: pointer;
 .workspace-table .custom-control-label::after {
     cursor: pointer;
 }
+
+
+.sidenav .save-button-item {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .sidenav .save-button-item {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0.5rem 0;
+    }
+}
+
