@@ -395,4 +395,13 @@
         </div>
         @include('includes.workspace-save-modal')
     </main>
+    <footer class="page-footer footer-hide bg-grey fixed-bottom">
+        <div class="container">
+            <div class="text-center py-2 d-flex justify-content-center align-items-center">
+                    <h5 class="mb-1 unsaved-text mr-3">На странице есть несохраненные изменения</h5>
+                    <button class="btn btn-light show-save-toast" type="submit" >Сохранить
+                    </button>
+            </div>
+        </div>
+    </footer>
 @stop

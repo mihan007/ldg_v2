@@ -15,3 +15,4 @@ require('./dashboard.js');
 require('./saved-toast');
 require('./workspace-save-modal');
 require('./workspace-form-project');
+require('./save-result-modal');

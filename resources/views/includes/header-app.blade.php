@@ -65,11 +65,9 @@
                 </a>
             </li>
             <li class="nav-item sidenav-link save-button-item">
-                <button class="btn btn-light show-save-toast" type="submit" data-toggle="tooltip" data-placement="right"
-                        title="Сохранить" aria-label="Кнопка Сохранить">
-                    <i class="fa fa-floppy-o" aria-hidden="true"></i>
-                </button>
+                <button class="btn btn-light save-result-button">Сохранить</button>
             </li>
         </ul>
     </nav>
 </header>
+@include('includes.save-result-modal'))

@@ -14952,11 +14952,29 @@ input[type=radio].visually-hidden {
 
 @media (min-width: 768px) {
   .sidenav .save-button-item {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0.5rem 0;
+    display: none;
   }
+}
+
+.unsaved-text {
+  color: white;
+}
+
+.page-footer {
+  padding: 2px 0;
+}
+
+@media (max-width: 767px) {
+  .footer-hide {
+    display: none;
+  }
+}
+
+.js-save-result-modal.modal.show .modal-dialog {
+  transform: translateY(70vh);
+}
+
+.workspace-save-button {
+  font-size: 15px;
 }
 
