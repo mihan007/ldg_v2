@@ -14517,6 +14517,12 @@ input[type=radio].visually-hidden {
   font-size: 13px;
 }
 
+@media (max-width: 1350px) {
+  .company-table {
+    font-size: 12px;
+  }
+}
+
 .company-table tr:first-child th {
   vertical-align: middle;
 }
@@ -14960,14 +14966,9 @@ input[type=radio].visually-hidden {
   cursor: pointer;
 }
 
-.unsaved-text {
-  color: white;
-  font-size: 18px;
-}
-
 .page-footer {
   padding: 2px 0;
-  background-color: rgba(105, 105, 105, 0.5);
+  background-color: #e0e0e0;
   z-index: 1029;
 }
 
@@ -14977,15 +14978,20 @@ input[type=radio].visually-hidden {
   }
 }
 
+.unsaved-text {
+  color: #212529;
+  font-size: 18px;
+}
+
+.footer-save-button {
+  font-size: 14px;
+}
+
 .js-save-result-modal.modal.show .modal-dialog {
   transform: translateY(70vh);
 }
 
 .workspace-save-button {
   font-size: 15px;
-}
-
-.footer-save-button {
-  font-size: 14px;
 }
 

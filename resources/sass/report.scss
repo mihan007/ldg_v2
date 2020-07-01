@@ -73,6 +73,12 @@
     font-size: 13px;
 }
 
+@media (max-width: 1350px) {
+    .company-table {
+    font-size: 12px;
+    }
+}
+
 .company-table tr:first-child th {
     vertical-align: middle;
 }

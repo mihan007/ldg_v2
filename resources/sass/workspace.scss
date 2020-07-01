@@ -266,11 +266,6 @@
     cursor: pointer;
 }
 
-.unsaved-text {
-    color: white;
-    font-size: 18px;
-}
-
 .page-footer {
     padding: 2px 0;
     background-color: $page-footer-bg;
@@ -281,6 +276,15 @@
     .footer-hide {
         display: none;
     }
+}
+
+.unsaved-text {
+    color: $main-text-color;
+    font-size: 18px;
+}
+
+.footer-save-button {
+    font-size: 14px;
 }
 
 //.modal-dialog {
@@ -300,6 +304,4 @@
     font-size: 15px;
 }
 
-.footer-save-button {
-    font-size: 14px;
-}
+
