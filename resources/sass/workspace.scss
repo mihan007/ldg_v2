@@ -6,10 +6,6 @@
     width: 100%;
 }
 
-.project-group,
-.base-cost-group {
-}
-
 .max-cpl-group,
 .base-cost-group {
     width: 48%;
@@ -17,11 +13,6 @@
 
 .base-cost-group {
     margin-right: 1.2rem;
-}
-
-.moderation-period-group {
-    //width: 272px;
-    //margin-right: 1.2rem;
 }
 
 .orders-agreement-group {
@@ -36,28 +27,10 @@
 }
 
 .description-example-button {
-    //margin-bottom: 1rem;
-    //font-size: 11px;
     font-size: 14px;
-    //background-color: $description-example-button-bg;
-    //color: $description-example-button-text;
     padding: 3px 7px;
-    //margin-left: 10px;
     margin-bottom: 3px;
-    //color: $main-text-color;
-    //margin-left: 5px;
 }
-
-//.description-example-button:hover {
-//    //background-color: $description-example-button-bg-hover;
-//    //color: $description-example-button-text;
-//    color: $description-button-hover;
-//}
-//
-//.description-example-button:active {
-//    //background-color: $description-example-button-bg-active;
-//    color: $description-button-active;
-//}
 
 .workspace-form .input-group-text {
     font-size: 14px;
@@ -85,12 +58,15 @@
 }
 
 .workspace-form-column:nth-child(3) {
-    width: 380px;
+    width: 378px;
+}
+
+.form-label-nowrap {
+    white-space: nowrap;
 }
 
 .workspace-form-label {
-cursor: pointer;
-    //padding-left: 10px;
+    cursor: pointer;
     font-weight: 600;
 }
 
@@ -99,7 +75,6 @@ cursor: pointer;
 }
 
 .workspace-project-dropdown .dropdown-toggle {
-    //font-size: 14px;
     color: $main-text-color;
 }
 
@@ -127,7 +102,6 @@ cursor: pointer;
 }
 
 .workspace-email-form .workspace-email-input {
-    //margin-right: 1.2rem;
     width: 68%;
     font-size: 14px;
 }
@@ -136,8 +110,17 @@ cursor: pointer;
     font-size: 14px;
 }
 
+.activity-col {
+    width: 8%;
+}
+
 .email-col {
-    width: 10%;
+    width: 22%;
+    overflow: hidden;
+}
+
+.workspace-buttons-col {
+    width: 4%;
 }
 
 .custom-control-input-success:checked ~ .custom-control-label::before {
@@ -163,16 +146,8 @@ cursor: pointer;
     margin-top: -0.45rem;
 }
 
-//.workspace-reset-button:hover {
-//    color: $workspace-reset-button-hover;
-//}
-//
-//.workspace-reset-button:active {
-//    color: $workspace-reset-button-active;
-//}
-
 .subscription-login-text {
-   display: inline-block;
+    display: inline-block;
     margin-bottom: 0;
 }
 
@@ -184,51 +159,11 @@ cursor: pointer;
 .saved-toast {
     position: absolute;
     top: 5px;
-    right: 30px;
+    right: 220px;
     background-color: $toast-bg;
     z-index: 1050;
 }
 
-//.settings-wrapper {
-//    display: -webkit-box;
-//    display: -ms-flexbox;
-//    display: flex;
-//    -webkit-box-pack: justify;
-//    -ms-flex-pack: justify;
-//    justify-content: space-between;
-//    -webkit-box-align: center;
-//    -ms-flex-align: center;
-//    align-items: center;
-//    padding-top: 0.7rem;
-//    padding-bottom: 0.7rem;
-//    -ms-flex-wrap: wrap;
-//    flex-wrap: wrap;
-//}
-
-//.select2-container .select2-selection--single .select2-selection__rendered {
-//    padding: 0.375rem 0.75rem;
-//    font-size: 14px;
-//}
-//.select2-container--default:focus .select2-search--dropdown .select2-search__field,
-//.select2-container--default:focus .select2-selection--single .select2-selection__rendered {
-//    border-color: #80bdff;
-//    outline: 0;
-//    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-//    border-radius: 0.25rem;
-//}
-
-//.select2-container .select2-selection--single {
-//    height: calc(1.5em + 0.75rem + 2px) !important;
-//}
-//.select2-container--default .select2-selection--single {
-//    border: 1px solid #ced4da !important;
-//}
-//.select2-container--default .select2-selection--single .select2-selection__rendered {
-//    line-height: 34px !important;
-//}
-//.select2-container--default .select2-selection--single .select2-selection__arrow {
-//    height: 34px !important;
-//}
 .select2-container--bootstrap .select2-selection--single {
     height: 35px !important;
 }
@@ -242,4 +177,39 @@ cursor: pointer;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
     border-color: #80bdff !important;
+}
+
+.workspace-table .custom-control-label::before,
+.workspace-table .custom-control-label::after {
+    cursor: pointer;
+}
+
+.page-footer {
+    padding: 2px 0;
+    background-color: $page-footer-bg;
+    z-index: 1029;
+}
+
+@media (max-width: 767px) {
+    .footer-hide {
+        display: none;
+    }
+}
+
+.unsaved-text {
+    color: $main-text-color;
+    font-size: 18px;
+}
+
+.footer-save-button {
+    font-size: 14px;
+}
+
+.js-save-result-modal.modal.show .modal-dialog {
+    -webkit-transform: translateY(70vh);
+    transform: translateY(70vh);
+}
+
+.workspace-save-button {
+    font-size: 15px;
 }

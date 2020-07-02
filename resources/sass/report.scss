@@ -70,7 +70,13 @@
 
 .company-table {
     cursor: pointer;
+    font-size: 13px;
+}
+
+@media (max-width: 1365px) {
+    .company-table {
     font-size: 12px;
+    }
 }
 
 .company-table tr:first-child th {

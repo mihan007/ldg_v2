@@ -74610,6 +74610,8 @@ __webpack_require__(/*! ./saved-toast */ "./resources/js/saved-toast.js");
 __webpack_require__(/*! ./workspace-save-modal */ "./resources/js/workspace-save-modal.js");
 
 __webpack_require__(/*! ./workspace-form-project */ "./resources/js/workspace-form-project.js");
+
+__webpack_require__(/*! ./save-result-modal */ "./resources/js/save-result-modal.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -75020,6 +75022,21 @@ $(document).ready(function () {
 
 /***/ }),
 
+/***/ "./resources/js/save-result-modal.js":
+/*!*******************************************!*\
+  !*** ./resources/js/save-result-modal.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $('.save-result-button').on('click', function () {
+    $('.js-save-result-modal').modal('show');
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/js/saved-toast.js":
 /*!*************************************!*\
   !*** ./resources/js/saved-toast.js ***!
@@ -75028,7 +75045,10 @@ $(document).ready(function () {
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  $('.workspace-form input').on('change', function () {
+  $(".show-save-toast").click(function () {
+    $(".js-saved-toast").toast({
+      delay: 3000
+    });
     $(".js-saved-toast").toast('show');
   });
 });
@@ -75044,9 +75064,12 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip({});
-  $(document).on('click', '[data-toggle="click-tooltip"]', function () {
-    $(this).tooltip('toggle'); // }).on('mouseleave', '[data-toggle="click-tooltip"]', function () {
-    //     $(this).tooltip('hide')
+  $(document).on('click', '[data-toggle="click-tooltip"]', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).tooltip('toggle');
+  }).on('click', function (e) {
+    $('[data-toggle="click-tooltip"]').tooltip('hide');
   });
 });
 
@@ -75060,7 +75083,7 @@ $(document).ready(function () {
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  $(".show-toast").click(function () {
+  $(".show-update-toast").click(function () {
     $(".js-update-toast").toast({
       delay: 3000
     });

@@ -16,7 +16,7 @@
                     <button type="button" class="btn page-button mb-1" aria-label="Показать дашборд">
                         <i class="fa fa-line-chart" aria-hidden="true"></i>
                     </button>
-                    <button type="button" class="btn page-button show-toast mb-1" data-toggle="tooltip"
+                    <button type="button" class="btn page-button show-update-toast mb-1" data-toggle="tooltip"
                             data-placement="bottom" title="Последнее обновление ..." data-trigger="hover"
                             aria-label="Обновление данных в таблице аналитики">
                         <i class="fa fa-refresh" aria-hidden="true"></i>

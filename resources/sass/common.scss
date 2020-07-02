@@ -70,20 +70,46 @@ input[type="radio"].visually-hidden {
 
 .sidenav {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
-    width: 60px;
-    height: 100vh;
+    width: 100%;
     margin-top: 3.5rem;
     background-color: $header-bg;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     font-size: 26px;
     z-index: 1032;
+}
+
+@media(max-width: 767px) {
+    .sidenav.navbar-nav {
+        flex-direction: row;
+        padding: 0 1rem;
+    }
+
+    .sidenav .nav-item {
+        margin-right: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .sidenav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 100vh;
+        margin-top: 3.5rem;
+        background-color: $header-bg;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        font-size: 26px;
+        z-index: 1032;
+    }
 }
 
 .sidenav-link .sidenav-icon {
@@ -118,6 +144,12 @@ input[type="radio"].visually-hidden {
     padding-left: 80px;
     min-width: 1340px;
     font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .page-wrapper {
+        padding-left: 20px;
+    }
 }
 
 .offset-block {
@@ -369,4 +401,21 @@ input[type="radio"].visually-hidden {
 
 .function-button:active {
     color: $function-button-active;
+}
+
+.sidenav .save-button-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .sidenav .save-button-item {
+        display: none;
+    }
 }

@@ -35,8 +35,8 @@
                 </a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item disabled">1@troiza.net</a>
-                    <a class="dropdown-item"href="#" ><i class="fa fa-id-card-o" aria-hidden="true"></i>Мой профиль</a>
-                    <a class="cog-link dropdown-item" href="#" alt="Настройки аккаунта">
+                    <a class="dropdown-item" href="#" ><i class="fa fa-id-card-o" aria-hidden="true"></i>Мой профиль</a>
+                    <a class="cog-link dropdown-item" href="#">
                         <i class="fa fa-cog" aria-hidden="true"></i>Настройки аккаунта
                     </a>
                     <button class="dropdown-item"><i class="fa fa-sign-out" aria-hidden="true"></i>Выйти</button>
@@ -47,23 +47,27 @@
     <nav class="navbar-collapse magic-hide">
         <ul class="navbar-nav navbar-dark mr-auto sidenav text-center position-fixed">
             <li class="nav-item">
-                <a class="nav-link sidenav-link active" href="{{ route('companies.report') }}" data-toggle="tooltip" data-placement="right" title="Компании"
-                   aria-label="Главная страница">
+                <a class="nav-link sidenav-link active" href="{{ route('companies.report') }}" data-toggle="tooltip"
+                   data-placement="right" title="Компании" aria-label="Главная страница">
                     <i class="fa fa-home sidenav-icon " aria-hidden="true"></i>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link sidenav-link" href="{{ route('work.orders') }}" data-toggle="tooltip" data-placement="right" title="Заявки"
-                   aria-label="Заявки">
+                <a class="nav-link sidenav-link" href="{{ route('work.orders') }}" data-toggle="tooltip"
+                   data-placement="right" title="Заявки" aria-label="Заявки">
                     <i class="fa fa-bars sidenav-icon" aria-hidden="true"></i>
                 </a>
             </li>
             <li class="nav-item sidenav-link">
-                <a class="nav-link" href="{{ route('settings.workspace') }}" data-toggle="tooltip" data-placement="right" title="Настройки"
-                   aria-label="Настройки">
+                <a class="nav-link" href="{{ route('settings.workspace') }}" data-toggle="tooltip" data-placement="right"
+                   title="Настройки" aria-label="Настройки">
                     <i class="fa fa-cog sidenav-icon" aria-hidden="true"></i>
                 </a>
+            </li>
+            <li class="nav-item sidenav-link save-button-item">
+                <button class="btn btn-primary save-result-button">Сохранить</button>
             </li>
         </ul>
     </nav>
 </header>
+@include('includes.save-result-modal')

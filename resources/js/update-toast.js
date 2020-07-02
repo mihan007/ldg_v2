@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".show-toast").click(function(){
+    $(".show-update-toast").click(function(){
         $(".js-update-toast").toast({
             delay: 3000
         });
