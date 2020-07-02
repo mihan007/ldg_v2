@@ -75045,9 +75045,6 @@ $(document).ready(function () {
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  // $('.workspace-form input').on('change', function () {
-  //     $(".js-saved-toast").toast('show');
-  // })
   $(".show-save-toast").click(function () {
     $(".js-saved-toast").toast({
       delay: 3000
@@ -75065,12 +75062,6 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// $(document).ready(function(){
-//     $('[data-toggle="tooltip"]').tooltip({});
-//     $(document).on('click', '[data-toggle="click-tooltip"]', function () {
-//         $(this).tooltip('toggle')
-//     })
-// });
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip({});
   $(document).on('click', '[data-toggle="click-tooltip"]', function (e) {
