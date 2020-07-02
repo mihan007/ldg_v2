@@ -74612,6 +74612,12 @@ __webpack_require__(/*! ./workspace-save-modal */ "./resources/js/workspace-save
 __webpack_require__(/*! ./workspace-form-project */ "./resources/js/workspace-form-project.js");
 
 __webpack_require__(/*! ./save-result-modal */ "./resources/js/save-result-modal.js");
+
+__webpack_require__(/*! ./copy-text */ "./resources/js/copy-text.js");
+
+__webpack_require__(/*! ./select-modal */ "./resources/js/select-modal.js");
+
+__webpack_require__(/*! ./save-result */ "./resources/js/save-result.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -74692,6 +74698,19 @@ $(document).ready(function () {
       'orderSequence': ['desc', 'asc']
     }]
   });
+});
+
+/***/ }),
+
+/***/ "./resources/js/copy-text.js":
+/*!***********************************!*\
+  !*** ./resources/js/copy-text.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  var clipboard = new ClipboardJS('.copy-button');
 });
 
 /***/ }),
@@ -75037,6 +75056,23 @@ $(document).ready(function () {
 
 /***/ }),
 
+/***/ "./resources/js/save-result.js":
+/*!*************************************!*\
+  !*** ./resources/js/save-result.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).on('click', '.js-save-show-result', function () {
+  var resultModalSelector = '.' + $(this).data('result');
+  $('.modal').modal('hide');
+  $('.modal').on('hidden', function () {
+    $(resultModalSelector).modal('show');
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/js/saved-toast.js":
 /*!*************************************!*\
   !*** ./resources/js/saved-toast.js ***!
@@ -75050,6 +75086,29 @@ $(document).ready(function () {
       delay: 3000
     });
     $(".js-saved-toast").toast('show');
+  });
+});
+
+/***/ }),
+
+/***/ "./resources/js/select-modal.js":
+/*!**************************************!*\
+  !*** ./resources/js/select-modal.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// $(document).ready(function(){
+//     $(".openmodal").on("change", function () {
+//     if($(this).val() === 'openmodaloption'){
+//         $('.js-roistat-phone-modal').modal('show');
+//     }
+// });
+// });
+$(document).ready(function () {
+  $(".openmodal").on("change", function () {
+    var modalClass = $(this).find(':selected').data('modal');
+    $('.' + modalClass).modal('show');
   });
 });
 

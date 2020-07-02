@@ -236,6 +236,7 @@ input[type="radio"].visually-hidden {
     border-bottom: 2px solid $filter-button-border;
     border-right: 2px solid $filter-button-border;
     font-weight: 600;
+    border-top: none;
 }
 
 .common-table thead th:last-child {

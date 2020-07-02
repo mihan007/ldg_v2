@@ -16,3 +16,6 @@ require('./saved-toast');
 require('./workspace-save-modal');
 require('./workspace-form-project');
 require('./save-result-modal');
+require('./copy-text');
+require('./select-modal');
+require('./save-result');

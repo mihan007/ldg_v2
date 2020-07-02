@@ -14277,6 +14277,7 @@ input[type=radio].visually-hidden {
   border-bottom: 2px solid #ced4da;
   border-right: 2px solid #ced4da;
   font-weight: 600;
+  border-top: none;
 }
 
 .common-table thead th:last-child {
@@ -14869,10 +14870,6 @@ input[type=radio].visually-hidden {
   font-size: 14px;
 }
 
-.workspace-table thead th {
-  border-top: none;
-}
-
 .workspace-email-group {
   width: 68%;
   display: flex;
@@ -14993,5 +14990,38 @@ input[type=radio].visually-hidden {
 
 .workspace-save-button {
   font-size: 15px;
+}
+
+.orders-source-select {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.source-id-col {
+  width: 10%;
+}
+
+.source-buttons-col {
+  width: 7%;
+}
+
+.name-col,
+.source-col,
+.order-cost-col {
+  width: 12%;
+}
+
+.request-col {
+  width: 11%;
+}
+
+.copy-form-input,
+.copy-button {
+  font-size: 14px;
+}
+
+.modal-text {
+  margin-bottom: 0;
+  font-size: 16px;
 }
 

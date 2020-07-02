@@ -72,3 +72,7 @@ Route::get('/settings/first-subscription', function () {
 Route::get('/settings/workspace-invite', function () {
     return view('pages.settings.workspace-invite');
 })->name('settings.workspace-invite');
+
+Route::get('/settings/orders-source', function () {
+    return view('pages.settings.orders-source');
+})->name('settings.orders-source');

@@ -1,7 +1,23 @@
 @extends('layouts.app')
 @section('content')
     <main class="page-wrapper show-toast position-relative">
-        @include('includes.settings-links', ['step'=>'workspace'])
+        <div class="row">
+            <div class="col-md-12 offset-block"></div>
+            <div class="col-md-12 settings-wrapper border-bottom font-weight-bold">
+                @include('includes.settings-links', ['step'=>'workspace'])
+                <div>
+                    <select class="custom-select settings-select-item">
+                        <option selected>Менеджер</option>
+                        <option value="1">Айгуль Шайкенова</option>
+                        <option value="2">Имя 2</option>
+                        <option value="3">Имя 3</option>
+                        <option value="4">Имя 4</option>
+                        <option value="5">Имя 5</option>
+                        <option value="6">Имя 6</option>
+                    </select>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12 border-bottom">
                 <form class="d-flex workspace-form" method="post" action="#">
@@ -172,7 +188,7 @@
         <div class="row">
             <div class="col-md-12 mx-auto">
                 <div class="table-wrapper mb-5">
-                    <table class="table workspace-table common-table" data-offset="140">
+                    <table class="table workspace-table common-table">
                         <thead>
                             <tr class="table-grey text-center">
                                 <th class="rounded-table-left activity-col" data-toggle="tooltip" data-placement="top"
