@@ -20,13 +20,7 @@
                         <input class="form-control" type="text" id="roistat-cost" value="Базовая">
                         </div>
                     </div>
-                    <div class="form-group workspace-reset-modal-buttons modal-action-buttons">
-                        <button class="btn cancel-button modal-action-button" data-dismiss="modal"
-                                type="button">Отменить
-                        </button>
-                        <a class="btn btn-primary modal-action-button js-save-show-result"
-                                role="button" data-result='js-roistat-url-modal'>Сохранить</a>
-                    </div>
+                    @include('includes.modal.buttons', ['resultModalClass' => 'js-roistat-url-modal'])
                 </form>
             </div>
         </div>

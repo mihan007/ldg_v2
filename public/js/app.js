@@ -75063,11 +75063,15 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-$(document).on('click', '.js-save-show-result', function () {
-  var resultModalSelector = '.' + $(this).data('result');
-  $('.modal').modal('hide');
-  $('.modal').on('hidden', function () {
-    $(resultModalSelector).modal('show');
+$(document).on('click', '.js-save-show-result', function (e) {
+  e.preventDefault();
+  e.stopPropagation();
+  var resultModalClass = $(this).data('result');
+  var resultModalSelector = '.' + resultModalClass;
+  $('.modal').modal('hide').on('hidden.bs.modal', function () {
+    if (!$(this).hasClass(resultModalClass)) {
+      $(resultModalSelector).modal('show');
+    }
   });
 });
 
@@ -75098,15 +75102,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// $(document).ready(function(){
-//     $(".openmodal").on("change", function () {
-//     if($(this).val() === 'openmodaloption'){
-//         $('.js-roistat-phone-modal').modal('show');
-//     }
-// });
-// });
 $(document).ready(function () {
-  $(".openmodal").on("change", function () {
+  $(document).on('change', '.js-open-modal', function () {
     var modalClass = $(this).find(':selected').data('modal');
     $('.' + modalClass).modal('show');
   });
@@ -75233,8 +75230,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/macbook/Documents/GitHub/ldg_v2/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/macbook/Documents/GitHub/ldg_v2/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/mihan007/Projects/ldg_v2/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/mihan007/Projects/ldg_v2/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

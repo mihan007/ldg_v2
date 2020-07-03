@@ -6,10 +6,9 @@
             <div class="col-md-12 settings-wrapper font-weight-bold">
                 @include('includes.settings-links', ['step'=>'orders-source'])
                 <div>
-                    <select class="select custom-select orders-source-select bg-primary text-white openmodal"
+                    <select class="select custom-select orders-source-select bg-primary text-white js-open-modal"
                             data-style="btn-primary">
                         <option value="" selected>Добавить подключение</option>
-{{--                    <select class="selectpicker" title="Добавить подключение" data-style="btn-primary">--}}
                         <optgroup label="Получение заявок">
                             <option class="" data-modal="js-roistat-phone-modal" role="button">
                                     Roistat телефония
@@ -142,13 +141,14 @@
                 </div>
             </div>
         </div>
-        @include('includes.workspace-reset-modal')
         <div class="toast saved-toast js-saved-toast">
             <div class="toast-body">
                 <div>Данные сохранены</div>
             </div>
         </div>
+        @include('includes.workspace-reset-modal')
         @include('includes.workspace-save-modal')
         @include('includes.roistat-phone-modal')
+        @include('includes.roistat-url-modal')
     </main>
 @stop
