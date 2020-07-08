@@ -10,16 +10,10 @@
                     <div class="form-group row">
                         <label class="col-sm-4 col-form-label" for="roistat-connect-name">Имя подключения</label>
                         <div class="col-sm-8">
-                        <input class="form-control" type="text" id="roistat-connect-name" value="Roistat телефония">
+                        <input class="form-control" type="text" id="roistat-connect-name" value="Roistat телефония[ID]">
                         </div>
                     </div>
-                    <p class="modal-text">Укажите стоимость заявки</p>
-                    <div class="form-group row">
-                        <label class="col-sm-4 col-form-label" for="roistat-cost">Цена</label>
-                        <div class="col-sm-8">
-                        <input class="form-control" type="text" id="roistat-cost" value="Базовая">
-                        </div>
-                    </div>
+                    @include('includes.order-cost')
                     @include('includes.modal.buttons', ['resultModalClass' => 'js-roistat-url-modal'])
                 </form>
             </div>

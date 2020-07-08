@@ -1,9 +1,12 @@
 @extends('layouts.app')
 @section('content')
     <main class="page-wrapper show-toast position-relative">
+        <h1 class="sr-only">Страница настроек "Рабочая область"</h1>
         <div class="row">
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper border-bottom font-weight-bold">
+                <h2 class="sr-only">Блок навигации по страницам настроек и управления настройками страницы "Источник
+                    заявок"</h2>
                 @include('includes.settings-links', ['step'=>'workspace'])
                 <div>
                     <select class="custom-select settings-select-item">
@@ -19,6 +22,7 @@
             </div>
         </div>
         <div class="row">
+            <h2 class="sr-only">Блок настроек рабочей области</h2>
             <div class="col-md-12 border-bottom">
                 <form class="d-flex workspace-form" method="post" action="#">
                     <div class="workspace-form-column">
@@ -186,6 +190,7 @@
             </div>
         </div>
         <div class="row">
+            <h2 class="sr-only">Таблица настроек рабочей области</h2>
             <div class="col-md-12 mx-auto">
                 <div class="table-wrapper mb-5">
                     <table class="table workspace-table common-table">

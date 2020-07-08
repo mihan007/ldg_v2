@@ -283,9 +283,9 @@ input[type="radio"].visually-hidden {
     box-shadow: 0 0 0 0.2rem $filter-button-box-shadow;
 }
 
-.directory-buttons {
+.settings-page-title {
+    font-size: 14px;
     font-weight: 700;
-    text-transform: uppercase;
 }
 
 .directory-button {
@@ -420,3 +420,4 @@ input[type="radio"].visually-hidden {
         display: none;
     }
 }
+

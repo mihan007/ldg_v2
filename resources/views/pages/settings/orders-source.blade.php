@@ -1,37 +1,43 @@
 @extends('layouts.app')
 @section('content')
     <main class="page-wrapper show-toast position-relative">
+        <h1 class="sr-only">Страница настроек "Источник заявок"</h1>
         <div class="row">
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper font-weight-bold">
+                <h2 class="sr-only">Блок навигации по страницам настроек и управления настройками страницы "Источник
+                    заявок"</h2>
                 @include('includes.settings-links', ['step'=>'orders-source'])
                 <div>
-                    <select class="select custom-select orders-source-select bg-primary text-white js-open-modal"
-                            data-style="btn-primary">
-                        <option value="" selected>Добавить подключение</option>
-                        <optgroup label="Получение заявок">
-                            <option class="" data-modal="js-roistat-phone-modal" role="button">
-                                    Roistat телефония
-                            </option>
-                            <option>Zadarma телефония</option>
-                            <option>Marquiz</option>
-                            <option>Webhooks от других сервисов</option>
-                            <option>GET запрос с сайта</option>
-                        </optgroup>
-                        <optgroup label="Реклама и расходы">
-                            <option>Яндекс.Директ</option>
-                            <option>Google Ads</option>
-                            <option>Roistat</option>
-                        </optgroup>
-                        <optgroup label="Отправка заявок в CRM">
-                            <option>Битрикс 24</option>
-                        </optgroup>
-                    </select>
+{{--                    <select class="select custom-select orders-source-select bg-primary text-white js-open-modal"--}}
+{{--                            data-style="btn-primary">--}}
+{{--                        <option value="" selected>Добавить подключение</option>--}}
+{{--                        <optgroup label="Получение заявок">--}}
+{{--                            <option class="" data-modal="js-roistat-phone-modal" role="button">--}}
+{{--                                    Roistat телефония</option>--}}
+{{--                            <option >Zadarma телефония</option>--}}
+{{--                            <option>Marquiz</option>--}}
+{{--                            <option class="" data-modal="js-webhook-modal" role="button">Webhooks от других сервисов--}}
+{{--                            </option>--}}
+{{--                            <option>GET запрос с сайта</option>--}}
+{{--                        </optgroup>--}}
+{{--                        <optgroup label="Реклама и расходы">--}}
+{{--                            <option>Яндекс.Директ</option>--}}
+{{--                            <option>Google Ads</option>--}}
+{{--                            <option>Roistat</option>--}}
+{{--                        </optgroup>--}}
+{{--                        <optgroup label="Отправка заявок в CRM">--}}
+{{--                            <option>Битрикс 24</option>--}}
+{{--                        </optgroup>--}}
+{{--                    </select>--}}
+               <a class="btn btn-primary wizard-button" href=".js-orders-source-wizard" role="button" data-toggle="modal">
+                   Новое подключение</a>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 mx-auto">
+                <h2 class="sr-only">Таблица заявок с параметрами подключения"</h2>
                 <div class="table-wrapper mb-5">
                     <table class="table orders-source-table common-table">
                         <thead>
@@ -86,9 +92,8 @@
                             </td>
                             <td class="request-col text-center">22.04.2020 22:40</td>
                             <td class="source-buttons-col text-center">
-                                <a class="btn source-correct-button source-button function-button" href="#" role="button"
-                                   aria-label="Редактировать
-                                данные">
+                                <a class="btn source-correct-button source-button function-button"
+                                   href=".js-orders-source-wizard" data-toggle="modal" role="button" aria-label="Редактировать данные">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </a>
                                 <a class="btn function-button" aria-label="Удалить доступ"
@@ -113,11 +118,11 @@
                             <td class="text-center">
                                 <form class="order-source-copy-form" method="get" action="/">
                                     <div class="input-group">
-                                        <input class="form-control copy-form-input" type="text" id="copy-form-input"
+                                        <input class="form-control copy-form-input" type="text" id="copy-form-input2"
                                                value="https://panel.troiza.net/api/v1/web-leads/webhook/GyOJjqO8HqlRJdEsy5Pb">
                                         <div class="input-group-append">
                                             <button class="btn btn-secondary copy-button" type="button"
-                                                    data-clipboard-target="#copy-form-input" aria-label="Копировать">
+                                                    data-clipboard-target="#copy-form-input2" aria-label="Копировать">
                                                 <i class="fa fa-files-o" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -127,7 +132,7 @@
                             <td class="text-center">22.04.2020 22:40</td>
                             <td class="text-center">
                                 <a class="btn source-correct-button source-button function-button" data-toggle="modal"
-                                   href=".js-roistat-phone-modal" role="button" aria-label="Редактировать данные">
+                                   href=".js-orders-source-wizard" role="button" aria-label="Редактировать данные">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </a>
                                 <a class="btn function-button" aria-label="Удалить доступ"
@@ -150,5 +155,10 @@
         @include('includes.workspace-save-modal')
         @include('includes.roistat-phone-modal')
         @include('includes.roistat-url-modal')
+        @include('includes.webhooks-modal')
+        @include('includes.webhooks-url-modal')
+        @include('includes.compare-parameters')
+        @include('includes.orders-source-wizard')
+        @include(('includes.modal.elama-instruction'))
     </main>
 @stop

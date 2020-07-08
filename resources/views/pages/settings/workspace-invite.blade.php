@@ -1,6 +1,7 @@
 @extends('layouts.default')
 @section('content')
     <main class="container main-login">
+        <h3 class="sr-only">Вход в рабочую область после принятия приглашения в рабочую область</h3>
         <div class="row h-100">
             <div class="col-sm-12 my-auto">
                 @include('includes.logo-name')
