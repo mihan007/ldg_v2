@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <main class="page-wrapper show-toast position-relative">
+    <main class="page-wrapper">
         <h1 class="sr-only">Страница настроек "Источник заявок"</h1>
         <div class="row">
             <div class="col-md-12 offset-block"></div>
@@ -152,12 +152,6 @@
             </div>
         </div>
         @include('includes.workspace-reset-modal')
-        @include('includes.workspace-save-modal')
-        @include('includes.roistat-phone-modal')
-        @include('includes.roistat-url-modal')
-        @include('includes.webhooks-modal')
-        @include('includes.webhooks-url-modal')
-        @include('includes.compare-parameters')
         @include('includes.orders-source-wizard')
         @include(('includes.modal.elama-instruction'))
     </main>
