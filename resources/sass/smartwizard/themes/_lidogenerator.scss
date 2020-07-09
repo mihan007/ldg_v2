@@ -42,8 +42,11 @@ $nav-danger-secondary-color    : #ffffff;
       padding: .375rem .75rem;
       border-radius: .25rem;
       font-weight: 400;
+        margin-top: 5px;
     }
   }
+
+
 
   // Navigation style
   & > .nav {
@@ -111,5 +114,15 @@ $nav-danger-secondary-color    : #ffffff;
     }
 
   }
+}
 
+.sw .toolbar {
+    display: block;
+}
+
+@media (max-width: 398px) {
+    .sw .toolbar {
+        display: flex;
+        flex-direction: column;
+    }
 }
