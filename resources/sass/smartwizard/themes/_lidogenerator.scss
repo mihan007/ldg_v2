@@ -31,7 +31,6 @@ $nav-danger-secondary-color    : #ffffff;
     & > .tab-pane {
       padding: 10px;
     }
-
   }
 
   // Toolbar style
@@ -45,6 +44,7 @@ $nav-danger-secondary-color    : #ffffff;
       border-radius: .25rem;
       font-weight: 400;
         margin-top: 5px;
+        order: 3;
     }
 
       & > .btn.btn-secondary {
@@ -55,6 +55,12 @@ $nav-danger-secondary-color    : #ffffff;
           border-radius: .25rem;
           font-weight: 400;
           margin-top: 5px;
+          float: left;
+          order: 1;
+      }
+
+      & > .btn.btn-finish {
+          order: 2;
       }
   }
 
@@ -130,9 +136,14 @@ $nav-danger-secondary-color    : #ffffff;
     display: block;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 991px) {
     .sw .toolbar {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 }

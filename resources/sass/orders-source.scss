@@ -15,6 +15,11 @@
 .source-col,
 .order-cost-col {
     width: 12%;
+    cursor: pointer;
+}
+
+.data-connect-col {
+    cursor: pointer;
 }
 
 .request-col {
@@ -127,10 +132,4 @@
         width: 40%;
         height: auto;
     }
-}
-
-//временно для демонстрации
-.js-orders-source-wizard form {
-    margin-bottom: 15px;
-    border-bottom: 2px solid #999999;
 }

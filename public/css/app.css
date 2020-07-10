@@ -14883,6 +14883,7 @@ input[type=radio].visually-hidden {
 
 .workspace-email-form {
   width: 330px;
+  margin-bottom: 70px;
 }
 
 .workspace-email-form .workspace-email-input {
@@ -14892,6 +14893,17 @@ input[type=radio].visually-hidden {
 
 .email-add-button {
   font-size: 14px;
+}
+
+.activity-col,
+.crm-col,
+.new-order-col,
+.lidgen-balance-col,
+.yandex-balance-col,
+.google-balance-col,
+.roistat-balance-col,
+.admin-col {
+  cursor: pointer;
 }
 
 .activity-col {
@@ -15013,6 +15025,11 @@ input[type=radio].visually-hidden {
 .source-col,
 .order-cost-col {
   width: 12%;
+  cursor: pointer;
+}
+
+.data-connect-col {
+  cursor: pointer;
 }
 
 .request-col {
@@ -15125,11 +15142,6 @@ input[type=radio].visually-hidden {
     width: 40%;
     height: auto;
   }
-}
-
-.js-orders-source-wizard form {
-  margin-bottom: 15px;
-  border-bottom: 2px solid #999999;
 }
 
 /*!
@@ -15311,6 +15323,7 @@ input[type=radio].visually-hidden {
   border-radius: 0.25rem;
   font-weight: 400;
   margin-top: 5px;
+  order: 3;
 }
 
 .sw-theme-lidogenerator .toolbar > .btn.btn-secondary {
@@ -15321,6 +15334,12 @@ input[type=radio].visually-hidden {
   border-radius: 0.25rem;
   font-weight: 400;
   margin-top: 5px;
+  float: left;
+  order: 1;
+}
+
+.sw-theme-lidogenerator .toolbar > .btn.btn-finish {
+  order: 2;
 }
 
 .sw-theme-lidogenerator > .nav {
@@ -15392,7 +15411,7 @@ input[type=radio].visually-hidden {
   display: block;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 991px) {
   .sw .toolbar {
     display: flex;
     flex-direction: column;

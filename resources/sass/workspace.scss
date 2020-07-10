@@ -95,6 +95,7 @@
 
 .workspace-email-form {
     width: 330px;
+    margin-bottom: 70px;
 }
 
 .workspace-email-form .workspace-email-input {
@@ -104,6 +105,17 @@
 
 .email-add-button {
     font-size: 14px;
+}
+
+.activity-col,
+.crm-col,
+.new-order-col,
+.lidgen-balance-col,
+.yandex-balance-col,
+.google-balance-col,
+.roistat-balance-col,
+.admin-col {
+    cursor: pointer;
 }
 
 .activity-col {
