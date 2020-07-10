@@ -122,6 +122,13 @@
     }
 }
 
+@media (min-width: 1000px)  {
+    .wizard-img {
+        width: 40%;
+        height: auto;
+    }
+}
+
 //временно для демонстрации
 .js-orders-source-wizard form {
     margin-bottom: 15px;
