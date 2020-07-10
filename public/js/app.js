@@ -75139,6 +75139,13 @@ $(document).ready(function () {
   }).on('click', function (e) {
     $('[data-toggle="click-tooltip"]').tooltip('hide');
   });
+  $(document).on('click', '[data-toggle="click-leave-tooltip"]', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).tooltip('show');
+  }).on('mouseout', function (e) {
+    $('[data-toggle="click-leave-tooltip"]').tooltip('hide');
+  });
 });
 
 /***/ }),
@@ -75201,8 +75208,11 @@ $(document).ready(function () {
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  var btnFinish = $('<button></button>').text('Создать подключение').addClass('btn btn-primary btn-finish').hide().on('click', function () {
+  var btnFinish = $('<button></button>').text('Создать подключение' + ' ' + '+').addClass('btn btn-primary btn-finish').hide().on('click', function () {
     alert('Подключение создано');
+    $('.modal').modal('hide');
+  });
+  var btnCancel = $('<button></button>').text('Отмена').addClass('btn btn-secondary').on('click', function () {
     $('.modal').modal('hide');
   }); // SmartWizard initialize
 
@@ -75217,7 +75227,7 @@ $(document).ready(function () {
       previous: 'Предыдущий шаг'
     },
     toolbarSettings: {
-      toolbarExtraButtons: [btnFinish]
+      toolbarExtraButtons: [btnFinish, btnCancel]
     }
   });
   $("#smartwizard").on("showStep", function (e, anchorObject, stepNumber, stepDirection) {

@@ -14362,6 +14362,10 @@ input[type=radio].visually-hidden {
   margin-right: 1.2rem;
 }
 
+.custom-modal-title {
+  font-size: 1.25rem;
+}
+
 .balance-info-wrapper {
   width: 212px;
 }
@@ -15024,6 +15028,7 @@ input[type=radio].visually-hidden {
 .modal-text {
   margin-bottom: 5px;
   font-size: 16px;
+  font-weight: 700;
 }
 
 .url-modal-label {
@@ -15301,6 +15306,16 @@ input[type=radio].visually-hidden {
   margin-top: 5px;
 }
 
+.sw-theme-lidogenerator .toolbar > .btn.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border: 1px solid #6c757d;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
 .sw-theme-lidogenerator > .nav {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1) !important;
 }
@@ -15370,7 +15385,7 @@ input[type=radio].visually-hidden {
   display: block;
 }
 
-@media (max-width: 398px) {
+@media (max-width: 550px) {
   .sw .toolbar {
     display: flex;
     flex-direction: column;

@@ -1,9 +1,15 @@
 $(document).ready(function () {
-    var btnFinish = $('<button></button>').text('Создать подключение')
+    var btnFinish = $('<button></button>').text('Создать подключение' + ' ' + '+')
         .addClass('btn btn-primary btn-finish')
         .hide()
         .on('click', function () {
             alert('Подключение создано');
+            $('.modal').modal('hide')
+        });
+
+    var btnCancel = $('<button></button>').text('Отмена')
+        .addClass('btn btn-secondary')
+        .on('click', function () {
             $('.modal').modal('hide')
         });
 
@@ -18,7 +24,7 @@ $(document).ready(function () {
             previous: 'Предыдущий шаг'
         },
         toolbarSettings: {
-            toolbarExtraButtons: [btnFinish]
+            toolbarExtraButtons: [btnFinish, btnCancel]
         }
     });
 

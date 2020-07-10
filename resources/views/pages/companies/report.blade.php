@@ -2,6 +2,8 @@
 @section('content')
     <main class="page-wrapper">
         <div class="row">
+            <h1 class="sr-only">Страница компаний</h1>
+            <h2 class="sr-only">Фильтр для таблицы данных по компаниям</h2>
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper">
                 <div class="index-buttons-wrapper mr-3">
@@ -47,6 +49,7 @@
                 @include('includes.search-form')
             </div>
             <div class="col-md-12 table-wrapper mb-5">
+                <h2 class="sr-only">Таблица данных по компаниям</h2>
                 @include('includes.company_grid')
             </div>
         </div>

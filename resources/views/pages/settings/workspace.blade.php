@@ -3,10 +3,10 @@
     <main class="page-wrapper show-toast position-relative">
         <h1 class="sr-only">Страница настроек "Рабочая область"</h1>
         <div class="row">
+            <h2 class="sr-only">Блок навигации по страницам настроек и управления настройками страницы
+                "Рабочая область"</h2>
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper border-bottom font-weight-bold">
-                <h2 class="sr-only">Блок навигации по страницам настроек и управления настройками страницы "Источник
-                    заявок"</h2>
                 @include('includes.settings-links', ['step'=>'workspace'])
                 <div>
                     <select class="custom-select settings-select-item">
@@ -125,7 +125,8 @@
                             <input class="form-control moderation-period-input" type="number" id="moderation-period"
                                    placeholder="7" min="1" max="45">
                             <div class="invalid-feedback moderation-period-invalid-feedback">Максимальный период
-                                модерации 45 дней</div>
+                                модерации 45 дней
+                            </div>
                         </div>
                         <div class="form-group data-hide-group">
                             <label class="workspace-form-label" for="data-hide">
@@ -195,204 +196,208 @@
                 <div class="table-wrapper mb-5">
                     <table class="table workspace-table common-table">
                         <thead>
-                            <tr class="table-grey text-center">
-                                <th class="rounded-table-left activity-col" data-toggle="tooltip" data-placement="top"
-                                    data-delay='{"show":"1000", "hide":"1000"}' title="Включает / выключает доступ и
-                                        рассылку">Активность</th>
-                                <th class="email-col" scope="col">Почта</th>
-                                <th class="crm-col" scope="col">Доступ в CRM</th>
-                                <th class="new-order-col" scope="col">Новая заявка</th>
-                                <th class="lidgen-balance-col" scope="col">Лидген баланс</th>
-                                <th class="yandex-balance-col" scope="col">Яндекс баланс</th>
-                                <th class="google-balance-col" scope="col">Google баланс</th>
-                                <th class="roistat-balance-col" scope="col">Roistat баланс</th>
-                                <th class="admin-col" scope="col">
-                                    <a data-toggle="tooltip" data-placement="top"
-                                       data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Наделяет правами управления рассылкой для текущих и новых пользователей">
-                                        Администратор
-                                    </a>
-                                </th>
-                                <th class="workspace-buttons-col rounded-table-right"></th>
-                            </tr>
+                        <tr class="table-grey text-center">
+                            <th class="rounded-table-left activity-col" data-toggle="tooltip" data-placement="top"
+                                data-delay='{"show":"1000", "hide":"1000"}' title="Включает / выключает доступ и
+                                        рассылку">Активность
+                            </th>
+                            <th class="email-col" scope="col">Почта</th>
+                            <th class="crm-col" scope="col">Доступ в CRM</th>
+                            <th class="new-order-col" scope="col">Новая заявка</th>
+                            <th class="lidgen-balance-col" scope="col">Лидген баланс</th>
+                            <th class="yandex-balance-col" scope="col">Яндекс баланс</th>
+                            <th class="google-balance-col" scope="col">Google баланс</th>
+                            <th class="roistat-balance-col" scope="col">Roistat баланс</th>
+                            <th class="admin-col" scope="col">
+                                <a data-toggle="tooltip" data-placement="top"
+                                   data-delay='{"show":"1000", "hide":"1000"}'
+                                   title="Наделяет правами управления рассылкой для текущих и новых пользователей">
+                                    Администратор
+                                </a>
+                            </th>
+                            <th class="workspace-buttons-col rounded-table-right"></th>
+                        </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td class="activity-col text-center">
-                                    <div class="custom-control custom-switch">
-                                        <input class="custom-control-input custom-control-input-success" id="active-switch"
-                                               type="checkbox" checked>
-                                        <label class="custom-control-label font-italic" for="active-switch"
-                                               aria-label="Активность включена/выключена"></label>
-                                    </div>
-                                </td>
-                                <td class="email-col text-center">1@troiza.net</td>
-                                <td class="text-center">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" name="customCheck"
-                                               id="crm-access" checked>
-                                        <label class="custom-control-label" for="crm-access"
-                                               aria-label="Доступ в CRM клиента"></label>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
-                                         data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка включена + время
+                        <tr>
+                            <td class="activity-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label font-italic" for="active-switch"
+                                           aria-label="Активность включена/выключена"></label>
+                                </div>
+                            </td>
+                            <td class="email-col text-center">1@troiza.net</td>
+                            <td class="text-center">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="customCheck"
+                                           id="crm-access" checked>
+                                    <label class="custom-control-label" for="crm-access"
+                                           aria-label="Доступ в CRM клиента"></label>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
+                                     data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка включена + время
                                                    изменения статуса">
-                                        <input type="checkbox" class="custom-control-input custom-control-input-success"
-                                               id="orders-message" name="example1" checked>
-                                        <label class="custom-control-label" for="orders-message" aria-label="Оповещение о
+                                    <input type="checkbox" class="custom-control-input custom-control-input-success"
+                                           id="orders-message" name="example1" checked>
+                                    <label class="custom-control-label" for="orders-message" aria-label="Оповещение о
                                             заявках"></label>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
-                                         data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка включена + время
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
+                                     data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка включена + время
                                                    изменения статуса">
-                                        <input type="checkbox" class="custom-control-input custom-control-input-success"
-                                               id="ldg-balance" name="example1" checked>
-                                        <label class="custom-control-label" for="ldg-balance"
-                                               aria-label="Лидогенератор баланс"></label>
-                                    </div>
-                                </td>
-                                <td class="target-status text-center">
-                                    <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
-                                         data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка включена + время
+                                    <input type="checkbox" class="custom-control-input custom-control-input-success"
+                                           id="ldg-balance" name="example1" checked>
+                                    <label class="custom-control-label" for="ldg-balance"
+                                           aria-label="Лидогенератор баланс"></label>
+                                </div>
+                            </td>
+                            <td class="target-status text-center">
+                                <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
+                                     data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка включена + время
                                              изменения статуса">
-                                        <input type="checkbox" class="custom-control-input custom-control-input-success"
-                                               id="yandex-balance" name="example1" checked>
-                                        <label class="custom-control-label" for="yandex-balance" aria-label="Яндекс баланс">
-                                        </label>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
-                                         data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка ожидает подтверждения
+                                    <input type="checkbox" class="custom-control-input custom-control-input-success"
+                                           id="yandex-balance" name="example1" checked>
+                                    <label class="custom-control-label" for="yandex-balance" aria-label="Яндекс баланс">
+                                    </label>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
+                                     data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка ожидает подтверждения
                                              + время изменения статуса">
-                                        <input type="checkbox" class="custom-control-input custom-control-input-warning"
-                                               name="example1" id="google-balance" checked>
-                                        <label class="custom-control-label" for="google-balance" aria-label="Google баланс">
-                                        </label>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
-                                         data-delay='{"show":"1000", "hide":"1000"}'
-                                         title="Отказ от рассылки + время изменения статуса">
-                                        <input type="checkbox" class="custom-control-input custom-control-input-danger"
-                                               name="customCheck" id="roistat-balance" checked>
-                                        <label class="custom-control-label custom-control-label-cross" for="roistat-balance"
-                                               aria-label="Roistat баланс"></label>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" name="customCheck"
-                                               id="administrator" checked>
-                                        <label class="custom-control-label" for="administrator" aria-label="Администратор">
-                                        </label>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <a class="btn workspace-reset-button function-button" aria-label="Удалить доступ"
-                                       href=".js-workspace-reset-modal" role="button" data-toggle="modal">
-                                        <i class="fa fa-trash" aria-hidden="true"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="activity-col text-center">
-                                    <div class="custom-control custom-switch">
-                                        <input class="custom-control-input custom-control-input-success" id="active-switch2"
-                                               type="checkbox">
-                                        <label class="custom-control-label font-italic" for="active-switch2"
-                                               aria-label="Активность включена/выключена"></label>
-                                    </div>
-                                </td>
-                                <td class="email-col text-center">1@troiza.net</td>
-                                <td class="text-center">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" name="customCheck"
-                                               id="crm-access2" checked>
-                                        <label class="custom-control-label" for="crm-access2" aria-label="Доступ в CRM
+                                    <input type="checkbox" class="custom-control-input custom-control-input-warning"
+                                           name="example1" id="google-balance" checked>
+                                    <label class="custom-control-label" for="google-balance" aria-label="Google баланс">
+                                    </label>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
+                                     data-delay='{"show":"1000", "hide":"1000"}'
+                                     title="Отказ от рассылки + время изменения статуса">
+                                    <input type="checkbox" class="custom-control-input custom-control-input-danger"
+                                           name="customCheck" id="roistat-balance" checked>
+                                    <label class="custom-control-label custom-control-label-cross" for="roistat-balance"
+                                           aria-label="Roistat баланс"></label>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="customCheck"
+                                           id="administrator" checked>
+                                    <label class="custom-control-label" for="administrator" aria-label="Администратор">
+                                    </label>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <a class="btn workspace-reset-button function-button" aria-label="Удалить доступ"
+                                   href=".js-workspace-reset-modal" role="button" data-toggle="modal">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="activity-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch2"
+                                           type="checkbox">
+                                    <label class="custom-control-label font-italic" for="active-switch2"
+                                           aria-label="Активность включена/выключена"></label>
+                                </div>
+                            </td>
+                            <td class="email-col text-center">1@troiza.net</td>
+                            <td class="text-center">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="customCheck"
+                                           id="crm-access2" checked>
+                                    <label class="custom-control-label" for="crm-access2" aria-label="Доступ в CRM
                                             клиента"></label>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
-                                         data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка включена + время
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
+                                     data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка включена + время
                                              изменения статуса">
-                                        <input type="checkbox" class="custom-control-input custom-control-input-success"
-                                               id="orders-message2" name="example1" checked>
-                                        <label class="custom-control-label" for="orders-message2" aria-label="Оповещение
+                                    <input type="checkbox" class="custom-control-input custom-control-input-success"
+                                           id="orders-message2" name="example1" checked>
+                                    <label class="custom-control-label" for="orders-message2" aria-label="Оповещение
                                             о заявках"></label>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
-                                         data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка включена + время
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
+                                     data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка включена + время
                                              изменения статуса">
-                                        <input type="checkbox" class="custom-control-input custom-control-input-success"
-                                               id="ldg-balance2" name="example1" checked>
-                                        <label class="custom-control-label" for="ldg-balance2"
-                                               aria-label="Лидогенератор баланс">
-                                        </label>
-                                    </div>
-                                </td>
-                                <td class="target-status text-center">
-                                    <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
-                                         data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка отключена">
-                                        <input type="checkbox" class="custom-control-input custom-control-input-success"
-                                               id="yandex-balance2" name="example1">
-                                        <label class="custom-control-label" for="yandex-balance2" aria-label="Яндекс
+                                    <input type="checkbox" class="custom-control-input custom-control-input-success"
+                                           id="ldg-balance2" name="example1" checked>
+                                    <label class="custom-control-label" for="ldg-balance2"
+                                           aria-label="Лидогенератор баланс">
+                                    </label>
+                                </div>
+                            </td>
+                            <td class="target-status text-center">
+                                <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
+                                     data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка отключена">
+                                    <input type="checkbox" class="custom-control-input custom-control-input-success"
+                                           id="yandex-balance2" name="example1">
+                                    <label class="custom-control-label" for="yandex-balance2" aria-label="Яндекс
                                             баланс"></label>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
-                                         data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка отключена">
-                                        <input type="checkbox" class="custom-control-input custom-control-input-warning"
-                                               name="example1" id="google-balance2">
-                                        <label class="custom-control-label" for="google-balance2" aria-label="Google
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
+                                     data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка отключена">
+                                    <input type="checkbox" class="custom-control-input custom-control-input-warning"
+                                           name="example1" id="google-balance2">
+                                    <label class="custom-control-label" for="google-balance2" aria-label="Google
                                             баланс"></label>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
-                                         data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка отключена">
-                                        <input type="checkbox" class="custom-control-input custom-control-input-danger"
-                                               name="customCheck" id="roistat-balance2">
-                                        <label class="custom-control-label custom-control-label-cross"
-                                               for="roistat-balance2" aria-label="Roistat баланс"></label>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" name="customCheck"
-                                               id="administrator2">
-                                        <label class="custom-control-label" for="administrator2"
-                                               aria-label="Администратор"></label>
-                                    </div>
-                                </td>
-                                <td class="workspace-buttons-col text-center">
-                                    <a class="btn workspace-reset-button function-button" aria-label="Удалить доступ"
-                                       href=".js-workspace-reset-modal" role="button" data-toggle="modal">
-                                        <i class="fa fa-trash" aria-hidden="true"></i>
-                                    </a>
-                                </td>
-                            </tr>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="top"
+                                     data-delay='{"show":"1000", "hide":"1000"}' title="Рассылка отключена">
+                                    <input type="checkbox" class="custom-control-input custom-control-input-danger"
+                                           name="customCheck" id="roistat-balance2">
+                                    <label class="custom-control-label custom-control-label-cross"
+                                           for="roistat-balance2" aria-label="Roistat баланс"></label>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="customCheck"
+                                           id="administrator2">
+                                    <label class="custom-control-label" for="administrator2"
+                                           aria-label="Администратор"></label>
+                                </div>
+                            </td>
+                            <td class="workspace-buttons-col text-center">
+                                <a class="btn workspace-reset-button function-button" aria-label="Удалить доступ"
+                                   href=".js-workspace-reset-modal" role="button" data-toggle="modal">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
-        @include('includes.workspace-reset-modal')
         <div class="toast saved-toast js-saved-toast">
             <div class="toast-body">
                 <div>Данные сохранены</div>
             </div>
         </div>
         @include('includes.workspace-save-modal')
+        @include('includes.workspace-reset-modal', [
+            'messageHeader' => 'Удаление доступа и рассылок',
+            'messageBody' => 'Вы действительно хотите удалить доступ к проекту?'
+        ])
     </main>
     <footer class="page-footer footer-hide bg-grey fixed-bottom">
         <div class="container">

@@ -3,6 +3,8 @@ $container-border-color        : #eeeeee;
 
 $toolbar-bg-color              : rgba(0,0,0,.03);
 $toolbar-btn-bg-color          : #007bff;
+$toolbar-btn-secondary-bg-color: #6c757d;
+
 
 $nav-active-primary-color      : #007bff; // #17a2b8 #5bc0de
 $nav-active-secondary-color    : #ffffff;
@@ -44,9 +46,17 @@ $nav-danger-secondary-color    : #ffffff;
       font-weight: 400;
         margin-top: 5px;
     }
+
+      & > .btn.btn-secondary {
+          color: #fff;
+          background-color: $toolbar-btn-secondary-bg-color;
+          border: 1px solid $toolbar-btn-secondary-bg-color;
+          padding: .375rem .75rem;
+          border-radius: .25rem;
+          font-weight: 400;
+          margin-top: 5px;
+      }
   }
-
-
 
   // Navigation style
   & > .nav {
@@ -120,7 +130,7 @@ $nav-danger-secondary-color    : #ffffff;
     display: block;
 }
 
-@media (max-width: 398px) {
+@media (max-width: 550px) {
     .sw .toolbar {
         display: flex;
         flex-direction: column;

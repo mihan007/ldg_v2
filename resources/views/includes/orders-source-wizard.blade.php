@@ -68,8 +68,7 @@
                         <div id="step-2" class="tab-pane" role="tabpanel">
                             <h3 class="mb-1 wizard-step-title">Определите параметры</h3>
                             <div class="text-right">
-                                <a class="btn btn-outline-primary mb-3 js-save-show-result" role="button"
-                                   data-result="js-instruction-modal" data-prev="js-orders-source-wizard" href="#">
+                                <a class="btn btn-outline-primary mb-3" href="{{ route('settings.elama-instruction') }}" target="_blank">
                                     <i class="fa fa-info-circle" aria-hidden="true"></i>
                                     Инструкция
                                 </a>
@@ -116,7 +115,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-lg-2 col-form-label" for="webhooks-phone">Телефон</label>
                                     <div class="col-sm-5 col-lg-7">
-                                        <input class="form-control" type="tel" id="webhooks-phone" value="89229997988">
+                                        <input class="form-control" type="text" id="webhooks-phone" value="89229997988">
                                     </div>
                                     <div class="col-sm-4 col-lg-3 modal-select-wrapper">
                                         <select class="select custom-select modal-select">
@@ -133,22 +132,6 @@
                                     <label class="col-sm-3 col-lg-2 col-form-label" for="webhooks-name">Имя</label>
                                     <div class="col-sm-5 col-lg-7">
                                         <input class="form-control wizard-form-input" type="text" id="webhooks-name">
-                                    </div>
-                                    <div class="col-sm-4 col-lg-3 modal-select-wrapper">
-                                        <select class="select custom-select modal-select">
-                                            <option selected>Выбрать параметр</option>
-                                            <option value="1">Телефон</option>
-                                            <option value="2">Электронная почта</option>
-                                            <option value="3">Адрес</option>
-                                            <option value="4">Комментарий</option>
-                                            <option value="5">Другой параметр</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-lg-2 col-form-label" for="webhooks-site-name">Название сайта, формы</label>
-                                    <div class="col-sm-5 col-lg-7">
-                                        <input class="form-control wizard-form-input" type="text" id="webhooks-site-name">
                                     </div>
                                     <div class="col-sm-4 col-lg-3 modal-select-wrapper">
                                         <select class="select custom-select modal-select">
@@ -385,6 +368,8 @@
                                                     <div class="input-group-append">
                                                         <button class="btn btn-secondary copy-button" type="button"
                                                                 data-clipboard-target="#copy-form-input"
+                                                                data-trigger="manual" data-toggle="click-leave-tooltip"
+                                                                data-placement="top" title="Скопировано"
                                                                 aria-label="Копировать">
                                                             <i class="fa fa-files-o" aria-hidden="true"></i>
                                                         </button>
@@ -403,34 +388,26 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <h3 class="mb-4 wizard-step-title">Сравните данные</h3>
+                            <h3 class="mb-4 wizard-step-title">Параметры заявок</h3>
                             <div class="table-wrapper">
                                 <table class="table common-table wizard-table mx-auto">
                                     <thead>
                                         <tr class="table-grey">
-                                            <th class="rounded-table-left">Вход</th>
-                                            <th class="rounded-table-left">Пример</th>
+                                            <th class="rounded-table-left">Лидген CRM</th>
+                                            <th class="rounded-table-right">Параметры webhook</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-bordered">
                                         <tr>
-                                            <td class="">phone</td>
-                                            <td class="">89229997988</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="">Электронная почта</td>
-                                            <td class="">pit@ya.ru</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="">Адрес</td>
-                                            <td class="">Краснодар</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="">Комментарий</td>
+                                            <td class="">Телефон</td>
                                             <td class=""></td>
                                         </tr>
                                         <tr>
-                                            <td class="">Другой параметр</td>
+                                            <td class="">Имя</td>
+                                            <td class=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Дополнительная информация</td>
                                             <td class=""></td>
                                         </tr>
                                     </tbody>

@@ -2,7 +2,7 @@
 @section('content')
     <main class="page-wrapper">
         <h1 class="sr-only">Страница настроек "Источник заявок"</h1>
-        <div class="row">
+        <div class="row sticky-top">
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper font-weight-bold">
                 <h2 class="sr-only">Блок навигации по страницам настроек и управления настройками страницы "Источник
@@ -30,8 +30,11 @@
 {{--                            <option>Битрикс 24</option>--}}
 {{--                        </optgroup>--}}
 {{--                    </select>--}}
-               <a class="btn btn-primary wizard-button" href=".js-orders-source-wizard" role="button" data-toggle="modal">
-                   Новое подключение</a>
+                       <a class="btn btn-primary wizard-button" href=".js-orders-source-wizard" role="button"
+                          data-toggle="modal">
+                           Новое подключение
+                           <i class="fa fa-plus" aria-hidden="true"></i>
+                       </a>
                 </div>
             </div>
         </div>
@@ -43,7 +46,7 @@
                         <thead>
                         <tr class="table-grey text-center">
                             <th class="rounded-table-left activity-col" data-toggle="tooltip" data-placement="top"
-                                data-delay='{"show":"1000", "hide":"1000"}' title="Включает / выключает прием вебхука">
+                                data-delay='{"show":"1000", "hide":"1000"}' title="Включает / выключает прием заявок">
                                 Активность</th>
                             <th class="source-id-col" scope="col">ID</th>
                             <th class="name-col" data-toggle="tooltip" data-placement="top"
@@ -83,7 +86,9 @@
                                                value="https://panel.troiza.net/api/v1/web-leads/webhook/GyOJjqO8HqlRJdEsy5Pb">
                                         <div class="input-group-append">
                                             <button class="btn btn-secondary copy-button" type="button"
-                                                    data-clipboard-target="#copy-form-input" aria-label="Копировать">
+                                                    data-clipboard-target="#copy-form-input" data-trigger="manual"
+                                                    data-toggle="click-leave-tooltip" data-placement="top"
+                                                    title="Скопировано" aria-label="Копировать">
                                                 <i class="fa fa-files-o" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -122,7 +127,9 @@
                                                value="https://panel.troiza.net/api/v1/web-leads/webhook/GyOJjqO8HqlRJdEsy5Pb">
                                         <div class="input-group-append">
                                             <button class="btn btn-secondary copy-button" type="button"
-                                                    data-clipboard-target="#copy-form-input2" aria-label="Копировать">
+                                                    data-clipboard-target="#copy-form-input2" data-trigger="manual"
+                                                    data-toggle="click-leave-tooltip" data-placement="top"
+                                                    title="Скопировано" aria-label="Копировать">
                                                 <i class="fa fa-files-o" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -151,8 +158,10 @@
                 <div>Данные сохранены</div>
             </div>
         </div>
-        @include('includes.workspace-reset-modal')
+        @include('includes.workspace-reset-modal', [
+            'messageHeader' => 'Удаление подключения',
+            'messageBody' => 'Вы действительно хотите удалить подключение?'
+        ])
         @include('includes.orders-source-wizard')
-        @include(('includes.modal.elama-instruction'))
     </main>
 @stop

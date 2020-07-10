@@ -8,4 +8,13 @@ $(document).ready(function(){
         .on('click', function(e) {
             $('[data-toggle="click-tooltip"]').tooltip('hide')
         })
+
+    $(document).on('click', '[data-toggle="click-leave-tooltip"]', function (e) {
+        e.preventDefault()
+        e.stopPropagation()
+        $(this).tooltip('show')
+    })
+        .on('mouseout', function(e) {
+            $('[data-toggle="click-leave-tooltip"]').tooltip('hide')
+        })
 });
