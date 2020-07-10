@@ -2,6 +2,8 @@
 @section('content')
     <main class="page-wrapper">
         <div class="row sticky-top bg-white">
+            <h1 class="sr-only">Страница финансов</h1>
+            <h2 class="sr-only">Фильтр данных для таблицы по финансам</h2>
             @include('includes.orders-directory-links', ['step'=>'finance'])
             <div class="col-md-12 filter-wrapper">
                 <div class="finance-filter">
@@ -44,6 +46,7 @@
             </div>
         </div>
         <div class="row">
+            <h2 class="sr-only">Таблица данных по финансам</h2>
             <div class="col-md-12 mx-auto">
                 <div class="table-wrapper mb-5">
                     <table class="table finance-table common-table finance-grid table-striped" data-offset="144">

@@ -74611,7 +74611,15 @@ __webpack_require__(/*! ./workspace-save-modal */ "./resources/js/workspace-save
 
 __webpack_require__(/*! ./workspace-form-project */ "./resources/js/workspace-form-project.js");
 
-__webpack_require__(/*! ./save-result-modal */ "./resources/js/save-result-modal.js");
+__webpack_require__(/*! ./sidenav-save-modal */ "./resources/js/sidenav-save-modal.js");
+
+__webpack_require__(/*! ./copy-text */ "./resources/js/copy-text.js");
+
+__webpack_require__(/*! ./select-modal */ "./resources/js/select-modal.js");
+
+__webpack_require__(/*! ./save-result */ "./resources/js/save-result.js");
+
+__webpack_require__(/*! ./wizard */ "./resources/js/wizard.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -74692,6 +74700,19 @@ $(document).ready(function () {
       'orderSequence': ['desc', 'asc']
     }]
   });
+});
+
+/***/ }),
+
+/***/ "./resources/js/copy-text.js":
+/*!***********************************!*\
+  !*** ./resources/js/copy-text.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  var clipboard = new ClipboardJS('.copy-button');
 });
 
 /***/ }),
@@ -75022,16 +75043,31 @@ $(document).ready(function () {
 
 /***/ }),
 
-/***/ "./resources/js/save-result-modal.js":
-/*!*******************************************!*\
-  !*** ./resources/js/save-result-modal.js ***!
-  \*******************************************/
+/***/ "./resources/js/save-result.js":
+/*!*************************************!*\
+  !*** ./resources/js/save-result.js ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-$(document).ready(function () {
-  $('.save-result-button').on('click', function () {
-    $('.js-save-result-modal').modal('show');
+$(document).on('click', '.js-save-show-result', function (e) {
+  e.preventDefault();
+  e.stopPropagation();
+  var resultModalClass = $(this).data('result');
+  var resultModalSelector = '.' + resultModalClass;
+  $(resultModalSelector).data('prev', $(this).data('prev'));
+  window.needOpenNext = $(resultModalSelector);
+  $('.modal').modal('hide').on('hidden.bs.modal', function () {
+    var prevModal = $(this).data('prev');
+
+    if (prevModal) {
+      window.needOpenNext = $('.' + prevModal);
+    }
+
+    if (window.needOpenNext) {
+      window.needOpenNext.modal('show');
+      window.needOpenNext = false;
+    }
   });
 });
 
@@ -75055,6 +75091,38 @@ $(document).ready(function () {
 
 /***/ }),
 
+/***/ "./resources/js/select-modal.js":
+/*!**************************************!*\
+  !*** ./resources/js/select-modal.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $(document).on('change', '.js-open-modal', function () {
+    var modalClass = $(this).find(':selected').data('modal');
+    $('.' + modalClass).modal('show');
+    $(this).val('');
+  });
+});
+
+/***/ }),
+
+/***/ "./resources/js/sidenav-save-modal.js":
+/*!********************************************!*\
+  !*** ./resources/js/sidenav-save-modal.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $('.save-result-button').on('click', function () {
+    $('.js-save-result-modal').modal('show');
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/js/tooltip.js":
 /*!*********************************!*\
   !*** ./resources/js/tooltip.js ***!
@@ -75070,6 +75138,13 @@ $(document).ready(function () {
     $(this).tooltip('toggle');
   }).on('click', function (e) {
     $('[data-toggle="click-tooltip"]').tooltip('hide');
+  });
+  $(document).on('click', '[data-toggle="click-leave-tooltip"]', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).tooltip('show');
+  }).on('mouseout', function (e) {
+    $('[data-toggle="click-leave-tooltip"]').tooltip('hide');
   });
 });
 
@@ -75122,6 +75197,52 @@ $(document).ready(function () {
     });
   }, false);
 })();
+
+/***/ }),
+
+/***/ "./resources/js/wizard.js":
+/*!********************************!*\
+  !*** ./resources/js/wizard.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  var btnFinish = $('<button></button>').text('Создать подключение' + ' ' + '+').addClass('btn btn-primary btn-finish').hide().on('click', function () {
+    alert('Подключение создано');
+    $('.modal').modal('hide');
+  });
+  var btnCancel = $('<button></button>').text('Отмена').addClass('btn btn-secondary').on('click', function () {
+    $('.modal').modal('hide');
+  }); // SmartWizard initialize
+
+  $('#smartwizard').smartWizard({
+    selected: 0,
+    enableURLhash: false,
+    autoAdjustHeight: false,
+    theme: 'lidogenerator',
+    lang: {
+      // Language variables for button
+      next: 'Следующий шаг',
+      previous: 'Предыдущий шаг'
+    },
+    toolbarSettings: {
+      toolbarExtraButtons: [btnFinish, btnCancel]
+    }
+  });
+  $("#smartwizard").on("showStep", function (e, anchorObject, stepNumber, stepDirection) {
+    console.log(anchorObject);
+
+    if (anchorObject.hasClass('final')) {
+      $('.btn-finish').show(); // show the button extra only in the last page
+
+      $('button.sw-btn-next').hide();
+    } else {
+      $('.btn-finish').hide();
+      $('.sw-btn-next').show();
+    }
+  });
+});
 
 /***/ }),
 

@@ -10,7 +10,8 @@
                     <a class="dropdown-item disabled" href="#">Пункт 1</a>
                     <a class="dropdown-item" href="{{ route('users.login') }}">Страница входа</a>
                     <a class="dropdown-item" href="{{ route('users.reset-password') }}">Восстановление пароля</a>
-                    <a class="dropdown-item" href="{{ route('users.reset-alert') }}">Оповещение о ссылке на восстановление пароля</a>
+                    <a class="dropdown-item" href="{{ route('users.reset-alert') }}">Оповещение о ссылке на
+                        восстановление пароля</a>
                     <a class="dropdown-item" href="{{ route('users.new-password') }}">Ввод нового пароля</a>
                     <a class="dropdown-item" href="{{ route('users.new-password-login') }}">Оповещение об изменении пароля
                     и страница входа</a>
@@ -23,7 +24,9 @@
                     <a class="dropdown-item" href="{{ route('companies.dashboard') }}">Дашборд</a>
                     <a class="dropdown-item" href="{{ route('settings.workspace') }}">Настройки рабочей области</a>
                     <a class="dropdown-item" href="{{ route('settings.workspace-invite') }}">Страница входа с доступом в
-                    настройки рабочей области</a>
+                        рабочую область</a>
+                    <a class="dropdown-item" href="{{ route('settings.orders-source') }}">Страница настроек "Источник
+                        заявок"</a>
                 </div>
             </div>
         </div>
@@ -70,4 +73,4 @@
         </ul>
     </nav>
 </header>
-@include('includes.save-result-modal')
+@include('includes.sidenav-save-modal')

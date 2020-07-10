@@ -236,6 +236,7 @@ input[type="radio"].visually-hidden {
     border-bottom: 2px solid $filter-button-border;
     border-right: 2px solid $filter-button-border;
     font-weight: 600;
+    border-top: none;
 }
 
 .common-table thead th:last-child {
@@ -282,9 +283,9 @@ input[type="radio"].visually-hidden {
     box-shadow: 0 0 0 0.2rem $filter-button-box-shadow;
 }
 
-.directory-buttons {
+.settings-page-title {
+    font-size: 14px;
     font-weight: 700;
-    text-transform: uppercase;
 }
 
 .directory-button {
@@ -317,6 +318,10 @@ input[type="radio"].visually-hidden {
 .select-item:first-child,
 .finance-filter .select-item {
     margin-right: 1.2rem;
+}
+
+.custom-modal-title {
+    font-size: 1.25rem;
 }
 
 .balance-info-wrapper {
@@ -419,3 +424,4 @@ input[type="radio"].visually-hidden {
         display: none;
     }
 }
+

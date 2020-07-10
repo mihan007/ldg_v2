@@ -1,0 +1,136 @@
+.orders-source-select {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.source-id-col {
+    width: 10%;
+}
+
+.source-buttons-col {
+    width: 8%;
+}
+
+.name-col,
+.source-col,
+.order-cost-col {
+    width: 12%;
+}
+
+.request-col {
+    width: 12%;
+}
+
+.copy-form-input,
+.copy-button,
+.wizard-form-input {
+    font-size: 14px;
+}
+
+.modal-text {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.url-modal-label {
+    font-size: 16px;
+}
+
+.modal-select-wrapper {
+    padding-left: 0;
+}
+
+.modal-select {
+    font-size: 14px;
+}
+
+@media (max-width: 575px) {
+    .modal-select-wrapper {
+        padding-top: calc(0.375rem + 1px);
+        padding-bottom: calc(0.375rem + 1px);
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .modal-select {
+        width: 64%;
+    }
+}
+
+@media (max-width: 991px) {
+    .modal-select {
+        font-size: 13px;
+        padding-left: 0.35rem;
+    }
+}
+
+.connect-list-item,
+.connect-list-item .btn {
+    font-size: 14px;
+}
+
+.connect-list-main-item {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 0.75rem;
+}
+
+.wizard-form-hide {
+    display: none;
+}
+
+.wizard-step-title {
+    font-size: 1.5rem;
+}
+
+.wizard-button {
+    font-size: 14px;
+}
+
+@media (min-width: 1000px) {
+    .wizard-table {
+        width: 600px;
+    }
+}
+
+.wizard-table th,
+.wizard-table td {
+    padding: 0.75rem 1rem;
+}
+
+.wizard-instruction-list {
+    padding-left: 20px;
+}
+
+.wizard-img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 500px)  {
+    .wizard-img {
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (min-width: 700px)  {
+    .wizard-img {
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1000px)  {
+    .wizard-img {
+        width: 40%;
+        height: auto;
+    }
+}
+
+//временно для демонстрации
+.js-orders-source-wizard form {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #999999;
+}
