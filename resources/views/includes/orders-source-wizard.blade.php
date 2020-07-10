@@ -160,7 +160,12 @@
                                         </select>
                                     </div>
                                 </div>
-                                <p class="modal-text">Укажите стоимость заявки</p>
+                                <p class="modal-text">Укажите стоимость заявки
+                                    <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
+                                          data-toggle="click-tooltip" data-placement="top" data-title="Ваше
+                                          вознаграждение за заявку с этого источника. Можете оставить базовую цену из
+                                          настроек Рабочей области"></i>
+                                </p>
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-lg-2 col-form-label" for="webhooks-cost">Цена</label>
                                     <div class="col-sm-8 col-lg-7">
@@ -178,7 +183,12 @@
                                                    id="roistat-phone-name" value="Roistat телефония [ID]">
                                         </div>
                                     </div>
-                                <p class="modal-text">Укажите стоимость заявки</p>
+                                <p class="modal-text">Укажите стоимость заявки
+                                    <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
+                                       data-toggle="click-tooltip" data-placement="top" data-title="Ваше
+                                          вознаграждение за заявку с этого источника. Можете оставить базовую цену из
+                                          настроек Рабочей области"></i>
+                                </p>
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="roistat-phone-cost">Цена</label>
                                     <div class="col-sm-8">
@@ -193,7 +203,12 @@
                                         <input class="form-control wizard-form-input" type="text" id="marquiz-name" value="Marquiz [ID]">
                                     </div>
                                 </div>
-                                <p class="modal-text">Укажите стоимость заявки</p>
+                                <p class="modal-text">Укажите стоимость заявки
+                                    <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
+                                       data-toggle="click-tooltip" data-placement="top" data-title="Ваше
+                                          вознаграждение за заявку с этого источника. Можете оставить базовую цену из
+                                          настроек Рабочей области"></i>
+                                </p>
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="markviz-cost">Цена</label>
                                     <div class="col-sm-8">
@@ -208,7 +223,12 @@
                                         <input class="form-control wizard-form-input" type="text" id="get-name" value="GET запрос с сайта [ID]">
                                     </div>
                                 </div>
-                                <p class="modal-text">Укажите стоимость заявки</p>
+                                <p class="modal-text">Укажите стоимость заявки
+                                    <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
+                                       data-toggle="click-tooltip" data-placement="top" data-title="Ваше
+                                          вознаграждение за заявку с этого источника. Можете оставить базовую цену из
+                                          настроек Рабочей области"></i>
+                                </p>
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="get-cost">Цена</label>
                                     <div class="col-sm-8">
@@ -239,7 +259,12 @@
                                                value="">
                                     </div>
                                 </div>
-                                <p class="modal-text">Укажите стоимость заявки</p>
+                                <p class="modal-text">Укажите стоимость заявки
+                                    <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
+                                       data-toggle="click-tooltip" data-placement="top" data-title="Ваше
+                                          вознаграждение за заявку с этого источника. Можете оставить базовую цену из
+                                          настроек Рабочей области"></i>
+                                </p>
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="zadarma-cost">Цена</label>
                                     <div class="col-sm-8">

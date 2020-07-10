@@ -79,7 +79,7 @@
                     <div class="workspace-form-column">
                         <div class="form-group project-group">
                             <label class="workspace-form-label" for="project">
-                                2. Проект
+                                2. Ниша
                                 <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                    data-toggle="click-tooltip" data-placement="top" data-title="Разделяйте лидогенерацию
                                        по нишам. Пример: окна, юристы, строительство"></i>
@@ -132,8 +132,8 @@
                             <label class="workspace-form-label" for="data-hide">
                                 8. Скрывать данные заявок при балансе Лидгена менее
                                 <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
-                                   data-toggle="click-tooltip" data-placement="top" data-title="Система скроет данные
-                                   заявки при балансе ниже этого значения"></i>
+                                   data-toggle="click-tooltip" data-placement="top" data-title="Система скроет заявки
+                                   для вашего клиента при балансе менее этого значения"></i>
                             </label>
                             <div class="input-group">
                                 <input class="form-control data-hide-input" type="number" id="data-hide" min="0"
@@ -167,27 +167,30 @@
             <div class="col-md-12 mb-1 mt-1 settings-wrapper align-items-start">
                 <div>
                     <label class="workspace-form-label" for="workspace-email">9. Доступ клиента к заявкам и
-                        уведомления</label>
+                        уведомлениям
+                        <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
+                            data-toggle="click-tooltip" data-placement="top" data-title="Добавьте почту клиента"></i>
+                    </label>
                     <a class="btn client-acсess-button" href="#" aria-label="Ссылка на внешнее администрирование">
                         <i class="fa fa-external-link" aria-hidden="true"></i>
                     </a>
                 </div>
-                <form class="workspace-email-form" method="post" action="/">
-                    <label class="sr-only" for="workspace-email">Почта</label>
-                    <div class="input-group">
-                        <input class="form-control workspace-email-input" type="email" id="workspace-email"
-                               placeholder="Почта">
-                        <div class="input-group-append">
-                            <button type="submit" class="btn btn-primary email-add-button" aria-label="Добавить">
-                                Добавить
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="invalid-feedback workspace-email-invalid-feedback">Вы можете добавить не более
-                        20 доступов за 2 часа.
-                    </div>
-                </form>
+{{--                <form class="workspace-email-form" method="post" action="/">--}}
+{{--                    <label class="sr-only" for="workspace-email">Почта</label>--}}
+{{--                    <div class="input-group">--}}
+{{--                        <input class="form-control workspace-email-input" type="email" id="workspace-email"--}}
+{{--                               placeholder="Почта">--}}
+{{--                        <div class="input-group-append">--}}
+{{--                            <button type="submit" class="btn btn-primary email-add-button" aria-label="Добавить">--}}
+{{--                                Добавить--}}
+{{--                                <i class="fa fa-plus" aria-hidden="true"></i>--}}
+{{--                            </button>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="invalid-feedback workspace-email-invalid-feedback">Вы можете добавить не более--}}
+{{--                        20 доступов за 2 часа.--}}
+{{--                    </div>--}}
+{{--                </form>--}}
             </div>
         </div>
         <div class="row">
@@ -202,12 +205,24 @@
                                         рассылку">Активность
                             </th>
                             <th class="email-col" scope="col">Почта</th>
-                            <th class="crm-col" scope="col">Доступ в CRM</th>
-                            <th class="new-order-col" scope="col">Новая заявка</th>
-                            <th class="lidgen-balance-col" scope="col">Лидген баланс</th>
-                            <th class="yandex-balance-col" scope="col">Яндекс баланс</th>
-                            <th class="google-balance-col" scope="col">Google баланс</th>
-                            <th class="roistat-balance-col" scope="col">Roistat баланс</th>
+                            <th class="crm-col" scope="col" data-toggle="tooltip" data-placement="top"
+                                data-delay='{"show":"1000", "hide":"1000"}' title="Открывает доступ в CRM Лидогенератора
+                                с вашими заявками">Доступ в CRM</th>
+                            <th class="new-order-col" scope="col" data-toggle="tooltip" data-placement="top"
+                                data-delay='{"show":"1000", "hide":"1000"}' title="Отправляет на почту уведомления о
+                                новой заявке в Лидогенераторе">Новая заявка</th>
+                            <th class="lidgen-balance-col" scope="col" data-toggle="tooltip" data-placement="top"
+                                data-delay='{"show":"1000", "hide":"1000"}' title="Отправляет уведомления при снижении
+                                баланса Лидгена менее указанной суммы в разделе №1 Рабочая область">Лидген баланс</th>
+                            <th class="yandex-balance-col" scope="col" data-toggle="tooltip" data-placement="top"
+                                data-delay='{"show":"1000", "hide":"1000"}' title="Отправляет уведомления при снижении
+                                баланса Яндекса менее указанной суммы в разделе №3 Реклама">Яндекс баланс</th>
+                            <th class="google-balance-col" scope="col" data-toggle="tooltip" data-placement="top"
+                                data-delay='{"show":"1000", "hide":"1000"}' title="Отправляет уведомления при снижении
+                                баланса Google менее указанной суммы в разделе №3 Реклама">Google баланс</th>
+                            <th class="roistat-balance-col" scope="col" data-toggle="tooltip" data-placement="top"
+                                data-delay='{"show":"1000", "hide":"1000"}' title="Отправляет уведомления при снижении
+                                баланса Roistat менее указанной суммы в разделе №3 Реклама">Roistat баланс</th>
                             <th class="admin-col" scope="col">
                                 <a data-toggle="tooltip" data-placement="top"
                                    data-delay='{"show":"1000", "hide":"1000"}'
@@ -386,6 +401,26 @@
                         </tbody>
                     </table>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form class="workspace-email-form" method="post" action="/">
+                    <label class="sr-only" for="workspace-email">Почта</label>
+                    <div class="input-group">
+                        <input class="form-control workspace-email-input" type="email" id="workspace-email"
+                               placeholder="Почта">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-primary email-add-button" aria-label="Добавить">
+                                Добавить
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback workspace-email-invalid-feedback">Вы можете добавить не более
+                        20 доступов за 2 часа.
+                    </div>
+                </form>
             </div>
         </div>
         <div class="toast saved-toast js-saved-toast">
