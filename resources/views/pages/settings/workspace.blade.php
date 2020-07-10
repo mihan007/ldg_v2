@@ -175,22 +175,6 @@
                         <i class="fa fa-external-link" aria-hidden="true"></i>
                     </a>
                 </div>
-{{--                <form class="workspace-email-form" method="post" action="/">--}}
-{{--                    <label class="sr-only" for="workspace-email">Почта</label>--}}
-{{--                    <div class="input-group">--}}
-{{--                        <input class="form-control workspace-email-input" type="email" id="workspace-email"--}}
-{{--                               placeholder="Почта">--}}
-{{--                        <div class="input-group-append">--}}
-{{--                            <button type="submit" class="btn btn-primary email-add-button" aria-label="Добавить">--}}
-{{--                                Добавить--}}
-{{--                                <i class="fa fa-plus" aria-hidden="true"></i>--}}
-{{--                            </button>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="invalid-feedback workspace-email-invalid-feedback">Вы можете добавить не более--}}
-{{--                        20 доступов за 2 часа.--}}
-{{--                    </div>--}}
-{{--                </form>--}}
             </div>
         </div>
         <div class="row">

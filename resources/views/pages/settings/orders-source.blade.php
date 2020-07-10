@@ -9,32 +9,11 @@
                     заявок"</h2>
                 @include('includes.settings-links', ['step'=>'orders-source'])
                 <div>
-{{--                    <select class="select custom-select orders-source-select bg-primary text-white js-open-modal"--}}
-{{--                            data-style="btn-primary">--}}
-{{--                        <option value="" selected>Добавить подключение</option>--}}
-{{--                        <optgroup label="Получение заявок">--}}
-{{--                            <option class="" data-modal="js-roistat-phone-modal" role="button">--}}
-{{--                                    Roistat телефония</option>--}}
-{{--                            <option >Zadarma телефония</option>--}}
-{{--                            <option>Marquiz</option>--}}
-{{--                            <option class="" data-modal="js-webhook-modal" role="button">Webhooks от других сервисов--}}
-{{--                            </option>--}}
-{{--                            <option>GET запрос с сайта</option>--}}
-{{--                        </optgroup>--}}
-{{--                        <optgroup label="Реклама и расходы">--}}
-{{--                            <option>Яндекс.Директ</option>--}}
-{{--                            <option>Google Ads</option>--}}
-{{--                            <option>Roistat</option>--}}
-{{--                        </optgroup>--}}
-{{--                        <optgroup label="Отправка заявок в CRM">--}}
-{{--                            <option>Битрикс 24</option>--}}
-{{--                        </optgroup>--}}
-{{--                    </select>--}}
-                       <a class="btn btn-primary wizard-button" href=".js-orders-source-wizard" role="button"
-                          data-toggle="modal">
-                           Новое подключение
-                           <i class="fa fa-plus" aria-hidden="true"></i>
-                       </a>
+                   <a class="btn btn-primary wizard-button" href=".js-orders-source-wizard" role="button"
+                      data-toggle="modal">
+                       Новое подключение
+                       <i class="fa fa-plus" aria-hidden="true"></i>
+                   </a>
                 </div>
             </div>
         </div>

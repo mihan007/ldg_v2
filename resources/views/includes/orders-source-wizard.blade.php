@@ -174,7 +174,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <form class="roistat-phone-form" method="post" action="#">
+                            <form class="roistat-phone-form wizard-form-hide" method="post" action="#">
                                     <div class="form-group row">
                                         <label class="col-sm-4 col-form-label" for="roistat-phone-name">Имя подключения
                                         </label>
@@ -196,7 +196,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <form class="markviz-form" method="post" action="#">
+                            <form class="markviz-form wizard-form-hide" method="post" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="marquiz-name">Имя подключения</label>
                                     <div class="col-sm-8">
@@ -216,7 +216,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <form class="get-form" method="post" action="#">
+                            <form class="get-form wizard-form-hide" method="post" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="get-name">Имя подключения</label>
                                     <div class="col-sm-8">
@@ -236,7 +236,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <form class="zadarma-form" method="post" action="#">
+                            <form class="zadarma-form wizard-form-hide" method="post" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="zadarma-name">Имя подключения</label>
                                     <div class="col-sm-8">
@@ -273,7 +273,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <form class="yandex-direct-form" method="post" action="#">
+                            <form class="yandex-direct-form wizard-form-hide" method="post" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="yandex-direct-name">Имя подключения</label>
                                     <div class="col-sm-8">
@@ -296,7 +296,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <form class="google-ads-form" method="post" action="#">
+                            <form class="google-ads-form wizard-form-hide" method="post" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="google-name">Имя подключения</label>
                                     <div class="col-sm-8">
@@ -316,7 +316,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <form class="roistat-form" method="post" action="#">
+                            <form class="roistat-form wizard-form-hide" method="post" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="roistat-name">Имя подключения</label>
                                     <div class="col-sm-8">
@@ -336,7 +336,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <form class="bitrix-form" method="post" action="#">
+                            <form class="bitrix-form wizard-form-hide" method="post" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="bitrix-name">Имя подключения</label>
                                     <div class="col-sm-8">
