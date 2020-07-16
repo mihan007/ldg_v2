@@ -8,9 +8,9 @@
             <div class="col-md-12 settings-wrapper border-bottom font-weight-bold">
                 @include('includes.settings-links', ['step'=>'ad'])
                     <select class="custom-select select-item ad-select js-open-modal">
-                        <option selected>Новое подключение</option>
-                        <option value="1" data-modal="js-yandex-ad-modal" role="button">Яндекс.Директ</option>
-                        <option value="2" data-modal="js-google-ad-modal" role="button">Google Ads</option>
+                        <option value="0" selected>Новое подключение</option>
+                        <option value="1" data-modal="js-yandex-ad-modal">Яндекс.Директ</option>
+                        <option value="2" data-modal="js-google-ad-modal">Google Ads</option>
                     </select>
 
 {{--                <div>--}}
