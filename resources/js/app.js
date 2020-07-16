@@ -20,3 +20,4 @@ require('./copy-text');
 require('./select-modal');
 require('./save-result');
 require('./wizard');
+require('./orders-source-grid');

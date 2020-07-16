@@ -14334,6 +14334,7 @@ input[type=radio].visually-hidden {
   margin-right: 1.2rem;
   color: #212529;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .directory-button.active,
@@ -15416,5 +15417,34 @@ input[type=radio].visually-hidden {
     display: flex;
     flex-direction: column;
   }
+}
+
+.ad-settings-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.ad-buttons-col {
+  width: 7%;
+}
+
+.ad-id-col {
+  width: 9%;
+}
+
+.ad-crm-col {
+  width: 12%;
+}
+
+.ad-yandex-col {
+  width: 14%;
+}
+
+.value-added-col {
+  width: 5%;
 }
 

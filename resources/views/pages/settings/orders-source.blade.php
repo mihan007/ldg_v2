@@ -2,7 +2,7 @@
 @section('content')
     <main class="page-wrapper">
         <h1 class="sr-only">Страница настроек "Источник заявок"</h1>
-        <div class="row sticky-top">
+        <div class="row sticky-top bg-white">
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper font-weight-bold">
                 <h2 class="sr-only">Блок навигации по страницам настроек и управления настройками страницы "Источник
@@ -21,7 +21,7 @@
             <div class="col-md-12 mx-auto">
                 <h2 class="sr-only">Таблица заявок с параметрами подключения"</h2>
                 <div class="table-wrapper mb-5">
-                    <table class="table orders-source-table common-table">
+                    <table class="table orders-source-table common-table orders-source-grid" data-offset="110">
                         <thead>
                         <tr class="table-grey text-center">
                             <th class="rounded-table-left activity-col" data-toggle="tooltip" data-placement="top"
@@ -50,7 +50,7 @@
                                 <div class="custom-control custom-switch">
                                     <input class="custom-control-input custom-control-input-success" id="active-switch"
                                            type="checkbox" checked>
-                                    <label class="custom-control-label font-italic" for="active-switch"
+                                    <label class="custom-control-label" for="active-switch"
                                            aria-label="Активность включена/выключена"></label>
                                 </div>
                             </td>
@@ -127,14 +127,337 @@
                                 </a>
                             </td>
                         </tr>
+                        <tr>
+                            <td class="activity-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch2"
+                                           type="checkbox">
+                                    <label class="custom-control-label font-italic" for="active-switch2"
+                                           aria-label="Активность включена/выключена"></label>
+                                </div>
+                            </td>
+                            <td class="email-col text-center">02</td>
+                            <td class="name-col text-center">Балконы</td>
+                            <td class="source-col text-center">Roistat телефония</td>
+                            <td class="order-cost-col text-center">Базовая</td>
+                            <td class="text-center">
+                                <form class="order-source-copy-form" method="get" action="/">
+                                    <div class="input-group">
+                                        <input class="form-control copy-form-input" type="text" id="copy-form-input2"
+                                               value="https://panel.troiza.net/api/v1/web-leads/webhook/GyOJjqO8HqlRJdEsy5Pb">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-secondary copy-button" type="button"
+                                                    data-clipboard-target="#copy-form-input2" data-trigger="manual"
+                                                    data-toggle="click-leave-tooltip" data-placement="top"
+                                                    title="Скопировано" aria-label="Копировать">
+                                                <i class="fa fa-files-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
+                            <td class="text-center">22.04.2020 22:40</td>
+                            <td class="text-center">
+                                <a class="btn source-correct-button source-button function-button" data-toggle="modal"
+                                   href=".js-orders-source-wizard" role="button" aria-label="Редактировать данные">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </a>
+                                <a class="btn function-button" aria-label="Удалить доступ"
+                                   href=".js-workspace-reset-modal" role="button" data-toggle="modal">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="activity-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch2"
+                                           type="checkbox">
+                                    <label class="custom-control-label font-italic" for="active-switch2"
+                                           aria-label="Активность включена/выключена"></label>
+                                </div>
+                            </td>
+                            <td class="email-col text-center">02</td>
+                            <td class="name-col text-center">Балконы</td>
+                            <td class="source-col text-center">Roistat телефония</td>
+                            <td class="order-cost-col text-center">Базовая</td>
+                            <td class="text-center">
+                                <form class="order-source-copy-form" method="get" action="/">
+                                    <div class="input-group">
+                                        <input class="form-control copy-form-input" type="text" id="copy-form-input2"
+                                               value="https://panel.troiza.net/api/v1/web-leads/webhook/GyOJjqO8HqlRJdEsy5Pb">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-secondary copy-button" type="button"
+                                                    data-clipboard-target="#copy-form-input2" data-trigger="manual"
+                                                    data-toggle="click-leave-tooltip" data-placement="top"
+                                                    title="Скопировано" aria-label="Копировать">
+                                                <i class="fa fa-files-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
+                            <td class="text-center">22.04.2020 22:40</td>
+                            <td class="text-center">
+                                <a class="btn source-correct-button source-button function-button" data-toggle="modal"
+                                   href=".js-orders-source-wizard" role="button" aria-label="Редактировать данные">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </a>
+                                <a class="btn function-button" aria-label="Удалить доступ"
+                                   href=".js-workspace-reset-modal" role="button" data-toggle="modal">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="activity-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch2"
+                                           type="checkbox">
+                                    <label class="custom-control-label font-italic" for="active-switch2"
+                                           aria-label="Активность включена/выключена"></label>
+                                </div>
+                            </td>
+                            <td class="email-col text-center">02</td>
+                            <td class="name-col text-center">Балконы</td>
+                            <td class="source-col text-center">Roistat телефония</td>
+                            <td class="order-cost-col text-center">Базовая</td>
+                            <td class="text-center">
+                                <form class="order-source-copy-form" method="get" action="/">
+                                    <div class="input-group">
+                                        <input class="form-control copy-form-input" type="text" id="copy-form-input2"
+                                               value="https://panel.troiza.net/api/v1/web-leads/webhook/GyOJjqO8HqlRJdEsy5Pb">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-secondary copy-button" type="button"
+                                                    data-clipboard-target="#copy-form-input2" data-trigger="manual"
+                                                    data-toggle="click-leave-tooltip" data-placement="top"
+                                                    title="Скопировано" aria-label="Копировать">
+                                                <i class="fa fa-files-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
+                            <td class="text-center">22.04.2020 22:40</td>
+                            <td class="text-center">
+                                <a class="btn source-correct-button source-button function-button" data-toggle="modal"
+                                   href=".js-orders-source-wizard" role="button" aria-label="Редактировать данные">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </a>
+                                <a class="btn function-button" aria-label="Удалить доступ"
+                                   href=".js-workspace-reset-modal" role="button" data-toggle="modal">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="activity-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch2"
+                                           type="checkbox">
+                                    <label class="custom-control-label font-italic" for="active-switch2"
+                                           aria-label="Активность включена/выключена"></label>
+                                </div>
+                            </td>
+                            <td class="email-col text-center">02</td>
+                            <td class="name-col text-center">Балконы</td>
+                            <td class="source-col text-center">Roistat телефония</td>
+                            <td class="order-cost-col text-center">Базовая</td>
+                            <td class="text-center">
+                                <form class="order-source-copy-form" method="get" action="/">
+                                    <div class="input-group">
+                                        <input class="form-control copy-form-input" type="text" id="copy-form-input2"
+                                               value="https://panel.troiza.net/api/v1/web-leads/webhook/GyOJjqO8HqlRJdEsy5Pb">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-secondary copy-button" type="button"
+                                                    data-clipboard-target="#copy-form-input2" data-trigger="manual"
+                                                    data-toggle="click-leave-tooltip" data-placement="top"
+                                                    title="Скопировано" aria-label="Копировать">
+                                                <i class="fa fa-files-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
+                            <td class="text-center">22.04.2020 22:40</td>
+                            <td class="text-center">
+                                <a class="btn source-correct-button source-button function-button" data-toggle="modal"
+                                   href=".js-orders-source-wizard" role="button" aria-label="Редактировать данные">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </a>
+                                <a class="btn function-button" aria-label="Удалить доступ"
+                                   href=".js-workspace-reset-modal" role="button" data-toggle="modal">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="activity-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch2"
+                                           type="checkbox">
+                                    <label class="custom-control-label font-italic" for="active-switch2"
+                                           aria-label="Активность включена/выключена"></label>
+                                </div>
+                            </td>
+                            <td class="email-col text-center">02</td>
+                            <td class="name-col text-center">Балконы</td>
+                            <td class="source-col text-center">Roistat телефония</td>
+                            <td class="order-cost-col text-center">Базовая</td>
+                            <td class="text-center">
+                                <form class="order-source-copy-form" method="get" action="/">
+                                    <div class="input-group">
+                                        <input class="form-control copy-form-input" type="text" id="copy-form-input2"
+                                               value="https://panel.troiza.net/api/v1/web-leads/webhook/GyOJjqO8HqlRJdEsy5Pb">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-secondary copy-button" type="button"
+                                                    data-clipboard-target="#copy-form-input2" data-trigger="manual"
+                                                    data-toggle="click-leave-tooltip" data-placement="top"
+                                                    title="Скопировано" aria-label="Копировать">
+                                                <i class="fa fa-files-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
+                            <td class="text-center">22.04.2020 22:40</td>
+                            <td class="text-center">
+                                <a class="btn source-correct-button source-button function-button" data-toggle="modal"
+                                   href=".js-orders-source-wizard" role="button" aria-label="Редактировать данные">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </a>
+                                <a class="btn function-button" aria-label="Удалить доступ"
+                                   href=".js-workspace-reset-modal" role="button" data-toggle="modal">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="activity-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch2"
+                                           type="checkbox">
+                                    <label class="custom-control-label font-italic" for="active-switch2"
+                                           aria-label="Активность включена/выключена"></label>
+                                </div>
+                            </td>
+                            <td class="email-col text-center">02</td>
+                            <td class="name-col text-center">Балконы</td>
+                            <td class="source-col text-center">Roistat телефония</td>
+                            <td class="order-cost-col text-center">Базовая</td>
+                            <td class="text-center">
+                                <form class="order-source-copy-form" method="get" action="/">
+                                    <div class="input-group">
+                                        <input class="form-control copy-form-input" type="text" id="copy-form-input2"
+                                               value="https://panel.troiza.net/api/v1/web-leads/webhook/GyOJjqO8HqlRJdEsy5Pb">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-secondary copy-button" type="button"
+                                                    data-clipboard-target="#copy-form-input2" data-trigger="manual"
+                                                    data-toggle="click-leave-tooltip" data-placement="top"
+                                                    title="Скопировано" aria-label="Копировать">
+                                                <i class="fa fa-files-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
+                            <td class="text-center">22.04.2020 22:40</td>
+                            <td class="text-center">
+                                <a class="btn source-correct-button source-button function-button" data-toggle="modal"
+                                   href=".js-orders-source-wizard" role="button" aria-label="Редактировать данные">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </a>
+                                <a class="btn function-button" aria-label="Удалить доступ"
+                                   href=".js-workspace-reset-modal" role="button" data-toggle="modal">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="activity-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch2"
+                                           type="checkbox">
+                                    <label class="custom-control-label font-italic" for="active-switch2"
+                                           aria-label="Активность включена/выключена"></label>
+                                </div>
+                            </td>
+                            <td class="email-col text-center">02</td>
+                            <td class="name-col text-center">Балконы</td>
+                            <td class="source-col text-center">Roistat телефония</td>
+                            <td class="order-cost-col text-center">Базовая</td>
+                            <td class="text-center">
+                                <form class="order-source-copy-form" method="get" action="/">
+                                    <div class="input-group">
+                                        <input class="form-control copy-form-input" type="text" id="copy-form-input2"
+                                               value="https://panel.troiza.net/api/v1/web-leads/webhook/GyOJjqO8HqlRJdEsy5Pb">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-secondary copy-button" type="button"
+                                                    data-clipboard-target="#copy-form-input2" data-trigger="manual"
+                                                    data-toggle="click-leave-tooltip" data-placement="top"
+                                                    title="Скопировано" aria-label="Копировать">
+                                                <i class="fa fa-files-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
+                            <td class="text-center">22.04.2020 22:40</td>
+                            <td class="text-center">
+                                <a class="btn source-correct-button source-button function-button" data-toggle="modal"
+                                   href=".js-orders-source-wizard" role="button" aria-label="Редактировать данные">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </a>
+                                <a class="btn function-button" aria-label="Удалить доступ"
+                                   href=".js-workspace-reset-modal" role="button" data-toggle="modal">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="activity-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch2"
+                                           type="checkbox">
+                                    <label class="custom-control-label font-italic" for="active-switch2"
+                                           aria-label="Активность включена/выключена"></label>
+                                </div>
+                            </td>
+                            <td class="email-col text-center">02</td>
+                            <td class="name-col text-center">Балконы</td>
+                            <td class="source-col text-center">Roistat телефония</td>
+                            <td class="order-cost-col text-center">Базовая</td>
+                            <td class="text-center">
+                                <form class="order-source-copy-form" method="get" action="/">
+                                    <div class="input-group">
+                                        <input class="form-control copy-form-input" type="text" id="copy-form-input2"
+                                               value="https://panel.troiza.net/api/v1/web-leads/webhook/GyOJjqO8HqlRJdEsy5Pb">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-secondary copy-button" type="button"
+                                                    data-clipboard-target="#copy-form-input2" data-trigger="manual"
+                                                    data-toggle="click-leave-tooltip" data-placement="top"
+                                                    title="Скопировано" aria-label="Копировать">
+                                                <i class="fa fa-files-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
+                            <td class="text-center">22.04.2020 22:40</td>
+                            <td class="text-center">
+                                <a class="btn source-correct-button source-button function-button" data-toggle="modal"
+                                   href=".js-orders-source-wizard" role="button" aria-label="Редактировать данные">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </a>
+                                <a class="btn function-button" aria-label="Удалить доступ"
+                                   href=".js-workspace-reset-modal" role="button" data-toggle="modal">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
-            </div>
-        </div>
-        <div class="toast saved-toast js-saved-toast">
-            <div class="toast-body">
-                <div>Данные сохранены</div>
             </div>
         </div>
         @include('includes.workspace-reset-modal', [
