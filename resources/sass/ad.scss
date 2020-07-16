@@ -17,12 +17,43 @@
 
 .ad-crm-col {
     width: 12%;
+    cursor: pointer;
 }
 
 .ad-yandex-col {
     width: 14%;
+    cursor: pointer;
 }
 
 .value-added-col {
     width: 5%;
+}
+
+.ad-detailed-expense-col {
+    width: 8%;
+    cursor: pointer;
+}
+
+.ad-detailed-campaign-col,
+.ad-detailed-adding-col,
+.ad-detailed-status-col {
+    width: 11%;
+}
+
+.ad-detailed-start-col,
+.ad-detailed-new-col {
+    width: 15%;
+}
+
+.ad-detailed-new-col,
+.client-payment-col {
+    cursor: pointer;
+}
+
+.ad-select {
+    width: 20%;
+    //background-color: #007bff;
+    background-color: $ad-select-bg;
+    color: $ad-text-color;
+    border: 1px solid $ad-select-bg;
 }

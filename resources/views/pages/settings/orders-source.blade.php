@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-md-12 mx-auto">
                 <h2 class="sr-only">Таблица заявок с параметрами подключения"</h2>
-                <div class="table-wrapper mb-5">
+                <div class="orders-source-table-wrapper mb-5">
                     <table class="table orders-source-table common-table orders-source-grid" data-offset="110">
                         <thead>
                         <tr class="table-grey text-center">

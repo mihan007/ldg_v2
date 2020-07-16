@@ -15014,6 +15014,10 @@ input[type=radio].visually-hidden {
   cursor: pointer;
 }
 
+.orders-source-table {
+  z-index: 2;
+}
+
 .source-id-col {
   width: 10%;
 }
@@ -15023,8 +15027,7 @@ input[type=radio].visually-hidden {
 }
 
 .name-col,
-.source-col,
-.order-cost-col {
+.source-col {
   width: 12%;
   cursor: pointer;
 }
@@ -15033,8 +15036,9 @@ input[type=radio].visually-hidden {
   cursor: pointer;
 }
 
-.request-col {
-  width: 12%;
+.request-col,
+.order-cost-col {
+  width: 13%;
 }
 
 .copy-form-input,
@@ -15438,13 +15442,43 @@ input[type=radio].visually-hidden {
 
 .ad-crm-col {
   width: 12%;
+  cursor: pointer;
 }
 
 .ad-yandex-col {
   width: 14%;
+  cursor: pointer;
 }
 
 .value-added-col {
   width: 5%;
+}
+
+.ad-detailed-expense-col {
+  width: 8%;
+  cursor: pointer;
+}
+
+.ad-detailed-campaign-col,
+.ad-detailed-adding-col,
+.ad-detailed-status-col {
+  width: 11%;
+}
+
+.ad-detailed-start-col,
+.ad-detailed-new-col {
+  width: 15%;
+}
+
+.ad-detailed-new-col,
+.client-payment-col {
+  cursor: pointer;
+}
+
+.ad-select {
+  width: 20%;
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
 }
 

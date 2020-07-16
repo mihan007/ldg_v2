@@ -2,20 +2,26 @@
 @section('content')
     <main class="page-wrapper">
         <h1 class="sr-only">Страница настроек "Реклама"</h1>
-        <div class="row sticky-top">
+        <div class="row sticky-top bg-white">
             <h2 class="sr-only">Блок навигации по страницам настроек и управления настройками страницы "Реклама"</h2>
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper border-bottom font-weight-bold">
                 @include('includes.settings-links', ['step'=>'ad'])
-                <div>
-                   <a class="btn btn-primary wizard-button" href=".js-orders-source-wizard" role="button"
-                      data-toggle="modal">
-                       Новое подключение
-                       <i class="fa fa-plus" aria-hidden="true"></i>
-                   </a>
-                </div>
+                    <select class="custom-select select-item ad-select js-open-modal">
+                        <option selected>Новое подключение</option>
+                        <option value="1" data-modal="js-yandex-ad-modal" role="button">Яндекс.Директ</option>
+                        <option value="2" data-modal="js-google-ad-modal" role="button">Google Ads</option>
+                    </select>
+
+{{--                <div>--}}
+{{--                   <a class="btn btn-primary wizard-button" href=".js-ad-modal" role="button"--}}
+{{--                      data-toggle="modal">--}}
+{{--                       Новое подключение--}}
+{{--                       <i class="fa fa-plus" aria-hidden="true"></i>--}}
+{{--                   </a>--}}
+{{--                </div>--}}
             </div>
-            <div class="col-md-12 font-weight-bold border-bottom ad-settings-wrapper">
+            <div class="col-md-12 font-weight-bold ad-settings-wrapper">
                 <button class="btn directory-button" type="button">Яндекс.Директ</button>
                 <button class="btn directory-button" type="button">Google.Ads</button>
                 <button class="btn directory-button" type="button">Roistat</button>
@@ -24,8 +30,8 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="sr-only">Таблица общих настроек</h2>
-                <div class="table-wrapper mt-3">
-                    <table class="table ad-common-table common-table">
+                <div class="table-wrapper">
+                    <table class="table ad-common-table common-table ad-common-grid" data-offset="170">
                         <thead>
                         <tr class="table-grey text-center">
                             <th class="rounded-table-left ad-activity-col activity-col" data-toggle="tooltip" data-placement="top"
@@ -103,6 +109,104 @@
                                 </a>
                             </td>
                         </tr>
+                        <tr>
+                            <td class="ad-activity-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label font-italic" for="active-switch"
+                                           aria-label="Активность включена/выключена"></label>
+                                </div>
+                            </td>
+                            <td class="ad-id-col text-center">03</td>
+                            <td class=" ad-email-col text-center">dir@yandex.ru</td>
+                            <td class="ad-name-col text-center">Окна Саратов</td>
+                            <td class="ad-crm-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Включено/выключено">0 рублей</label>
+                                </div>
+                            </td>
+                            <td class="ad-yandex-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Включено/выключено">1000 рублей</label>
+                                </div>
+                            </td>
+                            <td class="value-added-col text-center">20%</td>
+                            <td class="client-payment-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Включено/выключено"></label>
+                                </div>
+                            </td>
+                            <td class="timing-col text-center">22.04.2020 22:40</td>
+                            <td class="ad-buttons-col text-center">
+                                <a class="btn source-correct-button source-button function-button"
+                                   href=".js-orders-source-wizard" data-toggle="modal" role="button" aria-label="Редактировать данные">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </a>
+                                <a class="btn function-button" aria-label="Удалить доступ"
+                                   href=".js-workspace-reset-modal" role="button" data-toggle="modal">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ad-activity-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label font-italic" for="active-switch"
+                                           aria-label="Активность включена/выключена"></label>
+                                </div>
+                            </td>
+                            <td class="ad-id-col text-center">03</td>
+                            <td class=" ad-email-col text-center">dir@yandex.ru</td>
+                            <td class="ad-name-col text-center">Окна Саратов</td>
+                            <td class="ad-crm-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Включено/выключено">0 рублей</label>
+                                </div>
+                            </td>
+                            <td class="ad-yandex-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Включено/выключено">1000 рублей</label>
+                                </div>
+                            </td>
+                            <td class="value-added-col text-center">20%</td>
+                            <td class="client-payment-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Включено/выключено"></label>
+                                </div>
+                            </td>
+                            <td class="timing-col text-center">22.04.2020 22:40</td>
+                            <td class="ad-buttons-col text-center">
+                                <a class="btn source-correct-button source-button function-button"
+                                   href=".js-orders-source-wizard" data-toggle="modal" role="button" aria-label="Редактировать данные">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </a>
+                                <a class="btn function-button" aria-label="Удалить доступ"
+                                   href=".js-workspace-reset-modal" role="button" data-toggle="modal">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
@@ -112,7 +216,7 @@
             <div class="col-md-12">
                 <h2 class="sr-only">Таблица детальных настроек</h2>
                 <div class="table-wrapper mt-3">
-                    <table class="table ad-detailed-table common-table">
+                    <table class="table ad-detailed-table common-table ad-detailed-grid">
                         <thead>
                         <tr class="table-grey text-center">
                             <th class="rounded-table-left ad-detailed-expense-col" data-toggle="tooltip" data-placement="top"
@@ -180,20 +284,226 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr>
+                            <td class="ad-detailed-expense-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label font-italic" for="active-switch"
+                                           aria-label="Учет расходов включен/выключен"></label>
+                                </div>
+                            </td>
+                            <td class="ad-detailed-name-col text-center">Поиск/Окна/Оренбург</td>
+                            <td class="ad-detailed-campaign-col text-center">111111112</td>
+                            <td class="ad-detailed-adding-col text-center">22.04.2020</td>
+                            <td class="ad-detailed-status-col text-center">Идут показы</td>
+                            <td class="ad-detailed-start-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Кампания запущена/остановлена"></label>
+                                </div>
+                            </td>
+                            <td class="ad-detailed-new-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Учет расходов новым кампаниям включен/выключен"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ad-detailed-expense-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label font-italic" for="active-switch"
+                                           aria-label="Учет расходов включен/выключен"></label>
+                                </div>
+                            </td>
+                            <td class="ad-detailed-name-col text-center">Поиск/Окна/Оренбург</td>
+                            <td class="ad-detailed-campaign-col text-center">111111112</td>
+                            <td class="ad-detailed-adding-col text-center">22.04.2020</td>
+                            <td class="ad-detailed-status-col text-center">Идут показы</td>
+                            <td class="ad-detailed-start-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Кампания запущена/остановлена"></label>
+                                </div>
+                            </td>
+                            <td class="ad-detailed-new-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Учет расходов новым кампаниям включен/выключен"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ad-detailed-expense-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label font-italic" for="active-switch"
+                                           aria-label="Учет расходов включен/выключен"></label>
+                                </div>
+                            </td>
+                            <td class="ad-detailed-name-col text-center">Поиск/Окна/Оренбург</td>
+                            <td class="ad-detailed-campaign-col text-center">111111112</td>
+                            <td class="ad-detailed-adding-col text-center">22.04.2020</td>
+                            <td class="ad-detailed-status-col text-center">Идут показы</td>
+                            <td class="ad-detailed-start-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Кампания запущена/остановлена"></label>
+                                </div>
+                            </td>
+                            <td class="ad-detailed-new-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Учет расходов новым кампаниям включен/выключен"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ad-detailed-expense-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label font-italic" for="active-switch"
+                                           aria-label="Учет расходов включен/выключен"></label>
+                                </div>
+                            </td>
+                            <td class="ad-detailed-name-col text-center">Поиск/Окна/Оренбург</td>
+                            <td class="ad-detailed-campaign-col text-center">111111112</td>
+                            <td class="ad-detailed-adding-col text-center">22.04.2020</td>
+                            <td class="ad-detailed-status-col text-center">Идут показы</td>
+                            <td class="ad-detailed-start-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Кампания запущена/остановлена"></label>
+                                </div>
+                            </td>
+                            <td class="ad-detailed-new-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Учет расходов новым кампаниям включен/выключен"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ad-detailed-expense-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label font-italic" for="active-switch"
+                                           aria-label="Учет расходов включен/выключен"></label>
+                                </div>
+                            </td>
+                            <td class="ad-detailed-name-col text-center">Поиск/Окна/Оренбург</td>
+                            <td class="ad-detailed-campaign-col text-center">111111112</td>
+                            <td class="ad-detailed-adding-col text-center">22.04.2020</td>
+                            <td class="ad-detailed-status-col text-center">Идут показы</td>
+                            <td class="ad-detailed-start-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Кампания запущена/остановлена"></label>
+                                </div>
+                            </td>
+                            <td class="ad-detailed-new-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Учет расходов новым кампаниям включен/выключен"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ad-detailed-expense-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label font-italic" for="active-switch"
+                                           aria-label="Учет расходов включен/выключен"></label>
+                                </div>
+                            </td>
+                            <td class="ad-detailed-name-col text-center">Поиск/Окна/Оренбург</td>
+                            <td class="ad-detailed-campaign-col text-center">111111112</td>
+                            <td class="ad-detailed-adding-col text-center">22.04.2020</td>
+                            <td class="ad-detailed-status-col text-center">Идут показы</td>
+                            <td class="ad-detailed-start-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Кампания запущена/остановлена"></label>
+                                </div>
+                            </td>
+                            <td class="ad-detailed-new-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Учет расходов новым кампаниям включен/выключен"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ad-detailed-expense-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label font-italic" for="active-switch"
+                                           aria-label="Учет расходов включен/выключен"></label>
+                                </div>
+                            </td>
+                            <td class="ad-detailed-name-col text-center">Поиск/Окна/Оренбург</td>
+                            <td class="ad-detailed-campaign-col text-center">111111112</td>
+                            <td class="ad-detailed-adding-col text-center">22.04.2020</td>
+                            <td class="ad-detailed-status-col text-center">Идут показы</td>
+                            <td class="ad-detailed-start-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Кампания запущена/остановлена"></label>
+                                </div>
+                            </td>
+                            <td class="ad-detailed-new-col text-center">
+                                <div class="custom-control custom-switch">
+                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                           type="checkbox" checked>
+                                    <label class="custom-control-label" for="active-switch"
+                                           aria-label="Учет расходов новым кампаниям включен/выключен"></label>
+                                </div>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
-            </div>
-        </div>
-        <div class="toast saved-toast js-saved-toast">
-            <div class="toast-body">
-                <div>Данные сохранены</div>
             </div>
         </div>
         @include('includes.workspace-reset-modal', [
             'messageHeader' => 'Удаление подключения',
             'messageBody' => 'Вы действительно хотите удалить подключение?'
         ])
-        @include('includes.orders-source-wizard')
+        @include('includes.modal.yandex-ad-modal')
+        @include('includes.modal.google-ad-modal')
     </main>
 @stop

@@ -23,3 +23,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
 <!-- Wizard -->
 <script src="https://cdn.jsdelivr.net/npm/smartwizard@5.0.0/dist/js/jquery.smartWizard.min.js" type="text/javascript"></script>
+
