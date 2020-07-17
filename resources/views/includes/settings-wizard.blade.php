@@ -1,4 +1,4 @@
-<div class="modal fade js-orders-source-wizard" tabindex="-1">
+<div class="modal fade js-settings-wizard" tabindex="-1">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-body">
@@ -73,7 +73,7 @@
                                     Инструкция
                                 </a>
                             </div>
-                            <form class="webhooks-form" method="get" action="#">
+                            <form class="webhooks-form wizard-form-hide" method="get" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-lg-2 col-form-label" for="webhooks-connect-name">
                                         Имя подключения</label>
@@ -356,6 +356,17 @@
                                     </div>
                                 </div>
                             </form>
+                            <div class="wizard-demo">
+                                <p class="modal-text">После нажатия кнопки "Продолжить" вы будете перенаправлены
+                                    на сервер авторизации Google Ads, где необходимо предоставить доступ к данным для
+                                    приложения Лидогенератор</p>
+                            </div>
+                            <div class="wizard-demo">
+                                <p class="modal-text">После нажатия кнопки "Продолжить" вы будете перенаправлены
+                                    на сервер авторизации Яндекса, где необходимо предоставить доступ к данным для приложения
+                                    Лидогенератор</p>
+                            </div>
+
                         </div>
                         <div id="step-3" class="tab-pane" role="tabpanel">
                             <h3 class="mb-3 wizard-step-title">Проверьте параметры подключения</h3>
@@ -409,6 +420,39 @@
                                         <tr>
                                             <td class="">API Secret</td>
                                             <td class=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Название подключения</td>
+                                            <td class=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Останавливать, если на балансе CRM 0 рублей
+                                                <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
+                                                   data-toggle="click-tooltip" data-placement="top" data-title="Если баланс Лидогенератора достигнет
+                                этого значения, система автоматически остановит все включенные кампании и запомнит их.
+                                Когда баланс станет выше значения, система запустит ранее выключенные кампании"></i>
+                                            </td>
+                                            <td class="">Включено</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Уведомлять об окончании баланса при 10000 рублей
+                                                <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
+                                                   data-toggle="click-tooltip" data-placement="top" data-title="При достижении этого значения система
+                                отправить уведомление об окончании баланса Яндекса"></i>
+                                            </td>
+                                            <td class="">Включено</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">НДС</td>
+                                            <td class="">20%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Бюджет оплачивает клиент <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
+                                                                 data-toggle="click-tooltip" data-placement="top" data-title="Включите, если рекламный бюджет
+                                оплачивает клиент. Тогда при подсчете вашей Прибыли система не вычтет этот Расход из
+                                Выручки"></i>
+                                            </td>
+                                            <td class="">Выключено</td>
                                         </tr>
                                     </tbody>
                                 </table>

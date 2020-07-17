@@ -74581,7 +74581,7 @@ module.exports = function(module) {
 $(document).ready(function () {
   window.table = $('.ad-common-grid').DataTable({
     fixedHeader: {
-      headerOffset: 170
+      headerOffset: 187
     },
     paging: false,
     searching: false,
@@ -75367,8 +75367,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/mihan007/Projects/ldg_v2/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/mihan007/Projects/ldg_v2/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/macbook/Documents/GitHub/ldg_v2/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/macbook/Documents/GitHub/ldg_v2/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

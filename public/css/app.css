@@ -14452,6 +14452,11 @@ input[type=radio].visually-hidden {
   }
 }
 
+.custom-switch .custom-control-label::before,
+.custom-switch .custom-control-label::after {
+  cursor: pointer;
+}
+
 .index-buttons-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -15430,6 +15435,7 @@ input[type=radio].visually-hidden {
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
   flex-wrap: wrap;
+  padding-left: 40px;
 }
 
 .ad-buttons-col {
@@ -15437,7 +15443,7 @@ input[type=radio].visually-hidden {
 }
 
 .ad-id-col {
-  width: 9%;
+  width: 6%;
 }
 
 .ad-crm-col {
@@ -15450,8 +15456,12 @@ input[type=radio].visually-hidden {
   cursor: pointer;
 }
 
-.value-added-col {
+.ad-value-added-col {
   width: 5%;
+}
+
+.ad-timing-col {
+  width: 12%;
 }
 
 .ad-detailed-expense-col {
@@ -15471,7 +15481,7 @@ input[type=radio].visually-hidden {
 }
 
 .ad-detailed-new-col,
-.client-payment-col {
+.ad-client-payment-col {
   cursor: pointer;
 }
 
@@ -15480,5 +15490,10 @@ input[type=radio].visually-hidden {
   background-color: #007bff;
   color: white;
   border: 1px solid #007bff;
+}
+
+.ad-common-table th,
+.ad-detailed-table th {
+  cursor: pointer;
 }
 

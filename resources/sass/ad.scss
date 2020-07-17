@@ -5,6 +5,7 @@
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     flex-wrap: wrap;
+    padding-left: 40px;
 }
 
 .ad-buttons-col {
@@ -12,7 +13,7 @@
 }
 
 .ad-id-col {
-    width: 9%;
+    width: 6%;
 }
 
 .ad-crm-col {
@@ -25,8 +26,12 @@
     cursor: pointer;
 }
 
-.value-added-col {
+.ad-value-added-col {
     width: 5%;
+}
+
+.ad-timing-col {
+    width: 12%;
 }
 
 .ad-detailed-expense-col {
@@ -46,14 +51,18 @@
 }
 
 .ad-detailed-new-col,
-.client-payment-col {
+.ad-client-payment-col {
     cursor: pointer;
 }
 
 .ad-select {
     width: 20%;
-    //background-color: #007bff;
     background-color: $ad-select-bg;
     color: $ad-text-color;
     border: 1px solid $ad-select-bg;
+}
+
+.ad-common-table th,
+.ad-detailed-table th {
+   cursor: pointer;
 }
