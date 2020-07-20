@@ -15439,25 +15439,33 @@ input[type=radio].visually-hidden {
 }
 
 .ad-buttons-col {
-  width: 7%;
+  width: 10%;
 }
 
 .ad-id-col {
-  width: 6%;
+  width: 2%;
+}
+
+.ad-activity-col {
+  width: 7%;
 }
 
 .ad-crm-col {
-  width: 12%;
+  width: 9%;
   cursor: pointer;
 }
 
 .ad-yandex-col {
-  width: 14%;
+  width: 11%;
   cursor: pointer;
 }
 
+.ad-client-payment-col {
+  width: 7%;
+}
+
 .ad-value-added-col {
-  width: 5%;
+  width: 3%;
 }
 
 .ad-timing-col {
@@ -15495,5 +15503,9 @@ input[type=radio].visually-hidden {
 .ad-common-table th,
 .ad-detailed-table th {
   cursor: pointer;
+}
+
+.ad-detailed-table-wrapper {
+  margin-bottom: 55px;
 }
 

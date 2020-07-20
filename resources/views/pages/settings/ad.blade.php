@@ -30,11 +30,11 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="sr-only">Таблица общих настроек</h2>
-                <div class="table-wrapper table-responsive">
-                    <table class="table ad-common-table common-table ad-common-grid table-valign-middle" data-offset="187">
+                <div class="table-wrapper">
+                    <table class="table ad-common-table common-table ad-common-grid" data-offset="187">
                         <thead>
                         <tr class="table-grey text-center">
-                            <th class="rounded-table-left ad-activity-col activity-col" data-toggle="tooltip" data-placement="top"
+                            <th class="rounded-table-left ad-activity-col" data-toggle="tooltip" data-placement="top"
                                 data-delay='{"show":"1000", "hide":"1000"}' title="Включает / выключает работу по API по
                                  этой интеграции">
                                 Активность</th>
@@ -48,12 +48,12 @@
                                 scope="col">Останавливать, если на балансе CRM</th>
                             <th class="ad-yandex-col" data-toggle="tooltip" data-placement="top"
                                 data-delay='{"show":"1000", "hide":"1000"}' title="При достижении этого значения система
-                                отправить уведомление об окончании баланса Яндекса" scope="col">Уведомлять
+                                отправит уведомление об окончании баланса Яндекса" scope="col">Уведомлять
                                 об окончании баланса при</th>
                             <th class="ad-value-added-col" scope="col">НДС</th>
                             <th class="ad-client-payment-col" data-toggle="tooltip" data-placement="top"
                                 data-delay='{"show":"1000", "hide":"1000"}' title="Включите, если рекламный бюджет
-                                оплачивает клиент. Тогда при подсчете вашей Прибыли система не вычтет этот Расход из
+                                оплачивает клиент. Тогда при подсчете вашей Прибыли система не вычтет рекламный Расход из
                                 Выручки" scope="col">Бюджет оплачивает клиент</th>
                             <th class="ad-timing-col" scope="col">Последняя синхронизация</th>
                             <th class="ad-buttons-col rounded-table-right"></th>
@@ -97,20 +97,27 @@
                                            aria-label="Включено/выключено"></label>
                                 </div>
                             </td>
-                            <td class="timing-col text-left">22.04.2020 22:40
+                            <td class="timing-col text-center">22.04.2020 22:40
                                 <button type="button" class="btn function-button" aria-label="Обновление данных в таблице">
                                     <i class="fa fa-refresh" aria-hidden="true"></i>
                                 </button>
                             </td>
                             <td class="ad-buttons-col text-center">
+                                <a class="btn function-button" aria-label="Открыть таблицу детальных настроек"
+                                   href="#" role="button" data-toggle="tooltip" data-placement="top"
+                                   data-delay='{"show":"1000", "hide":"1000"}' title="Открыть таблицу детальных настроек">
+                                    <i class="fa fa-level-down" aria-hidden="true"></i>
+                                </a>
                                 <a class="btn source-correct-button source-button function-button"
-                                   href=".js-orders-source-wizard" data-toggle="modal" role="button" aria-label="Редактировать данные">
+                                   href=".js-settings-wizard" data-toggle="modal" role="button"
+                                   aria-label="Редактировать данные">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </a>
                                 <a class="btn function-button" aria-label="Удалить доступ"
                                    href=".js-workspace-reset-modal" role="button" data-toggle="modal">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                 </a>
+
                             </td>
                         </tr>
                         <tr data-target="#detailes2" data-toggle="collapse">
@@ -156,14 +163,21 @@
                                 </button>
                             </td>
                             <td class="ad-buttons-col text-center">
+                                <a class="btn function-button" aria-label="Открыть таблицу детальных настроек"
+                                   href="#" role="button" data-toggle="tooltip" data-placement="top"
+                                   data-delay='{"show":"1000", "hide":"1000"}' title="Скрыть таблицу детальных настроек">
+                                    <i class="fa fa-level-up" aria-hidden="true"></i>
+                                </a>
                                 <a class="btn source-correct-button source-button function-button"
-                                   href=".js-orders-source-wizard" data-toggle="modal" role="button" aria-label="Редактировать данные">
+                                   href=".js-settings-wizard" data-toggle="modal" role="button"
+                                   aria-label="Редактировать данные">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </a>
                                 <a class="btn function-button" aria-label="Удалить доступ"
                                    href=".js-workspace-reset-modal" role="button" data-toggle="modal">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                 </a>
+
                             </td>
                         </tr>
                         </tbody>
@@ -172,10 +186,10 @@
             </div>
 
 
-            <div class="col-md-12">
+            <div class="col-md-12 ad-detailed-table-wrapper">
                 <h2 class="sr-only">Таблицы детальных настроек</h2>
-                <div class="table-wrapper mt-3 table-responsive collapse" id="detailes">
-                    <table class="table ad-detailed-table common-table ad-detailed-grid table-valign-middle">
+                <div class="table-wrapper mt-3">
+                    <table class="table ad-detailed-table common-table ad-detailed-grid" data-offset="187">
                         <thead>
                         <tr class="table-grey text-center">
                             <th class="rounded-table-left ad-detailed-expense-col" data-toggle="tooltip" data-placement="top"
@@ -291,10 +305,10 @@
 
 
 
-                        <div class="col-md-12">
+                        <div class="col-md-12 ad-detailed-table-wrapper">
                             <h2 class="sr-only">Таблица детальных настроек</h2>
-                            <div class="table-wrapper mt-3 table-responsive collapse" id="detailes2">
-                                <table class="table ad-detailed-table common-table ad-detailed-grid table-valign-middle">
+                            <div class="table-wrapper mt-3">
+                                <table class="table ad-detailed-table common-table ad-detailed-grid">
                                     <thead>
                                     <tr class="table-grey text-center">
                                         <th class="rounded-table-left ad-detailed-expense-col" data-toggle="tooltip" data-placement="top"

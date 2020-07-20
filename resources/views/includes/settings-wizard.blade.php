@@ -5,19 +5,13 @@
                 <div id="smartwizard">
                     <ul class="nav">
                         <li>
-                            <a class="nav-link active" href="#step-1">
-                                Шаг 1
-                            </a>
+                            <a class="nav-link active" href="#step-1">Шаг 1</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#step-2">
-                                Шаг 2
-                            </a>
+                            <a class="nav-link" href="#step-2">Шаг 2</a>
                         </li>
                         <li>
-                            <a class="nav-link final" href="#step-3">
-                                Шаг 3
-                            </a>
+                            <a class="nav-link final" href="#step-3">Шаг 3</a>
                         </li>
                     </ul>
                     <div class="tab-content">
@@ -68,7 +62,8 @@
                         <div id="step-2" class="tab-pane" role="tabpanel">
                             <h3 class="mb-1 wizard-step-title">Определите параметры</h3>
                             <div class="text-right">
-                                <a class="btn btn-outline-primary mb-3" href="{{ route('settings.elama-instruction') }}" target="_blank">
+                                <a class="btn btn-outline-primary mb-3" href="{{ route('settings.elama-instruction') }}"
+                                   target="_blank">
                                     <i class="fa fa-info-circle" aria-hidden="true"></i>
                                     Инструкция
                                 </a>
@@ -78,8 +73,8 @@
                                     <label class="col-sm-3 col-lg-2 col-form-label" for="webhooks-connect-name">
                                         Имя подключения</label>
                                     <div class="col-sm-9 col-lg-10">
-                                        <input class="form-control wizard-form-input" type="text" id="webhooks-connect-name"
-                                               value="Webhooks [ID]">
+                                        <input class="form-control wizard-form-input" type="text"
+                                               id="webhooks-connect-name" value="Webhooks [ID]">
                                     </div>
                                 </div>
                                 <p class="modal-text">Отправьте тестовый webhooks на url и нажмите "Проверить"</p>
@@ -94,19 +89,19 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="table-wrapper col-lg-10 offset-lg-2">
-                                        <table class="table common-table ">
+                                        <table class="table common-table">
                                             <thead>
-                                            <tr class="table-grey text-center">
-                                                <th class="rounded-table-left">
-                                                    Параметры приняты</th>
-                                                <th class="rounded-table-right" scope="col">Значения</th>
-                                            </tr>
+                                                <tr class="table-grey text-center">
+                                                    <th class="rounded-table-left">
+                                                        Параметры приняты</th>
+                                                    <th class="rounded-table-right" scope="col">Значения</th>
+                                                </tr>
                                             </thead>
                                             <tbody class="table-bordered">
-                                            <tr>
-                                                <td class="text-center">phone</td>
-                                                <td class="text-center">89229997988</td>
-                                            </tr>
+                                                <tr>
+                                                    <td class="text-center">phone</td>
+                                                    <td class="text-center">89229997988</td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -145,9 +140,11 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-lg-2 col-form-label" for="webhooks-info-name">Дополнительная информация</label>
+                                    <label class="col-sm-3 col-lg-2 col-form-label" for="webhooks-info-name">
+                                        Дополнительная информация</label>
                                     <div class="col-sm-5 col-lg-7">
-                                        <input class="form-control wizard-form-input" type="text" id="webhooks-info-name">
+                                        <input class="form-control wizard-form-input" type="text"
+                                               id="webhooks-info-name">
                                     </div>
                                     <div class="col-sm-4 col-lg-3 modal-select-wrapper">
                                         <select class="select custom-select modal-select">
@@ -175,14 +172,14 @@
                                 </div>
                             </form>
                             <form class="roistat-phone-form wizard-form-hide" method="post" action="#">
-                                    <div class="form-group row">
-                                        <label class="col-sm-4 col-form-label" for="roistat-phone-name">Имя подключения
-                                        </label>
-                                        <div class="col-sm-8">
-                                            <input class="form-control wizard-form-input" type="text"
-                                                   id="roistat-phone-name" value="Roistat телефония [ID]">
-                                        </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label" for="roistat-phone-name">Имя подключения
+                                    </label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control wizard-form-input" type="text"
+                                               id="roistat-phone-name" value="Roistat телефония [ID]">
                                     </div>
+                                </div>
                                 <p class="modal-text">Укажите стоимость заявки
                                     <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                        data-toggle="click-tooltip" data-placement="top" data-title="Ваше
@@ -192,7 +189,8 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="roistat-phone-cost">Цена</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control wizard-form-input" type="text" id="roistat-phone-cost" value="Базовая">
+                                        <input class="form-control wizard-form-input" type="text" id="roistat-phone-cost"
+                                               value="Базовая">
                                     </div>
                                 </div>
                             </form>
@@ -200,7 +198,8 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="marquiz-name">Имя подключения</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control wizard-form-input" type="text" id="marquiz-name" value="Marquiz [ID]">
+                                        <input class="form-control wizard-form-input" type="text" id="marquiz-name"
+                                               value="Marquiz [ID]">
                                     </div>
                                 </div>
                                 <p class="modal-text">Укажите стоимость заявки
@@ -212,7 +211,8 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="markviz-cost">Цена</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control wizard-form-input" type="text" id="markviz-cost" value="Базовая">
+                                        <input class="form-control wizard-form-input" type="text" id="markviz-cost"
+                                               value="Базовая">
                                     </div>
                                 </div>
                             </form>
@@ -220,7 +220,8 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="get-name">Имя подключения</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control wizard-form-input" type="text" id="get-name" value="GET запрос с сайта [ID]">
+                                        <input class="form-control wizard-form-input" type="text" id="get-name"
+                                               value="GET запрос с сайта [ID]">
                                     </div>
                                 </div>
                                 <p class="modal-text">Укажите стоимость заявки
@@ -232,7 +233,8 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="get-cost">Цена</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control wizard-form-input" type="text" id="get-cost" value="Базовая">
+                                        <input class="form-control wizard-form-input" type="text" id="get-cost"
+                                               value="Базовая">
                                     </div>
                                 </div>
                             </form>
@@ -249,14 +251,14 @@
                                     <label class="col-sm-4 col-form-label" for="zadarma-key">Key</label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="zadarma-key"
-                                               value="">
+                                               value="API Key">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="zadarma-secret">Secret</label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="zadarma-secret"
-                                               value="">
+                                               value="API Secret">
                                     </div>
                                 </div>
                                 <p class="modal-text">Укажите стоимость заявки
@@ -275,7 +277,8 @@
                             </form>
                             <form class="yandex-direct-form wizard-form-hide" method="post" action="#">
                                 <div class="form-group row">
-                                    <label class="col-sm-4 col-form-label" for="yandex-direct-name">Имя подключения</label>
+                                    <label class="col-sm-4 col-form-label" for="yandex-direct-name">Имя подключения
+                                    </label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="yandex-direct-name"
                                                value="Яндекс.Директ [ID]">
@@ -300,7 +303,8 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="google-name">Имя подключения</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control wizard-form-input" type="text" id="google-name" value="Google Ads [ID]">
+                                        <input class="form-control wizard-form-input" type="text" id="google-name"
+                                               value="Google Ads [ID]">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -320,7 +324,8 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="roistat-name">Имя подключения</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control wizard-form-input" type="text" id="roistat-name" value="Roistat [ID]">
+                                        <input class="form-control wizard-form-input" type="text" id="roistat-name"
+                                               value="Roistat [ID]">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -340,7 +345,8 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="bitrix-name">Имя подключения</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control wizard-form-input" type="text" id="bitrix-name" value="Битрикс 24 [ID]">
+                                        <input class="form-control wizard-form-input" type="text" id="bitrix-name"
+                                               value="Битрикс 24 [ID]">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -366,7 +372,6 @@
                                     на сервер авторизации Яндекса, где необходимо предоставить доступ к данным для приложения
                                     Лидогенератор</p>
                             </div>
-
                         </div>
                         <div id="step-3" class="tab-pane" role="tabpanel">
                             <h3 class="mb-3 wizard-step-title">Проверьте параметры подключения</h3>
@@ -400,7 +405,8 @@
                                             <td class="">
                                                 <div class="input-group">
                                                     <input class="form-control copy-form-input" type="text"
-                                                           id="form-url-result" value="https://panel.troiza.net/api/v1/web-leads/webhook/GyOJjqO8HqlRJdEsy5Pb">
+                                                           id="form-url-result"
+                                                           value="https://panel.troiza.net/api/v1/web-leads/webhook/GyOJjqO8HqlRJdEsy5Pb">
                                                     <div class="input-group-append">
                                                         <button class="btn btn-secondary copy-button" type="button"
                                                                 data-clipboard-target="#copy-form-input"
@@ -427,18 +433,21 @@
                                         </tr>
                                         <tr>
                                             <td class="">Останавливать, если на балансе CRM 0 рублей
-                                                <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
-                                                   data-toggle="click-tooltip" data-placement="top" data-title="Если баланс Лидогенератора достигнет
-                                этого значения, система автоматически остановит все включенные кампании и запомнит их.
-                                Когда баланс станет выше значения, система запустит ранее выключенные кампании"></i>
+                                                <i class="fa fa-question-circle-o" aria-hidden="true"
+                                                   data-trigger="manual" data-toggle="click-tooltip" data-placement="top"
+                                                   data-title="Если баланс Лидогенератора достигнет этого значения,
+                                                   система автоматически остановит все включенные кампании и запомнит их.
+                                                   Когда баланс станет выше значения, система запустит ранее выключенные
+                                                   кампании"></i>
                                             </td>
                                             <td class="">Включено</td>
                                         </tr>
                                         <tr>
                                             <td class="">Уведомлять об окончании баланса при 10000 рублей
                                                 <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
-                                                   data-toggle="click-tooltip" data-placement="top" data-title="При достижении этого значения система
-                                отправить уведомление об окончании баланса Яндекса"></i>
+                                                   data-toggle="click-tooltip" data-placement="top"
+                                                   data-title="При достижении этого значения система отправит
+                                                   уведомление об окончании баланса Яндекса"></i>
                                             </td>
                                             <td class="">Включено</td>
                                         </tr>
@@ -447,10 +456,11 @@
                                             <td class="">20%</td>
                                         </tr>
                                         <tr>
-                                            <td class="">Бюджет оплачивает клиент <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
-                                                                 data-toggle="click-tooltip" data-placement="top" data-title="Включите, если рекламный бюджет
-                                оплачивает клиент. Тогда при подсчете вашей Прибыли система не вычтет этот Расход из
-                                Выручки"></i>
+                                            <td class="">Бюджет оплачивает клиент
+                                                <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
+                                                 data-toggle="click-tooltip" data-placement="top" data-title="Включите,
+                                                 если рекламный бюджет оплачивает клиент. Тогда при подсчете вашей
+                                                 Прибыли система не вычтет рекламный Расход из Выручки"></i>
                                             </td>
                                             <td class="">Выключено</td>
                                         </tr>

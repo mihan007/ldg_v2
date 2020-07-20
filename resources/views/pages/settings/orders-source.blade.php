@@ -77,7 +77,7 @@
                             <td class="request-col text-center">22.04.2020 22:40</td>
                             <td class="source-buttons-col text-center">
                                 <a class="btn source-correct-button source-button function-button"
-                                   href=".js-orders-source-wizard" data-toggle="modal" role="button" aria-label="Редактировать данные">
+                                   href=".js-settings-wizard" data-toggle="modal" role="button" aria-label="Редактировать данные">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </a>
                                 <a class="btn function-button" aria-label="Удалить доступ"
@@ -118,7 +118,7 @@
                             <td class="text-center">22.04.2020 22:40</td>
                             <td class="text-center">
                                 <a class="btn source-correct-button source-button function-button" data-toggle="modal"
-                                   href=".js-orders-source-wizard" role="button" aria-label="Редактировать данные">
+                                   href=".js-settings-wizard" role="button" aria-label="Редактировать данные">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </a>
                                 <a class="btn function-button" aria-label="Удалить доступ"

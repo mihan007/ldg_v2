@@ -74603,7 +74603,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   window.table = $('.ad-detailed-grid').DataTable({
     fixedHeader: {
-      headerOffset: 170
+      headerOffset: 187
     },
     paging: false,
     searching: false,
