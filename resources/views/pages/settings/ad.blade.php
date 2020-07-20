@@ -60,7 +60,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr  data-target="#detailes" data-toggle="collapse">
+                        <tr  data-target="#detailes1" data-toggle="collapse">
                             <td class="ad-activity-col text-center">
                                 <div class="custom-control custom-switch">
                                     <input class="custom-control-input custom-control-input-success" id="ad-active-switch"
@@ -188,7 +188,7 @@
 
             <div class="col-md-12 ad-detailed-table-wrapper">
                 <h2 class="sr-only">Таблицы детальных настроек</h2>
-                <div class="table-wrapper mt-3">
+                <div class="table-wrapper mt-3 collapse show" id="detailes1">
                     <table class="table ad-detailed-table common-table ad-detailed-grid" data-offset="187">
                         <thead>
                         <tr class="table-grey text-center">
@@ -307,7 +307,7 @@
 
                         <div class="col-md-12 ad-detailed-table-wrapper">
                             <h2 class="sr-only">Таблица детальных настроек</h2>
-                            <div class="table-wrapper mt-3">
+                            <div class="table-wrapper mt-3 collapse show" id="detailes2">
                                 <table class="table ad-detailed-table common-table ad-detailed-grid">
                                     <thead>
                                     <tr class="table-grey text-center">
