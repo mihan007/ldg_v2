@@ -1,9 +1,16 @@
 .ad-settings-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-left: 40px;
 }
@@ -17,7 +24,7 @@
 }
 
 .ad-activity-col {
-   width: 7%;
+    width: 7%;
 }
 
 .ad-crm-col {
@@ -31,7 +38,7 @@
 }
 
 .ad-client-payment-col {
- width: 7%;
+    width: 7%;
 }
 
 .ad-value-added-col {
@@ -72,7 +79,7 @@
 
 .ad-common-table th,
 .ad-detailed-table th {
-   cursor: pointer;
+    cursor: pointer;
 }
 
 .ad-detailed-table-wrapper {

@@ -60,7 +60,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr  data-target="#detailes1" data-toggle="collapse">
+                        <tr>
                             <td class="ad-activity-col text-center">
                                 <div class="custom-control custom-switch">
                                     <input class="custom-control-input custom-control-input-success" id="ad-active-switch"
@@ -70,7 +70,7 @@
                                 </div>
                             </td>
                             <td class="ad-id-col text-center">03</td>
-                            <td class=" ad-email-col text-center">dir@yandex.ru</td>
+                            <td class="ad-email-col text-center">dir@yandex.ru</td>
                             <td class="ad-name-col text-center">Окна Саратов</td>
                             <td class="ad-crm-col text-center">
                                 <div class="custom-control custom-switch">
@@ -120,7 +120,7 @@
 
                             </td>
                         </tr>
-                        <tr data-target="#detailes2" data-toggle="collapse">
+                        <tr>
                             <td class="ad-activity-col text-center">
                                 <div class="custom-control custom-switch">
                                     <input class="custom-control-input custom-control-input-success" id="ad-active-switch4"
@@ -188,7 +188,7 @@
 
             <div class="col-md-12 ad-detailed-table-wrapper">
                 <h2 class="sr-only">Таблицы детальных настроек</h2>
-                <div class="table-wrapper mt-3 collapse show" id="detailes1">
+                <div class="table-wrapper mt-3">
                     <table class="table ad-detailed-table common-table ad-detailed-grid" data-offset="187">
                         <thead>
                         <tr class="table-grey text-center">
@@ -307,7 +307,7 @@
 
                         <div class="col-md-12 ad-detailed-table-wrapper">
                             <h2 class="sr-only">Таблица детальных настроек</h2>
-                            <div class="table-wrapper mt-3 collapse show" id="detailes2">
+                            <div class="table-wrapper mt-3">
                                 <table class="table ad-detailed-table common-table ad-detailed-grid">
                                     <thead>
                                     <tr class="table-grey text-center">
