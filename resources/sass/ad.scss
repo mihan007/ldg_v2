@@ -47,7 +47,8 @@
 .ad-detailed-campaign-col,
 .ad-detailed-adding-col,
 .ad-detailed-status-col,
-.ad-yandex-col {
+.ad-yandex-col,
+.ad-google-col {
     width: 11%;
 }
 
@@ -63,8 +64,20 @@
 th.ad-activity-col,
 th.ad-crm-col,
 th.ad-yandex-col,
+th.ad-google-col,
 th.ad-client-payment-col,
 th.ad-detailed-new-col,
-th.ad-detailed-expense-col {
+th.ad-detailed-expense-col,
+th.ad-roistat-col,
+th.roistat-detailed-expense-col,
+th.roistat-detailed-new-col {
     cursor: pointer;
+}
+
+.roistat-detailed-expense-col {
+    width: 11%;
+}
+
+.roistat-detailed-new-col {
+    width: 26%;
 }

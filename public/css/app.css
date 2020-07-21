@@ -14457,6 +14457,60 @@ input[type=radio].visually-hidden {
   cursor: pointer;
 }
 
+.wizard-form-hide,
+.wizard-block-hide {
+  display: none;
+}
+
+.wizard-step-title {
+  font-size: 1.5rem;
+}
+
+.wizard-button {
+  font-size: 14px;
+}
+
+@media (min-width: 1000px) {
+  .wizard-table {
+    width: 600px;
+  }
+}
+
+.wizard-table th,
+.wizard-table td {
+  padding: 0.75rem 1rem;
+}
+
+.wizard-instruction-list {
+  padding-left: 20px;
+}
+
+.wizard-img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 500px) {
+  .wizard-img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (min-width: 700px) {
+  .wizard-img {
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .wizard-img {
+    width: 40%;
+    height: auto;
+  }
+}
+
 .index-buttons-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -15101,59 +15155,6 @@ input[type=radio].visually-hidden {
   margin-top: 0.75rem;
 }
 
-.wizard-form-hide {
-  display: none;
-}
-
-.wizard-step-title {
-  font-size: 1.5rem;
-}
-
-.wizard-button {
-  font-size: 14px;
-}
-
-@media (min-width: 1000px) {
-  .wizard-table {
-    width: 600px;
-  }
-}
-
-.wizard-table th,
-.wizard-table td {
-  padding: 0.75rem 1rem;
-}
-
-.wizard-instruction-list {
-  padding-left: 20px;
-}
-
-.wizard-img {
-  width: 100%;
-  height: auto;
-}
-
-@media (min-width: 500px) {
-  .wizard-img {
-    width: 70%;
-    height: auto;
-  }
-}
-
-@media (min-width: 700px) {
-  .wizard-img {
-    width: 60%;
-    height: auto;
-  }
-}
-
-@media (min-width: 1000px) {
-  .wizard-img {
-    width: 40%;
-    height: auto;
-  }
-}
-
 /*!
  * jQuery SmartWizard v5
  * jQuery Wizard Plugin
@@ -15470,7 +15471,8 @@ input[type=radio].visually-hidden {
 .ad-detailed-campaign-col,
 .ad-detailed-adding-col,
 .ad-detailed-status-col,
-.ad-yandex-col {
+.ad-yandex-col,
+.ad-google-col {
   width: 11%;
 }
 
@@ -15486,9 +15488,21 @@ input[type=radio].visually-hidden {
 th.ad-activity-col,
 th.ad-crm-col,
 th.ad-yandex-col,
+th.ad-google-col,
 th.ad-client-payment-col,
 th.ad-detailed-new-col,
-th.ad-detailed-expense-col {
+th.ad-detailed-expense-col,
+th.ad-roistat-col,
+th.roistat-detailed-expense-col,
+th.roistat-detailed-new-col {
   cursor: pointer;
+}
+
+.roistat-detailed-expense-col {
+  width: 11%;
+}
+
+.roistat-detailed-new-col {
+  width: 26%;
 }
 

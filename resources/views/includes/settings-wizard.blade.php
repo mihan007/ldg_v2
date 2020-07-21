@@ -68,7 +68,7 @@
                                     Инструкция
                                 </a>
                             </div>
-                            <form class="webhooks-form wizard-form-hide" method="get" action="#">
+                            <form class="webhooks-form wizard-form-hide" method="post" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-lg-2 col-form-label" for="webhooks-connect-name">
                                         Имя подключения</label>
@@ -362,16 +362,57 @@
                                     </div>
                                 </div>
                             </form>
-                            <div class="wizard-demo">
+                            <div class="wizard-demo wizard-block-hide">
                                 <p class="modal-text">После нажатия кнопки "Продолжить" вы будете перенаправлены
                                     на сервер авторизации Google Ads, где необходимо предоставить доступ к данным для
                                     приложения Лидогенератор</p>
                             </div>
-                            <div class="wizard-demo">
+                            <div class="wizard-demo wizard-block-hide">
                                 <p class="modal-text">После нажатия кнопки "Продолжить" вы будете перенаправлены
                                     на сервер авторизации Яндекса, где необходимо предоставить доступ к данным для приложения
                                     Лидогенератор</p>
                             </div>
+                            <form class="roistat-ad-form" method="post" action="#">
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label" for="roistat-ad-connect-name">
+                                        Имя подключения</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control wizard-form-input" type="text"
+                                               id="roistat-ad-connect-name" value="Roistat [ID]">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label" for="roistat-ad-number">
+                                        Номер компании Roistat</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control wizard-form-input" type="text"
+                                               id="roistat-ad-number" value="">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label" for="roistat-ad-api-key">
+                                        API ключ аккаунта</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control wizard-form-input" type="text"
+                                               id="roistat-ad-api-key" value="">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label" for="roistat-ad-balance">
+                                        Уведомлять о пополнении, если на балансе Roistat</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <input class="form-control wizard-form-input" type="text"
+                                                   id="roistat-ad-balance" value="0">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">
+                                                    <i class="fa fa-rub" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                         <div id="step-3" class="tab-pane" role="tabpanel">
                             <h3 class="mb-3 wizard-step-title">Проверьте параметры подключения</h3>
@@ -461,6 +502,15 @@
                                                  data-toggle="click-tooltip" data-placement="top" data-title="Включите,
                                                  если рекламный бюджет оплачивает клиент. Тогда при подсчете вашей
                                                  Прибыли система не вычтет рекламный Расход из Выручки"></i>
+                                            </td>
+                                            <td class="">Выключено</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Уведомлять о пополнении, если на балансе Roistat 0 рублей
+                                                <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
+                                                   data-toggle="click-tooltip" data-placement="top" data-title="При
+                                                   достижении этого значения система отправит уведомление об окончании
+                                                   баланса Roistat"></i>
                                             </td>
                                             <td class="">Выключено</td>
                                         </tr>
