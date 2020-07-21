@@ -223,7 +223,7 @@
                                 <div class="custom-control custom-switch">
                                     <input class="custom-control-input custom-control-input-success" id="active-switch"
                                            type="checkbox" checked>
-                                    <label class="custom-control-label font-italic" for="active-switch"
+                                    <label class="custom-control-label" for="active-switch"
                                            aria-label="Активность включена/выключена"></label>
                                 </div>
                             </td>

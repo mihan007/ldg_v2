@@ -3,6 +3,10 @@
     cursor: pointer;
 }
 
+.orders-source-table {
+    z-index: 2
+}
+
 .source-id-col {
     width: 10%;
 }
@@ -12,8 +16,7 @@
 }
 
 .name-col,
-.source-col,
-.order-cost-col {
+.source-col {
     width: 12%;
     cursor: pointer;
 }
@@ -22,8 +25,9 @@
     cursor: pointer;
 }
 
-.request-col {
-    width: 12%;
+.request-col,
+.order-cost-col {
+    width: 13%;
 }
 
 .copy-form-input,
@@ -133,3 +137,4 @@
         height: auto;
     }
 }
+

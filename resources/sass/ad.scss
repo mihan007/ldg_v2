@@ -1,0 +1,70 @@
+.ad-settings-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 40px;
+}
+
+.ad-buttons-col {
+    width: 10%;
+}
+
+.ad-id-col {
+    width: 2%;
+}
+
+.ad-activity-col,
+.ad-client-payment-col {
+    width: 7%;
+}
+
+.ad-crm-col {
+    width: 9%;
+}
+
+.ad-value-added-col {
+    width: 3%;
+}
+
+.ad-timing-col {
+    width: 12%;
+}
+
+.ad-detailed-expense-col {
+    width: 8%;
+}
+
+.ad-detailed-campaign-col,
+.ad-detailed-adding-col,
+.ad-detailed-status-col,
+.ad-yandex-col {
+    width: 11%;
+}
+
+.ad-detailed-start-col,
+.ad-detailed-new-col {
+    width: 15%;
+}
+
+.ad-detailed-table-wrapper {
+    margin-bottom: 55px;
+}
+
+th.ad-activity-col,
+th.ad-crm-col,
+th.ad-yandex-col,
+th.ad-client-payment-col,
+th.ad-detailed-new-col,
+th.ad-detailed-expense-col {
+    cursor: pointer;
+}

@@ -2,14 +2,14 @@
 @section('content')
     <main class="page-wrapper">
         <h1 class="sr-only">Страница настроек "Источник заявок"</h1>
-        <div class="row sticky-top">
+        <div class="row sticky-top bg-white">
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper font-weight-bold">
                 <h2 class="sr-only">Блок навигации по страницам настроек и управления настройками страницы "Источник
                     заявок"</h2>
                 @include('includes.settings-links', ['step'=>'orders-source'])
                 <div>
-                   <a class="btn btn-primary wizard-button" href=".js-orders-source-wizard" role="button"
+                   <a class="btn btn-primary wizard-button" href=".js-settings-wizard" role="button"
                       data-toggle="modal">
                        Новое подключение
                        <i class="fa fa-plus" aria-hidden="true"></i>
@@ -20,8 +20,8 @@
         <div class="row">
             <div class="col-md-12 mx-auto">
                 <h2 class="sr-only">Таблица заявок с параметрами подключения"</h2>
-                <div class="table-wrapper mb-5">
-                    <table class="table orders-source-table common-table">
+                <div class="orders-source-table-wrapper mb-5">
+                    <table class="table orders-source-table common-table orders-source-grid" data-offset="110">
                         <thead>
                         <tr class="table-grey text-center">
                             <th class="rounded-table-left activity-col" data-toggle="tooltip" data-placement="top"
@@ -50,7 +50,7 @@
                                 <div class="custom-control custom-switch">
                                     <input class="custom-control-input custom-control-input-success" id="active-switch"
                                            type="checkbox" checked>
-                                    <label class="custom-control-label font-italic" for="active-switch"
+                                    <label class="custom-control-label" for="active-switch"
                                            aria-label="Активность включена/выключена"></label>
                                 </div>
                             </td>
@@ -77,7 +77,7 @@
                             <td class="request-col text-center">22.04.2020 22:40</td>
                             <td class="source-buttons-col text-center">
                                 <a class="btn source-correct-button source-button function-button"
-                                   href=".js-orders-source-wizard" data-toggle="modal" role="button" aria-label="Редактировать данные">
+                                   href=".js-settings-wizard" data-toggle="modal" role="button" aria-label="Редактировать данные">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </a>
                                 <a class="btn function-button" aria-label="Удалить доступ"
@@ -118,7 +118,7 @@
                             <td class="text-center">22.04.2020 22:40</td>
                             <td class="text-center">
                                 <a class="btn source-correct-button source-button function-button" data-toggle="modal"
-                                   href=".js-orders-source-wizard" role="button" aria-label="Редактировать данные">
+                                   href=".js-settings-wizard" role="button" aria-label="Редактировать данные">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </a>
                                 <a class="btn function-button" aria-label="Удалить доступ"
@@ -132,15 +132,10 @@
                 </div>
             </div>
         </div>
-        <div class="toast saved-toast js-saved-toast">
-            <div class="toast-body">
-                <div>Данные сохранены</div>
-            </div>
-        </div>
         @include('includes.workspace-reset-modal', [
             'messageHeader' => 'Удаление подключения',
             'messageBody' => 'Вы действительно хотите удалить подключение?'
         ])
-        @include('includes.orders-source-wizard')
+        @include('includes.settings-wizard')
     </main>
 @stop

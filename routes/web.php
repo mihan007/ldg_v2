@@ -80,3 +80,7 @@ Route::get('/settings/orders-source', function () {
 Route::get('/settings/manual', function () {
     return view('pages.settings.elama-instruction');
 })->name('settings.elama-instruction');
+
+Route::get('/settings/ad', function () {
+    return view('pages.settings.ad');
+})->name('settings.ad');

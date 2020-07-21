@@ -14334,6 +14334,7 @@ input[type=radio].visually-hidden {
   margin-right: 1.2rem;
   color: #212529;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .directory-button.active,
@@ -14449,6 +14450,11 @@ input[type=radio].visually-hidden {
   .sidenav .save-button-item {
     display: none;
   }
+}
+
+.custom-switch .custom-control-label::before,
+.custom-switch .custom-control-label::after {
+  cursor: pointer;
 }
 
 .index-buttons-wrapper {
@@ -15013,6 +15019,10 @@ input[type=radio].visually-hidden {
   cursor: pointer;
 }
 
+.orders-source-table {
+  z-index: 2;
+}
+
 .source-id-col {
   width: 10%;
 }
@@ -15022,8 +15032,7 @@ input[type=radio].visually-hidden {
 }
 
 .name-col,
-.source-col,
-.order-cost-col {
+.source-col {
   width: 12%;
   cursor: pointer;
 }
@@ -15032,8 +15041,9 @@ input[type=radio].visually-hidden {
   cursor: pointer;
 }
 
-.request-col {
-  width: 12%;
+.request-col,
+.order-cost-col {
+  width: 13%;
 }
 
 .copy-form-input,
@@ -15416,5 +15426,69 @@ input[type=radio].visually-hidden {
     display: flex;
     flex-direction: column;
   }
+}
+
+.ad-settings-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  flex-wrap: wrap;
+  padding-left: 40px;
+}
+
+.ad-buttons-col {
+  width: 10%;
+}
+
+.ad-id-col {
+  width: 2%;
+}
+
+.ad-activity-col,
+.ad-client-payment-col {
+  width: 7%;
+}
+
+.ad-crm-col {
+  width: 9%;
+}
+
+.ad-value-added-col {
+  width: 3%;
+}
+
+.ad-timing-col {
+  width: 12%;
+}
+
+.ad-detailed-expense-col {
+  width: 8%;
+}
+
+.ad-detailed-campaign-col,
+.ad-detailed-adding-col,
+.ad-detailed-status-col,
+.ad-yandex-col {
+  width: 11%;
+}
+
+.ad-detailed-start-col,
+.ad-detailed-new-col {
+  width: 15%;
+}
+
+.ad-detailed-table-wrapper {
+  margin-bottom: 55px;
+}
+
+th.ad-activity-col,
+th.ad-crm-col,
+th.ad-yandex-col,
+th.ad-client-payment-col,
+th.ad-detailed-new-col,
+th.ad-detailed-expense-col {
+  cursor: pointer;
 }
 

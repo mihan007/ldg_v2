@@ -74571,6 +74571,50 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/js/ad-common-grid.js":
+/*!****************************************!*\
+  !*** ./resources/js/ad-common-grid.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  window.table = $('.ad-common-grid').DataTable({
+    fixedHeader: {
+      headerOffset: 187
+    },
+    paging: false,
+    searching: false,
+    info: false,
+    autoWidth: false,
+    ordering: false
+  });
+});
+
+/***/ }),
+
+/***/ "./resources/js/ad-detailed-grid.js":
+/*!******************************************!*\
+  !*** ./resources/js/ad-detailed-grid.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  window.table = $('.ad-detailed-grid').DataTable({
+    fixedHeader: {
+      headerOffset: 187
+    },
+    paging: false,
+    searching: false,
+    info: false,
+    autoWidth: false,
+    ordering: false
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -74620,6 +74664,12 @@ __webpack_require__(/*! ./select-modal */ "./resources/js/select-modal.js");
 __webpack_require__(/*! ./save-result */ "./resources/js/save-result.js");
 
 __webpack_require__(/*! ./wizard */ "./resources/js/wizard.js");
+
+__webpack_require__(/*! ./orders-source-grid */ "./resources/js/orders-source-grid.js");
+
+__webpack_require__(/*! ./ad-common-grid */ "./resources/js/ad-common-grid.js");
+
+__webpack_require__(/*! ./ad-detailed-grid */ "./resources/js/ad-detailed-grid.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -75043,6 +75093,28 @@ $(document).ready(function () {
 
 /***/ }),
 
+/***/ "./resources/js/orders-source-grid.js":
+/*!********************************************!*\
+  !*** ./resources/js/orders-source-grid.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  window.table = $('.orders-source-grid').DataTable({
+    fixedHeader: {
+      headerOffset: 110
+    },
+    paging: false,
+    searching: false,
+    info: false,
+    autoWidth: false,
+    ordering: false
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/js/save-result.js":
 /*!*************************************!*\
   !*** ./resources/js/save-result.js ***!
@@ -75102,7 +75174,7 @@ $(document).ready(function () {
   $(document).on('change', '.js-open-modal', function () {
     var modalClass = $(this).find(':selected').data('modal');
     $('.' + modalClass).modal('show');
-    $(this).val('');
+    $(this).val(0);
   });
 });
 
