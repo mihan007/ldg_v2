@@ -15446,22 +15446,13 @@ input[type=radio].visually-hidden {
   width: 2%;
 }
 
-.ad-activity-col {
+.ad-activity-col,
+.ad-client-payment-col {
   width: 7%;
 }
 
 .ad-crm-col {
   width: 9%;
-  cursor: pointer;
-}
-
-.ad-yandex-col {
-  width: 11%;
-  cursor: pointer;
-}
-
-.ad-client-payment-col {
-  width: 7%;
 }
 
 .ad-value-added-col {
@@ -15474,12 +15465,12 @@ input[type=radio].visually-hidden {
 
 .ad-detailed-expense-col {
   width: 8%;
-  cursor: pointer;
 }
 
 .ad-detailed-campaign-col,
 .ad-detailed-adding-col,
-.ad-detailed-status-col {
+.ad-detailed-status-col,
+.ad-yandex-col {
   width: 11%;
 }
 
@@ -15488,24 +15479,16 @@ input[type=radio].visually-hidden {
   width: 15%;
 }
 
-.ad-detailed-new-col,
-.ad-client-payment-col {
-  cursor: pointer;
-}
-
-.ad-select {
-  width: 20%;
-  background-color: #007bff;
-  color: white;
-  border: 1px solid #007bff;
-}
-
-.ad-common-table th,
-.ad-detailed-table th {
-  cursor: pointer;
-}
-
 .ad-detailed-table-wrapper {
   margin-bottom: 55px;
+}
+
+th.ad-activity-col,
+th.ad-crm-col,
+th.ad-yandex-col,
+th.ad-client-payment-col,
+th.ad-detailed-new-col,
+th.ad-detailed-expense-col {
+  cursor: pointer;
 }
 
