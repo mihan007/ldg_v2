@@ -152,7 +152,7 @@
                                 </button>
                             </td>
                             <td class="ad-buttons-col text-center">
-                                <a class="btn function-button" aria-label="Открыть таблицу детальных настроек"
+                                <a class="btn function-button" aria-label="Скрыть таблицу детальных настроек"
                                    href="#" role="button" data-toggle="tooltip" data-placement="top"
                                    data-delay='{"show":"1000", "hide":"1000"}' title="Скрыть таблицу детальных настроек">
                                     <i class="fa fa-level-up" aria-hidden="true"></i>

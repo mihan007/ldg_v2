@@ -92,6 +92,11 @@
                                    href=".js-workspace-reset-modal" role="button" data-toggle="modal">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                 </a>
+                                <a class="btn function-button" aria-label="Скрыть таблицу детальных настроек"
+                                   href="#" role="button" data-toggle="tooltip" data-placement="top"
+                                   data-delay='{"show":"1000", "hide":"1000"}' title="Скрыть таблицу детальных настроек">
+                                    <i class="fa fa-level-up" aria-hidden="true"></i>
+                                </a>
                             </td>
                         </tr>
                         </tbody>
