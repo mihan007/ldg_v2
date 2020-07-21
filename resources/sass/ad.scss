@@ -16,7 +16,7 @@
 }
 
 .ad-buttons-col {
-    width: 10%;
+    width: 11%;
 }
 
 .ad-id-col {
@@ -80,4 +80,10 @@ th.roistat-detailed-new-col {
 
 .roistat-detailed-new-col {
     width: 26%;
+}
+
+td.timing-col,
+td.ad-buttons-col {
+    padding-top: 6px;
+    vertical-align: baseline;
 }
