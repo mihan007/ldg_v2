@@ -430,3 +430,57 @@ input[type="radio"].visually-hidden {
 .custom-switch .custom-control-label::after {
     cursor: pointer;
 }
+
+.wizard-form-hide,
+.wizard-block-hide {
+    display: none;
+}
+
+.wizard-step-title {
+    font-size: 1.5rem;
+}
+
+.wizard-button {
+    font-size: 14px;
+}
+
+@media (min-width: 1000px) {
+    .wizard-table {
+        width: 600px;
+    }
+}
+
+.wizard-table th,
+.wizard-table td {
+    padding: 0.75rem 1rem;
+}
+
+.wizard-instruction-list {
+    padding-left: 20px;
+}
+
+.wizard-img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 500px)  {
+    .wizard-img {
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (min-width: 700px)  {
+    .wizard-img {
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1000px)  {
+    .wizard-img {
+        width: 40%;
+        height: auto;
+    }
+}

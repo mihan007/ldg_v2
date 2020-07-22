@@ -81,6 +81,14 @@ Route::get('/settings/manual', function () {
     return view('pages.settings.elama-instruction');
 })->name('settings.elama-instruction');
 
-Route::get('/settings/ad', function () {
-    return view('pages.settings.ad');
-})->name('settings.ad');
+Route::get('/settings/ad-yandex', function () {
+    return view('pages.settings.ad-yandex');
+})->name('settings.ad-yandex');
+
+Route::get('/settings/ad-google', function () {
+    return view('pages.settings.ad-google');
+})->name('settings.ad-google');
+
+Route::get('/settings/ad-roistat', function () {
+    return view('pages.settings.ad-roistat');
+})->name('settings.ad-roistat');
