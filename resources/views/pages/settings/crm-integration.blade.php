@@ -32,10 +32,10 @@
                                 Имя</th>
                             <th class="source-col" data-toggle="tooltip" data-placement="top"
                                 data-delay='{"show":"1000", "hide":"1000"}' title="Название подключения" scope="col">
-                                Источник</th>
+                                CRM</th>
                             <th class="data-connect-col" data-toggle="tooltip" data-placement="top"
                                 data-delay='{"show":"1000", "hide":"1000"}' title="Эти данные нужно указать в настройках
-                                подключаемого сервиса" scope="col">Данные для подключения</th>
+                                подключаемого сервиса" scope="col">Данные подключения</th>
                             <th class="request-col" scope="col">Последний запрос</th>
                             <th class="source-buttons-col rounded-table-right"></th>
                         </tr>

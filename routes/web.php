@@ -96,3 +96,7 @@ Route::get('/settings/ad-roistat', function () {
 Route::get('/settings/crm-integration', function () {
     return view('pages.settings.crm-integration');
 })->name('settings.crm-integration');
+
+Route::get('/users/users-profile', function () {
+    return view('pages.users.users-profile');
+})->name('users.users-profile');

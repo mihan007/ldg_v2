@@ -38,7 +38,7 @@
                 </a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item disabled">1@troiza.net</a>
-                    <a class="dropdown-item" href="#" ><i class="fa fa-id-card-o" aria-hidden="true"></i>Мой профиль</a>
+                    <a class="dropdown-item" href="{{ route('users.users-profile') }}" ><i class="fa fa-id-card-o" aria-hidden="true"></i>Мой профиль</a>
                     <a class="cog-link dropdown-item" href="#">
                         <i class="fa fa-cog" aria-hidden="true"></i>Настройки аккаунта
                     </a>
