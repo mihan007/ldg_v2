@@ -36,8 +36,10 @@
                                 data-delay='{"show":"1000", "hide":"1000"}' title="При достижении этого значения система
                                 отправит уведомление об окончании баланса Roistat" scope="col">Уведомлять
                                 о пополнении, если на балансе Roistat</th>
-                            <th class="ad-expence-deduct-col" scope="col">Вычитать расход
-                            </th>
+                            <th class="ad-client-payment-col" data-toggle="tooltip" data-placement="top"
+                                data-delay='{"show":"1000", "hide":"1000"}' title="Включите, если рекламный бюджет
+                                оплачивает клиент. Тогда при подсчете вашей Прибыли система не вычтет рекламный Расход из
+                                Выручки" scope="col">Бюджет оплачивает клиент</th>
                             <th class="ad-timing-col" scope="col">Последняя синхронизация</th>
                             <th class="ad-buttons-col rounded-table-right"></th>
                         </tr>
@@ -64,7 +66,7 @@
                                            aria-label="Включено/выключено">0 рублей</label>
                                 </div>
                             </td>
-                            <td class="ad-expence-deduct-col text-center">
+                            <td class="ad-client-payment-col text-center">
                                 <div class="custom-control custom-switch">
                                     <input class="custom-control-input custom-control-input-success" id="ad-active-switch3"
                                            type="checkbox" checked>
