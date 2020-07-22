@@ -92,3 +92,7 @@ Route::get('/settings/ad-google', function () {
 Route::get('/settings/ad-roistat', function () {
     return view('pages.settings.ad-roistat');
 })->name('settings.ad-roistat');
+
+Route::get('/settings/crm-integration', function () {
+    return view('pages.settings.crm-integration');
+})->name('settings.crm-integration');
