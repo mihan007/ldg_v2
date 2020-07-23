@@ -25,29 +25,33 @@
                         <div class="invalid-feedback login-password-invalid-feedback">Сообщение об ошибке</div>
                     </div>
                     <div class="form-group">
-                        <label class="" for="profile-users-surname">Фамилия</label>
+                        <label class="" for="profile-email">Email</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">
-                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <i class="fa fa-envelope"></i>
                                 </span>
                             </div>
-                            <input class="form-control" type="text" id="profile-users-surname" placeholder="Фамилия" required>
+                            <input class="form-control" type="email" id="profile-email" placeholder="Email" required>
                         </div>
-                        <div class="invalid-feedback login-password-invalid-feedback">Сообщение об ошибке</div>
+                        <div class="invalid-feedback login-email-invalid-feedback">Пожалуйста, введите правильный адрес email</div>
                     </div>
-                <div class="form-group">
-                    <label class="" for="profile-email">Email</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-envelope"></i></span>
-                        </div>
-                        <input class="form-control" type="email" id="profile-email" placeholder="Email" required>
-                    </div>
-                    <div class="invalid-feedback login-email-invalid-feedback">Пожалуйста, введите правильный адрес email</div>
-                </div>
                 </form>
             </div>
         </div>
+        <div class="toast saved-toast js-saved-toast">
+            <div class="toast-body">
+                <div>Данные сохранены</div>
+            </div>
+        </div>
     </main>
+    <footer class="page-footer footer-hide bg-grey fixed-bottom">
+        <div class="container">
+            <div class="text-center py-2 d-flex justify-content-center align-items-center">
+                <h5 class="mb-1 unsaved-text mr-3">На странице есть несохраненные изменения</h5>
+                <button class="btn btn-primary show-save-toast footer-save-button" type="submit">Сохранить
+                </button>
+            </div>
+        </div>
+    </footer>
 @stop

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,12 +63,9 @@ Route::get('/companies/dashboard', function () {
 })->name('companies.dashboard');
 
 Route::get('/settings/workspace', function () {
+    View::share('showSaveButton', true);
     return view('pages.settings.workspace');
 })->name('settings.workspace');
-
-Route::get('/settings/first-subscription', function () {
-    return view('pages.settings.first-subscription');
-})->name('settings.first-subscription');
 
 Route::get('/settings/workspace-invite', function () {
     return view('pages.settings.workspace-invite');
@@ -98,5 +96,11 @@ Route::get('/settings/crm-integration', function () {
 })->name('settings.crm-integration');
 
 Route::get('/users/users-profile', function () {
+    View::share('showSaveButton', true);
     return view('pages.users.users-profile');
 })->name('users.users-profile');
+
+Route::get('/users/profile-password', function () {
+    View::share('showSaveButton', true);
+    return view('pages.users.profile-password');
+})->name('users.profile-password');
