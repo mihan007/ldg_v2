@@ -7,7 +7,8 @@
             </div>
             <div class="modal-body">
                 <div class="workspace-save-modal-buttons d-flex flex-column">
-                    <button class="btn btn-primary mb-3 show-save-toast workspace-save-button" type="submit">Да, сохранить и продолжить</button>
+                    <button class="btn btn-primary mb-3 show-save-toast workspace-save-button" type="submit">Да,
+                        сохранить и продолжить</button>
                     <button class="btn cancel-button workspace-save-button" data-dismiss="modal"
                             type="button">Нет, продолжить без сохранения
                     </button>

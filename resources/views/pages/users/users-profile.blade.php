@@ -11,6 +11,9 @@
         <div class="row">
             <div class="col-sm-12 col-md-8 col-lg-4">
                 <h2 class="profile-title">Данные профиля</h2>
+                <div class="alert alert-primary text-center" role="alert">
+                    Ваш профиль сохранен.
+                </div>
                 <form class="profile-form" method="post" action="#">
                     <div class="form-group">
                         <label class="" for="profile-users-name">Имя</label>
@@ -36,16 +39,19 @@
                         </div>
                         <div class="invalid-feedback login-password-invalid-feedback">Сообщение об ошибке</div>
                     </div>
-                <div class="form-group">
-                    <label class="" for="profile-email">Email</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                    <div class="form-group">
+                        <label class="" for="profile-email">Email</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                            </div>
+                            <input class="form-control" type="email" id="profile-email" placeholder="Email" required>
                         </div>
-                        <input class="form-control" type="email" id="profile-email" placeholder="Email" required>
+                        <div class="invalid-feedback login-email-invalid-feedback">Пожалуйста, введите правильный адрес email</div>
                     </div>
-                    <div class="invalid-feedback login-email-invalid-feedback">Пожалуйста, введите правильный адрес email</div>
-                </div>
+                    <button class="btn btn-primary mt-1 profile-button" type="submit">Сохранить профиль</button>
                 </form>
             </div>
         </div>

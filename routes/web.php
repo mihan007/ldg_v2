@@ -100,3 +100,7 @@ Route::get('/settings/crm-integration', function () {
 Route::get('/users/users-profile', function () {
     return view('pages.users.users-profile');
 })->name('users.users-profile');
+
+Route::get('/users/profile-password', function () {
+    return view('pages.users.profile-password');
+})->name('users.profile-password');
