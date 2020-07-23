@@ -11,9 +11,6 @@
         <div class="row">
             <div class="col-sm-12 col-md-8 col-lg-4">
                 <h2 class="profile-title">Данные профиля</h2>
-{{--                <div class="alert alert-primary text-center" role="alert">--}}
-{{--                    Ваш профиль сохранен.--}}
-{{--                </div>--}}
                 <form class="profile-form" method="post" action="#">
                     <div class="form-group">
                         <label class="" for="profile-users-name">Имя</label>

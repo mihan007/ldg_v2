@@ -11,9 +11,6 @@
         <div class="row">
             <div class="col-sm-12 col-md-8 col-lg-4">
                 <h2 class="profile-title">Сменить пароль</h2>
-{{--                <div class="alert alert-primary text-center" role="alert">--}}
-{{--                    Пароль успешно изменен.--}}
-{{--                </div>--}}
                 <form class="profile-password-form" method="post" action="#">
                     <div class="form-group">
                         <label class="" for="profile-password">Текущий пароль</label>
@@ -51,7 +48,6 @@
                         </div>
                         <div class="invalid-feedback profile-password-repeat-invalid-feedback">Пароли не совпадают</div>
                     </div>
-{{--                    <button class="btn btn-primary mt-1" type="submit">Изменить пароль</button>--}}
                 </form>
             </div>
         </div>
