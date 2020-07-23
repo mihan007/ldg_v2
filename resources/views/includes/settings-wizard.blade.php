@@ -68,13 +68,14 @@
                                     Инструкция
                                 </a>
                             </div>
-                            <form class="webhooks-form wizard-form-hide" method="post" action="#">
+                            <form class="webhooks-form" method="post" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-lg-2 col-form-label" for="webhooks-connect-name">
                                         Имя подключения</label>
                                     <div class="col-sm-9 col-lg-10">
                                         <input class="form-control wizard-form-input" type="text"
                                                id="webhooks-connect-name" value="Webhooks [ID]">
+                                        <div class="invalid-feedback webhooks-connect-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <p class="modal-text">Отправьте тестовый webhooks на url и нажмите "Проверить"</p>
@@ -85,6 +86,7 @@
                                         <div class="input-group-append">
                                             <button class="btn btn-secondary copy-button" type="button">Проверить</button>
                                         </div>
+                                        <div class="invalid-feedback webhooks-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -111,6 +113,7 @@
                                     <label class="col-sm-3 col-lg-2 col-form-label" for="webhooks-phone">Телефон</label>
                                     <div class="col-sm-5 col-lg-7">
                                         <input class="form-control" type="text" id="webhooks-phone" value="89229997988">
+                                        <div class="invalid-feedback webhooks-phone-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                     <div class="col-sm-4 col-lg-3 modal-select-wrapper">
                                         <select class="select custom-select modal-select">
@@ -127,6 +130,7 @@
                                     <label class="col-sm-3 col-lg-2 col-form-label" for="webhooks-name">Имя</label>
                                     <div class="col-sm-5 col-lg-7">
                                         <input class="form-control wizard-form-input" type="text" id="webhooks-name">
+                                        <div class="invalid-feedback webhooks-name-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                     <div class="col-sm-4 col-lg-3 modal-select-wrapper">
                                         <select class="select custom-select modal-select">
@@ -145,6 +149,7 @@
                                     <div class="col-sm-5 col-lg-7">
                                         <input class="form-control wizard-form-input" type="text"
                                                id="webhooks-info-name">
+                                        <div class="invalid-feedback webhooks-info-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                     <div class="col-sm-4 col-lg-3 modal-select-wrapper">
                                         <select class="select custom-select modal-select">
@@ -168,16 +173,18 @@
                                     <div class="col-sm-8 col-lg-7">
                                         <input class="form-control wizard-form-input" type="text" id="webhooks-cost"
                                                value="Базовая">
+                                        <div class="invalid-feedback webhooks-cost-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                             </form>
-                            <form class="roistat-phone-form wizard-form-hide" method="post" action="#">
+                            <form class="roistat-phone-form" method="post" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="roistat-phone-name">Имя подключения
                                     </label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text"
                                                id="roistat-phone-name" value="Roistat телефония [ID]">
+                                        <div class="invalid-feedback roistat-phone-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <p class="modal-text">Укажите стоимость заявки
@@ -191,15 +198,18 @@
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="roistat-phone-cost"
                                                value="Базовая">
+                                        <div class="invalid-feedback roistat-phone-cost-invalid-feedback">Сообщение об
+                                            ошибке</div>
                                     </div>
                                 </div>
                             </form>
-                            <form class="markviz-form wizard-form-hide" method="post" action="#">
+                            <form class="markviz-form" method="post" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="marquiz-name">Имя подключения</label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="marquiz-name"
                                                value="Marquiz [ID]">
+                                        <div class="invalid-feedback marquiz-name-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <p class="modal-text">Укажите стоимость заявки
@@ -209,19 +219,21 @@
                                           настроек Рабочей области"></i>
                                 </p>
                                 <div class="form-group row">
-                                    <label class="col-sm-4 col-form-label" for="markviz-cost">Цена</label>
+                                    <label class="col-sm-4 col-form-label" for="marquiz-cost">Цена</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control wizard-form-input" type="text" id="markviz-cost"
+                                        <input class="form-control wizard-form-input" type="text" id="marquiz-cost"
                                                value="Базовая">
+                                        <div class="invalid-feedback marquiz-cost-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                             </form>
-                            <form class="get-form wizard-form-hide" method="post" action="#">
+                            <form class="get-form" method="post" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="get-name">Имя подключения</label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="get-name"
                                                value="GET запрос с сайта [ID]">
+                                        <div class="invalid-feedback get-name-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <p class="modal-text">Укажите стоимость заявки
@@ -235,15 +247,17 @@
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="get-cost"
                                                value="Базовая">
+                                        <div class="invalid-feedback get-cost-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                             </form>
-                            <form class="zadarma-form wizard-form-hide" method="post" action="#">
+                            <form class="zadarma-form" method="post" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="zadarma-name">Имя подключения</label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="zadarma-name"
                                                value="Zadarma [ID]">
+                                        <div class="invalid-feedback zadarma-name-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <p class="modal-text">Укажите ключи авторизации API</p>
@@ -252,6 +266,7 @@
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="zadarma-key"
                                                value="API Key">
+                                        <div class="invalid-feedback zadarma-key-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -259,6 +274,7 @@
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="zadarma-secret"
                                                value="API Secret">
+                                        <div class="invalid-feedback zadarma-secret-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <p class="modal-text">Укажите стоимость заявки
@@ -272,16 +288,18 @@
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="zadarma-cost"
                                                value="Базовая">
+                                        <div class="invalid-feedback zadarma-cost-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                             </form>
-                            <form class="yandex-direct-form wizard-form-hide" method="post" action="#">
+                            <form class="yandex-direct-form" method="post" action="#">
                                 <div class="form-group row">
-                                    <label class="col-sm-4 col-form-label" for="yandex-direct-name">Имя подключения
+                                    <label class="col-sm-4 col-form-label" for="yandex-name">Имя подключения
                                     </label>
                                     <div class="col-sm-8">
-                                        <input class="form-control wizard-form-input" type="text" id="yandex-direct-name"
+                                        <input class="form-control wizard-form-input" type="text" id="yandex-name"
                                                value="Яндекс.Директ [ID]">
+                                        <div class="invalid-feedback yandex-name-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -289,6 +307,7 @@
                                     </label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="yandex-parametr-1">
+                                        <div class="invalid-feedback yandex-parametr1-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -296,69 +315,87 @@
                                     </label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="yandex-parametr-2">
+                                        <div class="invalid-feedback yandex-parametr2-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                             </form>
-                            <form class="google-ads-form wizard-form-hide" method="post" action="#">
+                            <form class="google-ads-form" method="post" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="google-name">Имя подключения</label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="google-name"
                                                value="Google Ads [ID]">
+                                        <div class="invalid-feedback google-name-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="google-parametr-1">Параметр 1</label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="google-parametr-1">
+                                        <div class="invalid-feedback google-parametr1-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="google-parametr-2">Параметр 2</label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="google-parametr-2">
+                                        <div class="invalid-feedback google-parametr1-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                             </form>
-                            <form class="roistat-form wizard-form-hide" method="post" action="#">
+                            <form class="roistat-form" method="post" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="roistat-name">Имя подключения</label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="roistat-name"
                                                value="Roistat [ID]">
+                                        <div class="invalid-feedback roistat-name-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="roistat-parametr-1">Параметр 1</label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="roistat-parametr-1">
+                                        <div class="invalid-feedback roistat-parametr1-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="roistat-parametr-2">Параметр 2</label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="roistat-parametr-2">
+                                        <div class="invalid-feedback roistat-parametr2-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                             </form>
-                            <form class="bitrix-form wizard-form-hide" method="post" action="#">
+                            <form class="bitrix-form" method="post" action="#">
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="bitrix-name">Имя подключения</label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="bitrix-name"
                                                value="Битрикс 24 [ID]">
+                                        <div class="invalid-feedback bitrix-name-invalid-feedback">Сообщение об ошибке</div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label" for="bitrix-webhooks">Вставьте ссылку webhooks</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control wizard-form-input" type="text" id="bitrix-webhooks"
+                                               placeholder="https://name.bitrix24.ru/rest/1/7k5lak0lsn91ln/">
+                                        <div class="invalid-feedback bitrix-webhooks-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="bitrix-parametr-1">Параметр 1</label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="bitrix-parametr-1">
+                                        <div class="invalid-feedback bitrix-parametr1-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="bitrix-parametr-2">Параметр 2</label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text" id="bitrix-parametr-2">
+                                        <div class="invalid-feedback bitrix-parametr2-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                             </form>
@@ -379,6 +416,7 @@
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text"
                                                id="roistat-ad-connect-name" value="Roistat [ID]">
+                                        <div class="invalid-feedback roistat-ad-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -387,6 +425,7 @@
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text"
                                                id="roistat-ad-number" value="">
+                                        <div class="invalid-feedback roistat-ad-number-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -395,6 +434,7 @@
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text"
                                                id="roistat-ad-api-key" value="">
+                                        <div class="invalid-feedback roistat-ad-api-key-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -409,6 +449,7 @@
                                                     <i class="fa fa-rub" aria-hidden="true"></i>
                                                 </span>
                                             </div>
+                                            <div class="invalid-feedback roistat-ad-balance-invalid-feedback">Сообщение об ошибке</div>
                                         </div>
                                     </div>
                                 </div>
