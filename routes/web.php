@@ -104,3 +104,19 @@ Route::get('/users/profile-password', function () {
     View::share('showSaveButton', true);
     return view('pages.users.profile-password');
 })->name('users.profile-password');
+
+Route::get('/accounts/users-accounts', function () {
+    return view('pages.accounts.users-accounts');
+})->name('accounts.users-accounts');
+
+Route::get('/accounts/project', function () {
+    return view('pages.accounts.project');
+})->name('accounts.project');
+
+Route::get('/accounts/get-payments', function () {
+    return view('pages.accounts.get-payments');
+})->name('accounts.get-payments');
+
+Route::get('/accounts/timezone', function () {
+    return view('pages.accounts.timezone');
+})->name('accounts.timezone');

@@ -42,7 +42,7 @@
                     <a class="dropdown-item" href="{{ route('users.users-profile') }}"><i class="fa fa-id-card-o"
                                                                                           aria-hidden="true"></i>Мой
                         профиль</a>
-                    <a class="cog-link dropdown-item" href="#">
+                    <a class="cog-link dropdown-item" href="{{ route('accounts.users-accounts') }}">
                         <i class="fa fa-cog" aria-hidden="true"></i>Настройки аккаунта
                     </a>
                     <button class="dropdown-item"><i class="fa fa-sign-out" aria-hidden="true"></i>Выйти</button>
