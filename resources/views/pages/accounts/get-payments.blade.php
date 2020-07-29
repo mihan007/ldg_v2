@@ -5,8 +5,7 @@
         <div class="row sticky-top bg-white">
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper font-weight-bold border-bottom">
-{{--                        <h2 class="sr-only">Блок навигации по страницам настроек и управления настройками страницы "Источник--}}
-{{--                            заявок"</h2>--}}
+                <h2 class="sr-only">Блок навигации по страницам настроек аккаунтов и управления настройками</h2>
                 @include('includes.account-settings-links', ['step'=>'payments'])
                 <div>
                     <a class="btn btn-primary wizard-button" href=".js-payment-wizard" role="button"
@@ -28,6 +27,7 @@
 {{--                        </div>--}}
 {{--                    </div>--}}
             <div class="col-md-12 mx-auto">
+                <h2 class="sr-only">Таблица способов платежей"</h2>
                 <div class="payment-table-wrapper mb-5 mt-3">
                     <table class="table payment-table common-table">
                         <thead>

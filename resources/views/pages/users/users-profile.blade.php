@@ -44,6 +44,7 @@
                 <div>Данные сохранены</div>
             </div>
         </div>
+        @include('includes.workspace-save-modal')
     </main>
     <footer class="page-footer footer-hide bg-grey fixed-bottom">
         <div class="container">

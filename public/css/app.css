@@ -14478,7 +14478,8 @@ input[type=radio].visually-hidden {
 
 .wizard-table th,
 .wizard-table td {
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0.5rem;
+  overflow: hidden;
 }
 
 .wizard-instruction-list {
@@ -14509,6 +14510,16 @@ input[type=radio].visually-hidden {
     width: 40%;
     height: auto;
   }
+}
+
+.copy-form-input,
+.copy-button,
+.wizard-form-input,
+.show-hide-password-button,
+.create-button,
+.instruction-button,
+.settings-button {
+  font-size: 14px;
 }
 
 .index-buttons-wrapper {
@@ -15100,12 +15111,6 @@ input[type=radio].visually-hidden {
   width: 13%;
 }
 
-.copy-form-input,
-.copy-button,
-.wizard-form-input {
-  font-size: 14px;
-}
-
 .modal-text {
   margin-bottom: 5px;
   font-size: 16px;
@@ -15591,5 +15596,23 @@ td.ad-buttons-col {
 
 .payments-activity-col {
   width: 20%;
+}
+
+.wizard-section-title {
+  font-size: 1.3rem;
+}
+
+.yandex-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .yandex-buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 

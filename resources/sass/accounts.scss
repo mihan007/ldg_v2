@@ -52,3 +52,27 @@
 .payments-activity-col {
     width: 20%;
 }
+
+.wizard-section-title {
+    font-size: 1.3rem;
+    //padding-left: 80px;
+}
+
+.unchecked-text {
+    //padding-left: 80px;
+}
+
+.yandex-buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 992px) {
+    .yandex-buttons-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+

@@ -5,8 +5,7 @@
                 <div class="row sticky-top bg-white">
                     <div class="col-md-12 offset-block"></div>
                     <div class="col-md-12 settings-wrapper font-weight-bold border-bottom">
-{{--                        <h2 class="sr-only">Блок навигации по страницам настроек и управления настройками страницы "Источник--}}
-{{--                            заявок"</h2>--}}
+                        <h2 class="sr-only">Блок навигации по страницам настроек аккаунтов и управления настройками</h2>
                         @include('includes.account-settings-links', ['step'=>'users'])
                         <div>
                             <a class="btn btn-primary wizard-button" href=".js-invite-modal" role="button"
@@ -16,8 +15,6 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-md-12 company-title-wrapper">
                         <h2 class="sr-only">Название компании</h2>
                         <p class="company-title font-weight-bold">Информада</p>
@@ -25,10 +22,12 @@
                             <i class="fa fa-pencil" aria-hidden="true"></i>
                         </button>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-md-12 mx-auto">
-{{--                        <h2 class="sr-only">Таблица заявок с параметрами подключения"</h2>--}}
-                        <div class="orders-source-table-wrapper mb-5">
-                            <table class="table orders-source-table common-table orders-source-grid" data-offset="110">
+                        <h2 class="sr-only">Таблица данных пользователей компании"</h2>
+                        <div class="users-table-wrapper mb-5">
+                            <table class="table users-table common-table users-grid" data-offset="150">
                                 <thead>
                                 <tr class="table-grey text-center">
                                     <th class="rounded-table-left activity-col accounts-activity-col" data-toggle="tooltip" data-placement="top"

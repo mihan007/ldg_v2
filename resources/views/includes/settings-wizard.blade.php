@@ -62,7 +62,7 @@
                         <div id="step-2" class="tab-pane" role="tabpanel">
                             <h3 class="mb-1 wizard-step-title">Определите параметры</h3>
                             <div class="text-right">
-                                <a class="btn btn-outline-primary mb-3" href="{{ route('settings.elama-instruction') }}"
+                                <a class="btn btn-outline-primary instruction-button mb-3" href="{{ route('settings.elama-instruction') }}"
                                    target="_blank">
                                     <i class="fa fa-info-circle" aria-hidden="true"></i>
                                     Инструкция
@@ -86,8 +86,8 @@
                                         <div class="input-group-append">
                                             <button class="btn btn-secondary copy-button" type="button">Проверить</button>
                                         </div>
-                                        <div class="invalid-feedback webhooks-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
+                                    <div class="invalid-feedback webhooks-invalid-feedback">Сообщение об ошибке</div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="table-wrapper col-lg-10 offset-lg-2">
@@ -425,7 +425,8 @@
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text"
                                                id="roistat-ad-number" value="">
-                                        <div class="invalid-feedback roistat-ad-number-invalid-feedback">Сообщение об ошибке</div>
+                                    </div>
+                                    <div class="invalid-feedback roistat-ad-number-invalid-feedback">Сообщение об ошибке
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -434,7 +435,8 @@
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text"
                                                id="roistat-ad-api-key" value="">
-                                        <div class="invalid-feedback roistat-ad-api-key-invalid-feedback">Сообщение об ошибке</div>
+                                        <div class="invalid-feedback roistat-ad-api-key-invalid-feedback">Сообщение об
+                                            ошибке</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -449,8 +451,9 @@
                                                     <i class="fa fa-rub" aria-hidden="true"></i>
                                                 </span>
                                             </div>
-                                            <div class="invalid-feedback roistat-ad-balance-invalid-feedback">Сообщение об ошибке</div>
                                         </div>
+                                        <div class="invalid-feedback roistat-ad-balance-invalid-feedback">Сообщение об
+                                            ошибке</div>
                                     </div>
                                 </div>
                             </form>

@@ -23,3 +23,7 @@ require('./wizard');
 require('./orders-source-grid');
 require('./ad-common-grid');
 require('./ad-detailed-grid');
+require('./timezone-select');
+require('./show-hide-password');
+require('./project-grid');
+require('./users-grid');

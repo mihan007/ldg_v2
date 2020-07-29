@@ -5,8 +5,7 @@
                 <div class="row sticky-top bg-white">
                     <div class="col-md-12 offset-block"></div>
                     <div class="col-md-12 settings-wrapper font-weight-bold border-bottom">
-{{--                        <h2 class="sr-only">Блок навигации по страницам настроек и управления настройками страницы "Источник--}}
-{{--                            заявок"</h2>--}}
+                        <h2 class="sr-only">Блок навигации по страницам настроек аккаунтов и управления настройками</h2>
                         @include('includes.account-settings-links', ['step'=>'users'])
                     </div>
                 </div>
@@ -14,67 +13,36 @@
                     <div class="col-md-12 settings-wrapper">
                         <h2 class="company-title font-weight-bold">Часовой пояс клиента</h2>
                     </div>
-                    <div class="col-md-12 mx-auto">
-
-
-
-
-{{--                        <h2 class="sr-only">Таблица заявок с параметрами подключения"</h2>--}}
-                        <div class="orders-source-table-wrapper mb-5">
-                            <table class="table orders-source-table common-table orders-source-grid" data-offset="110">
-                                <thead>
-                                <tr class="table-grey text-center">
-                                    <th class="rounded-table-left activity-col accounts-activity-col" data-toggle="tooltip" data-placement="top"
-                                        data-delay='{"show":"1000", "hide":"1000"}' title="Включает / выключает доступ
-                                        пользователя к рабочей области или аккаунту">
-                                        Активность</th>
-                                    <th class="accounts-name-col" scope="col">
-                                        Имя</th>
-                                    <th class="accounts-email-col" scope="col">
-                                        Почта</th>
-                                    <th class="accounts-role-col" scope="col">Роль</th>
-                                    <th class="accounts-company-col" scope="col">Компании</th>
-                                    <th class="accounts-date-col" scope="col">Дата</th>
-                                    <th class="source-buttons-col accounts-buttons-col rounded-table-right"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td class="activity-col accounts-activity-col text-center">
-                                        <div class="custom-control custom-switch">
-                                            <input class="custom-control-input custom-control-input-success" id="active-switch"
-                                                   type="checkbox" checked>
-                                            <label class="custom-control-label" for="active-switch"
-                                                   aria-label="Доступ пользователя к рабочей области или аккаунту
-                                                   включен/выключен"></label>
-                                        </div>
-                                    </td>
-                                    <td class="accounts-name-col text-center">Виктор Емельянов</td>
-                                    <td class="accounts-email-col text-center">1@troiza.net </td>
-                                    <td class="accounts-role-col text-center">Администратор</td>
-                                    <td class="accounts-company-col text-center">Лидогенератор</td>
-                                    <td class="accounts-date-col text-center">Приглашение отправлено. 22.04.2019 13.00
-                                    </td>
-                                    <td class="source-buttons-col accounts-buttons-col text-center">
-                                        <a class="btn source-correct-button source-button function-button"
-                                           href=".js-settings-wizard" data-toggle="modal" role="button" aria-label="Редактировать данные">
-                                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                                        </a>
-                                        <a class="btn function-button" aria-label="Удалить доступ"
-                                           href=".js-workspace-reset-modal" role="button" data-toggle="modal">
-                                            <i class="fa fa-trash" aria-hidden="true"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                    <div class="col-md-12 mx-auto timezone-select-wrapper">
+                        <select class="js-timezone-select w-75" name="state">
+                            <option class="timezone-option" value="1">Часовая зона МСК−1 (калининградское время) MSK-1 (UTC+2)</option>
+                            <option class="timezone-option" value="2">Часовая зона МСК (московское время) MSK (UTC+3)</option>
+                            <option class="timezone-option" value="3">Часовая зона МСК+1 (самарское время) MSK+1 (UTC+4)</option>
+                            <option class="timezone-option" value="4">Часовая зона МСК+2 (екатеринбургское время) MSK+2 (UTC+5)</option>
+                            <option value="5">Часовая зона МСК+3 (омское время)	MSK+3 (UTC+6)</option>
+                            <option value="6">Часовая зона МСК+4 (красноярское время)	MSK+4 (UTC+7)</option>
+                            <option value="7">Часовая зона МСК+5 (иркутское время)	MSK+5 (UTC+8)</option>
+                            <option value="7">Часовая зона МСК+6 (якутское время)	MSK+6 (UTC+9)</option>
+                            <option value="7">Часовая зона МСК+7 (владивостокское время)	MSK+7 (UTC+10)</option>
+                            <option value="7">Часовая зона МСК+8 (магаданское время)	MSK+8 (UTC+11)</option>
+                            <option value="8">Часовой зона МСК+9 (камчатское время)	MSK+9 (UTC+12)</option>
+                        </select>
                     </div>
                 </div>
-                @include('includes.workspace-reset-modal', [
-                    'messageHeader' => 'Удаление пользователя',
-                    'messageBody' => 'Вы действительно хотите удалить пользователя?'
-                ])
-                @include('includes.invite-modal')
+        <div class="toast saved-toast js-saved-toast">
+            <div class="toast-body">
+                <div>Данные сохранены</div>
+            </div>
+        </div>
+        @include('includes.workspace-save-modal')
             </main>
+    <footer class="page-footer footer-hide bg-grey fixed-bottom">
+        <div class="container">
+            <div class="text-center py-2 d-flex justify-content-center align-items-center">
+                <h5 class="mb-1 unsaved-text mr-3">На странице есть несохраненные изменения</h5>
+                <button class="btn btn-primary show-save-toast footer-save-button" type="submit">Сохранить
+                </button>
+            </div>
+        </div>
+    </footer>
 @stop

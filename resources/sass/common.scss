@@ -452,7 +452,8 @@ input[type="radio"].visually-hidden {
 
 .wizard-table th,
 .wizard-table td {
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 0.5rem;
+    overflow: hidden;
 }
 
 .wizard-instruction-list {
@@ -483,4 +484,14 @@ input[type="radio"].visually-hidden {
         width: 40%;
         height: auto;
     }
+}
+
+.copy-form-input,
+.copy-button,
+.wizard-form-input,
+.show-hide-password-button,
+.create-button,
+.instruction-button,
+.settings-button {
+    font-size: 14px;
 }

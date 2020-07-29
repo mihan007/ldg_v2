@@ -118,5 +118,6 @@ Route::get('/accounts/get-payments', function () {
 })->name('accounts.get-payments');
 
 Route::get('/accounts/timezone', function () {
+    View::share('showSaveButton', true);
     return view('pages.accounts.timezone');
 })->name('accounts.timezone');

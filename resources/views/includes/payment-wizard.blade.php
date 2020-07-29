@@ -27,7 +27,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="wallet-number">Кошелек</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" type="number" id="wallet-number"
+                                        <input class="form-control wizard-form-input" type="number" id="wallet-number"
                                                    placeholder="410000000050333" required>
                                         <div class="invalid-feedback wallet-number-invalid-feedback">
                                             Сообщение об ошибке</div>
@@ -57,12 +57,13 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="secret-key">Секретный ключ</label>
                                     <div class="col-sm-8">
-                                        <div class="input-group">
-                                            <input class="form-control" type="password" id="secret-key" required>
+                                        <div class="input-group" id="show_hide_password">
+                                            <input class="form-control wizard-form-input" type="password" id="secret-key"
+                                                   required>
                                             <div class="input-group-append">
-                                                <button type="button" class="btn btn-secondary">
-                                                    <i class="fa fa-eye"></i>
-                                                </button>
+                                                <a class="btn btn-secondary show-hide-password-button" href="">
+                                                    <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                                                </a>
                                             </div>
                                         </div>
                                         <small class="form-text text-muted">Секретный ключ проверки подлинности данных
@@ -82,19 +83,19 @@
                                         <div class="custom-control custom-checkbox mt-2">
                                             <input type="checkbox" class="custom-control-input" name="payment-method"
                                                    id="payment-method2" checked>
-                                            <label class="custom-control-label" for="payment-method2">Банковская карта</label>
+                                            <label class="custom-control-label" for="payment-method2">Банковская карта
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
-                                <p>
-                                    <i class="fa fa-info-circle" aria-hidden="true"></i> Убедитесь, что отправка уведомлений
-                                включена
+                                <div class="yandex-buttons-wrapper">
+                                <p class="">
+                                    <i class="fa fa-info-circle" aria-hidden="true"></i> Убедитесь, что отправка
+                                    уведомлений включена
                                 </p>
-                                <div class="form-group modal-action-buttons">
-                                    <a class="btn btn-outline-secondary modal-action-button" href="#">
-                                        Перейти к настройке</a>
-                                    <button class="btn btn-primary show-save-toast modal-action-button" type="submit">
-                                        Сохранить</button>
+                                <div class="form-group">
+                                    <a class="btn btn-outline-primary settings-button" href="#">Перейти к настройке</a>
+                                </div>
                                 </div>
                                 <div class="form-group text-center">
                                     <a class="" href="#">Соглашение</a>
@@ -112,8 +113,8 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="bank-name">Банк получателя</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" type="text" id="bank-name"
-                                               placeholder="АО &#8220;ТИНЬКОФФ БАНК&#8221;" required>
+                                        <input class="form-control wizard-form-input" type="text" id="bank-name"
+                                               placeholder="АО &#8220;Тинькофф Банк&#8221;" required>
                                         <div class="invalid-feedback bank-name-invalid-feedback">
                                             Сообщение об ошибке</div>
                                     </div>
@@ -130,7 +131,7 @@
                                     <label class="col-sm-4 col-form-label" for="correspondent-account">Корреспондентский
                                         счет</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" type="number" id="correspondent-account"
+                                        <input class="form-control wizard-form-input" type="number" id="correspondent-account"
                                                placeholder="30101810145250000974" required>
                                         <div class="invalid-feedback correspondent-account-invalid-feedback">Сообщение
                                             об ошибке</div>
@@ -140,7 +141,7 @@
                                     <label class="col-sm-4 col-form-label" for="checking-account">Расчетный счет
                                     </label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" type="number" id="checking-account"
+                                        <input class="form-control wizard-form-input" type="number" id="checking-account"
                                                placeholder="40802810600000408982" required>
                                         <div class="invalid-feedback checking-account-invalid-feedback">Сообщение
                                             об ошибке</div>
@@ -152,8 +153,8 @@
                                         организации
                                     </label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" type="text" id="recipient-brand-name"
-                                               placeholder="ИП ЕМЕЛЬЯНОВ ВИКТОР ВЛАДИМИРОВИЧ" required>
+                                        <input class="form-control wizard-form-input" type="text" id="recipient-brand-name"
+                                               placeholder="ИП Емельянов Виктор Владимирович" required>
                                         <div class="invalid-feedback recipient-brand-invalid-feedback">Сообщение
                                             об ошибке</div>
                                     </div>
@@ -163,8 +164,8 @@
                                         наименование организации
                                     </label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" type="text" id="recipient-company-name"
-                                               placeholder="ИП ЕМЕЛЬЯНОВ ВИКТОР ВЛАДИМИРОВИЧ" required>
+                                        <input class="form-control wizard-form-input" type="text" id="recipient-company-name"
+                                               placeholder="ИП Емельянов Виктор Владимирович" required>
                                         <div class="invalid-feedback recipient-company-name-invalid-feedback">Сообщение
                                             об ошибке</div>
                                     </div>
@@ -172,7 +173,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="taxes-number">ИНН</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" type="number" id="taxes-number"
+                                        <input class="form-control wizard-form-input" type="number" id="taxes-number"
                                                placeholder="561112781701" required>
                                         <div class="invalid-feedback taxes-number-invalid-feedback">Сообщение
                                             об ошибке
@@ -182,7 +183,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="postcode">Почтовый индекс</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" type="number" id="postcode"
+                                        <input class="form-control wizard-form-input" type="number" id="postcode"
                                                placeholder="460021" required>
                                         <div class="invalid-feedback postcode-invalid-feedback">Сообщение
                                             об ошибке
@@ -192,8 +193,8 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="city">Город вашей организации</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" type="text" id="city"
-                                               placeholder="РОССИЯ, ОРЕНБУРГСКАЯ ОБЛ, Г ОРЕНБУРГ" required>
+                                        <input class="form-control wizard-form-input" type="text" id="city"
+                                               placeholder="Россия, Оренбургская Обл, г Оренбург" required>
                                         <div class="invalid-feedback city-invalid-feedback">Сообщение
                                             об ошибке
                                         </div>
@@ -203,8 +204,8 @@
                                     <label class="col-sm-4 col-form-label" for="company-address">Адрес вашей организации
                                     </label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" type="text" id="company-address"
-                                               placeholder="УЛ ВОСТОЧНАЯ, Д 44" required>
+                                        <input class="form-control wizard-form-input" type="text" id="company-address"
+                                               placeholder="ул Восточная, д 44" required>
                                         <div class="invalid-feedback company-address-invalid-feedback">Сообщение
                                             об ошибке
                                         </div>
@@ -214,8 +215,8 @@
                                     <label class="col-sm-4 col-form-label" for="company-head">Руководитель компании
                                     </label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" type="text" id="company-head"
-                                               placeholder="ЕМЕЛЬЯНОВ ВИКТОР ВЛАДИМИРОВИЧ" required>
+                                        <input class="form-control wizard-form-input" type="text" id="company-head"
+                                               placeholder="Емельянов Виктор Владимирович" required>
                                         <div class="invalid-feedback company-head-invalid-feedback">Сообщение
                                             об ошибке
                                         </div>
@@ -225,8 +226,8 @@
                                     <label class="col-sm-4 col-form-label" for="company-bookkeeper">Бухгалтер
                                     </label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" type="text" id="company-bookkeeper"
-                                               placeholder="ЕМЕЛЬЯНОВ ВИКТОР ВЛАДИМИРОВИЧ" required>
+                                        <input class="form-control wizard-form-input" type="text" id="company-bookkeeper"
+                                               placeholder="Емельянов Виктор Владимирович" required>
                                         <div class="invalid-feedback company-bookkeeper-invalid-feedback">Сообщение
                                             об ошибке
                                         </div>
@@ -242,8 +243,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-4 col-form-label">Подпись руководителя
-                                        (Формат PNG)</label>
+                                    <label class="col-sm-4 col-form-label">Подпись руководителя (Формат PNG)</label>
                                     <div class="col-sm-8">
                                         <div class="custom-file">
                                             <input class="custom-file-input" type="file" id="head-signature">
@@ -256,13 +256,10 @@
                                     <div class="col-sm-8">
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" id="bookkeeper-signature">
-                                            <label class="custom-file-label" for="bookkeeper-signature">Выберите файл</label>
+                                            <label class="custom-file-label" for="bookkeeper-signature">Выберите файл
+                                            </label>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="form-group text-right">
-                                    <button class="btn btn-primary show-save-toast modal-action-button" type="submit">
-                                        Сохранить</button>
                                 </div>
                             </form>
                         </div>
@@ -275,7 +272,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="tinkoff-account">Счет</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" type="number" id="tinkoff-account"
+                                        <input class="form-control wizard-form-input" type="number" id="tinkoff-account"
                                                placeholder="40802810600000408982" required>
                                         <div class="invalid-feedback tinkoff-account-invalid-feedback">
                                             Сообщение об ошибке</div>
@@ -293,145 +290,137 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label" for="token">Токен</label>
                                     <div class="col-sm-8">
-                                        <input class="form-control" type="number" id="token"
-                                               placeholder="30101810145250000974" required>
+                                        <div class="input-group" id="show_hide_password">
+                                            <input class="form-control wizard-form-input" type="password" id="token"
+                                                   required>
+                                            <div class="input-group-append">
+                                                <a class="btn btn-secondary show-hide-password-button" href="">
+                                                    <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
                                         <div class="invalid-feedback token-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
-                                </div>
-                                <div class="form-group text-light">
-                                    <button class="btn btn-outline-secondary modal-action-button" type="button">
-                                        Проверить</button>
                                 </div>
                             </form>
                         </div>
                         <div id="step-4" class="tab-pane" role="tabpanel">
-                            <h3 class="mb-3 wizard-step-title">Проверьте параметры подключения</h3>
-                            <div class="table-wrapper">
-                                <table class="table common-table wizard-table mx-auto">
-                                    <thead>
+                            <h3 class="mb-3 wizard-step-title">Проверьте параметры настроек</h3>
+                            <section>
+                                <h4 class="wizard-section-title mt-2">Яндекс Деньги</h4>
+                                <div class="table-wrapper">
+                                    <table class="table common-table wizard-table mx-auto">
+                                        <thead>
+                                            <tr class="table-grey">
+                                                <th class="rounded-table-left parametr-col" scope="col">Параметр</th>
+                                                <th class="rounded-table-right meaning-col" scope="col">Значение</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-bordered">
+                                        <tr>
+                                            <td class="">Номер кошелька</td>
+                                            <td class="">410000000050333</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Адрес</td>
+                                            <td class="">https://panel.troiza.net/api/v1/web-leads/webhook/GyOJjqO8HqlRJdEsy5Pb</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Секретный ключ</td>
+                                            <td class="">...</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Способы</td>
+                                            <td class="">Яндекс Деньги, Банковская карта</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                            <section>
+                                <h4 class="wizard-section-title mt-2">Расчетный счет</h4>
+                                <div class="table-wrapper">
+                                    <table class="table common-table wizard-table mx-auto">
+                                        <thead>
                                         <tr class="table-grey">
                                             <th class="rounded-table-left" scope="col">Параметр</th>
                                             <th class="rounded-table-right" scope="col">Значение</th>
                                         </tr>
-                                    </thead>
-                                    <tbody class="table-bordered">
+                                        </thead>
+                                        <tbody class="table-bordered">
                                         <tr>
-                                            <td class="">ID</td>
-                                            <td class=""></td>
+                                            <td class="">Банк получателя</td>
+                                            <td class="">АО &#8220;Тинькофф Банк&#8221;</td>
                                         </tr>
                                         <tr>
-                                            <td class="">Имя</td>
-                                            <td class=""></td>
+                                            <td class="">БИК</td>
+                                            <td class="">044525974</td>
                                         </tr>
                                         <tr>
-                                            <td class="">Источник</td>
-                                            <td class=""></td>
+                                            <td class="">Корреспондентский счет</td>
+                                            <td class="">30101810145250000974</td>
                                         </tr>
                                         <tr>
-                                            <td class="">Стоимость заявки</td>
-                                            <td class="">Базовая</td>
+                                            <td class="">Расчетный счет</td>
+                                            <td class="">4080281060000040898</td>
                                         </tr>
                                         <tr>
-                                            <td class="">URL</td>
-                                            <td class="">
-                                                <div class="input-group">
-                                                    <input class="form-control copy-form-input" type="text"
-                                                           id="form-url-result"
-                                                           value="https://panel.troiza.net/api/v1/web-leads/webhook/GyOJjqO8HqlRJdEsy5Pb">
-                                                    <div class="input-group-append">
-                                                        <button class="btn btn-secondary copy-button" type="button"
-                                                                data-clipboard-target="#copy-form-input"
-                                                                data-trigger="manual" data-toggle="click-leave-tooltip"
-                                                                data-placement="top" title="Скопировано"
-                                                                aria-label="Копировать">
-                                                            <i class="fa fa-files-o" aria-hidden="true"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
+                                            <td class="">Название Бренда организации</td>
+                                            <td class="">ИП Емельянов Виктор Владимирович</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Юридическое наименование организации</td>
+                                            <td class="">ИП Емельянов Виктор Владимирович</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">ИНН</td>
+                                            <td class="">561112781701</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Адрес организации</td>
+                                            <td class="">460021, Россия, Оренбургская Обл, г Оренбург, ул Восточная, д 44
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="">API Key</td>
-                                            <td class=""></td>
+                                            <td class="">Руководитель компании</td>
+                                            <td class="">Емельянов Виктор Владимирович</td>
                                         </tr>
                                         <tr>
-                                            <td class="">API Secret</td>
-                                            <td class=""></td>
+                                            <td class="">Бухгалтер</td>
+                                            <td class="">Емельянов Виктор Владимирович</td>
                                         </tr>
-                                        <tr>
-                                            <td class="">Название подключения</td>
-                                            <td class=""></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="">Останавливать, если на балансе CRM 0 рублей
-                                                <i class="fa fa-question-circle-o" aria-hidden="true"
-                                                   data-trigger="manual" data-toggle="click-tooltip" data-placement="top"
-                                                   data-title="Если баланс Лидогенератора достигнет этого значения,
-                                                   система автоматически остановит все включенные кампании и запомнит их.
-                                                   Когда баланс станет выше значения, система запустит ранее выключенные
-                                                   кампании"></i>
-                                            </td>
-                                            <td class="">Включено</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="">Уведомлять об окончании баланса при 10000 рублей
-                                                <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
-                                                   data-toggle="click-tooltip" data-placement="top"
-                                                   data-title="При достижении этого значения система отправит
-                                                   уведомление об окончании баланса Яндекса"></i>
-                                            </td>
-                                            <td class="">Включено</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="">НДС</td>
-                                            <td class="">20%</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="">Бюджет оплачивает клиент
-                                                <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
-                                                 data-toggle="click-tooltip" data-placement="top" data-title="Включите,
-                                                 если рекламный бюджет оплачивает клиент. Тогда при подсчете вашей
-                                                 Прибыли система не вычтет рекламный Расход из Выручки"></i>
-                                            </td>
-                                            <td class="">Выключено</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="">Уведомлять о пополнении, если на балансе Roistat 0 рублей
-                                                <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
-                                                   data-toggle="click-tooltip" data-placement="top" data-title="При
-                                                   достижении этого значения система отправит уведомление об окончании
-                                                   баланса Roistat"></i>
-                                            </td>
-                                            <td class="">Выключено</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <h3 class="mb-4 wizard-step-title">Параметры заявок</h3>
-                            <div class="table-wrapper">
-                                <table class="table common-table wizard-table mx-auto">
-                                    <thead>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                            <section>
+                                <h4 class="wizard-section-title mt-2">Тинькофф Банк</h4>
+                                <p class="unchecked-text">Способ оплаты не подключен</p>
+                                <div class="table-wrapper">
+                                    <table class="table common-table wizard-table mx-auto">
+                                        <thead>
                                         <tr class="table-grey">
-                                            <th class="rounded-table-left">Лидген CRM</th>
-                                            <th class="rounded-table-right">Параметры webhook</th>
+                                            <th class="rounded-table-left" scope="col">Параметр</th>
+                                            <th class="rounded-table-right" scope="col">Значение</th>
                                         </tr>
-                                    </thead>
-                                    <tbody class="table-bordered">
+                                        </thead>
+                                        <tbody class="table-bordered">
                                         <tr>
-                                            <td class="">Телефон</td>
-                                            <td class=""></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="">Имя</td>
-                                            <td class=""></td>
+                                            <td class="">Счет</td>
+                                            <td class="">40802810600000408982</td>
                                         </tr>
                                         <tr>
-                                            <td class="">Дополнительная информация</td>
-                                            <td class=""></td>
+                                            <td class="">ИНН</td>
+                                            <td class="">561112781701</td>
                                         </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                                        <tr>
+                                            <td class="">Токен</td>
+                                            <td class="">...</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </div>

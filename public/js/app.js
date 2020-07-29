@@ -74670,6 +74670,14 @@ __webpack_require__(/*! ./orders-source-grid */ "./resources/js/orders-source-gr
 __webpack_require__(/*! ./ad-common-grid */ "./resources/js/ad-common-grid.js");
 
 __webpack_require__(/*! ./ad-detailed-grid */ "./resources/js/ad-detailed-grid.js");
+
+__webpack_require__(/*! ./timezone-select */ "./resources/js/timezone-select.js");
+
+__webpack_require__(/*! ./show-hide-password */ "./resources/js/show-hide-password.js");
+
+__webpack_require__(/*! ./project-grid */ "./resources/js/project-grid.js");
+
+__webpack_require__(/*! ./users-grid */ "./resources/js/users-grid.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -75115,6 +75123,28 @@ $(document).ready(function () {
 
 /***/ }),
 
+/***/ "./resources/js/project-grid.js":
+/*!**************************************!*\
+  !*** ./resources/js/project-grid.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  window.table = $('.project-grid').DataTable({
+    fixedHeader: {
+      headerOffset: 163
+    },
+    paging: false,
+    searching: false,
+    info: false,
+    autoWidth: false,
+    ordering: false
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/js/save-result.js":
 /*!*************************************!*\
   !*** ./resources/js/save-result.js ***!
@@ -75180,6 +75210,31 @@ $(document).ready(function () {
 
 /***/ }),
 
+/***/ "./resources/js/show-hide-password.js":
+/*!********************************************!*\
+  !*** ./resources/js/show-hide-password.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $("#show_hide_password a").on('click', function (event) {
+    event.preventDefault();
+
+    if ($('#show_hide_password input').attr("type") == "text") {
+      $('#show_hide_password input').attr('type', 'password');
+      $('#show_hide_password i').addClass("fa-eye-slash");
+      $('#show_hide_password i').removeClass("fa-eye");
+    } else if ($('#show_hide_password input').attr("type") == "password") {
+      $('#show_hide_password input').attr('type', 'text');
+      $('#show_hide_password i').removeClass("fa-eye-slash");
+      $('#show_hide_password i').addClass("fa-eye");
+    }
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/js/sidenav-save-modal.js":
 /*!********************************************!*\
   !*** ./resources/js/sidenav-save-modal.js ***!
@@ -75190,6 +75245,20 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.save-result-button').on('click', function () {
     $('.js-save-result-modal').modal('show');
+  });
+});
+
+/***/ }),
+
+/***/ "./resources/js/timezone-select.js":
+/*!*****************************************!*\
+  !*** ./resources/js/timezone-select.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $('.js-timezone-select').select2({// width: 'resolve'
   });
 });
 
@@ -75235,6 +75304,28 @@ $(document).ready(function () {
       delay: 3000
     });
     $(".js-update-toast").toast('show');
+  });
+});
+
+/***/ }),
+
+/***/ "./resources/js/users-grid.js":
+/*!************************************!*\
+  !*** ./resources/js/users-grid.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  window.table = $('.users-grid').DataTable({
+    fixedHeader: {
+      headerOffset: 150
+    },
+    paging: false,
+    searching: false,
+    info: false,
+    autoWidth: false,
+    ordering: false
   });
 });
 
