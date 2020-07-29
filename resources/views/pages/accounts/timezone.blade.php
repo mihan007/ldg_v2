@@ -6,7 +6,7 @@
                     <div class="col-md-12 offset-block"></div>
                     <div class="col-md-12 settings-wrapper font-weight-bold border-bottom">
                         <h2 class="sr-only">Блок навигации по страницам настроек аккаунтов и управления настройками</h2>
-                        @include('includes.account-settings-links', ['step'=>'users'])
+                        @include('includes.account-settings-links', ['step'=>'timezone'])
                     </div>
                 </div>
                 <div class="row">
