@@ -149,7 +149,6 @@ input[type="radio"].visually-hidden {
     padding-right: 20px;
     padding-left: 80px;
     min-width: 1340px;
-    //font-size: 14px;
 }
 
 @media (max-width: 767px) {
@@ -187,7 +186,6 @@ input[type="radio"].visually-hidden {
     border-radius: 0.25rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    //font-size: 14px;
     margin-right: 1.2rem;
 }
 
@@ -230,7 +228,6 @@ input[type="radio"].visually-hidden {
 }
 
 .common-table {
-    //font-size: 14px;
     table-layout: fixed;
     font-weight: 400;
 }
@@ -286,16 +283,10 @@ input[type="radio"].visually-hidden {
     box-shadow: 0 0 0 0.2rem $filter-button-box-shadow;
 }
 
-//.settings-page-title {
-//    //font-size: 14px;
-//    font-weight: 700;
-//}
-
 .directory-button {
     margin-right: 1.2rem;
     color: $main-text-color;
     text-decoration: none;
-    //font-size: 14px;
 }
 
 .directory-button.active,
@@ -340,7 +331,6 @@ input[type="radio"].visually-hidden {
 .balance-info {
     margin-top: 0;
     margin-bottom: 0;
-    //font-size: 14px;
     text-decoration: none;
     color: $main-text-color;
 }
