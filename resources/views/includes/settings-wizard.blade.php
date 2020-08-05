@@ -112,7 +112,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-lg-2 col-form-label" for="webhooks-phone">Телефон</label>
                                     <div class="col-sm-5 col-lg-7">
-                                        <input class="form-control" type="text" id="webhooks-phone" value="89229997988">
+                                        <input class="form-control wizard-form-input" type="text" id="webhooks-phone" value="89229997988">
                                         <div class="invalid-feedback webhooks-phone-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                     <div class="col-sm-4 col-lg-3 modal-select-wrapper">

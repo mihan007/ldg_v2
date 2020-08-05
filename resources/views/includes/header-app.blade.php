@@ -5,7 +5,7 @@
         </a>
         <div class="navbar-nav">
             <div class="nav-item dropdown magic-menu">
-                <a class="nav-link dropdown-toggle" href="#" onclick="return false;">Название аккаунта</a>
+                <a class="nav-link dropdown-toggle accounts-dropdown" href="#" onclick="return false;">Название аккаунта</a>
                 <div class="dropdown-menu accounts-list">
                     <a class="dropdown-item disabled" href="#">Пункт 1</a>
                     <a class="dropdown-item" href="{{ route('users.login') }}">Страница входа</a>
@@ -33,7 +33,7 @@
         </div>
         <div class="navbar-nav login-wrapper ml-auto">
             <div class="nav-item dropdown magic-menu">
-                <a class="nav-link dropdown-toggle" href="#" onclick="return false;">
+                <a class="nav-link dropdown-toggle user-dropdown" href="#" onclick="return false;">
                     <i class="fa fa-user-o mr-2" aria-hidden="true"></i>
                     <span>Виктор Емельянов</span>
                 </a>

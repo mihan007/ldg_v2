@@ -20,7 +20,7 @@
                                     <i class="fa fa-unlock-alt" aria-hidden="true"></i>
                                 </span>
                             </div>
-                            <input class="form-control" type="password" id="profile-password" required>
+                            <input class="form-control profile-input" type="password" id="profile-password" required>
                         </div>
                         <div class="invalid-feedback profile-password-invalid-feedback">Сообщение об ошибке</div>
                     </div>
@@ -32,7 +32,7 @@
                                     <i class="fa fa-lock"></i>
                                 </span>
                             </div>
-                            <input class="form-control" type="password" id="profile-new-password" required>
+                            <input class="form-control profile-input" type="password" id="profile-new-password" required>
                         </div>
                         <div class="invalid-feedback profile-new-password-invalid-feedback">Сообщение об ошибке</div>
                     </div>
@@ -44,7 +44,7 @@
                                     <i class="fa fa-lock"></i>
                                 </span>
                             </div>
-                            <input class="form-control" type="password" id="profile-password-repeat" required>
+                            <input class="form-control profile-input" type="password" id="profile-password-repeat" required>
                         </div>
                         <div class="invalid-feedback profile-password-repeat-invalid-feedback">Пароли не совпадают</div>
                     </div>

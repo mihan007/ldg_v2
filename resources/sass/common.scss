@@ -11,6 +11,7 @@ body {
     font-family: "MalgunGothicRegular", "Helvetica", sans-serif;
     position: relative;
     color: $main-text-color;
+    font-size: 14px;
 }
 
 html, body {
@@ -66,6 +67,11 @@ input[type="radio"].visually-hidden {
 .fa-user-o {
     color: $header-icon-color;
     font-size: 23px;
+}
+
+.accounts-dropdown,
+.user-dropdown {
+    font-size: 16px;
 }
 
 .sidenav {
@@ -143,7 +149,7 @@ input[type="radio"].visually-hidden {
     padding-right: 20px;
     padding-left: 80px;
     min-width: 1340px;
-    font-size: 14px;
+    //font-size: 14px;
 }
 
 @media (max-width: 767px) {
@@ -181,7 +187,7 @@ input[type="radio"].visually-hidden {
     border-radius: 0.25rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-size: 14px;
+    //font-size: 14px;
     margin-right: 1.2rem;
 }
 
@@ -213,10 +219,7 @@ input[type="radio"].visually-hidden {
     width: 16%;
 }
 
-.button-search {
-    font-size: 14px;
-}
-
+.button-search,
 .search-form-input {
     font-size: 14px;
 }
@@ -227,7 +230,7 @@ input[type="radio"].visually-hidden {
 }
 
 .common-table {
-    font-size: 14px;
+    //font-size: 14px;
     table-layout: fixed;
     font-weight: 400;
 }
@@ -283,16 +286,16 @@ input[type="radio"].visually-hidden {
     box-shadow: 0 0 0 0.2rem $filter-button-box-shadow;
 }
 
-.settings-page-title {
-    font-size: 14px;
-    font-weight: 700;
-}
+//.settings-page-title {
+//    //font-size: 14px;
+//    font-weight: 700;
+//}
 
 .directory-button {
     margin-right: 1.2rem;
     color: $main-text-color;
     text-decoration: none;
-    font-size: 14px;
+    //font-size: 14px;
 }
 
 .directory-button.active,
@@ -332,6 +335,31 @@ input[type="radio"].visually-hidden {
 .balance-info-button {
     width: 100%;
     margin-right: 0;
+}
+
+.balance-info {
+    margin-top: 0;
+    margin-bottom: 0;
+    //font-size: 14px;
+    text-decoration: none;
+    color: $main-text-color;
+}
+
+.balance-info .fa-rub,
+.balance-actions .fa-rub{
+    color: $main-text-color;
+}
+
+.balance-info:hover,
+.balance-info:hover .fa-rub {
+    color: $balance-info-button-hover;
+    text-decoration: none;
+}
+
+.balance-info:active,
+.balance-info:active .fa-rub {
+    color: $balance-info-button-active;
+    text-decoration: none;
 }
 
 .balance-actions {
@@ -503,8 +531,6 @@ input[type="radio"].visually-hidden {
 .modal-button {
     font-size: 14px;
 }
-
-//Страница "Настройки аккаунтов"
 
 .accounts-buttons-col {
     width: 8%;

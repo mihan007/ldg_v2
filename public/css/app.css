@@ -14072,6 +14072,7 @@ body {
   font-family: "MalgunGothicRegular", "Helvetica", sans-serif;
   position: relative;
   color: #212529;
+  font-size: 14px;
 }
 
 html,
@@ -14125,6 +14126,11 @@ input[type=radio].visually-hidden {
 .fa-user-o {
   color: white;
   font-size: 23px;
+}
+
+.accounts-dropdown,
+.user-dropdown {
+  font-size: 16px;
 }
 
 .sidenav {
@@ -14197,7 +14203,6 @@ input[type=radio].visually-hidden {
   padding-right: 20px;
   padding-left: 80px;
   min-width: 1340px;
-  font-size: 14px;
 }
 
 @media (max-width: 767px) {
@@ -14227,7 +14232,6 @@ input[type=radio].visually-hidden {
   width: 348px;
   border-radius: 0.25rem;
   box-sizing: border-box;
-  font-size: 14px;
   margin-right: 1.2rem;
 }
 
@@ -14254,10 +14258,7 @@ input[type=radio].visually-hidden {
   width: 16%;
 }
 
-.button-search {
-  font-size: 14px;
-}
-
+.button-search,
 .search-form-input {
   font-size: 14px;
 }
@@ -14268,7 +14269,6 @@ input[type=radio].visually-hidden {
 }
 
 .common-table {
-  font-size: 14px;
   table-layout: fixed;
   font-weight: 400;
 }
@@ -14325,16 +14325,10 @@ input[type=radio].visually-hidden {
   box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
-.settings-page-title {
-  font-size: 14px;
-  font-weight: 700;
-}
-
 .directory-button {
   margin-right: 1.2rem;
   color: #212529;
   text-decoration: none;
-  font-size: 14px;
 }
 
 .directory-button.active,
@@ -14374,6 +14368,30 @@ input[type=radio].visually-hidden {
 .balance-info-button {
   width: 100%;
   margin-right: 0;
+}
+
+.balance-info {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: #212529;
+}
+
+.balance-info .fa-rub,
+.balance-actions .fa-rub {
+  color: #212529;
+}
+
+.balance-info:hover,
+.balance-info:hover .fa-rub {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.balance-info:active,
+.balance-info:active .fa-rub {
+  color: #5a6268;
+  text-decoration: none;
 }
 
 .balance-actions {
@@ -14589,7 +14607,6 @@ td.accounts-buttons-col {
 
 .company-icon {
   color: #95999c;
-  font-size: 14px;
 }
 
 .company-dashboard-button:hover .company-icon,
@@ -14655,31 +14672,6 @@ td.accounts-buttons-col {
 
 .crm-main {
   position: relative;
-}
-
-.balance-info {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 14px;
-  text-decoration: none;
-  color: #212529;
-}
-
-.balance-info .fa-rub,
-.balance-actions .fa-rub {
-  color: #212529;
-}
-
-.balance-info:hover,
-.balance-info:hover .fa-rub {
-  color: #6c757d;
-  text-decoration: none;
-}
-
-.balance-info:active,
-.balance-info:active .fa-rub {
-  color: #5a6268;
-  text-decoration: none;
 }
 
 .crm-button {
@@ -15525,7 +15517,6 @@ td.ad-buttons-col {
 .profile-wrapper {
   padding-right: 20px;
   padding-left: 80px;
-  font-size: 14px;
   margin-bottom: 65px;
 }
 
@@ -15548,6 +15539,10 @@ td.ad-buttons-col {
   padding-right: 1px;
 }
 
+.profile-input {
+  font-size: 14px;
+}
+
 .company-title-wrapper {
   padding-left: 40px;
   display: flex;
@@ -15559,13 +15554,16 @@ td.ad-buttons-col {
   font-size: 16px;
 }
 
-.accounts-role-col,
-.accounts-name-col {
+.accounts-role-col {
   width: 13%;
 }
 
+.accounts-name-col {
+  width: 20%;
+}
+
 .accounts-date-col {
-  width: 22%;
+  width: 14%;
 }
 
 .project-name-col {
@@ -15581,22 +15579,6 @@ td.ad-buttons-col {
 
 .project-open-button {
   padding: 0 0.75rem;
-}
-
-.lined .nav-link {
-  border: none;
-  border-bottom: 3px solid transparent;
-}
-
-.lined .nav-link:hover {
-  border: none;
-  border-bottom: 3px solid transparent;
-}
-
-.lined .nav-link.active {
-  background: none;
-  color: #555;
-  border-color: #2b90d9;
 }
 
 .payments-activity-col {

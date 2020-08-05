@@ -13,13 +13,16 @@
     font-size: 16px;
 }
 
-.accounts-role-col,
-.accounts-name-col {
+.accounts-role-col {
     width: 13%;
 }
 
+.accounts-name-col {
+    width: 20%;
+}
+
 .accounts-date-col {
-    width: 22%;
+    width: 14%;
 }
 
 .project-name-col{
@@ -41,21 +44,21 @@
     padding: 0 0.75rem;;
 }
 
-.lined .nav-link {
-    border: none;
-    border-bottom: 3px solid transparent;
-}
-
-.lined .nav-link:hover {
-    border: none;
-    border-bottom: 3px solid transparent;
-}
-
-.lined .nav-link.active {
-    background: none;
-    color: #555;
-    border-color: #2b90d9;
-}
+//.lined .nav-link {
+//    border: none;
+//    border-bottom: 3px solid transparent;
+//}
+//
+//.lined .nav-link:hover {
+//    border: none;
+//    border-bottom: 3px solid transparent;
+//}
+//
+//.lined .nav-link.active {
+//    background: none;
+//    color: #555;
+//    border-color: #2b90d9;
+//}
 
 .payments-activity-col {
     width: 20%;

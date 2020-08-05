@@ -19,9 +19,8 @@
                     </div>
                     <div class="form-group">
                             <select class="custom-select select-item w-100">
-                                <option selected>Все менеджеры</option>
-                                <option value="1">Администратор</option>
-                                <option value="2">Менеджер</option>
+                                <option value="1" selected>Менеджер</option>
+                                <option value="2">Администратор</option>
                             </select>
 {{--                        <label class="sr-only" for="invite-role">Роль</label>--}}
 {{--                        <select class="js-role-select w-75" name="role" data-tags="true" data-placeholder="Select an option"--}}

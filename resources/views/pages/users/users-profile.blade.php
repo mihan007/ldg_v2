@@ -20,7 +20,7 @@
                                     <i class="fa fa-user" aria-hidden="true"></i>
                                 </span>
                             </div>
-                            <input class="form-control" type="text" id="profile-users-name" placeholder="Имя" required>
+                            <input class="form-control profile-input" type="text" id="profile-users-name" placeholder="Имя" required>
                         </div>
                         <div class="invalid-feedback login-password-invalid-feedback">Сообщение об ошибке</div>
                     </div>
@@ -32,7 +32,7 @@
                                     <i class="fa fa-envelope"></i>
                                 </span>
                             </div>
-                            <input class="form-control" type="email" id="profile-email" placeholder="Email" required>
+                            <input class="form-control profile-input" type="email" id="profile-email" placeholder="Email" required>
                         </div>
                         <div class="invalid-feedback login-email-invalid-feedback">Пожалуйста, введите правильный адрес email</div>
                     </div>

@@ -8,6 +8,11 @@
             <div class="modal-body">
                 <form class="balance-actions" method="post" action="#" novalidate>
                     <div class="form-group">
+                        <label class="workspace-form-label" for="project-name">Название ниши</label>
+                        <input class="form-control" type="text" id="project-name" placeholder="Балконы" required>
+                        <div class="invalid-feedback project-name-invalid-feedback">Сообщение об ошибке</div>
+                    </div>
+                    <div class="form-group">
                         <label class="workspace-form-label" for="project-settings-moderation-period">
                             Максимальный период модерации
                             <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
