@@ -61,11 +61,11 @@
                 <div>Данные сохранены</div>
             </div>
         </div>
-                @include('includes.reset-modal', [
+                @include('includes.modal.reset-modal', [
                     'messageHeader' => 'Удаление ниши',
                     'messageBody' => 'Вы действительно хотите удалить нишу?'
                 ])
                 @include('includes.modal.project-modal')
-                @include('includes.project-settings-modal')
+                @include('includes.modal.project-settings-modal')
             </main>
 @stop

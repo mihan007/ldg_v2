@@ -494,6 +494,6 @@
                 </div>
             </div>
         </div>
-        @include('includes.balance-modal')
+        @include('includes.modal.balance-modal')
     </main>
 @stop

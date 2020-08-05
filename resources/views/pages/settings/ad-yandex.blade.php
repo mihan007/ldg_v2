@@ -403,7 +403,7 @@
                 </div>
             </div>
         </div>
-        @include('includes.reset-modal', [
+        @include('includes.modal.reset-modal', [
             'messageHeader' => 'Удаление подключения',
             'messageBody' => 'Вы действительно хотите удалить подключение?'
         ])

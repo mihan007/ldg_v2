@@ -177,7 +177,7 @@
                 </div>
             </div>
         </div>
-        @include('includes.balance-modal')
-        @include('includes.bill-modal')
+        @include('includes.modal.balance-modal')
+        @include('includes.modal.bill-modal')
     </main>
 @stop

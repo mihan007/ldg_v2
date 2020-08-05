@@ -412,8 +412,8 @@
                 <div>Данные сохранены</div>
             </div>
         </div>
-        @include('includes.workspace-save-modal')
-        @include('includes.reset-modal', [
+        @include('includes.modal.workspace-save-modal')
+        @include('includes.modal.reset-modal', [
             'messageHeader' => 'Удаление доступа и рассылок',
             'messageBody' => 'Вы действительно хотите удалить доступ к проекту?'
         ])

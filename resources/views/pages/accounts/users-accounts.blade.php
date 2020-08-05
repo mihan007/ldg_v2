@@ -78,10 +78,10 @@
                         </div>
                     </div>
                 </div>
-                @include('includes.reset-modal', [
+                @include('includes.modal.reset-modal', [
                     'messageHeader' => 'Удаление пользователя',
                     'messageBody' => 'Вы действительно хотите удалить пользователя?'
                 ])
-                @include('includes.invite-modal')
+                @include('includes.modal.invite-modal')
             </main>
 @stop

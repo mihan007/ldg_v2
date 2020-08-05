@@ -90,8 +90,6 @@
             </div>
         </div>
         @include('includes.payment-wizard')
-        @include('includes.modal.payment-reset-modal', [
-
-                ])
+        @include('includes.modal.payment-reset-modal')
     </main>
 @stop
