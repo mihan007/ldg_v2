@@ -16,15 +16,6 @@
             </div>
         </div>
         <div class="row">
-{{--                    <div class="col-md-12 subcategory-settings-wrapper">--}}
-{{--                        <h2 class="sr-only">Способы платежей</h2>--}}
-{{--                        <div>--}}
-{{--                            <a class="directory-button active" href="{{ route('accounts.get-payments') }}">--}}
-{{--                               Яндекс.Деньги</a>--}}
-{{--                            <a class="directory-button active"--}}
-{{--                               href="{{ route('accounts.project') }}">Расчетный счет</a>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
             <div class="col-md-12 mx-auto">
                 <h2 class="sr-only">Таблица способов платежей"</h2>
                 <div class="payment-table-wrapper mb-5 mt-3">
