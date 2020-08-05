@@ -1,4 +1,4 @@
-<div class="modal fade js-workspace-reset-modal" tabindex="-1">
+<div class="modal fade js-reset-modal" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

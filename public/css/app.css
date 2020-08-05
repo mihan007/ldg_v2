@@ -14466,8 +14466,15 @@ input[type=radio].visually-hidden {
   font-size: 1.5rem;
 }
 
-.wizard-button {
+.wizard-list-item,
+.wizard-list-item .btn {
   font-size: 14px;
+}
+
+.wizard-list-main-item {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 0.75rem;
 }
 
 @media (min-width: 1000px) {
@@ -14516,10 +14523,19 @@ input[type=radio].visually-hidden {
 .copy-button,
 .wizard-form-input,
 .show-hide-password-button,
-.create-button,
 .instruction-button,
-.settings-button {
+.settings-button,
+.wizard-button,
+.modal-button {
   font-size: 14px;
+}
+
+.accounts-buttons-col {
+  width: 8%;
+}
+
+td.accounts-buttons-col {
+  padding-top: 3px;
 }
 
 .index-buttons-wrapper {
@@ -15149,17 +15165,6 @@ input[type=radio].visually-hidden {
   }
 }
 
-.connect-list-item,
-.connect-list-item .btn {
-  font-size: 14px;
-}
-
-.connect-list-main-item {
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 0.75rem;
-}
-
 /*!
  * jQuery SmartWizard v5
  * jQuery Wizard Plugin
@@ -15560,7 +15565,7 @@ td.ad-buttons-col {
 }
 
 .accounts-date-col {
-  width: 14%;
+  width: 22%;
 }
 
 .project-name-col {
@@ -15596,6 +15601,26 @@ td.ad-buttons-col {
 
 .payments-activity-col {
   width: 20%;
+}
+
+.payment-modal-action-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-modal-action-button {
+  margin-bottom: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  .payment-modal-action-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .payment-modal-action-button {
+    width: 30%;
+  }
 }
 
 .wizard-section-title {

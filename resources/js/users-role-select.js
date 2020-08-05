@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.js-timezone-select').select2({
+    $('.js-role-select').select2({
         });
 });
 

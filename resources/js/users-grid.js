@@ -1,7 +1,7 @@
 $(document).ready(function () {
     window.table = $('.users-grid').DataTable({
         fixedHeader: {
-            headerOffset: 150
+            headerOffset: 173
         },
         paging: false,
         searching: false,

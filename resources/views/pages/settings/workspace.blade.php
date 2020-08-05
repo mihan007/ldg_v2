@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <main class="page-wrapper show-toast position-relative">
+    <main class="page-wrapper position-relative">
         <h1 class="sr-only">Страница настроек "Рабочая область"</h1>
         <div class="row">
             <h2 class="sr-only">Блок навигации по страницам настроек и управления настройками страницы
@@ -296,7 +296,7 @@
                             </td>
                             <td class="text-center">
                                 <a class="btn workspace-reset-button function-button" aria-label="Удалить доступ"
-                                   href=".js-workspace-reset-modal" role="button" data-toggle="modal">
+                                   href=".js-reset-modal" role="button" data-toggle="modal">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                 </a>
                             </td>
@@ -377,7 +377,7 @@
                             </td>
                             <td class="workspace-buttons-col text-center">
                                 <a class="btn workspace-reset-button function-button" aria-label="Удалить доступ"
-                                   href=".js-workspace-reset-modal" role="button" data-toggle="modal">
+                                   href=".js-reset-modal" role="button" data-toggle="modal">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                 </a>
                             </td>
@@ -413,7 +413,7 @@
             </div>
         </div>
         @include('includes.workspace-save-modal')
-        @include('includes.workspace-reset-modal', [
+        @include('includes.reset-modal', [
             'messageHeader' => 'Удаление доступа и рассылок',
             'messageBody' => 'Вы действительно хотите удалить доступ к проекту?'
         ])

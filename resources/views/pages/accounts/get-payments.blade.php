@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <main class="page-wrapper show-toast position-relative">
+    <main class="page-wrapper position-relative">
         <h1 class="sr-only">Настройки аккаунтов.Пользователи.</h1>
         <div class="row sticky-top bg-white">
             <div class="col-md-12 offset-block"></div>
@@ -9,8 +9,7 @@
                 @include('includes.account-settings-links', ['step'=>'payments'])
                 <div>
                     <a class="btn btn-primary wizard-button" href=".js-payment-wizard" role="button"
-                       data-toggle="modal">
-                        Добавить настройки
+                       data-toggle="modal">Подключить платежи
                         <i class="fa fa-plus" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -21,7 +20,7 @@
 {{--                        <h2 class="sr-only">Способы платежей</h2>--}}
 {{--                        <div>--}}
 {{--                            <a class="directory-button active" href="{{ route('accounts.get-payments') }}">--}}
-{{--                               Онлайн-платеж</a>--}}
+{{--                               Яндекс.Деньги</a>--}}
 {{--                            <a class="directory-button active"--}}
 {{--                               href="{{ route('accounts.project') }}">Расчетный счет</a>--}}
 {{--                        </div>--}}
@@ -36,46 +35,54 @@
                                 data-toggle="tooltip" data-placement="top"
                                 data-delay='{"show":"1000", "hide":"1000"}' title="Включает / выключает способ
                                 платежа">Активность</th>
-                            <th class="payment-col rounded-table-right" scope="col">
-                                Способ платежа</th>
+                            <th class="payment-type-col" scope="col">Способ платежа</th>
+                            <th class="accounts-buttons-col rounded-table-right"></th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td class="activity-col accounts-activity-col text-center">
+                            <td class="activity-col payments-activity-col text-center">
                                 <div class="custom-control custom-switch">
-                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                    <input class="custom-control-input custom-control-input-success" id="payment-active-switch1"
                                            type="checkbox" checked>
-                                    <label class="custom-control-label" for="active-switch"
+                                    <label class="custom-control-label" for="payment-active-switch1"
                                            aria-label="Доступ пользователя к рабочей области или аккаунту
                                            включен/выключен"></label>
                                 </div>
                             </td>
-                            <td class="accounts-name-col text-center">Онлайн-платеж</td>
+                            <td class="payment-type-col text-center">Яндекс.Деньги</td>
+                            <td class="accounts-buttons-col text-center">
+                                <a class="btn payment-correct-button function-button"
+                                   href=".js-payment-wizard" data-toggle="modal" role="button" aria-label="Редактировать данные">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </a>
+                                <a class="btn payment-reset-button function-button" aria-label="Удалить доступ"
+                                   href=".js-payment-reset-modal" role="button" data-toggle="modal">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
                         </tr>
                         <tr>
-                            <td class="activity-col accounts-activity-col text-center">
+                            <td class="activity-col payments-activity-col text-center">
                                 <div class="custom-control custom-switch">
-                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
+                                    <input class="custom-control-input custom-control-input-success" id="payment-active-switch2"
                                            type="checkbox" checked>
-                                    <label class="custom-control-label" for="active-switch"
+                                    <label class="custom-control-label" for="payment-active-switch2"
                                            aria-label="Доступ пользователя к рабочей области или аккаунту
                                            включен/выключен"></label>
                                 </div>
                             </td>
-                            <td class="accounts-name-col text-center">Расчетный счет</td>
-                        </tr>
-                        <tr>
-                            <td class="activity-col accounts-activity-col text-center">
-                                <div class="custom-control custom-switch">
-                                    <input class="custom-control-input custom-control-input-success" id="active-switch"
-                                           type="checkbox" checked>
-                                    <label class="custom-control-label" for="active-switch"
-                                           aria-label="Доступ пользователя к рабочей области или аккаунту
-                                           включен/выключен"></label>
-                                </div>
+                            <td class="payment-type-col text-center">Расчетный счет</td>
+                            <td class="accounts-buttons-col text-center">
+                                <a class="btn payment-correct-button function-button"
+                                   href=".js-payment-wizard" data-toggle="modal" role="button" aria-label="Редактировать данные">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </a>
+                                <a class="btn payment-reset-button function-button" aria-label="Удалить доступ"
+                                   href=".js-payment-reset-modal" role="button" data-toggle="modal">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </a>
                             </td>
-                            <td class="accounts-name-col text-center">Тинькофф Банк</td>
                         </tr>
                         </tbody>
                     </table>
@@ -83,5 +90,8 @@
             </div>
         </div>
         @include('includes.payment-wizard')
+        @include('includes.modal.payment-reset-modal', [
+
+                ])
     </main>
 @stop

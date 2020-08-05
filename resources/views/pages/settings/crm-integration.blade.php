@@ -71,13 +71,13 @@
                             </td>
                             <td class="request-col text-center">22.04.2020 22:40</td>
                             <td class="source-buttons-col text-center">
-                                <a class="btn source-correct-button source-button function-button"
+                                <a class="btn crm-integration-correct-button function-button"
                                    href=".js-settings-wizard" data-toggle="modal" role="button" aria-label="Редактировать
                                    данные">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </a>
-                                <a class="btn function-button" aria-label="Удалить доступ"
-                                   href=".js-workspace-reset-modal" role="button" data-toggle="modal">
+                                <a class="btn crm-integration-reset-button function-button" aria-label="Удалить доступ"
+                                   href=".js-reset-modal" role="button" data-toggle="modal">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                 </a>
                             </td>
@@ -112,12 +112,12 @@
                             </td>
                             <td class="text-center">22.04.2020 22:40</td>
                             <td class="text-center">
-                                <a class="btn source-correct-button source-button function-button" data-toggle="modal"
+                                <a class="btn crm-integration-correct-button function-button" data-toggle="modal"
                                    href=".js-settings-wizard" role="button" aria-label="Редактировать данные">
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </a>
-                                <a class="btn function-button" aria-label="Удалить доступ"
-                                   href=".js-workspace-reset-modal" role="button" data-toggle="modal">
+                                <a class="btn crm-integration-reset-button function-button" aria-label="Удалить доступ"
+                                   href=".js-reset-modal" role="button" data-toggle="modal">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                 </a>
                             </td>
@@ -127,7 +127,7 @@
                 </div>
             </div>
         </div>
-        @include('includes.workspace-reset-modal', [
+        @include('includes.reset-modal', [
             'messageHeader' => 'Удаление подключения',
             'messageBody' => 'Вы действительно хотите удалить подключение?'
         ])

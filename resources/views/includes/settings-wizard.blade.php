@@ -17,42 +17,42 @@
                     <div class="tab-content">
                         <div id="step-1" class="tab-pane" role="tabpanel">
                             <h3 class="mb-3 wizard-step-title">Выберите подключение</h3>
-                            <ul class="list-unstyled connect-list">
-                                <li class="connect-list-main-item">Получение заявок
+                            <ul class="list-unstyled wizard-list">
+                                <li class="wizard-list-main-item">Получение заявок
                                     <ul>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Roistat телефония</button>
                                         </li>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Zadarma телефония</button>
                                         </li>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Marquiz</button>
                                         </li>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Webhooks от других сервисов</button>
                                         </li>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">GET запрос с сайта</button>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="connect-list-main-item">Реклама и расходы
+                                <li class="wizard-list-main-item">Реклама и расходы
                                     <ul>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Яндекс.Директ</button>
                                         </li>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Google Ads</button>
                                         </li>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Roistat</button>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="connect-list-main-item">Отправка заявок в CRM
+                                <li class="wizard-list-main-item">Отправка заявок в CRM
                                     <ul>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Битрикс 24</button>
                                         </li>
                                     </ul>

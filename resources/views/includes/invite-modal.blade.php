@@ -18,9 +18,19 @@
                         <div class="invalid-feedback invite-email-invalid-feedback">Сообщение об ошибке</div>
                     </div>
                     <div class="form-group">
-                        <label class="sr-only" for="invite-role">Роль</label>
-                        <input class="form-control" type="text" id="invite-role" placeholder="Роль" required>
-                        <div class="invalid-feedback invite-role-invalid-feedback">Сообщение об ошибке</div>
+                            <select class="custom-select select-item w-100">
+                                <option selected>Все менеджеры</option>
+                                <option value="1">Администратор</option>
+                                <option value="2">Менеджер</option>
+                            </select>
+{{--                        <label class="sr-only" for="invite-role">Роль</label>--}}
+{{--                        <select class="js-role-select w-75" name="role" data-tags="true" data-placeholder="Select an option"--}}
+{{--                                data-allow-clear="true">--}}
+{{--                            <option class="timezone-option" selected>Выберите роль</option>--}}
+
+{{--                        </select>--}}
+{{--                        <input class="form-control" type="text" id="invite-role" placeholder="Роль" required>--}}
+{{--                        <div class="invalid-feedback invite-role-invalid-feedback">Сообщение об ошибке</div>--}}
                     </div>
                     <div class="form-group modal-action-buttons">
                         <button class="btn btn-primary modal-action-button" type="submit">Пригласить</button>

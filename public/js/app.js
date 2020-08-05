@@ -74673,6 +74673,8 @@ __webpack_require__(/*! ./ad-detailed-grid */ "./resources/js/ad-detailed-grid.j
 
 __webpack_require__(/*! ./timezone-select */ "./resources/js/timezone-select.js");
 
+__webpack_require__(/*! ./users-role-select */ "./resources/js/users-role-select.js");
+
 __webpack_require__(/*! ./show-hide-password */ "./resources/js/show-hide-password.js");
 
 __webpack_require__(/*! ./project-grid */ "./resources/js/project-grid.js");
@@ -75258,8 +75260,7 @@ $(document).ready(function () {
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  $('.js-timezone-select').select2({// width: 'resolve'
-  });
+  $('.js-timezone-select').select2({});
 });
 
 /***/ }),
@@ -75319,7 +75320,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   window.table = $('.users-grid').DataTable({
     fixedHeader: {
-      headerOffset: 150
+      headerOffset: 173
     },
     paging: false,
     searching: false,
@@ -75327,6 +75328,19 @@ $(document).ready(function () {
     autoWidth: false,
     ordering: false
   });
+});
+
+/***/ }),
+
+/***/ "./resources/js/users-role-select.js":
+/*!*******************************************!*\
+  !*** ./resources/js/users-role-select.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $('.js-role-select').select2({});
 });
 
 /***/ }),
