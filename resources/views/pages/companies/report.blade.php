@@ -29,7 +29,10 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary text-uppercase mb-1 add-button" href="#" >Создать</a>
+                <a class="btn btn-primary mb-1 add-button" href="{{ route('settings.workspace') }}">
+                    Создать
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </a>
             </div>
             <div class="col-md-12 filter-wrapper mb-1">
                 <div class="index-select-wrapper d-flex mr-auto">

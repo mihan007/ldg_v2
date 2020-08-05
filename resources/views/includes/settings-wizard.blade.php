@@ -17,42 +17,42 @@
                     <div class="tab-content">
                         <div id="step-1" class="tab-pane" role="tabpanel">
                             <h3 class="mb-3 wizard-step-title">Выберите подключение</h3>
-                            <ul class="list-unstyled connect-list">
-                                <li class="connect-list-main-item">Получение заявок
+                            <ul class="list-unstyled wizard-list">
+                                <li class="wizard-list-main-item">Получение заявок
                                     <ul>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Roistat телефония</button>
                                         </li>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Zadarma телефония</button>
                                         </li>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Marquiz</button>
                                         </li>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Webhooks от других сервисов</button>
                                         </li>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">GET запрос с сайта</button>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="connect-list-main-item">Реклама и расходы
+                                <li class="wizard-list-main-item">Реклама и расходы
                                     <ul>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Яндекс.Директ</button>
                                         </li>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Google Ads</button>
                                         </li>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Roistat</button>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="connect-list-main-item">Отправка заявок в CRM
+                                <li class="wizard-list-main-item">Отправка заявок в CRM
                                     <ul>
-                                        <li class="connect-list-item">
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Битрикс 24</button>
                                         </li>
                                     </ul>
@@ -62,7 +62,7 @@
                         <div id="step-2" class="tab-pane" role="tabpanel">
                             <h3 class="mb-1 wizard-step-title">Определите параметры</h3>
                             <div class="text-right">
-                                <a class="btn btn-outline-primary mb-3" href="{{ route('settings.elama-instruction') }}"
+                                <a class="btn btn-outline-primary instruction-button mb-3" href="{{ route('settings.elama-instruction') }}"
                                    target="_blank">
                                     <i class="fa fa-info-circle" aria-hidden="true"></i>
                                     Инструкция
@@ -86,8 +86,8 @@
                                         <div class="input-group-append">
                                             <button class="btn btn-secondary copy-button" type="button">Проверить</button>
                                         </div>
-                                        <div class="invalid-feedback webhooks-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
+                                    <div class="invalid-feedback webhooks-invalid-feedback">Сообщение об ошибке</div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="table-wrapper col-lg-10 offset-lg-2">
@@ -112,7 +112,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-lg-2 col-form-label" for="webhooks-phone">Телефон</label>
                                     <div class="col-sm-5 col-lg-7">
-                                        <input class="form-control" type="text" id="webhooks-phone" value="89229997988">
+                                        <input class="form-control wizard-form-input" type="text" id="webhooks-phone" value="89229997988">
                                         <div class="invalid-feedback webhooks-phone-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                     <div class="col-sm-4 col-lg-3 modal-select-wrapper">
@@ -425,7 +425,8 @@
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text"
                                                id="roistat-ad-number" value="">
-                                        <div class="invalid-feedback roistat-ad-number-invalid-feedback">Сообщение об ошибке</div>
+                                    </div>
+                                    <div class="invalid-feedback roistat-ad-number-invalid-feedback">Сообщение об ошибке
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -434,7 +435,8 @@
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text"
                                                id="roistat-ad-api-key" value="">
-                                        <div class="invalid-feedback roistat-ad-api-key-invalid-feedback">Сообщение об ошибке</div>
+                                        <div class="invalid-feedback roistat-ad-api-key-invalid-feedback">Сообщение об
+                                            ошибке</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -449,8 +451,9 @@
                                                     <i class="fa fa-rub" aria-hidden="true"></i>
                                                 </span>
                                             </div>
-                                            <div class="invalid-feedback roistat-ad-balance-invalid-feedback">Сообщение об ошибке</div>
                                         </div>
+                                        <div class="invalid-feedback roistat-ad-balance-invalid-feedback">Сообщение об
+                                            ошибке</div>
                                     </div>
                                 </div>
                             </form>

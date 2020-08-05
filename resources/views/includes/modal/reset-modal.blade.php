@@ -1,4 +1,4 @@
-<div class="modal fade js-workspace-reset-modal" tabindex="-1">
+<div class="modal fade js-reset-modal" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -7,7 +7,7 @@
             </div>
             <div class="modal-body">
                 <p>{{ $messageBody }}</p>
-                <div class="workspace-reset-modal-buttons modal-action-buttons">
+                <div class="modal-action-buttons">
                     <button class="btn btn-danger modal-action-button" type="submit">Удалить</button>
                     <button class="btn cancel-button modal-action-button" data-dismiss="modal"
                             type="button">Отменить

@@ -5,7 +5,7 @@
         </a>
         <div class="navbar-nav">
             <div class="nav-item dropdown magic-menu">
-                <a class="nav-link dropdown-toggle" href="#" onclick="return false;">Название аккаунта</a>
+                <a class="nav-link dropdown-toggle accounts-dropdown" href="#" onclick="return false;">Название аккаунта</a>
                 <div class="dropdown-menu accounts-list">
                     <a class="dropdown-item disabled" href="#">Пункт 1</a>
                     <a class="dropdown-item" href="{{ route('users.login') }}">Страница входа</a>
@@ -33,7 +33,7 @@
         </div>
         <div class="navbar-nav login-wrapper ml-auto">
             <div class="nav-item dropdown magic-menu">
-                <a class="nav-link dropdown-toggle" href="#" onclick="return false;">
+                <a class="nav-link dropdown-toggle user-dropdown" href="#" onclick="return false;">
                     <i class="fa fa-user-o mr-2" aria-hidden="true"></i>
                     <span>Виктор Емельянов</span>
                 </a>
@@ -42,7 +42,7 @@
                     <a class="dropdown-item" href="{{ route('users.users-profile') }}"><i class="fa fa-id-card-o"
                                                                                           aria-hidden="true"></i>Мой
                         профиль</a>
-                    <a class="cog-link dropdown-item" href="#">
+                    <a class="cog-link dropdown-item" href="{{ route('accounts.users-accounts') }}">
                         <i class="fa fa-cog" aria-hidden="true"></i>Настройки аккаунта
                     </a>
                     <button class="dropdown-item"><i class="fa fa-sign-out" aria-hidden="true"></i>Выйти</button>
@@ -79,4 +79,4 @@
         </ul>
     </nav>
 </header>
-@include('includes.sidenav-save-modal')
+@include('includes.modal.sidenav-save-modal')
