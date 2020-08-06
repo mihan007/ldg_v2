@@ -115,7 +115,8 @@
                         <div class="invalid-feedback data-hide-invalid-feedback">Сообщение об ошибке</div>
                     </div>
                     <div class="form-group modal-action-buttons">
-                        <button class="btn btn-primary modal-action-button show-save-toast workspace-save-button" type="submit">Сохранить</button>
+                        <button class="btn btn-primary modal-action-button show-save-toast workspace-save-button"
+                                type="submit">Сохранить</button>
                         <button class="btn cancel-button modal-action-button" data-dismiss="modal"
                                 type="button">Отменить
                         </button>

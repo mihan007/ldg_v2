@@ -49,50 +49,35 @@
                     <table class="table crm-table common-table order-grid table-striped" data-offset="140">
                         <thead>
                             <tr class="table-grey text-center ">
-                                <th class="rounded-table-left id-col">ID
-                                </th>
+                                <th class="rounded-table-left id-col">ID</th>
                                 <th class="time-col" scope="col">
                                     <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Дата и время в часовом поясе клиента">Время
-                                    </a>
+                                       title="Дата и время в часовом поясе клиента">Время</a>
                                 </th>
                                 <th class="title-col" scope="col">
                                     <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Название страницы или формы заявки">Заголовок
-                                    </a>
+                                       title="Название страницы или формы заявки">Заголовок</a>
                                 </th>
                                 <th class="info-col" scope="col">Информация
                                 </th>
-                                <th class="phone-col" scope="col">
-                                        Телефон
-                                </th>
-                                <th class="status-col" scope="col">
-                                        Статус
-                                </th>
+                                <th class="phone-col" scope="col">Телефон</th>
+                                <th class="status-col" scope="col">Статус</th>
                                 <th class="client-col" scope="col">
                                     <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                        title="Комментарий клиента">
-                                        Комментарий
-                                    </a>
+                                        Комментарий</a>
                                 </th>
-                                <th class="moderation-col" scope="col">
-                                        Модерация
-                                </th>
+                                <th class="moderation-col" scope="col">Модерация</th>
                                 <th class="comment-col" scope="col">
                                     <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Комментарий модератора">
-                                        Комментарий
-                                    </a>
+                                       title="Комментарий модератора">Комментарий</a>
                                 </th>
-                                <th class="buttons-col rounded-table-right">
-                                </th>
+                                <th class="buttons-col rounded-table-right"></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="order-line">
-                                <td class="id-col" scope="row">
-                                    1
-                                </td>
+                                <td class="id-col" scope="row">1</td>
                                 <td class="time-col text-left">11.01.2018 13:00:00</td>
                                 <td class="title-col">1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore</td>
@@ -102,21 +87,17 @@
                                 <td class="status-col target-status">Целевой</td>
                                 <td class="client-col">3Lorem ipsum dolor</td>
                                 <td class="moderation-col text-center">
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Согласны">
-                                        <span class="moderation-circle circle-green"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="На модерации" aria-label="На модерации">
-                                        <span class="moderation-circle"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Не согласны">
-                                        <span class="moderation-circle"></span>
-                                    </a>
+                                    <button class="btn moderation-circle circle-green" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="Согласны"></button>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="На модерации" aria-label="На модерации"></button>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="Не согласны"></button>
                                 </td>
                                 <td class="comment-col">4Lorem ipsum dolor
-                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button"
+                                            href=".js-manager-comment-modal" data-toggle="modal"
+                                            aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -130,9 +111,7 @@
                                 </td>
                             </tr>
                             <tr class="reset-order">
-                                <td class="id-col" scope="row">
-                                    111111
-                                </td>
+                                <td class="id-col" scope="row">11</td>
                                 <td class="text-left time-col">12.02.2020 13:00:00</td>
                                 <td  class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore</td>
@@ -142,21 +121,16 @@
                                 <td class="status-col non-target-status">Не дозвонились</td>
                                 <td class="client-col">Lorem ipsum dolor</td>
                                 <td class="moderation-col text-center">
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Согласны" aria-label="Согласны">
-                                        <span class="moderation-circle"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="На модерации" aria-label="На модерации">
-                                        <span class="moderation-circle circle-yellow"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Не согласны">
-                                        <span class="moderation-circle"></span>
-                                    </a>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="Согласны" aria-label="Согласны"></button>
+                                    <button class="btn moderation-circle circle-yellow" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="На модерации" aria-label="На модерации"></button>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="Не согласны"></button>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button"
+                                            href=".js-manager-comment-modal" data-toggle="modal" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -170,9 +144,7 @@
                                 </td>
                             </tr>
                             <tr class="order-line">
-                                <td class="id-col" scope="row">
-                                    111111
-                                </td>
+                                <td class="id-col" scope="row">111</td>
                                 <td class="text-left time-col">12.02.2020 13:00:00</td>
                                 <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore</td>
@@ -182,21 +154,19 @@
                                 <td class="status-col non-target-status">Не дозвонились</td>
                                 <td class="client-col">Lorem ipsum dolor</td>
                                 <td class="moderation-col text-center">
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Согласны" aria-label="Согласны">
-                                        <span class="moderation-circle"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="На модерации" aria-label="На модерации">
-                                        <span class="moderation-circle"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Не согласны">
-                                        <span class="moderation-circle circle-red"></span>
-                                    </a>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="Согласны" aria-label="Согласны"></button>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="На модерации" aria-label="На модерации"></button>
+                                    <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
+                                         data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
+                                        <button class="btn moderation-circle circle-red" type="button"
+                                                href=".js-manager-comment-modal" data-toggle="modal"
+                                                aria-label="Статус: клиент не согласен"></button>
+                                    </div>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" href=".js-manager-comment-modal" data-toggle="modal"  aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -211,7 +181,7 @@
                             </tr>
                             <tr class="reset-order">
                                 <td class="id-col" scope="row">
-                                    111111
+                                    1111
                                 </td>
                                 <td class="text-left time-col">12.02.2020 13:00:00</td>
                                 <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -222,21 +192,15 @@
                                 <td class="status-col target-status">Целевой</td>
                                 <td class="client-col">Lorem ipsum dolor</td>
                                 <td class="moderation-col text-center">
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Согласны" aria-label="Согласны">
-                                        <span class="moderation-circle circle-green"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="На модерации" aria-label="На модерации">
-                                        <span class="moderation-circle"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Не согласны">
-                                        <span class="moderation-circle"></span>
-                                    </a>
+                                    <button class="btn moderation-circle circle-green" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="Согласны" aria-label="Согласны"></button>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="На модерации" aria-label="На модерации"></button>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="Не согласны"></button>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" href=".js-manager-comment-modal" data-toggle="modal" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -251,7 +215,7 @@
                             </tr>
                             <tr class="order-line">
                                 <td class="id-col" scope="row">
-                                    111111
+                                    11111
                                 </td>
                                 <td class="text-left time-col">12.02.2020 13:00:00</td>
                                 <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -262,18 +226,20 @@
                                 <td class="status-col non-target-status">Не дозвонились</td>
                                 <td class="client-col">Lorem ipsum dolor</td>
                                 <td class="moderation-col text-center">
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Согласны" aria-label="Согласны">
-                                        <span class="moderation-circle"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="На модерации" aria-label="На модерации">
-                                        <span class="moderation-circle circle-yellow"></span>
-                                    </a>
-                                    <span class="moderation-circle"></span>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top"
+                                            data-delay='{"show":"1000", "hide":"1000"}' title="Согласны"
+                                            aria-label="Согласны">
+                                    </button>
+                                    <button class="btn moderation-circle circle-yellow" data-toggle="tooltip" data-placement="top"
+                                            data-delay='{"show":"1000", "hide":"1000"}' title="На модерации"
+                                            aria-label="На модерации">
+                                    </button>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top"
+                                            data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
+                                    </button>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" href=".js-manager-comment-modal" data-toggle="modal" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -299,21 +265,15 @@
                                 <td class="status-col non-target-status">Не дозвонились</td>
                                 <td class="client-col">Lorem ipsum dolor</td>
                                 <td class="moderation-col text-center">
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Согласны" aria-label="Согласны">
-                                        <span class="moderation-circle"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="На модерации" aria-label="На модерации">
-                                        <span class="moderation-circle"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Не согласны">
-                                        <span class="moderation-circle"></span>
-                                    </a>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="Согласны" aria-label="Согласны"></button>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="На модерации" aria-label="На модерации"></button>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="Не согласны"></button>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" href=".js-manager-comment-modal" data-toggle="modal"  aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -328,7 +288,7 @@
                             </tr>
                             <tr class="order-line">
                                 <td class="id-col" scope="row">
-                                    111111
+                                    1111111
                                 </td>
                                 <td class="text-left time-col">12.02.2020 13:00:00</td>
                                 <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -339,21 +299,18 @@
                                 <td class="status-col non-target-status">Не дозвонились</td>
                                 <td class="client-col">Lorem ipsum dolor</td>
                                 <td class="moderation-col text-center">
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                        title="Согласны" aria-label="Согласны">
-                                        <span class="moderation-circle"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                    </button>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                        title="На модерации" aria-label="На модерации">
-                                        <span class="moderation-circle"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                    </button>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                        title="Не согласны">
-                                        <span class="moderation-circle"></span>
-                                    </a>
+                                    </button>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" href=".js-manager-comment-modal" data-toggle="modal" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -368,7 +325,7 @@
                             </tr>
                             <tr class="reset-order">
                                 <td class="id-col" scope="row">
-                                    111111
+                                    11111111
                                 </td>
                                 <td class="text-left time-col">12.02.2020 13:00:00</td>
                                 <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -379,21 +336,18 @@
                                 <td class="status-col non-target-status"></td>
                                 <td class="client-col">Lorem ipsum dolor</td>
                                 <td class="moderation-col text-center">
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                        title="Согласны" aria-label="Согласны">
-                                        <span class="moderation-circle"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                    </button>
+                                    <button class="btn moderation-circle circle-green" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                        title="На модерации" aria-label="На модерации">
-                                        <span class="moderation-circle"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                    </button>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                        title="Не согласны">
-                                        <span class="moderation-circle"></span>
-                                    </a>
+                                    </button>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" href=".js-manager-comment-modal" data-toggle="modal" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -408,7 +362,7 @@
                             </tr>
                             <tr class="order-line">
                                 <td class="id-col" scope="row">
-                                    111111
+                                    1111112
                                 </td>
                                 <td class="text-left time-col">12.02.2020 13:00:00</td>
                                 <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -419,24 +373,15 @@
                                 <td class="status-col non-target-status">Не дозвонились</td>
                                 <td class="client-col">Lorem ipsum dolor</td>
                                 <td class="moderation-col text-center">
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Согласны" aria-label="Согласны">
-                                        <span class="moderation-circle"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="На модерации" aria-label="На модерации">
-                                        <span class="moderation-circle"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Не согласны">
-                                        <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                           title="Не согласны">
-                                            <span class="moderation-circle"></span>
-                                        </a>
-                                    </a>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="Согласны" aria-label="Согласны"></button>
+                                    <button class="btn moderation-circle circle-yellow" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="На модерации" aria-label="На модерации"></button>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="Не согласны"></button>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" href=".js-manager-comment-modal" data-toggle="modal" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -451,7 +396,7 @@
                             </tr>
                             <tr class="reset-order">
                                 <td class="id-col" scope="row">
-                                    111111
+                                    1111113
                                 </td>
                                 <td class="text-left time-col">12.02.2020 13:00:00</td>
                                 <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -462,21 +407,19 @@
                                 <td class="status-col non-target-status">Не дозвонились</td>
                                 <td class="client-col">Lorem ipsum dolor</td>
                                 <td class="moderation-col text-center">
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Согласны" aria-label="Согласны">
-                                        <span class="moderation-circle"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="На модерации" aria-label="На модерации">
-                                        <span class="moderation-circle"></span>
-                                    </a>
-                                    <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                                       title="Не согласны">
-                                        <span class="moderation-circle"></span>
-                                    </a>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="Согласны" aria-label="Согласны"></button>
+                                    <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                       title="На модерации" aria-label="На модерации"></button>
+                                    <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
+                                         data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
+                                        <button class="btn moderation-circle circle-red" type="button"
+                                            href=".js-manager-comment-modal" data-toggle="modal"
+                                            aria-label="Статус: клиент не согласен"></button>
+                                    </div>
                                 </td>
                                 <td class="comment-col">Lorem ipsum dolor
-                                    <button class="btn correct-button function-button" type="button" aria-label="Редактировать комментарий">
+                                    <button class="btn correct-button function-button" type="button" href=".js-manager-comment-modal" data-toggle="modal" aria-label="Редактировать комментарий">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </button>
                                 </td>
@@ -495,5 +438,6 @@
             </div>
         </div>
         @include('includes.modal.balance-modal')
+        @include('includes.modal.manager-comment-modal')
     </main>
 @stop
