@@ -142,3 +142,15 @@
 .crm-table .reset-order td {
     background-color: $crm-table-deleted-order-bg;
 }
+
+.orders-count-wrapper {
+    width: 18%;
+    margin-right: 1.2rem;
+}
+
+.inappropriate-orders-count,
+.targeted-orders-count {
+    padding: 8px;
+    width: 40%;
+    cursor: pointer;
+}

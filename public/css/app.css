@@ -14808,6 +14808,18 @@ td.accounts-buttons-col {
   background-color: rgba(229, 37, 21, 0.1);
 }
 
+.orders-count-wrapper {
+  width: 18%;
+  margin-right: 1.2rem;
+}
+
+.inappropriate-orders-count,
+.targeted-orders-count {
+  padding: 8px;
+  width: 40%;
+  cursor: pointer;
+}
+
 .finance-filter {
   display: flex;
   margin-right: auto;
