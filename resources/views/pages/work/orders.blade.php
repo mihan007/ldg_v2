@@ -16,16 +16,16 @@
                     @include('includes.date-range')
                 </div>
                 <div class="orders-count-wrapper text-center">
-                    <ul class="list-inline mb-0">
+                    <ul class="list-inline mb-0 d-flex justify-content-between">
                         <li class="list-inline-item bg-success text-white rounded targeted-orders-count"
                             data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                             title="Целевые заявки">
-                            <p class="font-weight-bold mb-0 d-block">241</p>
+                            <p class="font-weight-bold mb-0 d-block">2415</p>
                         </li>
                         <li class="list-inline-item bg-danger text-white rounded inappropriate-orders-count"
                             data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                             title="Нецелевые заявки">
-                            <p class="font-weight-bold mb-0 d-block">84</p>
+                            <p class="font-weight-bold mb-0 d-block">8477</p>
                         </li>
                     </ul>
                 </div>
