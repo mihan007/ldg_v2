@@ -74680,7 +74680,23 @@ __webpack_require__(/*! ./show-hide-password */ "./resources/js/show-hide-passwo
 __webpack_require__(/*! ./project-grid */ "./resources/js/project-grid.js");
 
 __webpack_require__(/*! ./users-grid */ "./resources/js/users-grid.js");
+
+__webpack_require__(/*! ./autofocus */ "./resources/js/autofocus.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./resources/js/autofocus.js":
+/*!***********************************!*\
+  !*** ./resources/js/autofocus.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).on('shown.bs.modal', function (e) {
+  $('textarea:visible:enabled:first', e.target).focus();
+  $('input:visible:enabled:first', e.target).focus();
+});
 
 /***/ }),
 

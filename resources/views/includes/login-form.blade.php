@@ -4,7 +4,7 @@
         <div class="input-group-prepend">
             <span class="input-group-text"><i class="fa fa-envelope"></i></span>
         </div>
-        <input class="form-control" type="email" id="input-email" placeholder="Email" required>
+        <input class="form-control" type="email" id="input-email" placeholder="Email" required autofocus>
     </div>
     <div class="invalid-feedback login-email-invalid-feedback">Пожалуйста, введите правильный адрес email</div>
 </div>

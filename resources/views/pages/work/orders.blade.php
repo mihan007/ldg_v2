@@ -151,7 +151,7 @@
                                 <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore</td>
                                 <td class="phone-col text-center">87777777777</td>
-                                <td class="status-col non-target-status">Не дозвонились</td>
+                                <td class="status-col non-target-status"></td>
                                 <td class="client-col">Lorem ipsum dolor</td>
                                 <td class="moderation-col text-center">
                                     <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
@@ -339,7 +339,7 @@
                                     <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                        title="Согласны" aria-label="Согласны">
                                     </button>
-                                    <button class="btn moderation-circle circle-green" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                                    <button class="btn moderation-circle circle-yellow" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                                        title="На модерации" aria-label="На модерации">
                                     </button>
                                     <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'

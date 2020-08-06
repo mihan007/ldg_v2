@@ -9,7 +9,7 @@
                 <form class="manager-comment-form" method="post" action="#" novalidate>
                     <div class="form-group">
                         <textarea class="form-control manager-comment-input" rows="6"
-                                  id="manager-comment-orders-agreement" placeholder="Опишите причину здесь"></textarea>
+                                  id="manager-comment-orders-agreement" placeholder="Опишите причину здесь" autofocus></textarea>
                         <div class="invalid-feedback manager-comment-invalid-feedback">Сообщение об ошибке</div>
                     </div>
                     <div class="form-group modal-action-buttons">
