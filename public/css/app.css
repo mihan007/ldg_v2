@@ -14819,6 +14819,7 @@ td.accounts-buttons-col {
   padding: 8px;
   width: 44%;
   cursor: pointer;
+  opacity: 0.9;
 }
 
 .finance-filter {
