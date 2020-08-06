@@ -60,7 +60,7 @@
             <h2 class="sr-only">Таблица данных по заявкам</h2>
             <div class="col-md-12 mx-auto">
                 <div class="table-wrapper mb-5">
-                    <table class="table crm-table common-table order-grid table-striped" data-offset="140">
+                    <table class="table crm-table common-table order-grid" data-offset="140">
                         <thead>
                             <tr class="table-grey text-center ">
                                 <th class="rounded-table-left id-col">ID</th>
