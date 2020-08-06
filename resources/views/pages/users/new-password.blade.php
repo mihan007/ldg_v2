@@ -14,7 +14,8 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-lock"></i></span>
                         </div>
-                        <input class="form-control" type="password" id="input-newpassword" placeholder="Пароль" required>
+                        <input class="form-control" type="password" id="input-newpassword" placeholder="Пароль" autofocus
+                               required>
                     </div>
                 </div>
                 <div class="form-group">

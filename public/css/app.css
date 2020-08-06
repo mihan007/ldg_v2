@@ -14725,6 +14725,7 @@ td.accounts-buttons-col {
   border: 1px solid gray;
   display: inline-block;
   cursor: pointer;
+  padding: 0;
 }
 
 .moderation-circle:last-child {

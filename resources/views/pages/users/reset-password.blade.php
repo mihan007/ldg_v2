@@ -14,7 +14,8 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fa fa-envelope"></i></span>
                             </div>
-                            <input class="form-control" type="email" id="input-reset-email" placeholder="Email" required>
+                            <input class="form-control" type="email" id="input-reset-email" placeholder="Email" autofocus
+                                   required>
                             <div class="invalid-feedback">Пожалуйста, введите верный адрес электронной почты</div>
                         </div>
                     </div>

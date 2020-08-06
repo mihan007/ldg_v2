@@ -28,3 +28,4 @@ require('./users-role-select');
 require('./show-hide-password');
 require('./project-grid');
 require('./users-grid');
+require('./autofocus');

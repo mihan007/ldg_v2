@@ -14,9 +14,8 @@
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fa fa-rub" aria-hidden="true"></i></span>
                             </div>
-                            <div class="invalid-feedback balance-invalid-feedback">Сообщение об ошибке
-                            </div>
                         </div>
+                        <div class="invalid-feedback balance-invalid-feedback">Сообщение об ошибке</div>
                     </div>
                     <div class="form-group balance-action-buttons">
                         <button class="btn btn-primary balance-action-button" type="submit">Пополнить</button>
