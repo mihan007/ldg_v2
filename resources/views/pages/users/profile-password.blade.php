@@ -20,7 +20,8 @@
                                     <i class="fa fa-unlock-alt" aria-hidden="true"></i>
                                 </span>
                             </div>
-                            <input class="form-control profile-input" type="password" id="profile-password" required>
+                            <input class="form-control profile-input" type="password" id="profile-password" autofocus
+                                   required>
                         </div>
                         <div class="invalid-feedback profile-password-invalid-feedback">Сообщение об ошибке</div>
                     </div>
