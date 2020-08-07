@@ -15,6 +15,20 @@
                     </select>
                     @include('includes.date-range')
                 </div>
+                <div class="orders-count-wrapper text-center">
+                    <ul class="list-inline mb-0 d-flex justify-content-between">
+                        <li class="list-inline-item bg-success text-white rounded targeted-orders-count"
+                            data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                            title="Целевые заявки">
+                            <p class="font-weight-bold mb-0 d-block">2415</p>
+                        </li>
+                        <li class="list-inline-item bg-danger text-white rounded inappropriate-orders-count"
+                            data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                            title="Нецелевые заявки">
+                            <p class="font-weight-bold mb-0 d-block">8477</p>
+                        </li>
+                    </ul>
+                </div>
                 <div class="order-buttons">
                     <button type="button" class="btn page-button show-toast">Описание заявки</button>
                     <div class="toast crm-button js-order-description-toast">
@@ -46,7 +60,7 @@
             <h2 class="sr-only">Таблица данных по заявкам</h2>
             <div class="col-md-12 mx-auto">
                 <div class="table-wrapper mb-5">
-                    <table class="table crm-table common-table order-grid table-striped" data-offset="140">
+                    <table class="table crm-table common-table order-grid" data-offset="140">
                         <thead>
                             <tr class="table-grey text-center ">
                                 <th class="rounded-table-left id-col">ID</th>

@@ -14409,7 +14409,7 @@ input[type=radio].visually-hidden {
 
 @media (max-width: 454px) {
   .balance-action-button {
-    width: 60%;
+    width: 100%;
     margin: 0 auto 0.75rem auto;
   }
 
@@ -14806,6 +14806,20 @@ td.accounts-buttons-col {
 
 .crm-table .reset-order td {
   background-color: rgba(229, 37, 21, 0.1);
+}
+
+.orders-count-wrapper {
+  width: 13%;
+  margin-right: auto;
+  margin-left: -1.2rem;
+}
+
+.inappropriate-orders-count,
+.targeted-orders-count {
+  padding: 8px;
+  width: 44%;
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 .finance-filter {

@@ -19,7 +19,7 @@
                     </div>
                     <div class="form-group balance-action-buttons">
                         <button class="btn btn-primary balance-action-button" type="submit">Пополнить</button>
-                        <button class="btn btn-primary balance-action-button" type="submit">Списать</button>
+                        <button class="btn btn-danger balance-action-button" type="submit">Списать</button>
                         <button class="btn cancel-button balance-action-button" data-dismiss="modal"
                                 type="button">Отменить
                         </button>
