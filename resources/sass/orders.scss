@@ -86,7 +86,7 @@
 }
 
 .info-col {
-    width: 25%;
+    width: 23%;
 }
 
 .title-col,
@@ -95,9 +95,16 @@
     width: 10%;
 }
 
-.phone-col,
+.phone-col {
+    width: 9%;
+}
+
 .status-col {
     width: 8%;
+}
+
+.status-client-col {
+    width: 13%;
 }
 
 .order-line .non-target-status,
@@ -112,6 +119,10 @@
 
 .moderation-col {
     width: 9%;
+}
+
+.moderation-client-col {
+    width: 7%;
 }
 
 .buttons-col {
@@ -144,15 +155,35 @@
 }
 
 .orders-count-wrapper {
-    width: 13%;
+    width: 11%;
     margin-right: auto;
     margin-left: -1.2rem;
 }
 
+.orders-count-wrapper-2 {
+    width: 11%;
+    margin-right: 1.2rem;
+    margin-left: auto;
+}
+
+.search-form-crm-client {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .inappropriate-orders-count,
 .targeted-orders-count {
-    padding: 8px;
+    padding: 7px;
     width: 44%;
     cursor: pointer;
     opacity: 0.9;
 }
+
+//Временно для демонстрации. Стили для обозначения целевых заявок зеленым, другие - красным
+ .target-status .custom-select {
+    color: $crm-table-target-status !important;
+}
+
+ .non-target-status .custom-select {
+     color: $non-target-status !important;
+ }

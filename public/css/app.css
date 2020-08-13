@@ -14270,7 +14270,6 @@ input[type=radio].visually-hidden {
 
 .common-table {
   table-layout: fixed;
-  font-weight: 400;
 }
 
 .common-table thead th {
@@ -14345,11 +14344,18 @@ input[type=radio].visually-hidden {
   color: #5a6268;
 }
 
-.select-item {
+.custom-select {
   font-size: 14px;
+}
+
+.select-item {
   width: 47%;
   cursor: pointer;
   color: #212529;
+}
+
+.crm-select-item {
+  width: 43%;
 }
 
 .select-item:first-child,
@@ -14751,7 +14757,7 @@ td.accounts-buttons-col {
 }
 
 .info-col {
-  width: 25%;
+  width: 23%;
 }
 
 .title-col,
@@ -14760,9 +14766,16 @@ td.accounts-buttons-col {
   width: 10%;
 }
 
-.phone-col,
+.phone-col {
+  width: 9%;
+}
+
 .status-col {
   width: 8%;
+}
+
+.status-client-col {
+  width: 13%;
 }
 
 .order-line .non-target-status,
@@ -14777,6 +14790,10 @@ td.accounts-buttons-col {
 
 .moderation-col {
   width: 9%;
+}
+
+.moderation-client-col {
+  width: 7%;
 }
 
 .buttons-col {
@@ -14809,17 +14826,36 @@ td.accounts-buttons-col {
 }
 
 .orders-count-wrapper {
-  width: 13%;
+  width: 11%;
   margin-right: auto;
   margin-left: -1.2rem;
 }
 
+.orders-count-wrapper-2 {
+  width: 11%;
+  margin-right: 1.2rem;
+  margin-left: auto;
+}
+
+.search-form-crm-client {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .inappropriate-orders-count,
 .targeted-orders-count {
-  padding: 8px;
+  padding: 7px;
   width: 44%;
   cursor: pointer;
   opacity: 0.9;
+}
+
+.target-status .custom-select {
+  color: green !important;
+}
+
+.non-target-status .custom-select {
+  color: #e52515 !important;
 }
 
 .finance-filter {

@@ -229,7 +229,6 @@ input[type="radio"].visually-hidden {
 
 .common-table {
     table-layout: fixed;
-    font-weight: 400;
 }
 
 .common-table thead th {
@@ -303,11 +302,18 @@ input[type="radio"].visually-hidden {
     color: $directory-button-click;
 }
 
-.select-item {
+.custom-select {
     font-size: 14px;
+}
+
+.select-item {
     width: 47%;
     cursor: pointer;
     color: $main-text-color;
+}
+
+.crm-select-item {
+    width: 43%;
 }
 
 .select-item:first-child,
