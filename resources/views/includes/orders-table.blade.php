@@ -25,7 +25,8 @@
                             Комментарий</a>
                     </th>
                     <th class="moderation-col @if ($role=='client') moderation-client-col @endif" scope="col">Модерация</th>
-                    <th class="comment-col" scope="col">
+                    <th class="comment-col @if ($role=='client')
+                        rounded-table-right @endif" scope="col">
                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
                            title="Комментарий модератора">Комментарий</a>
                     </th>
