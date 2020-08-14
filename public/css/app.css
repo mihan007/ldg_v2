@@ -14907,6 +14907,11 @@ td.accounts-buttons-col {
   display: none;
 }
 
+.finance-client-filter {
+  display: flex;
+  margin-right: auto;
+}
+
 .dashboard-wrapper {
   display: flex;
   justify-content: space-between;
