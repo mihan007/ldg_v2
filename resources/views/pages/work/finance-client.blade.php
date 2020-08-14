@@ -4,7 +4,7 @@
         <div class="row sticky-top bg-white">
             <h1 class="sr-only">Страница финансов</h1>
             <h2 class="sr-only">Фильтр данных для таблицы по финансам</h2>
-            @include('includes.orders-directory-links', ['step'=>'finance', 'role'=>'staff'])
+            @include('includes.orders-directory-links', ['step'=>'finance', 'role'=>'client'])
             <div class="col-md-12 filter-wrapper">
                 <div class="finance-client-filter">
                     <select class="custom-select select-item">
@@ -34,7 +34,7 @@
             </div>
         </div>
         @include('includes.finance-table')
-        @include('includes.modal.balance-modal')
+        @include('includes.modal.balance-client-modal')
         @include('includes.modal.bill-modal')
     </main>
 @stop
