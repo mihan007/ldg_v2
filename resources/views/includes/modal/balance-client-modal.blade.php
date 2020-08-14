@@ -2,7 +2,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title custom-modal-title">Операции с балансом</h3>
+                <h3 class="modal-title custom-modal-title">Пополнение баланса</h3>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
@@ -14,7 +14,7 @@
                         </div>
                         <div class="custom-control custom-radio mt-2">
                             <input type="radio" class="custom-control-input" name="balance-radio" id="yandex-modal">
-                            <label class="custom-control-label" for="yandex-modal">Яндекс.Деньги</label>
+                            <label class="custom-control-label" for="yandex-modal">Яндекс Деньги</label>
                         </div>
                         <div class="custom-control custom-radio mt-2">
                             <input type="radio" class="custom-control-input" name="balance-radio" id="bill" >
@@ -48,12 +48,10 @@
                         </div>
                         <div class="invalid-feedback client-sum-invalid-feedback">Сообщение об ошибке</div>
                     </div>
-                    <div class="form-group balance-action-buttons">
-                        <button class="btn btn-primary balance-action-button" type="submit">Пополнить</button>
-                        <button class="btn btn-danger balance-action-button" type="submit">Списать</button>
-                        <button class="btn cancel-button balance-action-button" data-dismiss="modal"
-                                type="button">Отменить
-                        </button>
+                    <div class="form-group modal-action-buttons">
+                        <button class="btn btn-primary modal-action-button" type="submit">Пополнить</button>
+                        <button class="btn cancel-button modal-action-button" data-dismiss="modal"
+                                type="button">Отменить</button>
                     </div>
                 </form>
             </div>

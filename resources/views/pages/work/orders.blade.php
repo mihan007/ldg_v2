@@ -59,7 +59,8 @@
         @include('includes.orders-table', ['role'=>'staff'])
         @include('includes.modal.balance-modal')
         @include('includes.modal.comment-modal', [
-            'messageHeader' => 'Укажите, почему Вы не согласны с решением клиента'
+            'messageHeader' => 'Укажите, почему Вы не согласны с решением клиента',
+            'messagePlaceholder' => 'Опишите причину здесь'
         ])
     </main>
 @stop

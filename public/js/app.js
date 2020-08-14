@@ -74682,6 +74682,8 @@ __webpack_require__(/*! ./project-grid */ "./resources/js/project-grid.js");
 __webpack_require__(/*! ./users-grid */ "./resources/js/users-grid.js");
 
 __webpack_require__(/*! ./autofocus */ "./resources/js/autofocus.js");
+
+__webpack_require__(/*! ./openmodal */ "./resources/js/openmodal.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -75039,6 +75041,25 @@ $(window).resize(function () {
 
 /***/ }),
 
+/***/ "./resources/js/openmodal.js":
+/*!***********************************!*\
+  !*** ./resources/js/openmodal.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $(".openmodal").on("change", function () {
+    var modalClass = $(this).find(':selected').data('modal');
+
+    if (modalClass) {
+      $('.' + modalClass).modal('show');
+    }
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/js/order-description-toast.js":
 /*!*************************************************!*\
   !*** ./resources/js/order-description-toast.js ***!
@@ -75084,6 +75105,46 @@ $(document).ready(function () {
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
+  var staffColumns = [{
+    'orderSequence': ['desc', 'asc']
+  }, {
+    "orderable": false
+  }, {
+    'orderSequence': ['desc', 'asc']
+  }, {
+    "orderable": false
+  }, {
+    'orderSequence': ['desc', 'asc']
+  }, {
+    "orderable": false
+  }, {
+    "orderable": false
+  }, {
+    "orderable": false
+  }, {
+    "orderable": false
+  }, {
+    "orderable": false
+  }];
+  var clientColumns = [{
+    'orderSequence': ['desc', 'asc']
+  }, {
+    "orderable": false
+  }, {
+    'orderSequence': ['desc', 'asc']
+  }, {
+    "orderable": false
+  }, {
+    'orderSequence': ['desc', 'asc']
+  }, {
+    "orderable": false
+  }, {
+    "orderable": false
+  }, {
+    "orderable": false
+  }, {
+    "orderable": false
+  }];
   window.table = $('.order-grid').DataTable({
     fixedHeader: {
       headerOffset: 144
@@ -75093,27 +75154,7 @@ $(document).ready(function () {
     info: false,
     autoWidth: false,
     order: [[0, 'desc']],
-    columns: [{
-      'orderSequence': ['desc', 'asc']
-    }, {
-      "orderable": false
-    }, {
-      'orderSequence': ['desc', 'asc']
-    }, {
-      "orderable": false
-    }, {
-      'orderSequence': ['desc', 'asc']
-    }, {
-      "orderable": false
-    }, {
-      "orderable": false
-    }, {
-      "orderable": false
-    }, {
-      "orderable": false
-    }, {
-      "orderable": false
-    }]
+    columns: $('.order-grid-staff:visible').length > 0 ? staffColumns : clientColumns
   });
 });
 

@@ -67,7 +67,9 @@
 {{--                    </div>--}}
 {{--                </form>--}}
                 <div class="order-buttons">
-                    <a class="btn page-button" href="#"><i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                    <a class="btn page-button" href="#" data-toggle="tooltip" data-placement="top"
+                       data-delay='{"show":"1000", "hide":"1000"}' title="Экспорт заявок в Excel">
+                        <i class="fa fa-file-excel-o" aria-hidden="true"></i>
                     </a>
 {{--                    <a href=".js-bill-modal" role="button" class="btn page-button bill-button" data-toggle="modal">--}}
 {{--                        Выставить счет--}}
@@ -100,8 +102,10 @@
         @include('includes.orders-table', ['role'=>'client'])
         @include('includes.modal.balance-client-modal')
         @include('includes.modal.comment-modal', [
-            'messageHeader' => 'Укажите, почему Вы не согласны с решением компании'
+            'messageHeader' => 'Ваш комментарий',
+            'messagePlaceholder' => 'Напишите Ваш комментарий'
         ])
         @include('includes.modal.bill-modal')
+        @include('includes.modal.status-modal')
     </main>
 @stop

@@ -50,8 +50,8 @@
                                 <tr>
                                     <td class="activity-col accounts-activity-col text-center">
                                         <div class="custom-control custom-switch">
-                                            <input class="custom-control-input custom-control-input-success" id="users-active-switch1"
-                                                   type="checkbox" checked>
+                                            <input class="custom-control-input custom-control-input-success"
+                                                   id="users-active-switch1" type="checkbox" checked>
                                             <label class="custom-control-label" for="users-active-switch1"
                                                    aria-label="Доступ пользователя к рабочей области или аккаунту
                                                    включен/выключен"></label>

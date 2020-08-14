@@ -2,14 +2,17 @@
     <h2 class="sr-only">Таблица данных по заявкам</h2>
     <div class="col-md-12 mx-auto">
         <div class="table-wrapper mb-5">
-            <table class="table crm-table common-table order-grid crm-table-staff crm-table-client @if ($role=='client')
+            <table class="table crm-table common-table order-grid crm-table-{{$role}} @if ($role=='client')
                 table-striped @endif" data-offset="144">
                 <thead>
                 <tr class="table-grey text-center ">
                     <th class="rounded-table-left id-col">ID</th>
                     <th class="time-col" scope="col">
-                        <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                           title="Дата и время в часовом поясе клиента">Время</a>
+                        @if ($role=='staff')
+                            <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                               title="Дата и время в часовом поясе клиента">Время</a>
+                        @endif
+                        @if ($role=='client') Время @endif
                     </th>
                     <th class="title-col" scope="col">
                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
@@ -20,11 +23,19 @@
                     <th class="phone-col" scope="col">Телефон</th>
                     <th class="status-col @if ($role=='client') status-client-col @endif" scope="col">Статус</th>
                     <th class="client-col" scope="col">
-                        <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
-                           title="Комментарий клиента">
+                        @if ($role=='staff')
+                            <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                               title="Комментарий клиента">Комментарий</a>
+                        @endif
+                        @if ($role=='client')
+                            <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
+                               title="Ваш комментарий">
                             Комментарий</a>
+                        @endif
                     </th>
-                    <th class="moderation-col @if ($role=='client') moderation-client-col @endif" scope="col">Модерация</th>
+                    <th class="moderation-col @if ($role=='client') moderation-client-col @endif" scope="col">
+                        Модерация
+                    </th>
                     <th class="comment-col @if ($role=='client')
                         rounded-table-right @endif" scope="col">
                         <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
@@ -52,21 +63,27 @@
                     @endif
                     @if ($role=='client')
                         <td class="status-client-col target-status">
-                            <select class="custom-select">
+                            <select class="custom-select openmodal">
                                 <option value="1" data-color="#008000" selected>Целевая заявка</option>
-                                <option value="2" data-color="#e52515">Не оставляли заявку</option>
-                                <option value="3" data-color="#e52515">Некорректный номер</option>
-                                <option value="4" data-color="#e52515">Предложение рекламы</option>
-                                <option value="5" data-color="#e52515">Не дозвонились</option>
-                                <option value="6" data-color="#e52515">Дубль заявки</option>
-                                <option value="7" data-color="#e52515">Вне зоны обслуживания</option>
-                                <option value="8" data-color="#e52515">Другое</option>
+                                <option value="2" data-modal="js-status-modal" data-color="#e52515">Не оставляли заявку
+                                </option>
+                                <option value="3" data-modal="js-status-modal" data-color="#e52515">Некорректный номер
+                                </option>
+                                <option value="4" data-modal="js-status-modal" data-color="#e52515">Предложение рекламы
+                                </option>
+                                <option value="5" data-modal="js-status-modal" data-color="#e52515">Не дозвонились
+                                </option>
+                                <option value="6" data-modal="js-status-modal" data-color="#e52515">Дубль заявки
+                                </option>
+                                <option value="7" data-modal="js-status-modal" data-color="#e52515">Вне зоны обслуживания
+                                </option>
+                                <option value="8" data-modal="js-status-modal" data-color="#e52515">Другое</option>
                             </select>
                         </td>
                     @endif
                     <td class="client-col">3Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -75,7 +92,8 @@
                     </td>
                     @if ($role=='staff')
                         <td class="moderation-col text-center">
-                            <button class="btn moderation-circle circle-green" data-toggle="tooltip" data-placement="top"
+                            <button class="btn moderation-circle circle-green" data-toggle="tooltip"
+                                    data-placement="top"
                                     data-delay='{"show":"1000", "hide":"1000"}' title="Согласны" aria-label="Согласны">
                             </button>
                             <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top"
@@ -92,12 +110,12 @@
                     @if ($role=='client')
                         <td class="moderation-client-col text-center">
                             <span class="moderation-circle circle-green" data-toggle="tooltip" data-placement="top"
-                                    data-delay='{"show":"1000", "hide":"1000"}' title="Согласны"></span>
+                                  data-delay='{"show":"1000", "hide":"1000"}' title="Согласны"></span>
                         </td>
                     @endif
                     <td class="comment-col">4Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -110,14 +128,15 @@
                                     value="Восстановление" aria-label="Восстановить данные">
                                 <i class="fa fa-undo" aria-hidden="true"></i>
                             </button>
-                            <button class="btn reset-button reset-button-show function-button" type="reset" value="Удаление"
+                            <button class="btn reset-button reset-button-show function-button" type="reset"
+                                    value="Удаление"
                                     aria-label="Удалить заявку">
                                 <i class="fa fa-trash" aria-hidden="true"></i>
                             </button>
                         </td>
                     @endif
                 </tr>
-                <tr  class="@if ($role=='staff') reset-order @endif" >
+                <tr class="@if ($role=='staff') reset-order @endif">
                     <td class="id-col" scope="row">11</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -132,21 +151,26 @@
                     @endif
                     @if ($role=='client')
                         <td class="status-client-col non-target-status">
-                            <select class="custom-select">
+                            <select class="custom-select openmodal">
                                 <option value="1" data-color="#008000">Целевая заявка</option>
-                                <option value="2" data-color="#e52515">Не оставляли заявку</option>
-                                <option value="3" data-color="#e52515">Некорректный номер</option>
-                                <option value="4" data-color="#e52515">Предложение рекламы</option>
-                                <option value="5" data-color="#e52515" selected>Не дозвонились</option>
-                                <option value="6" data-color="#e52515">Дубль заявки</option>
-                                <option value="7" data-color="#e52515">Вне зоны обслуживания</option>
-                                <option value="8" data-color="#e52515">Другое</option>
+                                <option value="2" data-modal="js-status-modal" data-color="#e52515">Не оставляли заявку
+                                </option>
+                                <option value="3" data-modal="js-status-modal" data-color="#e52515">Некорректный номер
+                                </option>
+                                <option value="4" data-modal="js-status-modal" data-color="#e52515">Предложение рекламы
+                                </option>
+                                <option value="5" data-modal="js-status-modal" data-color="#e52515" selected>Не
+                                    дозвонились</option>
+                                <option value="6" data-modal="js-status-modal" data-color="#e52515">Дубль заявки</option>
+                                <option value="7" data-modal="js-status-modal" data-color="#e52515">Вне зоны обслуживания
+                                </option>
+                                <option value="8" data-modal="js-status-modal" data-color="#e52515">Другое</option>
                             </select>
                         </td>
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -158,7 +182,8 @@
                             <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top"
                                     data-delay='{"show":"1000", "hide":"1000"}' title="Согласны" aria-label="Согласны">
                             </button>
-                            <button class="btn moderation-circle circle-yellow" data-toggle="tooltip" data-placement="top"
+                            <button class="btn moderation-circle circle-yellow" data-toggle="tooltip"
+                                    data-placement="top"
                                     data-delay='{"show":"1000", "hide":"1000"}' title="На модерации"
                                     aria-label="На модерации"></button>
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
@@ -172,13 +197,13 @@
                     @if ($role=='client')
                         <td class="moderation-client-col text-center">
                             <span class="moderation-circle circle-yellow" data-toggle="tooltip" data-placement="top"
-                                    data-delay='{"show":"1000", "hide":"1000"}' title="На модерации"
-                                    aria-label="На модерации"></span>
+                                  data-delay='{"show":"1000", "hide":"1000"}' title="На модерации"
+                                  aria-label="На модерации"></span>
                         </td>
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -191,7 +216,8 @@
                                     value="Восстановление" aria-label="Восстановить данные">
                                 <i class="fa fa-undo" aria-hidden="true"></i>
                             </button>
-                            <button class="btn reset-button reset-button-hide function-button" type="reset" value="Удаление"
+                            <button class="btn reset-button reset-button-hide function-button" type="reset"
+                                    value="Удаление"
                                     aria-label="Удалить заявку">
                                 <i class="fa fa-trash" aria-hidden="true"></i>
                             </button>
@@ -213,21 +239,27 @@
                     @endif
                     @if ($role=='client')
                         <td class="status-client-col non-target-status">
-                            <select class="custom-select">
+                            <select class="custom-select openmodal">
                                 <option value="1" data-color="#008000">Целевая заявка</option>
-                                <option value="2" data-color="#e52515">Не оставляли заявку</option>
-                                <option value="3" data-color="#e52515">Некорректный номер</option>
-                                <option value="4" data-color="#e52515">Предложение рекламы</option>
-                                <option value="5" data-color="#e52515">Не дозвонились</option>
-                                <option value="6" data-color="#e52515">Дубль заявки</option>
-                                <option value="7" data-color="#e52515">Вне зоны обслуживания</option>
-                                <option value="8" data-color="#e52515" selected>Другое</option>
+                                <option value="2" data-modal="js-status-modal" data-color="#e52515">Не оставляли заявку
+                                </option>
+                                <option value="3" data-modal="js-status-modal" data-color="#e52515">Некорректный номер
+                                </option>
+                                <option value="4" data-modal="js-status-modal" data-color="#e52515">Предложение рекламы
+                                </option>
+                                <option value="5" data-modal="js-status-modal" data-color="#e52515">Не дозвонились
+                                </option>
+                                <option value="6" data-modal="js-status-modal" data-color="#e52515">Дубль заявки</option>
+                                <option value="7" data-modal="js-status-modal" data-color="#e52515">Вне зоны обслуживания
+                                </option>
+                                <option value="8" data-modal="js-status-modal" data-color="#e52515" selected>Другое
+                                </option>
                             </select>
                         </td>
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -253,12 +285,12 @@
                     @if ($role=='client')
                         <td class="moderation-client-col text-center">
                             <span class="btn moderation-circle circle-red" data-toggle="tooltip" data-placement="top"
-                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны"></span>
+                                  data-delay='{"show":"1000", "hide":"1000"}' title="Отклонено"></span>
                         </td>
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -271,7 +303,8 @@
                                     value="Восстановление" aria-label="Восстановить данные">
                                 <i class="fa fa-undo" aria-hidden="true"></i>
                             </button>
-                            <button class="btn reset-button reset-button-show function-button" type="reset" value="Удаление"
+                            <button class="btn reset-button reset-button-show function-button" type="reset"
+                                    value="Удаление"
                                     aria-label="Удалить заявку">
                                 <i class="fa fa-trash" aria-hidden="true"></i>
                             </button>
@@ -295,21 +328,27 @@
                     @endif
                     @if ($role=='client')
                         <td class="status-client-col target-status">
-                            <select class="custom-select">
+                            <select class="custom-select openmodal">
                                 <option value="1" data-color="#008000" selected>Целевая заявка</option>
-                                <option value="2" data-color="#e52515">Не оставляли заявку</option>
-                                <option value="3" data-color="#e52515">Некорректный номер</option>
-                                <option value="4" data-color="#e52515">Предложение рекламы</option>
-                                <option value="5" data-color="#e52515">Не дозвонились</option>
-                                <option value="6" data-color="#e52515">Дубль заявки</option>
-                                <option value="7" data-color="#e52515">Вне зоны обслуживания</option>
-                                <option value="8" data-color="#e52515">Другое</option>
+                                <option value="2" data-modal="js-status-modal" data-color="#e52515">Не оставляли заявку
+                                </option>
+                                <option value="3" data-modal="js-status-modal" data-color="#e52515">Некорректный номер
+                                </option>
+                                <option value="4" data-modal="js-status-modal" data-color="#e52515">Предложение рекламы
+                                </option>
+                                <option value="5" data-modal="js-status-modal" data-color="#e52515">Не дозвонились
+                                </option>
+                                <option value="6" data-modal="js-status-modal" data-color="#e52515">Дубль заявки
+                                </option>
+                                <option value="7" data-modal="js-status-modal" data-color="#e52515">Вне зоны обслуживания
+                                </option>
+                                <option value="8" data-modal="js-status-modal" data-color="#e52515">Другое</option>
                             </select>
                         </td>
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -318,7 +357,8 @@
                     </td>
                     @if ($role=='staff')
                         <td class="moderation-col text-center">
-                            <button class="btn moderation-circle circle-green" data-toggle="tooltip" data-placement="top"
+                            <button class="btn moderation-circle circle-green" data-toggle="tooltip"
+                                    data-placement="top"
                                     data-delay='{"show":"1000", "hide":"1000"}' title="Согласны"
                                     aria-label="Согласны"></button>
                             <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top"
@@ -335,13 +375,13 @@
                     @if ($role=='client')
                         <td class="moderation-client-col text-center">
                             <span class="btn moderation-circle circle-green" data-toggle="tooltip" data-placement="top"
-                                    data-delay='{"show":"1000", "hide":"1000"}' title="Согласны" aria-label="Согласны">
+                                  data-delay='{"show":"1000", "hide":"1000"}' title="Согласны" aria-label="Согласны">
                             </span>
                         </td>
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -354,7 +394,8 @@
                                     value="Восстановление" aria-label="Восстановить данные">
                                 <i class="fa fa-undo" aria-hidden="true"></i>
                             </button>
-                            <button class="btn reset-button reset-button-hide function-button" type="reset" value="Удаление"
+                            <button class="btn reset-button reset-button-hide function-button" type="reset"
+                                    value="Удаление"
                                     aria-label="Удалить заявку">
                                 <i class="fa fa-trash" aria-hidden="true"></i>
                             </button>
@@ -378,21 +419,27 @@
                     @endif
                     @if ($role=='client')
                         <td class="status-client-col non-target-status">
-                            <select class="custom-select">
-                                <option value="1" data-color="#008000">Целевая заявка</option>
-                                <option value="2" data-color="#e52515">Не оставляли заявку</option>
-                                <option value="3" data-color="#e52515">Некорректный номер</option>
-                                <option value="4" data-color="#e52515">Предложение рекламы</option>
-                                <option value="5" data-color="#e52515" selected>Не дозвонились</option>
-                                <option value="6" data-color="#e52515">Дубль заявки</option>
-                                <option value="7" data-color="#e52515">Вне зоны обслуживания</option>
-                                <option value="8" data-color="#e52515">Другое</option>
+                            <select class="custom-select openmodal">
+                                <option value="1" data-modal="js-status-modal" data-color="#008000">Целевая заявка
+                                </option>
+                                <option value="2" data-modal="js-status-modal" data-color="#e52515">Не оставляли заявку
+                                </option>
+                                <option value="3" data-modal="js-status-modal" data-color="#e52515">Некорректный номер
+                                </option>
+                                <option value="4" data-modal="js-status-modal" data-color="#e52515">Предложение рекламы
+                                </option>
+                                <option value="5" data-modal="js-status-modal" data-color="#e52515" selected>Не
+                                    дозвонились</option>
+                                <option value="6" data-modal="js-status-modal" data-color="#e52515">Дубль заявки</option>
+                                <option value="7" data-modal="js-status-modal" data-color="#e52515">Вне зоны
+                                    обслуживания</option>
+                                <option value="8" data-modal="js-status-modal" data-color="#e52515">Другое</option>
                             </select>
                         </td>
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -405,7 +452,8 @@
                                     data-delay='{"show":"1000", "hide":"1000"}' title="Согласны"
                                     aria-label="Согласны">
                             </button>
-                            <button class="btn moderation-circle circle-yellow" data-toggle="tooltip" data-placement="top"
+                            <button class="btn moderation-circle circle-yellow" data-toggle="tooltip"
+                                    data-placement="top"
                                     data-delay='{"show":"1000", "hide":"1000"}' title="На модерации"
                                     aria-label="На модерации">
                             </button>
@@ -420,14 +468,14 @@
                     @if ($role=='client')
                         <td class="moderation-client-col text-center">
                             <span class="btn moderation-circle circle-yellow" data-toggle="tooltip" data-placement="top"
-                                    data-delay='{"show":"1000", "hide":"1000"}' title="На модерации"
-                                    aria-label="На модерации">
+                                  data-delay='{"show":"1000", "hide":"1000"}' title="На модерации"
+                                  aria-label="На модерации">
                             </span>
                         </td>
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -440,7 +488,8 @@
                                     value="Восстановление" aria-label="Восстановить данные">
                                 <i class="fa fa-undo" aria-hidden="true"></i>
                             </button>
-                            <button class="btn reset-button reset-button-show function-button" type="reset" value="Удаление"
+                            <button class="btn reset-button reset-button-show function-button" type="reset"
+                                    value="Удаление"
                                     aria-label="Удалить заявку">
                                 <i class="fa fa-trash" aria-hidden="true"></i>
                             </button>
@@ -464,21 +513,27 @@
                     @endif
                     @if ($role=='client')
                         <td class="status-client-col non-target-status">
-                            <select class="custom-select">
+                            <select class="custom-select openmodal">
                                 <option value="1" data-color="#008000">Целевая заявка</option>
-                                <option value="2" data-color="#e52515" selected>Не оставляли заявку</option>
-                                <option value="3" data-color="#e52515">Некорректный номер</option>
-                                <option value="4" data-color="#e52515">Предложение рекламы</option>
-                                <option value="5" data-color="#e52515">Не дозвонились</option>
-                                <option value="6" data-color="#e52515">Дубль заявки</option>
-                                <option value="7" data-color="#e52515">Вне зоны обслуживания</option>
-                                <option value="8" data-color="#e52515">Другое</option>
+                                <option value="2" data-modal="js-status-modal" data-color="#e52515" selected>Не
+                                    оставляли заявку</option>
+                                <option value="3" data-modal="js-status-modal" data-color="#e52515">Некорректный
+                                    номер</option>
+                                <option value="4" data-modal="js-status-modal" data-color="#e52515">Предложение
+                                    рекламы</option>
+                                <option value="5" data-modal="js-status-modal" data-color="#e52515">Не дозвонились
+                                </option>
+                                <option value="6" data-modal="js-status-modal" data-color="#e52515">Дубль заявки
+                                </option>
+                                <option value="7" data-modal="js-status-modal" data-color="#e52515">Вне зоны
+                                    обслуживания</option>
+                                <option value="8" data-modal="js-status-modal" data-color="#e52515">Другое</option>
                             </select>
                         </td>
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -506,7 +561,7 @@
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -519,7 +574,8 @@
                                     value="Восстановление" aria-label="Восстановить данные">
                                 <i class="fa fa-undo" aria-hidden="true"></i>
                             </button>
-                            <button class="btn reset-button reset-button-hide function-button" type="reset" value="Удаление"
+                            <button class="btn reset-button reset-button-hide function-button" type="reset"
+                                    value="Удаление"
                                     aria-label="Удалить заявку">
                                 <i class="fa fa-trash" aria-hidden="true"></i>
                             </button>
@@ -543,21 +599,27 @@
                     @endif
                     @if ($role=='client')
                         <td class="status-client-col non-target-status">
-                            <select class="custom-select">
+                            <select class="custom-select openmodal">
                                 <option value="1" data-color="#008000">Целевая заявка</option>
-                                <option value="2" data-color="#e52515">Не оставляли заявку</option>
-                                <option value="3" data-color="#e52515">Некорректный номер</option>
-                                <option value="4" data-color="#e52515">Предложение рекламы</option>
-                                <option value="5" data-color="#e52515" selected>Не дозвонились</option>
-                                <option value="6" data-color="#e52515">Дубль заявки</option>
-                                <option value="7" data-color="#e52515">Вне зоны обслуживания</option>
-                                <option value="8" data-color="#e52515">Другое</option>
+                                <option value="2" data-modal="js-status-modal" data-color="#e52515">Не оставляли
+                                    заявку</option>
+                                <option value="3" data-modal="js-status-modal" data-color="#e52515">Некорректный
+                                    номер</option>
+                                <option value="4" data-modal="js-status-modal" data-color="#e52515">Предложение
+                                    рекламы</option>
+                                <option value="5" data-modal="js-status-modal" data-color="#e52515" selected>Не
+                                    дозвонились</option>
+                                <option value="6" data-modal="js-status-modal" data-color="#e52515">Дубль заявки
+                                </option>
+                                <option value="7" data-modal="js-status-modal" data-color="#e52515">Вне зоны
+                                    обслуживания</option>
+                                <option value="8" data-modal="js-status-modal" data-color="#e52515">Другое</option>
                             </select>
                         </td>
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -585,7 +647,7 @@
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -598,7 +660,8 @@
                                     value="Восстановление" aria-label="Восстановить данные">
                                 <i class="fa fa-undo" aria-hidden="true"></i>
                             </button>
-                            <button class="btn reset-button reset-button-show function-button" type="reset" value="Удаление"
+                            <button class="btn reset-button reset-button-show function-button" type="reset"
+                                    value="Удаление"
                                     aria-label="Удалить заявку">
                                 <i class="fa fa-trash" aria-hidden="true"></i>
                             </button>
@@ -622,21 +685,27 @@
                     @endif
                     @if ($role=='client')
                         <td class="status-client-col non-target-status">
-                            <select class="custom-select">
+                            <select class="custom-select openmodal">
                                 <option value="1" data-color="#008000">Целевая заявка</option>
-                                <option value="2" data-color="#e52515" selected>Не оставляли заявку</option>
-                                <option value="3" data-color="#e52515">Некорректный номер</option>
-                                <option value="4" data-color="#e52515">Предложение рекламы</option>
-                                <option value="5" data-color="#e52515">Не дозвонились</option>
-                                <option value="6" data-color="#e52515">Дубль заявки</option>
-                                <option value="7" data-color="#e52515">Вне зоны обслуживания</option>
-                                <option value="8" data-color="#e52515">Другое</option>
+                                <option value="2" data-modal="js-status-modal" data-color="#e52515" selected>Не
+                                    оставляли заявку</option>
+                                <option value="3" data-modal="js-status-modal" data-color="#e52515">Некорректный
+                                    номер</option>
+                                <option value="4" data-modal="js-status-modal" data-color="#e52515">Предложение
+                                    рекламы</option>
+                                <option value="5" data-modal="js-status-modal" data-color="#e52515">Не дозвонились
+                                </option>
+                                <option value="6" data-modal="js-status-modal" data-color="#e52515">Дубль заявки
+                                </option>
+                                <option value="7" data-modal="js-status-modal" data-color="#e52515">Вне зоны
+                                    обслуживания</option>
+                                <option value="8" data-modal="js-status-modal" data-color="#e52515">Другое</option>
                             </select>
                         </td>
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -648,7 +717,8 @@
                             <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top"
                                     data-delay='{"show":"1000", "hide":"1000"}' title="Согласны" aria-label="Согласны">
                             </button>
-                            <button class="btn moderation-circle circle-yellow" data-toggle="tooltip" data-placement="top"
+                            <button class="btn moderation-circle circle-yellow" data-toggle="tooltip"
+                                    data-placement="top"
                                     data-delay='{"show":"1000", "hide":"1000"}' title="На модерации"
                                     aria-label="На модерации"></button>
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
@@ -662,30 +732,31 @@
                     @if ($role=='client')
                         <td class="moderation-client-col text-center">
                             <span class="btn moderation-circle circle-yellow" data-toggle="tooltip" data-placement="top"
-                                    data-delay='{"show":"1000", "hide":"1000"}'
-                                    title="На модерации" aria-label="На модерации"></span>
+                                  data-delay='{"show":"1000", "hide":"1000"}'
+                                  title="На модерации" aria-label="На модерации"></span>
                         </td>
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                        <button class="btn correct-button function-button" type="button"
-                                href=".js-comment-modal" data-toggle="modal"
-                                aria-label="Редактировать комментарий">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                        </button>
+                            <button class="btn crm-correct-button function-button" type="button"
+                                    href=".js-comment-modal" data-toggle="modal"
+                                    aria-label="Редактировать комментарий">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </button>
                         @endif
                     </td>
                     @if ($role=='staff')
-                    <td class="buttons-col text-center">
-                        <button class="btn restore-button restore-button-show function-button" type="button"
-                                value="Восстановление" aria-label="Восстановить данные">
-                            <i class="fa fa-undo" aria-hidden="true"></i>
-                        </button>
-                        <button class="btn reset-button reset-button-hide function-button" type="reset" value="Удаление"
-                                aria-label="Удалить заявку">
-                            <i class="fa fa-trash" aria-hidden="true"></i>
-                        </button>
-                    </td>
+                        <td class="buttons-col text-center">
+                            <button class="btn restore-button restore-button-show function-button" type="button"
+                                    value="Восстановление" aria-label="Восстановить данные">
+                                <i class="fa fa-undo" aria-hidden="true"></i>
+                            </button>
+                            <button class="btn reset-button reset-button-hide function-button" type="reset"
+                                    value="Удаление"
+                                    aria-label="Удалить заявку">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </button>
+                        </td>
                     @endif
                 </tr>
                 <tr class="order-line">
@@ -705,21 +776,27 @@
                     @endif
                     @if ($role=='client')
                         <td class="status-client-col non-target-status">
-                            <select class="custom-select">
+                            <select class="custom-select openmodal">
                                 <option value="1" data-color="#008000">Целевая заявка</option>
-                                <option value="2" data-color="#e52515">Не оставляли заявку</option>
-                                <option value="3" data-color="#e52515">Некорректный номер</option>
-                                <option value="4" data-color="#e52515">Предложение рекламы</option>
-                                <option value="5" data-color="#e52515" selected>Не дозвонились</option>
-                                <option value="6" data-color="#e52515">Дубль заявки</option>
-                                <option value="7" data-color="#e52515">Вне зоны обслуживания</option>
-                                <option value="8" data-color="#e52515">Другое</option>
+                                <option value="2" data-modal="js-status-modal" data-color="#e52515">Не оставляли
+                                    заявку</option>
+                                <option value="3" data-modal="js-status-modal" data-color="#e52515">Некорректный
+                                    номер</option>
+                                <option value="4" data-modal="js-status-modal" data-color="#e52515">Предложение
+                                    рекламы</option>
+                                <option value="5" data-modal="js-status-modal" data-color="#e52515" selected>Не
+                                    дозвонились</option>
+                                <option value="6" data-modal="js-status-modal" data-color="#e52515">Дубль заявки
+                                </option>
+                                <option value="7" data-modal="js-status-modal" data-color="#e52515">Вне зоны
+                                    обслуживания</option>
+                                <option value="8" data-modal="js-status-modal" data-color="#e52515">Другое</option>
                             </select>
                         </td>
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -731,7 +808,8 @@
                             <button class="btn moderation-circle" data-toggle="tooltip" data-placement="top"
                                     data-delay='{"show":"1000", "hide":"1000"}' title="Согласны"
                                     aria-label="Согласны"></button>
-                            <button class="btn moderation-circle circle-yellow" data-toggle="tooltip" data-placement="top"
+                            <button class="btn moderation-circle circle-yellow" data-toggle="tooltip"
+                                    data-placement="top"
                                     data-delay='{"show":"1000", "hide":"1000"}' title="На модерации"
                                     aria-label="На модерации"></button>
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
@@ -751,7 +829,7 @@
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -764,7 +842,8 @@
                                     value="Восстановление" aria-label="Восстановить данные">
                                 <i class="fa fa-undo" aria-hidden="true"></i>
                             </button>
-                            <button class="btn reset-button reset-button-show function-button" type="reset" value="Удаление"
+                            <button class="btn reset-button reset-button-show function-button" type="reset"
+                                    value="Удаление"
                                     aria-label="Удалить заявку">
                                 <i class="fa fa-trash" aria-hidden="true"></i>
                             </button>
@@ -788,21 +867,27 @@
                     @endif
                     @if ($role=='client')
                         <td class="status-client-col non-target-status">
-                            <select class="custom-select">
+                            <select class="custom-select openmodal">
                                 <option value="1" data-color="#008000">Целевая заявка</option>
-                                <option value="2" data-color="#e52515">Не оставляли заявку</option>
-                                <option value="3" data-color="#e52515">Некорректный номер</option>
-                                <option value="4" data-color="#e52515">Предложение рекламы</option>
-                                <option value="5" data-color="#e52515" selected>Не дозвонились</option>
-                                <option value="6" data-color="#e52515">Дубль заявки</option>
-                                <option value="7" data-color="#e52515">Вне зоны обслуживания</option>
-                                <option value="8" data-color="#e52515">Другое</option>
+                                <option value="2" data-modal="js-status-modal" data-color="#e52515">Не оставляли
+                                    заявку</option>
+                                <option value="3" data-modal="js-status-modal" data-color="#e52515">Некорректный
+                                    номер</option>
+                                <option value="4" data-modal="js-status-modal" data-color="#e52515">Предложение
+                                    рекламы</option>
+                                <option value="5" data-modal="js-status-modal" data-color="#e52515" selected>Не
+                                    дозвонились</option>
+                                <option value="6" data-modal="js-status-modal" data-color="#e52515">Дубль заявки
+                                </option>
+                                <option value="7" data-modal="js-status-modal" data-color="#e52515">Вне зоны
+                                    обслуживания</option>
+                                <option value="8" data-modal="js-status-modal" data-color="#e52515">Другое</option>
                             </select>
                         </td>
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -829,12 +914,12 @@
                         <td class="moderation-client-col text-center">
                             <span class="btn moderation-circle circle-red" data-toggle="tooltip" data-placement="top"
                                   data-delay='{"show":"1000", "hide":"1000"}'
-                                  title="Не согласны" aria-label="Не согласны"></span>
+                                  title="Отклонено" aria-label="Отклонено"></span>
                         </td>
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn correct-button function-button" type="button"
+                            <button class="btn crm-correct-button function-button" type="button"
                                     href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -847,7 +932,8 @@
                                     value="Восстановление" aria-label="Восстановить данные">
                                 <i class="fa fa-undo" aria-hidden="true"></i>
                             </button>
-                            <button class="btn reset-button reset-button-hide function-button" type="reset" value="Удаление"
+                            <button class="btn reset-button reset-button-hide function-button" type="reset"
+                                    value="Удаление"
                                     aria-label="Удалить заявку">
                                 <i class="fa fa-trash" aria-hidden="true"></i>
                             </button>

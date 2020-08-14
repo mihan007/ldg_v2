@@ -21,7 +21,7 @@
                                 <li>
                                     <ul>
                                         <li class="wizard-list-item">
-                                            <button class="btn function-button">Яндекс.Деньги</button>
+                                            <button class="btn function-button">Яндекс Деньги</button>
                                         </li>
                                         <li class="wizard-list-item">
                                             <button class="btn function-button">Расчетный счет</button>
