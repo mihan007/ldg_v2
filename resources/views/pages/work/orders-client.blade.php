@@ -28,52 +28,11 @@
                         </li>
                     </ul>
                 </div>
-{{--                <div class="btn-group date-items">--}}
-{{--                    <button class="btn date-item" href="#">Excel <i class="fa fa-file-excel-o" aria-hidden="true"></i>--}}
-{{--                    </button>--}}
-{{--                    <button class="btn bill-button date-item" href=".js-bill-modal" data-toggle="modal">--}}
-{{--                        Выставить счет--}}
-{{--                    </button>--}}
-{{--                    <button class="btn show-toast date-item" type="button">Описание заявки</button>--}}
-{{--                </div>--}}
-{{--                <div class="toast crm-button js-order-description-toast">--}}
-{{--                    <button type="button" class="close ml-2 mb-1 mr-1" data-dismiss="toast">--}}
-{{--                        <span aria-hidden="true">&times;</span>--}}
-{{--                    </button>--}}
-{{--                    <div class="toast-body">--}}
-{{--                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor--}}
-{{--                            incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet sit--}}
-{{--                            amet. Id aliquet lectus proin nibh nisl condimentum. Aliquam sem fringilla ut morbi--}}
-{{--                            tincidunt augue interdum. Integer vitae justo eget magna fermentum iaculis eu.Lorem--}}
-{{--                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor--}}
-{{--                            incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet sit--}}
-{{--                            amet. Id aliquet lectus proin nibh nisl condimentum. Aliquam sem fringilla ut morbi--}}
-{{--                            tincidunt augue interdum. Integer vitae justo eget magna fermentum iaculis eu.Lorem--}}
-{{--                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor--}}
-{{--                            incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet sit--}}
-{{--                            amet. Id aliquet lectus proin nibh nisl condimentum. Aliquam sem fringilla ut morbi--}}
-{{--                            tincidunt augue interdum. Integer vitae justo eget magna fermentum iaculis eu.</p>--}}
-{{--                        <p>Максимальный срок согласования заявки 7 дней</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <form class="search-form-crm-client date-item" method="get" action="#">--}}
-{{--                    <div class="input-group">--}}
-{{--                        <input type="text" class="form-control search-form-input" placeholder="Поиск">--}}
-{{--                        <div class="input-group-append">--}}
-{{--                            <button type="button" class="btn btn-secondary button-search">--}}
-{{--                                <i class="fa fa-search" aria-hidden="true"></i>--}}
-{{--                            </button>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </form>--}}
                 <div class="order-buttons">
                     <a class="btn page-button" href="#" data-toggle="tooltip" data-placement="top"
                        data-delay='{"show":"1000", "hide":"1000"}' title="Экспорт заявок в Excel">
                         <i class="fa fa-file-excel-o" aria-hidden="true"></i>
                     </a>
-{{--                    <a href=".js-bill-modal" role="button" class="btn page-button bill-button" data-toggle="modal">--}}
-{{--                        Выставить счет--}}
-{{--                    </a>--}}
                     <button type="button" class="btn page-button show-toast">Описание заявки</button>
                     <div class="toast crm-button js-order-description-toast">
                         <button type="button" class="close ml-2 mb-1 mr-1" data-dismiss="toast">
