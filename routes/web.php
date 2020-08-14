@@ -62,6 +62,10 @@ Route::get('/work/finance', function () {
     return view('pages.work.finance');
 })->name('work.finance');
 
+Route::get('/work/finance-client', function () {
+    return view('pages.work.finance-client');
+})->name('work.finance-client');
+
 Route::get('/companies/dashboard', function () {
     return view('pages.companies.dashboard');
 })->name('companies.dashboard');

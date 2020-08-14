@@ -6,23 +6,14 @@
             <h2 class="sr-only">Фильтр данных для таблицы по финансам</h2>
             @include('includes.orders-directory-links', ['step'=>'finance', 'role'=>'staff'])
             <div class="col-md-12 filter-wrapper">
-                <div class="finance-filter">
-                    <div class="filter-select-wrapper">
-                        <select class="custom-select select-item">
-                            <option selected>Операции</option>
-                            <option value="1">Пополнения</option>
-                            <option value="2">Списания</option>
-                            <option value="3">Возврат</option>
-                            <option value="4">Не оплачено</option>
-                        </select>
-                        <select class="custom-select select-item">
-                            <option selected>Источник</option>
-                            <option value="1">Банковская карта</option>
-                            <option value="2">Яндекс.Деньги</option>
-                            <option value="3">Расчетный счет</option>
-                            <option value="4">Пополнение вручную</option>
-                        </select>
-                    </div>
+                <div class="finance-client-filter">
+                    <select class="custom-select select-item">
+                        <option selected>Операции</option>
+                        <option value="1">Пополнения</option>
+                        <option value="2">Списания</option>
+                        <option value="3">Возврат</option>
+                        <option value="4">Не оплачено</option>
+                    </select>
                     @include('includes.date-range')
                 </div>
                 <div class="finance-buttons">
@@ -31,9 +22,6 @@
                         <span>/</span>
                         <span class="expense-finance-info">+2000</span>
                     </div>
-                    <a href=".js-bill-modal" role="button" class="btn page-button bill-button" data-toggle="modal">
-                        Выставить счет
-                    </a>
                 </div>
                 @include('includes.search-form')
             </div>
