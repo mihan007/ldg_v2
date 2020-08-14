@@ -54,6 +54,10 @@ Route::get('/work/orders', function () {
     return view('pages.work.orders');
 })->name('work.orders');
 
+Route::get('/work/orders-client', function () {
+    return view('pages.work.orders-client');
+})->name('work.orders-client');
+
 Route::get('/work/finance', function () {
     return view('pages.work.finance');
 })->name('work.finance');

@@ -4,14 +4,13 @@
         <div class="row sticky-top bg-white">
             <h1 class="sr-only">Страница заявок</h1>
             <h2 class="sr-only">Фильтр данных для таблицы заявок</h2>
-            @include('includes.orders-directory-links', ['step'=>'crm', 'role'=>'staff'])
+            @include('includes.orders-directory-links', ['step'=>'crm', 'role'=>'client'])
             <div class="col-md-12 filter-wrapper">
                 <div class="order-filter">
                     <select class="custom-select select-item crm-select-item">
                         <option selected>Все заявки</option>
                         <option value="1">Целевые заявки</option>
                         <option value="2">Нецелевые заявки</option>
-                        <option value="3">На модерации</option>
                     </select>
                     @include('includes.date-range')
                 </div>
@@ -30,6 +29,10 @@
                     </ul>
                 </div>
                 <div class="order-buttons">
+                    <a class="btn page-button" href="#" data-toggle="tooltip" data-placement="top"
+                       data-delay='{"show":"1000", "hide":"1000"}' title="Экспорт заявок в Excel">
+                        <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                    </a>
                     <button type="button" class="btn page-button show-toast">Описание заявки</button>
                     <div class="toast crm-button js-order-description-toast">
                         <button type="button" class="close ml-2 mb-1 mr-1" data-dismiss="toast">
@@ -39,28 +42,29 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet sit
                                 amet. Id aliquet lectus proin nibh nisl condimentum. Aliquam sem fringilla ut morbi
-                                tincidunt augue interdum. Integer vitae justo eget magna fermentum iaculis eu.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                tincidunt augue interdum. Integer vitae justo eget magna fermentum iaculis eu.Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet sit
                                 amet. Id aliquet lectus proin nibh nisl condimentum. Aliquam sem fringilla ut morbi
-                                tincidunt augue interdum. Integer vitae justo eget magna fermentum iaculis eu.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                tincidunt augue interdum. Integer vitae justo eget magna fermentum iaculis eu.Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Semper viverra nam libero justo laoreet sit
                                 amet. Id aliquet lectus proin nibh nisl condimentum. Aliquam sem fringilla ut morbi
                                 tincidunt augue interdum. Integer vitae justo eget magna fermentum iaculis eu.</p>
                             <p>Максимальный срок согласования заявки 7 дней</p>
                         </div>
                     </div>
-                    <a class="btn page-button" href="{{ route('work.orders-client') }}">CRM клиента
-                        <i class="fa fa-external-link" aria-hidden="true"></i>
-                    </a>
                 </div>
                 @include('includes.search-form')
             </div>
         </div>
-        @include('includes.orders-table', ['role'=>'staff'])
-        @include('includes.modal.balance-modal')
+        @include('includes.orders-table', ['role'=>'client'])
+        @include('includes.modal.balance-client-modal')
         @include('includes.modal.comment-modal', [
-            'messageHeader' => 'Укажите, почему Вы не согласны с решением клиента',
-            'messagePlaceholder' => 'Опишите причину здесь'
+            'messageHeader' => 'Ваш комментарий',
+            'messagePlaceholder' => 'Напишите Ваш комментарий'
         ])
+        @include('includes.modal.bill-modal')
+        @include('includes.modal.status-modal')
     </main>
 @stop

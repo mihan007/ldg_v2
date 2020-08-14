@@ -12,7 +12,9 @@
                         <div class="input-group">
                             <input class="form-control" type="number" min="0" id="input-sum-bill" placeholder="Сумма" required>
                             <div class="input-group-append">
-                                <span class="input-group-text"><i class="fa fa-rub" aria-hidden="true"></i></span>
+                                <span class="input-group-text">
+                                    <i class="fa fa-rub" aria-hidden="true"></i>
+                                </span>
                             </div>
                         </div>
                         <div class="invalid-feedback bill-sum-invalid-feedback">Сообщение об ошибке</div>

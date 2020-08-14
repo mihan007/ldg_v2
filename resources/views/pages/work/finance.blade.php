@@ -4,7 +4,7 @@
         <div class="row sticky-top bg-white">
             <h1 class="sr-only">Страница финансов</h1>
             <h2 class="sr-only">Фильтр данных для таблицы по финансам</h2>
-            @include('includes.orders-directory-links', ['step'=>'finance'])
+            @include('includes.orders-directory-links', ['step'=>'finance', 'role'=>'staff'])
             <div class="col-md-12 filter-wrapper">
                 <div class="finance-filter">
                     <div class="filter-select-wrapper">

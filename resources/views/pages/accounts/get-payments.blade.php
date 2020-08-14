@@ -41,7 +41,7 @@
                                            включен/выключен"></label>
                                 </div>
                             </td>
-                            <td class="payment-type-col text-center">Яндекс.Деньги</td>
+                            <td class="payment-type-col text-center">Яндекс Деньги</td>
                             <td class="accounts-buttons-col text-center">
                                 <a class="btn payment-correct-button function-button"
                                    href=".js-payment-wizard" data-toggle="modal" role="button" aria-label="Редактировать данные">
