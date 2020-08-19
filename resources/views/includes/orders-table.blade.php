@@ -102,7 +102,7 @@
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
                                 <button class="btn moderation-circle" type="button"
-                                        href=".js-manager-comment-modal" data-toggle="modal"
+                                        href=".js-comment-modal" data-toggle="modal"
                                         aria-label="Не согласны"></button>
                             </div>
                         </td>
@@ -189,7 +189,7 @@
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
                                 <button class="btn moderation-circle" type="button"
-                                        href=".js-manager-comment-modal" data-toggle="modal"
+                                        href=".js-comment-modal" data-toggle="modal"
                                         aria-label="Не согласны"></button>
                             </div>
                         </td>
@@ -277,7 +277,7 @@
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
                                 <button class="btn moderation-circle circle-red" type="button"
-                                        href=".js-manager-comment-modal" data-toggle="modal"
+                                        href=".js-comment-modal" data-toggle="modal"
                                         aria-label="Не согласны"></button>
                             </div>
                         </td>
@@ -367,7 +367,7 @@
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
                                 <button class="btn moderation-circle" type="button"
-                                        href=".js-manager-comment-modal" data-toggle="modal"
+                                        href=".js-comment-modal" data-toggle="modal"
                                         aria-label="Не согласны"></button>
                             </div>
                         </td>
@@ -460,7 +460,7 @@
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
                                 <button class="btn moderation-circle" type="button"
-                                        href=".js-manager-comment-modal" data-toggle="modal"
+                                        href=".js-comment-modal" data-toggle="modal"
                                         aria-label="Не согласны"></button>
                             </div>
                         </td>
@@ -551,7 +551,7 @@
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
                                 <button class="btn moderation-circle" type="button"
-                                        href=".js-manager-comment-modal" data-toggle="modal"
+                                        href=".js-comment-modal" data-toggle="modal"
                                         aria-label="Не согласны"></button>
                             </div>
                         </td>
@@ -637,7 +637,7 @@
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
                                 <button class="btn moderation-circle" type="button"
-                                        href=".js-manager-comment-modal" data-toggle="modal"
+                                        href=".js-comment-modal" data-toggle="modal"
                                         aria-label="Не согласны"></button>
                             </div>
                         </td>
@@ -724,7 +724,7 @@
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
                                 <button class="btn moderation-circle" type="button"
-                                        href=".js-manager-comment-modal" data-toggle="modal"
+                                        href=".js-comment-modal" data-toggle="modal"
                                         aria-label="Не согласны"></button>
                             </div>
                         </td>
@@ -905,7 +905,7 @@
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
                                 <button class="btn moderation-circle circle-red" type="button"
-                                        href=".js-manager-comment-modal" data-toggle="modal"
+                                        href=".js-comment-modal" data-toggle="modal"
                                         aria-label="Не согласны"></button>
                             </div>
                         </td>

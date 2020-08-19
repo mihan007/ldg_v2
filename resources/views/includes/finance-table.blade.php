@@ -15,9 +15,38 @@
                 <tbody>
                 <tr>
                     <td class="finance-time-col text-left" scope="row">11.02.2018 13:00:00</td>
+                    <td class="finance-operation-col">Выставлен к оплате</td>
+                    <td class="finance-info-col">Емельянов Виктор</td>
+                    <td class="finance-sum-col">
+                        @if ($role=='client')
+                            +-2.00
+                        @endif
+                        @if ($role=='staff')
+                            <div class="finance-sum-wrapper">
+                                <span class="mr-1">+-2.00</span>
+                                <button class="btn page-button paid-bill-button" type="button" href=".js-confirm-client-paid-modal"
+                                        data-toggle="modal">Подтвердить</button>
+                            </div>
+                        @endif
+                    </td>
+                    <td class="finance-history-col">85557</td>
+                </tr>
+                <tr>
+                    <td class="finance-time-col text-left" scope="row">11.02.2018 13:00:00</td>
                     <td class="finance-operation-col">Пополнение</td>
                     <td class="finance-info-col">Емельянов Виктор</td>
-                    <td class="finance-sum-col">+-2.00</td>
+                    <td class="finance-sum-col">
+                        @if ($role=='client')
+                            +-2.00
+                        @endif
+                        @if ($role=='staff')
+                            <div class="finance-sum-wrapper">
+                                <span class="mr-1">+-2.00</span>
+                                <button class="btn page-button paid-bill-button" type="button" href=".js-confirm-client-unpaid-modal"
+                                        data-toggle="modal">Отменить</button>
+                            </div>
+                        @endif
+                    </td>
                     <td class="finance-history-col">85557</td>
                 </tr>
                 <tr>
@@ -38,7 +67,17 @@
                     <td class="finance-time-col text-left" scope="row">11.05.2018 13:00:00</td>
                     <td class="finance-operation-col">Пополнение</td>
                     <td class="finance-info-col">Емельянов Виктор</td>
-                    <td class="finance-sum-col">+-2.00</td>
+                    <td class="finance-sum-col">@if ($role=='client')
+                            +-2.00
+                        @endif
+                        @if ($role=='staff')
+                            <div class="finance-sum-wrapper">
+                                <span  class="mr-1">+-2.00</span>
+                                <button class="btn page-button paid-bill-button" type="button" href=".js-confirm-client-unpaid-modal"
+                                        data-toggle="modal">Отменить</button>
+                            </div>
+                        @endif
+                    </td>
                     <td class="finance-history-col">85557</td>
                 </tr>
                 <tr>
@@ -59,7 +98,17 @@
                     <td class="finance-time-col text-left" scope="row">11.08.2018 13:00:00</td>
                     <td class="finance-operation-col">Пополнение</td>
                     <td class="finance-info-col">Емельянов Виктор</td>
-                    <td class="finance-sum-col">+-2.00</td>
+                    <td class="finance-sum-col">@if ($role=='client')
+                            +-2.00
+                        @endif
+                        @if ($role=='staff')
+                            <div class="finance-sum-wrapper">
+                                <span class="mr-1">+-300</span>
+                                <button class="btn page-button paid-bill-button" type="button" href=".js-confirm-client-unpaid-modal"
+                                        data-toggle="modal">Отменить</button>
+                            </div>
+                        @endif
+                    </td>
                     <td class="finance-history-col">85557</td>
                 </tr>
                 <tr>

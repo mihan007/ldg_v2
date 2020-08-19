@@ -14878,20 +14878,14 @@ td.accounts-buttons-col {
   align-items: center;
 }
 
-.finance-time-col {
-  width: 15%;
-}
-
 .finance-info-col {
   width: 25%;
 }
 
-.finance-sum-col,
-.finance-operation-col {
-  width: 15%;
-}
-
-.finance-history-col {
+.finance-operation-col,
+.finance-history-col,
+.finance-time-col,
+.finance-sum-col {
   width: 15%;
 }
 
@@ -14910,6 +14904,18 @@ td.accounts-buttons-col {
 .finance-client-filter {
   display: flex;
   margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.paid-bill-button {
+  margin-right: 0.5rem;
+  width: 61%;
+}
+
+.finance-sum-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .dashboard-wrapper {
