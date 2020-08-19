@@ -33,7 +33,7 @@
                 </div>
             </div>
         </div>
-        @include('includes.finance-table')
+        @include('includes.finance-table', ['role'=>'client'])
         @include('includes.modal.balance-client-modal')
         @include('includes.modal.bill-modal')
     </main>

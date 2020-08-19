@@ -28,20 +28,14 @@
     align-items: center;
 }
 
-.finance-time-col {
-    width: 15%;
-}
-
 .finance-info-col {
     width: 25%;
 }
 
-.finance-sum-col,
-.finance-operation-col {
-    width: 15%;
-}
-
-.finance-history-col {
+.finance-operation-col,
+.finance-history-col,
+.finance-time-col,
+.finance-sum-col {
     width: 15%;
 }
 
@@ -62,4 +56,36 @@
     display: -ms-flexbox;
     display: flex;
     margin-right: auto;
+}
+
+.paid-bill-button {
+    margin-right: 0.5rem;
+    width: 54%;
+}
+
+.finance-sum-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.confirm-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.confirm-button {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 376px) {
+    .confirm-buttons {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .confirm-button {
+        width: 30%;
+    }
 }

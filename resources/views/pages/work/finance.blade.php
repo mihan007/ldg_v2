@@ -14,6 +14,7 @@
                             <option value="2">Списания</option>
                             <option value="3">Возврат</option>
                             <option value="4">Не оплачено</option>
+                            <option value="5">Выставлен к оплате</option>
                         </select>
                         <select class="custom-select select-item">
                             <option selected>Источник</option>
@@ -45,8 +46,16 @@
                 </div>
             </div>
         </div>
-        @include('includes.finance-table')
+        @include('includes.finance-table', ['role'=>'staff'])
         @include('includes.modal.balance-modal')
         @include('includes.modal.bill-modal')
+        @include('includes.modal.confirm-modal', [
+            'messageBody' => 'Клиент действительно оплатил счет?',
+            'modalId' => 'js-confirm-client-paid-modal'
+            ])
+        @include('includes.modal.confirm-modal', [
+            'messageBody' => 'Клиент действительно не оплатил счет?',
+            'modalId' => 'js-confirm-client-unpaid-modal'
+            ])
     </main>
 @stop
