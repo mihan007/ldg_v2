@@ -14904,6 +14904,7 @@ td.accounts-buttons-col {
 .finance-client-filter {
   display: flex;
   margin-right: auto;
+  flex-wrap: wrap;
 }
 
 .paid-bill-button {
