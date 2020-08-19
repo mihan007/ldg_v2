@@ -25,7 +25,7 @@
                             <div class="finance-sum-wrapper">
                                 <span>+-2.00</span>
                                 <button class="btn page-button paid-bill-button" type="button" href=".js-confirm-client-paid-modal"
-                                        data-toggle="modal">Оплачен</button>
+                                        data-toggle="modal">Подтвердить</button>
                             </div>
                         @endif
                     </td>
@@ -43,7 +43,7 @@
                             <div class="finance-sum-wrapper">
                                 <span>+-2.00</span>
                                 <button class="btn page-button paid-bill-button" type="button" href=".js-confirm-client-unpaid-modal"
-                                        data-toggle="modal">Не оплачен</button>
+                                        data-toggle="modal">Отменить</button>
                             </div>
                         @endif
                     </td>
@@ -74,7 +74,7 @@
                             <div class="finance-sum-wrapper">
                                 <span>+-2.00</span>
                                 <button class="btn page-button paid-bill-button" type="button" href=".js-confirm-client-unpaid-modal"
-                                        data-toggle="modal">Не оплачен</button>
+                                        data-toggle="modal">Отменить</button>
                             </div>
                         @endif
                     </td>
@@ -105,7 +105,7 @@
                             <div class="finance-sum-wrapper">
                                 <span>+-2.00</span>
                                 <button class="btn page-button paid-bill-button" type="button" href=".js-confirm-client-unpaid-modal"
-                                        data-toggle="modal">Не оплачен</button>
+                                        data-toggle="modal">Отменить</button>
                             </div>
                         @endif
                     </td>

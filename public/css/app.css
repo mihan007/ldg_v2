@@ -14917,27 +14917,6 @@ td.accounts-buttons-col {
   justify-content: space-between;
 }
 
-.confirm-buttons {
-  display: flex;
-  flex-direction: column;
-}
-
-.confirm-button {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-@media (min-width: 376px) {
-  .confirm-buttons {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .confirm-button {
-    width: 30%;
-  }
-}
-
 .dashboard-wrapper {
   display: flex;
   justify-content: space-between;

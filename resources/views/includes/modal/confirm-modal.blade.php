@@ -7,10 +7,9 @@
             </div>
             <div class="modal-body">
                 <p>{{ $messageBody }}</p>
-                <div class="confirm-buttons">
-                    <button class="btn btn-primary confirm-button" type="submit">Да</button>
-                    <button class="btn btn-primary confirm-button" type="submit">Нет</button>
-                    <button class="btn cancel-button confirm-button" data-dismiss="modal" type="button">Отменить</button>
+                <div class="modal-action-buttons">
+                    <button class="btn btn-primary modal-action-button" type="submit">Да</button>
+                    <button class="btn cancel-button modal-action-button" data-dismiss="modal" type="button">Отменить</button>
                 </div>
             </div>
         </div>
