@@ -50,11 +50,11 @@
         @include('includes.modal.balance-modal')
         @include('includes.modal.bill-modal')
         @include('includes.modal.confirm-modal', [
-            'messageBody' => 'Клиент действительно оплатил счет?',
+            'messageHeader' => 'Отметить счет как оплаченный?',
             'modalId' => 'js-confirm-client-paid-modal'
             ])
         @include('includes.modal.confirm-modal', [
-            'messageBody' => 'Клиент действительно не оплатил счет?',
+            'messageHeader' => 'Отметить счет как неоплаченный?',
             'modalId' => 'js-confirm-client-unpaid-modal'
             ])
     </main>
