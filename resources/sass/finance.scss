@@ -56,7 +56,6 @@
     display: -ms-flexbox;
     display: flex;
     margin-right: auto;
-    flex-wrap: wrap;
 }
 
 .paid-bill-button {
@@ -66,6 +65,7 @@
 
 .finance-sum-wrapper {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
