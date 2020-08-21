@@ -74684,6 +74684,8 @@ __webpack_require__(/*! ./users-grid */ "./resources/js/users-grid.js");
 __webpack_require__(/*! ./autofocus */ "./resources/js/autofocus.js");
 
 __webpack_require__(/*! ./openmodal */ "./resources/js/openmodal.js");
+
+__webpack_require__(/*! ./lidogenerator-grid */ "./resources/js/lidogenerator-grid.js");
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -74993,6 +74995,52 @@ $(document).ready(function () {
       'orderSequence': ['desc', 'asc']
     }, {
       "orderable": ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }]
+  });
+});
+
+/***/ }),
+
+/***/ "./resources/js/lidogenerator-grid.js":
+/*!********************************************!*\
+  !*** ./resources/js/lidogenerator-grid.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  window.table = $('.lidogenerator-grid').DataTable({
+    fixedHeader: {
+      headerOffset: 52
+    },
+    paging: false,
+    searching: false,
+    info: false,
+    autoWidth: false,
+    bSortCellsTop: true,
+    "order": [[1, 'desc']],
+    columns: [{
+      "orderable": false
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
+    }, {
+      'orderSequence': ['desc', 'asc']
     }, {
       'orderSequence': ['desc', 'asc']
     }]

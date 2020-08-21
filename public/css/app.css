@@ -14199,6 +14199,10 @@ input[type=radio].visually-hidden {
   margin-right: 0.9rem;
 }
 
+.fa-cogs {
+  margin-right: 0.7rem;
+}
+
 .page-wrapper {
   padding-right: 20px;
   padding-left: 80px;
@@ -14218,7 +14222,7 @@ input[type=radio].visually-hidden {
 .settings-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
   flex-wrap: wrap;
@@ -14227,7 +14231,7 @@ input[type=radio].visually-hidden {
 .date-range {
   background: #f8f9fa;
   cursor: pointer;
-  padding: 6px 12px 4px 12px;
+  padding: 6px 12px 6px 12px;
   border: 1px solid #ced4da;
   width: 348px;
   border-radius: 0.25rem;
@@ -15683,5 +15687,14 @@ td.ad-buttons-col {
     justify-content: space-between;
     align-items: center;
   }
+}
+
+.lidogenerstors-search-form {
+  width: 15%;
+}
+
+.lidogenerators-date-range {
+  padding: 7px 12px;
+  width: auto;
 }
 
