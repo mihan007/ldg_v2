@@ -6,29 +6,27 @@
             <h2 class="sr-only">Фильтр для таблицы данных по компаниям</h2>
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper">
-{{--                <div class="index-buttons-wrapper">--}}
-                    @include('includes.date-range', ['role'=>'lidogenerators'])
-                    <div class="btn-group date-items mb-1">
-                        <button class="btn date-item" type="button">Сегодня</button>
-                        <button class="btn date-item" type="button">Вчера</button>
-                        <button class="btn date-item" type="button">7 дней</button>
-                        <button class="btn date-item" type="button">30 дней</button>
-                        <button class="btn date-item" type="button">Месяц</button>
+                @include('includes.date-range', ['role'=>'lidogenerators'])
+                <div class="btn-group date-items mb-1">
+                    <button class="btn date-item" type="button">Сегодня</button>
+                    <button class="btn date-item" type="button">Вчера</button>
+                    <button class="btn date-item" type="button">7 дней</button>
+                    <button class="btn date-item" type="button">30 дней</button>
+                    <button class="btn date-item" type="button">Месяц</button>
+                </div>
+                <button type="button" class="btn page-button mb-1" aria-label="Показать дашборд">
+                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn page-button show-update-toast mb-1" data-toggle="tooltip"
+                        data-placement="bottom" title="Последнее обновление ..." data-trigger="hover"
+                        aria-label="Обновление данных в таблице аналитики">
+                    <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+                <div class="toast update-button lidogenerators-update-button js-update-toast">
+                    <div class="toast-body">
+                        <div>Данные обновлены</div>
                     </div>
-                    <button type="button" class="btn page-button mb-1" aria-label="Показать дашборд">
-                        <i class="fa fa-line-chart" aria-hidden="true"></i>
-                    </button>
-                    <button type="button" class="btn page-button show-update-toast mb-1" data-toggle="tooltip"
-                            data-placement="bottom" title="Последнее обновление ..." data-trigger="hover"
-                            aria-label="Обновление данных в таблице аналитики">
-                        <i class="fa fa-refresh" aria-hidden="true"></i>
-                    </button>
-                    <div class="toast update-button lidogenerators-update-button js-update-toast">
-                        <div class="toast-body">
-                            <div>Данные обновлены</div>
-                        </div>
-                    </div>
-{{--                </div>--}}
+                </div>
                 <form class="lidogenerstors-search-form mb-1 mr-3" method="get" action="#">
                     <div class="input-group">
                         <input type="text" class="form-control search-form-input" placeholder="Поиск">
