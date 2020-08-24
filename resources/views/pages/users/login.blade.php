@@ -4,7 +4,7 @@
         <div class="row h-100">
             <div class="col-sm-12 my-auto">
                 @include('includes.logo-name')
-                <div class="alert alert-primary col-sm-12 mx-auto">
+                <div class="alert alert-primary col-sm-12 mx-auto d-none">
                     Вы успешно зарегистрировались. Введите Ваш email и пароль для входа в Лидогенератор
                 </div>
                 <form class="login-form needs-validation" method="post" action="#" novalidate>
