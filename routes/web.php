@@ -129,3 +129,11 @@ Route::get('/accounts/timezone', function () {
     View::share('showSaveButton', true);
     return view('pages.accounts.timezone');
 })->name('accounts.timezone');
+
+Route::get('/lidogenerators/lidogenerators-list', function () {
+    return view('pages.lidogenerators.lidogenerators-list');
+})->name('lidogenerators.lidogenerators-list');
+
+Route::get('/users/registration', function () {
+    return view('pages.users.registration');
+})->name('users.registration');

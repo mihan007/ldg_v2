@@ -145,6 +145,10 @@ input[type="radio"].visually-hidden {
     margin-right: 0.9rem;
 }
 
+.fa-cogs {
+    margin-right: 0.7rem;
+}
+
 .page-wrapper {
     padding-right: 20px;
     padding-left: 80px;
@@ -168,9 +172,12 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    //-webkit-box-align: center;
+    //-ms-flex-align: center;
+    //align-items: center;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     -ms-flex-wrap: wrap;
@@ -180,7 +187,7 @@ input[type="radio"].visually-hidden {
 .date-range {
     background: $filter-button-bg;
     cursor: pointer;
-    padding: 6px 12px 4px 12px;
+    padding: 6px 12px 6px 12px;
     border: 1px solid $filter-button-border;
     width: 348px;
     border-radius: 0.25rem;

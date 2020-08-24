@@ -30,4 +30,5 @@ require('./project-grid');
 require('./users-grid');
 require('./autofocus');
 require('./openmodal');
+require('./lidogenerator-grid');
 
