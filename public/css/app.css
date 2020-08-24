@@ -15698,3 +15698,9 @@ td.ad-buttons-col {
   width: auto;
 }
 
+.lidogenerators-update-button {
+  bottom: 0;
+  right: 290px;
+  z-index: 3000;
+}
+

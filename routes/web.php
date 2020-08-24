@@ -133,3 +133,7 @@ Route::get('/accounts/timezone', function () {
 Route::get('/lidogenerators/lidogenerators-list', function () {
     return view('pages.lidogenerators.lidogenerators-list');
 })->name('lidogenerators.lidogenerators-list');
+
+Route::get('/users/registration', function () {
+    return view('pages.users.registration');
+})->name('users.registration');

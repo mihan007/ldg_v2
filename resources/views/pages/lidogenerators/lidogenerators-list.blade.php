@@ -23,7 +23,7 @@
                             aria-label="Обновление данных в таблице аналитики">
                         <i class="fa fa-refresh" aria-hidden="true"></i>
                     </button>
-                    <div class="toast update-button js-update-toast">
+                    <div class="toast update-button lidogenerators-update-button js-update-toast">
                         <div class="toast-body">
                             <div>Данные обновлены</div>
                         </div>

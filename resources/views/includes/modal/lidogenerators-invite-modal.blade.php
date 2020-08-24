@@ -9,14 +9,13 @@
                 <form class="balance-actions" method="post" action="#" novalidate>
                     <div class="input-group">
                         <input class="form-control copy-form-input" type="text"
-                               id="form-url-result"
+                               id="lidogenerators-invite-form-url-result"
                                value="https://panel.troiza.net/api/v1/web-leads/webhook/GyOJjqO8HqlRJdEsy5Pb"
                         readonly>
                         <div class="input-group-append">
                             <button class="btn btn-secondary copy-button" type="button"
-                                    data-clipboard-target="#copy-form-input"
-                                    data-trigger="manual" data-toggle="click-leave-tooltip"
-                                    data-placement="top" title="Скопировано"
+                                    data-clipboard-target="#copy-form-input" data-trigger="manual"
+                                    data-toggle="click-leave-tooltip" data-placement="top" title="Скопировано"
                                     aria-label="Копировать">
                                 <i class="fa fa-files-o" aria-hidden="true"></i>
                             </button>
