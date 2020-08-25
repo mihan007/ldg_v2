@@ -137,3 +137,12 @@ Route::get('/lidogenerators/lidogenerators-list', function () {
 Route::get('/users/registration', function () {
     return view('pages.users.registration');
 })->name('users.registration');
+
+Route::get('/lidogenerators/lidogenerator-settings', function () {
+    View::share('showSaveButton', true);
+    return view('pages.lidogenerators.lidogenerator-settings');
+})->name('lidogenerators.lidogenerator-settings');
+
+Route::get('/lidogenerators/lidogenerator-finance', function () {
+    return view('pages.lidogenerators.lidogenerator-finance');
+})->name('lidogenerators.lidogenerator-finance');

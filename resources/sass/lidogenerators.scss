@@ -12,3 +12,26 @@
     right: 290px;
     z-index: 3000;
 }
+
+.lidogenerator-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lidogenerator-form-column {
+    width: 30%;
+    margin-right: 1.2rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.lidogenerator-form .lidogenerator-form-column:last-child {
+    margin-right: 0;
+}
+
+.lidogenerator-form .form-control,
+.lidogenerator-form .input-group-text {
+    font-size: 14px;
+}
