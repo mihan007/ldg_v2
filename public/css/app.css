@@ -14554,7 +14554,8 @@ input[type=radio].visually-hidden {
 .instruction-button,
 .settings-button,
 .wizard-button,
-.modal-button {
+.modal-button,
+.directory-button {
   font-size: 14px;
 }
 
@@ -14872,8 +14873,11 @@ td.accounts-buttons-col {
 }
 
 .filter-select-wrapper {
-  width: 350px;
   display: flex;
+}
+
+.finance-select-item {
+  width: 20%;
 }
 
 .income-expense-wrapper {

@@ -12,10 +12,13 @@
 }
 
 .filter-select-wrapper {
-    width: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+}
+
+.finance-select-item {
+    width: 20%;
 }
 
 .income-expense-wrapper {

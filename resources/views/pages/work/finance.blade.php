@@ -1,7 +1,12 @@
 @extends('layouts.app')
 @section('content')
     <main class="page-wrapper">
-        @include('includes.finance-settings')
+        <div class="row sticky-top bg-white">
+            <h1 class="sr-only">Страница финансов</h1>
+            <h2 class="sr-only">Фильтр данных для таблицы по финансам</h2>
+            @include('includes.orders-directory-links', ['step'=>'finance', 'role'=>'staff'])
+            @include('includes.finance-settings')
+        </div>
         @include('includes.finance-table', ['role'=>'staff'])
         @include('includes.modal.balance-modal')
         @include('includes.modal.bill-modal')
