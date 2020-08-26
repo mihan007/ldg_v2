@@ -34,7 +34,7 @@
                                        видна клиенту"></i>
                             </label>
                             <input class="form-control company-name-input" type="text" id="company-name" required>
-                            <div class="invalid-feedback company-name-invalid-feedback">Сообщение об ошибке</div>
+                            <div class="invalid-feedback company-name-invalid-feedback">Введите имя компании клиента</div>
                         </div>
                         <div class="d-flex align-items-end">
                             <div class="form-group base-cost-group">
@@ -120,12 +120,12 @@
                                 3. Максимальный период модерации
                                 <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                    data-toggle="click-tooltip" data-placement="top" data-title="Количество дней, в
-                                   течение которых клиент может изменить статус заявки. Максимальный период 45 дней"></i>
+                                   течение которых клиент может изменить статус заявки"></i>
                             </label>
                             <input class="form-control moderation-period-input" type="number" id="moderation-period"
                                    placeholder="7" min="1" max="45">
                             <div class="invalid-feedback moderation-period-invalid-feedback">Максимальный период
-                                модерации 45 дней
+                                модерации 14 дней
                             </div>
                         </div>
                         <div class="form-group data-hide-group">

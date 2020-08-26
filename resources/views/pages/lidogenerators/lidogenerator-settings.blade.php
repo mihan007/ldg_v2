@@ -17,7 +17,7 @@
                     <div class="lidogenerator-form-column">
                         <div class="form-group">
                             <label class="workspace-form-label" for="lidogenerator-active-switch">
-                                1. Активность
+                                Активность
                                 <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                    data-toggle="click-tooltip" data-placement="top"
                                    data-title="Включает/выключает аккаунт лидогенератора"></i>
@@ -31,21 +31,20 @@
                         </div>
                         <div class="form-group">
                             <label class="workspace-form-label" for="lidogenerator-moderation-period">
-                                4. Максимальный период модерации
+                                Максимальный период модерации
                                 <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                    data-toggle="click-tooltip" data-placement="top" data-title="Количество дней, в
                                    течение которых клиент может изменить статус заявки"></i>
                             </label>
                             <input class="form-control" type="number" id="lidogenerator-moderation-period"
-                                   placeholder="7" min="1" max="45">
-                            <div class="invalid-feedback lidogenerator-moderation-invalid-feedback">Максимальный период
-                                модерации 45 дней
+                                   placeholder="14" min="1" max="45">
+                            <div class="invalid-feedback lidogenerator-moderation-invalid-feedback">Сообщение об ошибке
                             </div>
                         </div>
                     </div>
                     <div class="lidogenerator-form-column">
                         <div class="form-group">
-                            <label class="workspace-form-label" for="lidogenerator-admin-email">2. Почта аккаунта
+                            <label class="workspace-form-label" for="lidogenerator-admin-email">Почта аккаунта
                                 <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                    data-toggle="click-tooltip" data-placement="top"
                                    data-title="Почта администратора аккаунта"></i>
@@ -55,7 +54,7 @@
                             <div class="invalid-feedback lidogenerator-admin-invalid-feedback">Сообщение об ошибке</div>
                         </div>
                         <div class="form-group">
-                            <label class="workspace-form-label" for="lidogenerator-min-profit">5. Минимальный заработок
+                            <label class="workspace-form-label" for="lidogenerator-min-profit">Минимальный заработок
                                 с целевой заявки
                                 <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                    data-toggle="click-tooltip" data-placement="top"
@@ -64,7 +63,7 @@
                             </label>
                             <div class="input-group">
                                 <input class="form-control" type="number" id="lidogenerator-min-profit" min="0"
-                                       max="100000" placeholder="100">
+                                       max="100000" placeholder="10">
                                 <div class="input-group-append">
                                     <span class="input-group-text">
                                         <i class="fa fa-rub" aria-hidden="true"></i>
@@ -77,14 +76,14 @@
                     </div>
                     <div class="lidogenerator-form-column">
                         <div class="form-group">
-                            <label class="workspace-form-label" for="profit-percent">3. Процент заработка
+                            <label class="workspace-form-label" for="profit-percent">Процент заработка
                                 <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                    data-toggle="click-tooltip" data-placement="top"
                                    data-title="Заработок от выручки лидогенератора в процентах"></i>
                             </label>
                             <div class="input-group">
                                 <input class="form-control" type="number" id="profit-percent" min="0"
-                                       max="100000" placeholder="90">
+                                       max="100000" placeholder="10">
                                 <div class="input-group-append">
                                     <span class="input-group-text">
                                         <i class="fa fa-percent" aria-hidden="true"></i>
@@ -94,13 +93,13 @@
                             <div class="invalid-feedback profit-percent-invalid-feedback">Сообщение об ошибке</div>
                         </div>
                         <div class="form-group">
-                            <label class="workspace-form-label" for="free-period">6. Бесплатный период
+                            <label class="workspace-form-label" for="free-period">Бесплатный период
                                 <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                    data-toggle="click-tooltip" data-placement="top"
                                    data-title="Количество бесплатных дней пользования сервисом"></i>
                             </label>
-                            <input class="form-control workspace-email-input" type="text" id="free-period"
-                                   placeholder="30 дней">
+                            <input class="form-control workspace-email-input" type="number" id="free-period"
+                                   placeholder="30">
                             <div class="invalid-feedback free-period-invalid-feedback">Сообщение об ошибке</div>
                         </div>
                     </div>
