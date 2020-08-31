@@ -143,6 +143,6 @@ Route::get('/lidogenerators/lidogenerator-settings', function () {
     return view('pages.lidogenerators.lidogenerator-settings');
 })->name('lidogenerators.lidogenerator-settings');
 
-Route::get('/lidogenerators/lidogenerator-finance', function () {
-    return view('pages.lidogenerators.lidogenerator-finance');
-})->name('lidogenerators.lidogenerator-finance');
+Route::get('/lidogenerators/finance', function () {
+    return view('pages.lidogenerators.finance');
+})->name('lidogenerators.finance');

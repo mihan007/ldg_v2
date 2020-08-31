@@ -21,7 +21,7 @@
                         @if ($role=='client')
                             +-2.00
                         @endif
-                        @if ($role=='staff')
+                        @if ($role=='staff' or $role=='lidogenerator')
                             <div class="finance-sum-wrapper">
                                 <span class="mr-1 mb-1">+-2.00</span>
                                 <button class="btn page-button paid-bill-button" type="button" href=".js-confirm-client-paid-modal"
@@ -39,7 +39,7 @@
                         @if ($role=='client')
                             +-2.00
                         @endif
-                        @if ($role=='staff')
+                        @if ($role=='staff' or $role=='lidogenerator')
                             <div class="finance-sum-wrapper">
                                 <span class="mr-1 mb-1">+-2.00</span>
                                 <button class="btn page-button paid-bill-button" type="button" href=".js-confirm-client-unpaid-modal"
@@ -70,7 +70,7 @@
                     <td class="finance-sum-col">@if ($role=='client')
                             +-2.00
                         @endif
-                        @if ($role=='staff')
+                        @if ($role=='staff' or $role=='lidogenerator')
                             <div class="finance-sum-wrapper">
                                 <span  class="mr-1 mb-1">+-2.00</span>
                                 <button class="btn page-button paid-bill-button" type="button" href=".js-confirm-client-unpaid-modal"
@@ -101,7 +101,7 @@
                     <td class="finance-sum-col">@if ($role=='client')
                             +-2.00
                         @endif
-                        @if ($role=='staff')
+                        @if ($role=='staff' or $role=='lidogenerator')
                             <div class="finance-sum-wrapper">
                                 <span class="mr-1 mb-1">+-300</span>
                                 <button class="btn page-button paid-bill-button" type="button" href=".js-confirm-client-unpaid-modal"
@@ -114,7 +114,13 @@
                 <tr>
                     <td class="text-left" scope="row">11.09.2018 13:00:00</td>
                     <td>Списание</td>
-                    <td>Целевая заявка №26061</td>
+                    @if ($role=='staff' or $role=='client')
+                    <td>Целевая заявка №11111</td>
+                    @endif
+                    @if ($role=='lidogenerator')
+                        <td>Целевая заявка <a class="btn-link" href="{{ route('work.orders') }}" aria-label="Ссылка на
+                        страницу заявки">№ 11111</a>. Цена 100 рублей.<br> Название компании.<br> Название источника заявок</td>
+                    @endif
                     <td>-100.00</td>
                     <td>7777</td>
                 </tr>
@@ -135,7 +141,13 @@
                 <tr>
                     <td class="text-left" scope="row">11.12.2018 13:00:00</td>
                     <td>Списание</td>
+                    @if ($role=='staff' or $role=='client')
                     <td>Целевая заявка №26061</td>
+                    @endif
+                    @if ($role=='lidogenerator')
+                        <td>Целевая заявка <a class="btn-link" href="{{ route('work.orders') }}" aria-label="Ссылка на
+                        страницу заявки">№ 26061</a>. Цена 100 рублей.<br>Название компании.<br> Название источника заявок</td>
+                    @endif
                     <td>-100.00</td>
                     <td>7777</td>
                 </tr>
