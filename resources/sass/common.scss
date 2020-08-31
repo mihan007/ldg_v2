@@ -54,6 +54,13 @@ input[type="radio"].visually-hidden {
     border-top: 0.5em solid;
 }
 
+@media (max-width: 767px) {
+    .logo-name,
+    .accounts-name {
+        display: none;
+    }
+}
+
 .login-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -64,7 +71,14 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
 }
 
-.fa-user-o {
+.fa-user-o,
+//.fa-building,
+//.fa-building-o,
+//.fa-folder,
+.fa-folder-o
+//.fa-industry,
+//.fa-shield
+{
     color: $header-icon-color;
     font-size: 23px;
 }

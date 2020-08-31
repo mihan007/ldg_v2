@@ -14117,13 +14117,21 @@ input[type=radio].visually-hidden {
   border-top: 0.5em solid;
 }
 
+@media (max-width: 767px) {
+  .logo-name,
+  .accounts-name {
+    display: none;
+  }
+}
+
 .login-wrapper {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.fa-user-o {
+.fa-user-o,
+.fa-folder-o {
   color: white;
   font-size: 23px;
 }
