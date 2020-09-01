@@ -4,8 +4,8 @@
             <img class="align-top" src="/img/logo-image.png" height="30" alt="Лидогенератор">
             <img class="align-top mr-2 logo-name" src="/img/logo-name.png" height="30" alt="Лидогенератор">
         </a>
-        <div class="navbar-nav">
-            <div class="nav-item dropdown magic-menu ">
+        <div class="navbar-nav accounts-wrapper">
+            <div class="nav-item dropdown magic-menu">
                 <a class="nav-link dropdown-toggle accounts-dropdown" href="#" onclick="return false;">
                     <i class="fa fa-folder-o mr-2" aria-hidden="true"></i>
                     <span class="accounts-name">Название аккаунта</span>
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="navbar-nav login-wrapper ml-auto">
+        <div class="navbar-nav login-wrapper">
             <div class="nav-item dropdown magic-menu">
                 <a class="nav-link dropdown-toggle user-dropdown" href="#" onclick="return false;">
                     <i class="fa fa-user-o mr-2" aria-hidden="true"></i>
