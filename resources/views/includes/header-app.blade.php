@@ -8,7 +8,8 @@
             <div class="nav-item dropdown magic-menu ">
                 <a class="nav-link dropdown-toggle accounts-dropdown" href="#" onclick="return false;">
                     <i class="fa fa-folder-o mr-2" aria-hidden="true"></i>
-                    <span class="accounts-name">Название аккаунта</span></a>
+                    <span class="accounts-name">Название аккаунта</span>
+                </a>
                 <div class="dropdown-menu accounts-list">
                     <a class="dropdown-item disabled" href="#">Пункт 1</a>
                     <a class="dropdown-item" href="{{ route('users.login') }}">Страница входа</a>
