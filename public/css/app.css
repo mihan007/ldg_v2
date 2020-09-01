@@ -14119,7 +14119,8 @@ input[type=radio].visually-hidden {
 
 @media (max-width: 767px) {
   .logo-name,
-  .accounts-name {
+  .accounts-name,
+  .dropdown-toggle::after {
     display: none;
   }
 }
@@ -14131,7 +14132,11 @@ input[type=radio].visually-hidden {
 }
 
 .fa-user-o,
-.fa-folder-o {
+.fa-folder-o,
+.fa-database,
+.fa-adjust,
+.fa-rub,
+.fa-cirle-o {
   color: white;
   font-size: 23px;
 }

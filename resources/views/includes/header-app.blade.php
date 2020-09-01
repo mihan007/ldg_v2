@@ -1,17 +1,13 @@
 <header class="container-fluid bg-grey company-header fixed-top">
     <nav class="navbar navbar-expand navbar-dark bg-grey scrollmenu">
         <a href="#" class="navbar-brand magic-hide d-flex">
-{{--            <img class="align-top mr-2" src="/img/logo-index.png" height="30" alt="Лидогенератор">--}}
             <img class="align-top" src="/img/logo-image.png" height="30" alt="Лидогенератор">
             <img class="align-top mr-2 logo-name" src="/img/logo-name.png" height="30" alt="Лидогенератор">
         </a>
         <div class="navbar-nav">
             <div class="nav-item dropdown magic-menu ">
                 <a class="nav-link dropdown-toggle accounts-dropdown" href="#" onclick="return false;">
-{{--                    <i class="fa fa-building mr-2" aria-hidden="true"></i>--}}
-{{--                    <i class="fa fa-building-o mr-2" aria-hidden="true"></i>--}}
                     <i class="fa fa-folder-o mr-2" aria-hidden="true"></i>
-{{--                    <i class="fa fa-industry mr-2" aria-hidden="true"></i>--}}
                     <span class="accounts-name">Название аккаунта</span></a>
                 <div class="dropdown-menu accounts-list">
                     <a class="dropdown-item disabled" href="#">Пункт 1</a>
