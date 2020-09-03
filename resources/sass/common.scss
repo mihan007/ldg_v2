@@ -62,6 +62,10 @@ input[type="radio"].visually-hidden {
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
+    margin-left: 20px;
+}
+
+.lidogenerator-balance-wrapper {
     margin-left: auto;
 }
 
@@ -79,21 +83,53 @@ input[type="radio"].visually-hidden {
     .accounts-wrapper {
        margin-left: auto;
     }
+
+    .lidogenerator-balance-wrapper {
+        margin-left: 10px;
+    }
 }
 
 .fa-user-o,
-.fa-folder-o,
 .fa-database,
 .fa-adjust,
-.fa-rub,
-.fa-cirle-o {
+.fa-cirle-o,
+.fa-money,
+.fa-wallet,
+.fa-folder-o {
     color: $header-icon-color;
     font-size: 23px;
+}
+
+//.lidogenerator-balance-link .lidogenerator-balance-icon {
+//    width: 25px;
+//    height: 25px;
+//    display: inline-block;
+//    fill: $header-icon-color;
+//
+//}
+
+.fa-folder-o {
+    font-size: 25px;
+}
+
+.lidogenerator-balance {
+    padding: 4px;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+.lidogenerator-balance-link:active,
+.lidogenerator-balance-link:hover {
+    text-decoration: none;
 }
 
 .accounts-dropdown,
 .user-dropdown {
     font-size: 16px;
+}
+
+.accounts-dropdown {
+    margin-bottom: -6px;
 }
 
 .sidenav {

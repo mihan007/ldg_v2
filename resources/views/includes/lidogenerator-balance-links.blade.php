@@ -1,0 +1,6 @@
+<div>
+    <a class="directory-button @if($step=='billing') active @endif"
+       href="{{ route('lidogenerators.billing') }}">Рабочая область</a>
+    <a class="directory-button @if($step=='lidogenerator-finance') active @endif"
+       href="{{ route('lidogenerators.finance') }}">Финансы</a>
+</div>

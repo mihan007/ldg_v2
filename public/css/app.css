@@ -14121,6 +14121,10 @@ input[type=radio].visually-hidden {
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin-left: 20px;
+}
+
+.lidogenerator-balance-wrapper {
   margin-left: auto;
 }
 
@@ -14138,21 +14142,45 @@ input[type=radio].visually-hidden {
   .accounts-wrapper {
     margin-left: auto;
   }
+
+  .lidogenerator-balance-wrapper {
+    margin-left: 10px;
+  }
 }
 
 .fa-user-o,
-.fa-folder-o,
 .fa-database,
 .fa-adjust,
-.fa-rub,
-.fa-cirle-o {
+.fa-cirle-o,
+.fa-money,
+.fa-wallet,
+.fa-folder-o {
   color: white;
   font-size: 23px;
+}
+
+.fa-folder-o {
+  font-size: 25px;
+}
+
+.lidogenerator-balance {
+  padding: 4px;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+
+.lidogenerator-balance-link:active,
+.lidogenerator-balance-link:hover {
+  text-decoration: none;
 }
 
 .accounts-dropdown,
 .user-dropdown {
   font-size: 16px;
+}
+
+.accounts-dropdown {
+  margin-bottom: -6px;
 }
 
 .sidenav {
@@ -15751,5 +15779,15 @@ td.ad-buttons-col {
 .lidogenerator-form .form-control,
 .lidogenerator-form .input-group-text {
   font-size: 14px;
+}
+
+.lidogenerator-balance-form {
+  width: 20%;
+}
+
+@media (min-width: 768px) {
+  .lidogenerator-balance-form {
+    width: 100%;
+  }
 }
 

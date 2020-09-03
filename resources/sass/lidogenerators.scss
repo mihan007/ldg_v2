@@ -35,3 +35,13 @@
 .lidogenerator-form .input-group-text {
     font-size: 14px;
 }
+
+.lidogenerator-balance-form {
+    width: 20%;
+}
+
+@media (min-width: 768px) {
+    .lidogenerator-balance-form {
+        width: 100%;
+    }
+}

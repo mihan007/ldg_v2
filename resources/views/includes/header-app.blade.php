@@ -35,10 +35,26 @@
                 </div>
             </div>
         </div>
+        @if ($roleLidogenerator)
+        <div class="navbar-nav lidogenerator-balance-wrapper">
+            <a class="lidogenerator-balance-link" href="{{ route('lidogenerators.billing') }}">
+{{--                <i class="fas fa-wallet mr-2" aria-hidden="true"></i>--}}
+{{--                   <img class="lidogenerator-balance-icon" src="../img/wallet_icon-icons.com_65116.svg" width="25" height="25" alt="">--}}
+                <img class="lidogenerator-balance-icon mr-2" src="../img/wallet-icon.svg" width="28" height="27" alt="">
+
+                {{--
+                <svg class="lidogenerator-balance-icon" fill="#ffffff" width="20" height="20" viewBox="0 0 334.877 334.877">--}}
+{{--                    <use xlink:href="./img/wallet_icon-icons.com_65116.svg"></use>--}}
+{{--                </svg>--}}
+                <span class="btn-secondary lidogenerator-balance"> 20000 <i class="fa fa-rub" aria-hidden="true"></i>
+                </span>
+            </a>
+        </div>
+        @endif
         <div class="navbar-nav login-wrapper">
             <div class="nav-item dropdown magic-menu">
                 <a class="nav-link dropdown-toggle user-dropdown" href="#" onclick="return false;">
-                    <i class="fa fa-user-o mr-2" aria-hidden="true"></i>
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
                     <a class="dropdown-item disabled">1@troiza.net</a>
