@@ -67,6 +67,7 @@ input[type="radio"].visually-hidden {
 
 .lidogenerator-balance-wrapper {
     margin-left: auto;
+    margin-bottom: -1px;
 }
 
 @media (max-width: 767px) {
@@ -100,16 +101,9 @@ input[type="radio"].visually-hidden {
     font-size: 23px;
 }
 
-//.lidogenerator-balance-link .lidogenerator-balance-icon {
-//    width: 25px;
-//    height: 25px;
-//    display: inline-block;
-//    fill: $header-icon-color;
-//
-//}
-
 .fa-folder-o {
     font-size: 25px;
+    padding-bottom: 2px;
 }
 
 .lidogenerator-balance {
@@ -128,8 +122,29 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
 }
 
-.accounts-dropdown {
-    margin-bottom: -6px;
+@media (max-width: 767px) {
+    .dropdown-center {
+        right: auto;
+        left: calc(-190px - 20vw);
+    }
+
+    .accounts-dropdown {
+         padding-bottom: 2px;
+     }
+}
+
+@media (max-width: 600px) {
+    .dropdown-center {
+        right: auto;
+        left: calc(-190px - 30vw);
+    }
+}
+
+@media (max-width: 400px) {
+    .dropdown-center {
+        right: auto;
+        left: -190px;
+    }
 }
 
 .sidenav {
@@ -230,9 +245,6 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    //-webkit-box-align: center;
-    //-ms-flex-align: center;
-    //align-items: center;
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     align-items: baseline;

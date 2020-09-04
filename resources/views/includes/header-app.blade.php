@@ -10,7 +10,7 @@
                     <i class="fa fa-folder-o mr-2" aria-hidden="true"></i>
                     <span class="accounts-name">Название аккаунта</span>
                 </a>
-                <div class="dropdown-menu accounts-list">
+                <div class="dropdown-menu accounts-list dropdown-center">
                     <a class="dropdown-item disabled" href="#">Пункт 1</a>
                     <a class="dropdown-item" href="{{ route('users.login') }}">Страница входа</a>
                     <a class="dropdown-item" href="{{ route('users.reset-password') }}">Восстановление пароля</a>
@@ -18,8 +18,7 @@
                         восстановление пароля</a>
                     <a class="dropdown-item" href="{{ route('users.new-password') }}">Ввод нового пароля</a>
                     <a class="dropdown-item" href="{{ route('users.new-password-login') }}">Оповещение об изменении
-                        пароля
-                        и страница входа</a>
+                        пароля и страница входа</a>
                     <a class="dropdown-item" href="{{ route('users.old-password') }}">Переход по устаревшей ссылке</a>
                     <a class="dropdown-item" href="{{ route('users.new-info-alert') }}">О новой ссылке на почту</a>
                     <a class="dropdown-item" href="{{ route('users.error-login') }}">Переход по неверной ссылке</a>
@@ -35,21 +34,17 @@
                 </div>
             </div>
         </div>
-        @if ($roleLidogenerator)
-        <div class="navbar-nav lidogenerator-balance-wrapper">
-            <a class="lidogenerator-balance-link" href="{{ route('lidogenerators.billing') }}">
-{{--                <i class="fas fa-wallet mr-2" aria-hidden="true"></i>--}}
-{{--                   <img class="lidogenerator-balance-icon" src="../img/wallet_icon-icons.com_65116.svg" width="25" height="25" alt="">--}}
-                <img class="lidogenerator-balance-icon mr-2" src="../img/wallet-icon.svg" width="28" height="27" alt="">
-
-                {{--
-                <svg class="lidogenerator-balance-icon" fill="#ffffff" width="20" height="20" viewBox="0 0 334.877 334.877">--}}
-{{--                    <use xlink:href="./img/wallet_icon-icons.com_65116.svg"></use>--}}
-{{--                </svg>--}}
-                <span class="btn-secondary lidogenerator-balance"> 20000 <i class="fa fa-rub" aria-hidden="true"></i>
+            <div class="navbar-nav lidogenerator-balance-wrapper">
+                @if (isset($roleLidogenerator) && ($roleLidogenerator))
+                    <div class="nav-item dropdown magic-menu">
+                <a class="nav-link lidogenerator-balance-link" href="{{ route('lidogenerators.billing') }}">
+                    <img class="lidogenerator-balance-icon mr-2" src="../img/wallet-icon.svg" width="28" height="27"
+                         alt="Иконка страницы биллинга лидогенератора">
+                    <span class="btn-secondary lidogenerator-balance"> 20000 <i class="fa fa-rub" aria-hidden="true"></i>
                 </span>
-            </a>
-        </div>
+                </a>
+                    </div>
+            </div>
         @endif
         <div class="navbar-nav login-wrapper">
             <div class="nav-item dropdown magic-menu">

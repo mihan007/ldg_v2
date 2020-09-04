@@ -9,16 +9,36 @@
                 @include('includes.lidogenerator-balance-links', ['step'=>'billing'])
             </div>
         </div>
-        <div class="row">
+        <div class="row pt-2">
             <h2 class="sr-only">Блок настроек Лидогенератора</h2>
-            <div class="col-md-12">
-                <h3>Лидогенератор</h3>
-            </div>
             <div class="col-md-9 d-flex justify-content-between">
-                <p><span class="font-weight-bolder">Тариф:</span> 10%</p>
-                <p><span class="font-weight-bolder">Минимальный тариф:</span> 10 рублей</p>
-                <p><span class="font-weight-bolder">Период согласования заявок:</span> 14 дней</p>
-                <p><span class="font-weight-bolder">Бесплатный период:</span> 30 дней</p>
+                <p>
+                    <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
+                   data-toggle="click-tooltip" data-placement="top" data-title="Система спишет комиссию от
+                       стоимости проданной заявки. Если произойдет возврат средств за заявку вашему клиенту, система
+                       вернет комиссию на ваш баланс и укажет это в финансах"></i>
+                    <span class="font-weight-bolder mr-2">Тариф:</span> 10%
+                </p>
+                <p>
+                    <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
+                       data-toggle="click-tooltip" data-placement="top" data-title="Минимальная комиссия за проданную
+                           заявку не может быть менее указанной суммы"></i>
+                    <span class="font-weight-bolder">Минимальная комиссия:</span> 10
+                    <i class="fa fa-rub" aria-hidden="true"></i>
+                </p>
+                <p>
+                    <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
+                       data-toggle="click-tooltip" data-placement="top" data-title="Это максимальный период модерации
+                       заявок для вашего клиента. В течение этого периода система вернет комиссию на баланс, если ваш
+                       клиент сделает заявку нецелевой"></i>
+                    <span class="font-weight-bolder">Период согласования заявок:</span> 14 дней
+                </p>
+                <p>
+                    <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
+                       data-toggle="click-tooltip" data-placement="top" data-title="Период для бесплатного доступа ко
+                       всем функциям. При завершении начинает действовать тарифный план"></i>
+                    <span class="font-weight-bolder">Бесплатный период:</span> 30 дней
+                </p>
             </div>
         </div>
         <div class="row pt-md-3">
@@ -58,13 +78,4 @@
             </div>
         </div>
     </main>
-{{--    <footer class="page-footer footer-hide bg-grey fixed-bottom">--}}
-{{--        <div class="container">--}}
-{{--            <div class="text-center py-2 d-flex justify-content-center align-items-center">--}}
-{{--                <h5 class="mb-1 unsaved-text mr-3">На странице есть несохраненные изменения</h5>--}}
-{{--                <button class="btn btn-primary show-save-toast footer-save-button" type="submit">Сохранить--}}
-{{--                </button>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </footer>--}}
 @stop
