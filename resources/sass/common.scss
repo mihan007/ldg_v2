@@ -123,27 +123,27 @@ input[type="radio"].visually-hidden {
 }
 
 @media (max-width: 767px) {
-    .dropdown-center {
-        right: auto;
-        left: calc(-190px - 20vw);
+    .accounts-dropdown {
+        padding-bottom: 2px;
     }
 
-    .accounts-dropdown {
-         padding-bottom: 2px;
-     }
-}
-
-@media (max-width: 600px) {
     .dropdown-center {
         right: auto;
-        left: calc(-190px - 30vw);
+        left: calc(-90px - 20vw);
+    }
+}
+
+@media (max-width: 450px) {
+    .dropdown-center {
+        right: auto;
+        left: calc(-90px - 15vw);
     }
 }
 
 @media (max-width: 400px) {
     .dropdown-center {
         right: auto;
-        left: -190px;
+        left: -90px;
     }
 }
 
@@ -528,8 +528,8 @@ input[type="radio"].visually-hidden {
     }
 }
 
-.custom-switch .custom-control-label::before,
-.custom-switch .custom-control-label::after {
+.custom-control-label::before,
+.custom-control-label::after {
     cursor: pointer;
 }
 
@@ -615,3 +615,6 @@ td.accounts-buttons-col {
     padding-top: 3px;
 }
 
+.fa-question-circle-o {
+    cursor: pointer;
+}
