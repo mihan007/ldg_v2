@@ -7,15 +7,15 @@
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper font-weight-bold">
                 @include('includes.lidogenerator-balance-links', ['step'=>'billing-finance'])
-                <a class="balance-info" href=".js-balance-modal" role="button" data-toggle="modal">
-                    <i class="fa fa-plus-square" aria-hidden="true"></i>
-                    Баланс 2000
-                    <i class="fa fa-rub" aria-hidden="true"></i>
-                </a>
+{{--                <a class="balance-info" href=".js-balance-modal" role="button" data-toggle="modal">--}}
+{{--                    <i class="fa fa-plus-square" aria-hidden="true"></i>--}}
+{{--                    Баланс 2000--}}
+{{--                    <i class="fa fa-rub" aria-hidden="true"></i>--}}
+{{--                </a>--}}
             </div>
-            @include('includes.finance-settings')
+            @include('includes.finance-settings', ['role'=> null])
         </div>
-        @include('includes.finance-table', ['role'=>'lidogenerator'])
+        @include('includes.finance-table', ['role'=>'billing'])
         @include('includes.modal.balance-modal')
         @include('includes.modal.bill-modal')
         @include('includes.modal.confirm-modal', [

@@ -18,22 +18,20 @@
         @include('includes.date-range')
     </div>
     <div class="finance-buttons">
-        <div class="income-expense-wrapper">
-            <span class="income-finance-info">-2000</span>
-            <span>/</span>
-            <span class="expense-finance-info">+2000</span>
-        </div>
-        <a href=".js-bill-modal" role="button" class="btn page-button bill-button" data-toggle="modal">
-            Выставить счет
-        </a>
-    </div>
-    @include('includes.search-form')
+        @include('includes.finance-info')
+        @if ($role=='lidogenerator')
+            <a href=".js-bill-modal" role="button" class="btn page-button bill-button" data-toggle="modal">
+               Выставить счет
+            </a>
+        @endif
+</div>
+@include('includes.search-form')
 </div>
 <!-- Алерт об ошибке финансовой системы -->
 <div class="col-md-6 text-center mx-auto balance-alert-wrapper">
-    <div class="alert alert-primary finance-balance-alert w-auto" role="alert">
-        Тут будет уведомление об ошибке работы финансовой подсистемы
-        <button class="close balance-alert-close" type="button" data-dismiss="alert">&times;</button>
-    </div>
+<div class="alert alert-primary finance-balance-alert w-auto" role="alert">
+Тут будет уведомление об ошибке работы финансовой подсистемы
+<button class="close balance-alert-close" type="button" data-dismiss="alert">&times;</button>
+</div>
 </div>
 

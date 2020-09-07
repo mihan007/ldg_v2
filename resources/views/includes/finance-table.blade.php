@@ -18,7 +18,7 @@
                     <td class="finance-operation-col">Выставлен к оплате</td>
                     <td class="finance-info-col">Емельянов Виктор</td>
                     <td class="finance-sum-col">
-                        @if ($role=='client')
+                        @if ($role=='client' or $role=='billing')
                             +-2.00
                         @endif
                         @if ($role=='staff' or $role=='lidogenerator')
@@ -36,7 +36,7 @@
                     <td class="finance-operation-col">Пополнение</td>
                     <td class="finance-info-col">Емельянов Виктор</td>
                     <td class="finance-sum-col">
-                        @if ($role=='client')
+                        @if ($role=='client' or $role=='billing')
                             +-2.00
                         @endif
                         @if ($role=='staff' or $role=='lidogenerator')
@@ -67,7 +67,7 @@
                     <td class="finance-time-col text-left" scope="row">11.05.2018 13:00:00</td>
                     <td class="finance-operation-col">Пополнение</td>
                     <td class="finance-info-col">Емельянов Виктор</td>
-                    <td class="finance-sum-col">@if ($role=='client')
+                    <td class="finance-sum-col">@if ($role=='client' or $role=='billing')
                             +-2.00
                         @endif
                         @if ($role=='staff' or $role=='lidogenerator')
@@ -98,7 +98,7 @@
                     <td class="finance-time-col text-left">11.08.2018 13:00:00</td>
                     <td class="finance-operation-col">Пополнение</td>
                     <td class="finance-info-col">Емельянов Виктор</td>
-                    <td class="finance-sum-col">@if ($role=='client')
+                    <td class="finance-sum-col">@if ($role=='client' or $role=='billing')
                             +-2.00
                         @endif
                         @if ($role=='staff' or $role=='lidogenerator')
@@ -117,7 +117,7 @@
                     @if ($role=='staff' or $role=='client')
                     <td>Целевая заявка №11111</td>
                     @endif
-                    @if ($role=='lidogenerator')
+                    @if ($role=='lidogenerator' or $role=='billing')
                         <td>Целевая заявка <a class="btn-link" href="{{ route('work.orders') }}" aria-label="Ссылка на
                         страницу заявки">№ 11111</a>. Цена 100 рублей.<br> Название компании.<br> Название источника заявок</td>
                     @endif
@@ -144,7 +144,7 @@
                     @if ($role=='staff' or $role=='client')
                     <td>Целевая заявка №26061</td>
                     @endif
-                    @if ($role=='lidogenerator')
+                    @if ($role=='lidogenerator' or $role=='billing')
                         <td>Целевая заявка <a class="btn-link" href="{{ route('work.orders') }}" aria-label="Ссылка на
                         страницу заявки">№ 26061</a>. Цена 100 рублей.<br>Название компании.<br> Название источника заявок</td>
                     @endif

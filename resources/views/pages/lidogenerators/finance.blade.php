@@ -13,7 +13,7 @@
                     <i class="fa fa-rub" aria-hidden="true"></i>
                 </a>
             </div>
-            @include('includes.finance-settings')
+            @include('includes.finance-settings', ['role'=>'lidogenerator'])
         </div>
         @include('includes.finance-table', ['role'=>'lidogenerator'])
         @include('includes.modal.balance-modal')
