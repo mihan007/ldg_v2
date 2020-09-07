@@ -154,3 +154,8 @@ Route::get('/lidogenerators/billing', function () {
     View::share('roleLidogenerator', true);
     return view('pages.lidogenerators.billing');
 })->name('lidogenerators.billing');
+
+Route::get('/lidogenerators/finance-billing', function () {
+    View::share('roleLidogenerator', true);
+    return view('pages.lidogenerators.finance-billing');
+})->name('lidogenerators.finance-billing');
