@@ -53,7 +53,7 @@
             </div>
             <div class="col-md-12 table-wrapper mb-5">
                 <h2 class="sr-only">Таблица данных по компаниям</h2>
-                @include('includes.company_grid')
+                @include('includes.company-grid')
             </div>
         </div>
     </main>

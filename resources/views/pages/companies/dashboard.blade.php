@@ -117,7 +117,7 @@
                 </div>
             </div>
             <div class="col-md-12 table-wrapper mb-5">
-                @include('includes.company_grid')
+                @include('includes.company-grid')
             </div>
         </div>
     </main>

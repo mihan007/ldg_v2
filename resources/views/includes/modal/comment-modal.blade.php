@@ -9,7 +9,7 @@
                 <form class="comment-form" method="post" action="#" novalidate>
                     <div class="form-group">
                         <textarea class="form-control comment-input" rows="6"
-                                  id="comment-order" placeholder="{{ $messagePlaceholder }}" autofocus></textarea>
+                                  id="comment-order" placeholder="{{ $messagePlaceholder }}"></textarea>
                         <div class="invalid-feedback comment-invalid-feedback">Сообщение об ошибке</div>
                     </div>
                     <div class="form-group modal-action-buttons">

@@ -62,16 +62,89 @@ input[type="radio"].visually-hidden {
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
+    margin-left: 20px;
 }
 
-.fa-user-o {
+.lidogenerator-balance-wrapper {
+    margin-left: auto;
+    margin-bottom: -1px;
+}
+
+@media (max-width: 767px) {
+    .logo-name,
+    .accounts-name,
+    .dropdown-toggle::after {
+        display: none;
+    }
+
+    .login-wrapper {
+        margin-left: 10px;
+    }
+
+    .accounts-wrapper {
+       margin-left: auto;
+    }
+
+    .lidogenerator-balance-wrapper {
+        margin-left: 10px;
+    }
+}
+
+.fa-user-o,
+.fa-database,
+.fa-adjust,
+.fa-cirle-o,
+.fa-money,
+.fa-wallet,
+.fa-folder-o {
     color: $header-icon-color;
     font-size: 23px;
+}
+
+.fa-folder-o {
+    font-size: 25px;
+    padding-bottom: 2px;
+}
+
+.lidogenerator-balance {
+    padding: 4px;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+.lidogenerator-balance-link:active,
+.lidogenerator-balance-link:hover {
+    text-decoration: none;
 }
 
 .accounts-dropdown,
 .user-dropdown {
     font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    .accounts-dropdown {
+        padding-bottom: 2px;
+    }
+
+    .dropdown-center {
+        right: auto;
+        left: calc(-90px - 20vw);
+    }
+}
+
+@media (max-width: 450px) {
+    .dropdown-center {
+        right: auto;
+        left: calc(-90px - 15vw);
+    }
+}
+
+@media (max-width: 400px) {
+    .dropdown-center {
+        right: auto;
+        left: -90px;
+    }
 }
 
 .sidenav {
@@ -172,9 +245,6 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    //-webkit-box-align: center;
-    //-ms-flex-align: center;
-    //align-items: center;
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     align-items: baseline;
@@ -458,8 +528,9 @@ input[type="radio"].visually-hidden {
     }
 }
 
-.custom-switch .custom-control-label::before,
-.custom-switch .custom-control-label::after {
+.custom-control-label::before,
+.custom-control-label::after,
+.custom-control-label {
     cursor: pointer;
 }
 
@@ -545,3 +616,6 @@ td.accounts-buttons-col {
     padding-top: 3px;
 }
 
+.fa-question-circle-o {
+    cursor: pointer;
+}

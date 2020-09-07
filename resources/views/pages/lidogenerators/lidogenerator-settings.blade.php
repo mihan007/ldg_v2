@@ -6,7 +6,7 @@
             <h2 class="sr-only">Блок навигации по страницам настроек и управления настройками страницы</h2>
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper border-bottom font-weight-bold">
-                @include('includes.lidogenerators-links', ['step'=>'lidogenerator-workspace'])
+                @include('includes.lidogenerator-links', ['step'=>'lidogenerator-workspace'])
                 <a class="btn btn-primary wizard-button" href="{{ route('companies.report') }}">Войти</a>
             </div>
         </div>

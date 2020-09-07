@@ -91,12 +91,12 @@
     </thead>
     <tbody>
     <tr>
-        <td scope="row">
+        <th scope="row">
             <button class="btn company-dashboard-button">
                 <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
             </button>
             Импульс
-        </td>
+        </th>
         <td>2000</td>
         <td>10000</td>
         <td>5000</td>
@@ -110,12 +110,12 @@
         <td>2000</td>
     </tr>
     <tr>
-        <td scope="row">
+        <th scope="row">
             <button class="btn company-dashboard-button">
                 <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
             </button>
             Центр профессиональной юридической помощи. Тверь.
-        </td>
+        </th>
         <td>20</td>
         <td>10</td>
         <td>50</td>
@@ -129,11 +129,11 @@
         <td>20</td>
     </tr>
     <tr>
-        <td scope="row">
+        <th scope="row">
             <button class="btn company-dashboard-button active">
                 <i class="fa fa-line-chart company-icon" aria-hidden="true"></i>
             </button>Импульс
-        </td>
+        </th>
         <td>2000</td>
         <td>10000</td>
         <td>5000</td>

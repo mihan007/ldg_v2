@@ -17,11 +17,7 @@
                     @include('includes.date-range')
                 </div>
                 <div class="finance-buttons">
-                    <div class="income-expense-wrapper">
-                        <span class="income-finance-info">-2000</span>
-                        <span>/</span>
-                        <span class="expense-finance-info">+2000</span>
-                    </div>
+                    @include('includes.finance-info')
                 </div>
                 @include('includes.search-form')
             </div>

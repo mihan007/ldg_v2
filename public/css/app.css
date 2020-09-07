@@ -14121,16 +14121,89 @@ input[type=radio].visually-hidden {
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin-left: 20px;
 }
 
-.fa-user-o {
+.lidogenerator-balance-wrapper {
+  margin-left: auto;
+  margin-bottom: -1px;
+}
+
+@media (max-width: 767px) {
+  .logo-name,
+  .accounts-name,
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  .login-wrapper {
+    margin-left: 10px;
+  }
+
+  .accounts-wrapper {
+    margin-left: auto;
+  }
+
+  .lidogenerator-balance-wrapper {
+    margin-left: 10px;
+  }
+}
+
+.fa-user-o,
+.fa-database,
+.fa-adjust,
+.fa-cirle-o,
+.fa-money,
+.fa-wallet,
+.fa-folder-o {
   color: white;
   font-size: 23px;
+}
+
+.fa-folder-o {
+  font-size: 25px;
+  padding-bottom: 2px;
+}
+
+.lidogenerator-balance {
+  padding: 4px;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+
+.lidogenerator-balance-link:active,
+.lidogenerator-balance-link:hover {
+  text-decoration: none;
 }
 
 .accounts-dropdown,
 .user-dropdown {
   font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .accounts-dropdown {
+    padding-bottom: 2px;
+  }
+
+  .dropdown-center {
+    right: auto;
+    left: calc(-90px - 20vw);
+  }
+}
+
+@media (max-width: 450px) {
+  .dropdown-center {
+    right: auto;
+    left: calc(-90px - 15vw);
+  }
+}
+
+@media (max-width: 400px) {
+  .dropdown-center {
+    right: auto;
+    left: -90px;
+  }
 }
 
 .sidenav {
@@ -14480,8 +14553,9 @@ input[type=radio].visually-hidden {
   }
 }
 
-.custom-switch .custom-control-label::before,
-.custom-switch .custom-control-label::after {
+.custom-control-label::before,
+.custom-control-label::after,
+.custom-control-label {
   cursor: pointer;
 }
 
@@ -14565,6 +14639,10 @@ input[type=radio].visually-hidden {
 
 td.accounts-buttons-col {
   padding-top: 3px;
+}
+
+.fa-question-circle-o {
+  cursor: pointer;
 }
 
 .index-buttons-wrapper {
@@ -14806,8 +14884,7 @@ td.accounts-buttons-col {
 }
 
 .crm-correct-button {
-  display: block;
-  margin-left: auto;
+  float: right;
 }
 
 .crm-table .restore-button,
@@ -15729,5 +15806,15 @@ td.ad-buttons-col {
 .lidogenerator-form .form-control,
 .lidogenerator-form .input-group-text {
   font-size: 14px;
+}
+
+.lidogenerator-balance-form {
+  width: 20%;
+}
+
+@media (min-width: 768px) {
+  .lidogenerator-balance-form {
+    width: 100%;
+  }
 }
 

@@ -48,7 +48,7 @@
                 </thead>
                 <tbody>
                 <tr class="order-line">
-                    <td class="id-col" scope="row">1</td>
+                    <td class="id-col">1</td>
                     <td class="time-col text-left">11.01.2018 13:00:00</td>
                     <td class="title-col">1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor
@@ -83,11 +83,10 @@
                     @endif
                     <td class="client-col">3Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -101,9 +100,8 @@
                                     aria-label="На модерации"></button>
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
-                                <button class="btn moderation-circle" type="button"
-                                        href=".js-comment-modal" data-toggle="modal"
-                                        aria-label="Не согласны"></button>
+                                <a class="btn moderation-circle" href=".js-comment-modal" data-toggle="modal"
+                                        aria-label="Не согласны"></a>
                             </div>
                         </td>
                     @endif
@@ -115,11 +113,10 @@
                     @endif
                     <td class="comment-col">4Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -137,7 +134,7 @@
                     @endif
                 </tr>
                 <tr class="@if ($role=='staff') reset-order @endif">
-                    <td class="id-col" scope="row">11</td>
+                    <td class="id-col">11</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -170,11 +167,10 @@
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -188,9 +184,8 @@
                                     aria-label="На модерации"></button>
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
-                                <button class="btn moderation-circle" type="button"
-                                        href=".js-comment-modal" data-toggle="modal"
-                                        aria-label="Не согласны"></button>
+                                <a class="btn moderation-circle" href=".js-comment-modal" data-toggle="modal"
+                                        aria-label="Не согласны"></a>
                             </div>
                         </td>
                     @endif
@@ -203,11 +198,10 @@
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -225,7 +219,7 @@
                     @endif
                 </tr>
                 <tr class="order-line">
-                    <td class="id-col" scope="row">111</td>
+                    <td class="id-col">111</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -259,11 +253,10 @@
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -276,9 +269,8 @@
                                     aria-label="На модерации"></button>
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
-                                <button class="btn moderation-circle circle-red" type="button"
-                                        href=".js-comment-modal" data-toggle="modal"
-                                        aria-label="Не согласны"></button>
+                                <a class="btn moderation-circle circle-red" href=".js-comment-modal" data-toggle="modal"
+                                        aria-label="Не согласны"></a>
                             </div>
                         </td>
                     @endif
@@ -290,11 +282,10 @@
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -312,7 +303,7 @@
                     @endif
                 </tr>
                 <tr class="@if ($role=='staff') reset-order @endif">
-                    <td class="id-col" scope="row">
+                    <td class="id-col">
                         1111
                     </td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
@@ -348,11 +339,10 @@
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -366,9 +356,8 @@
                                     aria-label="На модерации"></button>
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
-                                <button class="btn moderation-circle" type="button"
-                                        href=".js-comment-modal" data-toggle="modal"
-                                        aria-label="Не согласны"></button>
+                                 <a class="btn moderation-circle" href=".js-comment-modal" data-toggle="modal"
+                                        aria-label="Не согласны"></a>
                             </div>
                         </td>
                     @endif
@@ -381,11 +370,10 @@
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -403,7 +391,7 @@
                     @endif
                 </tr>
                 <tr class="order-line">
-                    <td class="id-col" scope="row">
+                    <td class="id-col">
                         11111
                     </td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
@@ -439,11 +427,10 @@
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -459,9 +446,8 @@
                             </button>
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
-                                <button class="btn moderation-circle" type="button"
-                                        href=".js-comment-modal" data-toggle="modal"
-                                        aria-label="Не согласны"></button>
+                                <a class="btn moderation-circle" href=".js-comment-modal" data-toggle="modal"
+                                        aria-label="Не согласны"></a>
                             </div>
                         </td>
                     @endif
@@ -475,11 +461,10 @@
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -497,7 +482,7 @@
                     @endif
                 </tr>
                 <tr class="@if ($role=='staff') reset-order @endif">
-                    <td class="id-col" scope="row">
+                    <td class="id-col">
                         111111
                     </td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
@@ -533,11 +518,10 @@
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -550,9 +534,8 @@
                                     aria-label="На модерации"></button>
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
-                                <button class="btn moderation-circle" type="button"
-                                        href=".js-comment-modal" data-toggle="modal"
-                                        aria-label="Не согласны"></button>
+                                <a class="btn moderation-circle" href=".js-comment-modal" data-toggle="modal"
+                                        aria-label="Не согласны"></a>
                             </div>
                         </td>
                     @endif
@@ -561,11 +544,10 @@
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -583,7 +565,7 @@
                     @endif
                 </tr>
                 <tr class="order-line">
-                    <td class="id-col" scope="row">
+                    <td class="id-col">
                         1111111
                     </td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
@@ -619,11 +601,10 @@
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -636,9 +617,8 @@
                                     aria-label="На модерации"></button>
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
-                                <button class="btn moderation-circle" type="button"
-                                        href=".js-comment-modal" data-toggle="modal"
-                                        aria-label="Не согласны"></button>
+                                <a class="btn moderation-circle" href=".js-comment-modal" data-toggle="modal"
+                                        aria-label="Не согласны"></a>
                             </div>
                         </td>
                     @endif
@@ -647,11 +627,10 @@
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -669,7 +648,7 @@
                     @endif
                 </tr>
                 <tr class="@if ($role=='staff') reset-order @endif">
-                    <td class="id-col" scope="row">
+                    <td class="id-col">
                         11111111
                     </td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
@@ -705,11 +684,10 @@
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -723,9 +701,8 @@
                                     aria-label="На модерации"></button>
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
-                                <button class="btn moderation-circle" type="button"
-                                        href=".js-comment-modal" data-toggle="modal"
-                                        aria-label="Не согласны"></button>
+                                <a class="btn moderation-circle" href=".js-comment-modal" data-toggle="modal"
+                                        aria-label="Не согласны"></a>
                             </div>
                         </td>
                     @endif
@@ -738,11 +715,10 @@
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -760,7 +736,7 @@
                     @endif
                 </tr>
                 <tr class="order-line">
-                    <td class="id-col" scope="row">
+                    <td class="id-col">
                         1111112
                     </td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
@@ -796,11 +772,10 @@
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -814,9 +789,8 @@
                                     aria-label="На модерации"></button>
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
-                                <button class="btn moderation-circle" type="button"
-                                        href=".js-comment-modal" data-toggle="modal"
-                                        aria-label="Не согласны"></button>
+                                <a class="btn moderation-circle" href=".js-comment-modal" data-toggle="modal"
+                                        aria-label="Не согласны"></a>
                             </div>
                         </td>
                     @endif
@@ -829,11 +803,10 @@
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -851,7 +824,7 @@
                     @endif
                 </tr>
                 <tr class="@if ($role=='staff') reset-order @endif">
-                    <td class="id-col" scope="row">
+                    <td class="id-col">
                         1111113
                     </td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
@@ -887,11 +860,10 @@
                     @endif
                     <td class="client-col">Lorem ipsum dolor
                         @if ($role=='client')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')
@@ -904,9 +876,8 @@
                                     aria-label="На модерации"></button>
                             <div class="d-inline-block" data-toggle="tooltip" data-placement="top"
                                  data-delay='{"show":"1000", "hide":"1000"}' title="Не согласны">
-                                <button class="btn moderation-circle circle-red" type="button"
-                                        href=".js-comment-modal" data-toggle="modal"
-                                        aria-label="Не согласны"></button>
+                                <a class="btn moderation-circle circle-red" href=".js-comment-modal" data-toggle="modal"
+                                        aria-label="Не согласны"></a>
                             </div>
                         </td>
                     @endif
@@ -919,11 +890,10 @@
                     @endif
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
-                            <button class="btn crm-correct-button function-button" type="button"
-                                    href=".js-comment-modal" data-toggle="modal"
+                            <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
                                     aria-label="Редактировать комментарий">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
+                            </a>
                         @endif
                     </td>
                     @if ($role=='staff')

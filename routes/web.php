@@ -131,6 +131,7 @@ Route::get('/accounts/timezone', function () {
 })->name('accounts.timezone');
 
 Route::get('/lidogenerators/lidogenerators-list', function () {
+    View::share('roleLidogenerator', true);
     return view('pages.lidogenerators.lidogenerators-list');
 })->name('lidogenerators.lidogenerators-list');
 
@@ -140,9 +141,21 @@ Route::get('/users/registration', function () {
 
 Route::get('/lidogenerators/lidogenerator-settings', function () {
     View::share('showSaveButton', true);
+    View::share('roleLidogenerator', true);
     return view('pages.lidogenerators.lidogenerator-settings');
 })->name('lidogenerators.lidogenerator-settings');
 
 Route::get('/lidogenerators/finance', function () {
+    View::share('roleLidogenerator', true);
     return view('pages.lidogenerators.finance');
 })->name('lidogenerators.finance');
+
+Route::get('/lidogenerators/billing', function () {
+    View::share('roleLidogenerator', true);
+    return view('pages.lidogenerators.billing');
+})->name('lidogenerators.billing');
+
+Route::get('/lidogenerators/finance-billing', function () {
+    View::share('roleLidogenerator', true);
+    return view('pages.lidogenerators.finance-billing');
+})->name('lidogenerators.finance-billing');

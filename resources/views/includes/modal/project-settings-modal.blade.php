@@ -8,25 +8,25 @@
             <div class="modal-body">
                 <form class="balance-actions" method="post" action="#" novalidate>
                     <div class="form-group">
-                        <label class="workspace-form-label" for="project-name">Название ниши</label>
-                        <input class="form-control" type="text" id="project-name" placeholder="Балконы" required>
+                        <label class="workspace-form-label" for="change-project-name">Название ниши</label>
+                        <input class="form-control" type="text" id="change-project-name" placeholder="Балконы" required>
                         <div class="invalid-feedback project-name-invalid-feedback">Сообщение об ошибке</div>
                     </div>
                     <div class="form-group">
-                        <label class="workspace-form-label" for="project-settings-moderation-period">
+                        <label class="workspace-form-label" for="change-moderation-period">
                             Максимальный период модерации
                             <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                data-toggle="click-tooltip" data-placement="top" data-title="Количество дней, в
                                    течение которых клиент может изменить статус заявки. Максимальный период 45 дней"></i>
                         </label>
                         <input class="form-control moderation-period-input" type="number"
-                               id="project-settings-moderation-period" placeholder="7" min="1" max="45">
+                               id="change-moderation-period" placeholder="7" min="1" max="45">
                         <div class="invalid-feedback moderation-period-invalid-feedback">Максимальный период
                             модерации 45 дней
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="workspace-form-label" for="project-settings-orders-agreement">
+                        <label class="workspace-form-label" for="change-orders-agreement">
                             Описание соглашения по заявкам
                             <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                data-toggle="click-tooltip" data-placement="top" data-title="Соглашение о том, какие
@@ -38,18 +38,18 @@
                             <i class="fa fa-clipboard" aria-hidden="true"></i>
                         </button>
                         <textarea class="form-control orders-agreement-input" rows="6"
-                                  id="project-settings-orders-agreement"></textarea>
+                                  id="change-orders-agreement"></textarea>
                         <div class="invalid-feedback orders-agreement-invalid-feedback">Сообщение об ошибке</div>
                     </div>
                     <div class="form-group">
-                        <label class="workspace-form-label" for="project-settings-base-cost">
+                        <label class="workspace-form-label" for="change-base-cost">
                             Базовая цена заявки для клиента
                             <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                data-toggle="click-tooltip" data-placement="top" data-title="Ваше вознаграждение за
                                        целевую заявку"></i>
                         </label>
                         <div class="input-group">
-                            <input class="form-control base-cost-input" type="number" id="project-settings-base-cost" min="0"
+                            <input class="form-control base-cost-input" type="number" id="change-base-cost" min="0"
                                    max="100000" placeholder="0">
                             <div class="input-group-append">
                                 <span class="input-group-text">
@@ -60,7 +60,7 @@
                         <div class="invalid-feedback base-cost-invalid-feedback">Сообщение об ошибке</div>
                     </div>
                     <div class="form-group">
-                        <label class="workspace-form-label" for="project-settings-max-cpl">
+                        <label class="workspace-form-label" for="change-max-cpl">
                             Максимально допустимый CPL
                             <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                data-toggle="click-tooltip" data-placement="top" data-title="Отправим оповещение о
@@ -68,7 +68,7 @@
                                            чтобы не получать уведомления"></i>
                         </label>
                         <div class="input-group">
-                            <input class="form-control max-cpl-input" type="number" id="project-settings-max-cpl" min="0"
+                            <input class="form-control max-cpl-input" type="number" id="change-max-cpl" min="0"
                                    placeholder="0">
                             <div class="input-group-append">
                                 <span class="input-group-text">
@@ -79,7 +79,7 @@
                         <div class="invalid-feedback max-cpl-invalid-feedback">Сообщение об ошибке</div>
                     </div>
                     <div class="form-group">
-                        <label class="workspace-form-label" for="project-settings-balance-limit">
+                        <label class="workspace-form-label" for="change-balance-limit">
                             Уведомлять об окончании баланса Лидгена при
                             <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                data-toggle="click-tooltip" data-placement="top" data-title="Отправим оповещение клиенту
@@ -87,7 +87,7 @@
                         </label>
                         <div class="input-group">
                             <input class="form-control balance-limit-input" type="number"
-                                   id="project-settings-balance-limit" min="0" placeholder="0">
+                                   id="change-balance-limit" min="0" placeholder="0">
                             <div class="input-group-append">
                                 <span class="input-group-text">
                                     <i class="fa fa-rub" aria-hidden="true"></i>
@@ -97,14 +97,14 @@
                         <div class="invalid-feedback balance-limit-invalid-feedback">Сообщение об ошибке</div>
                     </div>
                     <div class="form-group">
-                        <label class="workspace-form-label" for="project-settings-data-hide">
+                        <label class="workspace-form-label" for="change-data-hide">
                             Скрывать данные заявок при балансе Лидгена менее
                             <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                data-toggle="click-tooltip" data-placement="top" data-title="Система скроет заявки
                                    для вашего клиента при балансе менее этого значения"></i>
                         </label>
                         <div class="input-group">
-                            <input class="form-control data-hide-input" type="number" id="project-settings-data-hide"
+                            <input class="form-control data-hide-input" type="number" id="change-data-hide"
                                    min="0" placeholder="0">
                             <div class="input-group-append">
                                 <span class="input-group-text">

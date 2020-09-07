@@ -1,12 +1,16 @@
 <header class="container-fluid bg-grey company-header fixed-top">
     <nav class="navbar navbar-expand navbar-dark bg-grey scrollmenu">
-        <a href="#" class="navbar-brand magic-hide">
-            <img class="align-top mr-2" src="/img/logo-index.png" height="30" alt="Лидогенератор">
+        <a href="#" class="navbar-brand magic-hide d-flex">
+            <img class="align-top" src="/img/logo-image.png" height="30" alt="Лидогенератор">
+            <img class="align-top mr-2 logo-name" src="/img/logo-name.png" height="30" alt="Лидогенератор">
         </a>
-        <div class="navbar-nav">
+        <div class="navbar-nav accounts-wrapper">
             <div class="nav-item dropdown magic-menu">
-                <a class="nav-link dropdown-toggle accounts-dropdown" href="#" onclick="return false;">Название аккаунта</a>
-                <div class="dropdown-menu accounts-list">
+                <a class="nav-link dropdown-toggle accounts-dropdown" href="#" onclick="return false;">
+                    <i class="fa fa-folder-o mr-2" aria-hidden="true"></i>
+                    <span class="accounts-name">Название аккаунта</span>
+                </a>
+                <div class="dropdown-menu accounts-list dropdown-center">
                     <a class="dropdown-item disabled" href="#">Пункт 1</a>
                     <a class="dropdown-item" href="{{ route('users.login') }}">Страница входа</a>
                     <a class="dropdown-item" href="{{ route('users.reset-password') }}">Восстановление пароля</a>
@@ -14,8 +18,7 @@
                         восстановление пароля</a>
                     <a class="dropdown-item" href="{{ route('users.new-password') }}">Ввод нового пароля</a>
                     <a class="dropdown-item" href="{{ route('users.new-password-login') }}">Оповещение об изменении
-                        пароля
-                        и страница входа</a>
+                        пароля и страница входа</a>
                     <a class="dropdown-item" href="{{ route('users.old-password') }}">Переход по устаревшей ссылке</a>
                     <a class="dropdown-item" href="{{ route('users.new-info-alert') }}">О новой ссылке на почту</a>
                     <a class="dropdown-item" href="{{ route('users.error-login') }}">Переход по неверной ссылке</a>
@@ -31,13 +34,24 @@
                 </div>
             </div>
         </div>
-        <div class="navbar-nav login-wrapper ml-auto">
+        <div class="navbar-nav lidogenerator-balance-wrapper">
+            @if (isset($roleLidogenerator) && ($roleLidogenerator))
+                <div class="nav-item dropdown magic-menu">
+                    <a class="nav-link lidogenerator-balance-link" href="{{ route('lidogenerators.billing') }}">
+                        <img class="lidogenerator-balance-icon mr-2" src="../img/wallet-icon.svg" width="28" height="27"
+                             alt="Иконка страницы биллинга лидогенератора">
+                        <span class="btn-secondary lidogenerator-balance"> 20000 <i class="fa fa-rub" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+            @endif
+        </div>
+        <div class="navbar-nav login-wrapper">
             <div class="nav-item dropdown magic-menu">
                 <a class="nav-link dropdown-toggle user-dropdown" href="#" onclick="return false;">
-                    <i class="fa fa-user-o mr-2" aria-hidden="true"></i>
-                    <span>Виктор Емельянов</span>
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
                 </a>
-                <div class="dropdown-menu">
+                <div class="dropdown-menu dropdown-menu-right">
                     <a class="dropdown-item disabled">1@troiza.net</a>
                     <a class="dropdown-item" href="{{ route('users.users-profile') }}">
                         <i class="fa fa-id-card-o" aria-hidden="true"></i>Мой профиль
