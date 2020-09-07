@@ -529,7 +529,8 @@ input[type="radio"].visually-hidden {
 }
 
 .custom-control-label::before,
-.custom-control-label::after {
+.custom-control-label::after,
+.custom-control-label {
     cursor: pointer;
 }
 
