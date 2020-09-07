@@ -6,7 +6,7 @@
             <h2 class="sr-only">Блок навигации по страницам настроек и управления настройками страницы</h2>
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper font-weight-bold">
-                @include('includes.lidogenerators-links', ['step'=>'lidogenerator-finance'])
+                @include('includes.lidogenerator-links', ['step'=>'lidogenerator-finance'])
                 <a class="balance-info" href=".js-balance-modal" role="button" data-toggle="modal">
                     <i class="fa fa-plus-square" aria-hidden="true"></i>
                     Баланс 2000
