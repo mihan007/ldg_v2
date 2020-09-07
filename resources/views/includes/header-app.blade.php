@@ -41,7 +41,7 @@
                     <img class="lidogenerator-balance-icon mr-2" src="../img/wallet-icon.svg" width="28" height="27"
                          alt="Иконка страницы биллинга лидогенератора">
                     <span class="btn-secondary lidogenerator-balance"> 20000 <i class="fa fa-rub" aria-hidden="true"></i>
-                </span>
+                    </span>
                 </a>
                     </div>
             </div>
