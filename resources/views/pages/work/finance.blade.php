@@ -5,7 +5,7 @@
             <h1 class="sr-only">Страница финансов</h1>
             <h2 class="sr-only">Фильтр данных для таблицы по финансам</h2>
             @include('includes.orders-directory-links', ['step'=>'finance', 'role'=>'staff'])
-            @include('includes.finance-settings')
+            @include('includes.finance-settings', ['role'=> null])
         </div>
         @include('includes.finance-table', ['role'=>'staff'])
         @include('includes.modal.balance-modal')

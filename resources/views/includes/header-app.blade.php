@@ -34,18 +34,18 @@
                 </div>
             </div>
         </div>
-            <div class="navbar-nav lidogenerator-balance-wrapper">
-                @if (isset($roleLidogenerator) && ($roleLidogenerator))
-                    <div class="nav-item dropdown magic-menu">
-                <a class="nav-link lidogenerator-balance-link" href="{{ route('lidogenerators.billing') }}">
-                    <img class="lidogenerator-balance-icon mr-2" src="../img/wallet-icon.svg" width="28" height="27"
-                         alt="Иконка страницы биллинга лидогенератора">
-                    <span class="btn-secondary lidogenerator-balance"> 20000 <i class="fa fa-rub" aria-hidden="true"></i>
-                    </span>
-                </a>
-                    </div>
-            </div>
-        @endif
+        <div class="navbar-nav lidogenerator-balance-wrapper">
+            @if (isset($roleLidogenerator) && ($roleLidogenerator))
+                <div class="nav-item dropdown magic-menu">
+                    <a class="nav-link lidogenerator-balance-link" href="{{ route('lidogenerators.billing') }}">
+                        <img class="lidogenerator-balance-icon mr-2" src="../img/wallet-icon.svg" width="28" height="27"
+                             alt="Иконка страницы биллинга лидогенератора">
+                        <span class="btn-secondary lidogenerator-balance"> 20000 <i class="fa fa-rub" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+            @endif
+        </div>
         <div class="navbar-nav login-wrapper">
             <div class="nav-item dropdown magic-menu">
                 <a class="nav-link dropdown-toggle user-dropdown" href="#" onclick="return false;">
