@@ -130,10 +130,10 @@ Route::get('/accounts/timezone', function () {
     return view('pages.accounts.timezone');
 })->name('accounts.timezone');
 
-Route::get('/lidogenerators/lidogenerators-list', function () {
+Route::get('/lidogenerators/lidogenerator-list', function () {
     View::share('roleLidogenerator', true);
-    return view('pages.lidogenerators.lidogenerators-list');
-})->name('lidogenerators.lidogenerators-list');
+    return view('pages.lidogenerators.lidogenerator-list');
+})->name('lidogenerators.lidogenerator-list');
 
 Route::get('/users/registration', function () {
     return view('pages.users.registration');
