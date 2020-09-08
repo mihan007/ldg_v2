@@ -6,7 +6,7 @@
                 table-striped @endif" data-offset="144">
                 <thead>
                 <tr class="table-grey text-center ">
-                    <th class="rounded-table-left id-col">ID</th>
+                    <th class="rounded-table-left id-col" scope="col">ID</th>
                     <th class="time-col" scope="col">
                         @if ($role=='staff')
                             <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'
@@ -42,13 +42,13 @@
                            title="Комментарий модератора">Комментарий</a>
                     </th>
                     @if ($role=='staff')
-                        <th class="buttons-col rounded-table-right"></th>
+                        <th class="buttons-col rounded-table-right" scope="col"></th>
                     @endif
                 </tr>
                 </thead>
                 <tbody>
                 <tr class="order-line">
-                    <td class="id-col">1</td>
+                    <th class="id-col" scope="row">1</th>
                     <td class="time-col text-left">11.01.2018 13:00:00</td>
                     <td class="title-col">1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor
@@ -134,7 +134,7 @@
                     @endif
                 </tr>
                 <tr class="@if ($role=='staff') reset-order @endif">
-                    <td class="id-col">11</td>
+                    <th class="id-col" scope="row">11</th>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -219,7 +219,7 @@
                     @endif
                 </tr>
                 <tr class="order-line">
-                    <td class="id-col">111</td>
+                    <th class="id-col" scope="row">111</th>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -303,9 +303,9 @@
                     @endif
                 </tr>
                 <tr class="@if ($role=='staff') reset-order @endif">
-                    <td class="id-col">
+                    <th class="id-col" scope="row">
                         1111
-                    </td>
+                    </th>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -391,9 +391,9 @@
                     @endif
                 </tr>
                 <tr class="order-line">
-                    <td class="id-col">
+                    <th class="id-col" scope="row">
                         11111
-                    </td>
+                    </th>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -482,9 +482,9 @@
                     @endif
                 </tr>
                 <tr class="@if ($role=='staff') reset-order @endif">
-                    <td class="id-col">
+                    <th class="id-col" scope="row">
                         111111
-                    </td>
+                    </th>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -565,9 +565,9 @@
                     @endif
                 </tr>
                 <tr class="order-line">
-                    <td class="id-col">
+                    <th class="id-col" scope="row">
                         1111111
-                    </td>
+                    </th>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -648,9 +648,9 @@
                     @endif
                 </tr>
                 <tr class="@if ($role=='staff') reset-order @endif">
-                    <td class="id-col">
+                    <th class="id-col" scope="row">
                         11111111
-                    </td>
+                    </th>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -736,9 +736,9 @@
                     @endif
                 </tr>
                 <tr class="order-line">
-                    <td class="id-col">
+                    <th class="id-col" scope="row">
                         1111112
-                    </td>
+                    </th>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -824,9 +824,9 @@
                     @endif
                 </tr>
                 <tr class="@if ($role=='staff') reset-order @endif">
-                    <td class="id-col">
+                    <th class="id-col" scope="row">
                         1111113
-                    </td>
+                    </th>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
