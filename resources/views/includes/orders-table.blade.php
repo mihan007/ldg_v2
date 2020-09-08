@@ -48,7 +48,7 @@
                 </thead>
                 <tbody>
                 <tr class="order-line">
-                    <th class="id-col" scope="row">1</th>
+                    <td class="id-col">1</td>
                     <td class="time-col text-left">11.01.2018 13:00:00</td>
                     <td class="title-col">1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor
@@ -134,7 +134,7 @@
                     @endif
                 </tr>
                 <tr class="@if ($role=='staff') reset-order @endif">
-                    <th class="id-col" scope="row">11</th>
+                    <td class="id-col">11</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -219,7 +219,7 @@
                     @endif
                 </tr>
                 <tr class="order-line">
-                    <th class="id-col" scope="row">111</th>
+                    <td class="id-col">111</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -303,9 +303,7 @@
                     @endif
                 </tr>
                 <tr class="@if ($role=='staff') reset-order @endif">
-                    <th class="id-col" scope="row">
-                        1111
-                    </th>
+                    <td class="id-col">1111</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -391,9 +389,7 @@
                     @endif
                 </tr>
                 <tr class="order-line">
-                    <th class="id-col" scope="row">
-                        11111
-                    </th>
+                    <td class="id-col">11111</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -482,9 +478,7 @@
                     @endif
                 </tr>
                 <tr class="@if ($role=='staff') reset-order @endif">
-                    <th class="id-col" scope="row">
-                        111111
-                    </th>
+                    <td class="id-col">111111</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -565,9 +559,7 @@
                     @endif
                 </tr>
                 <tr class="order-line">
-                    <th class="id-col" scope="row">
-                        1111111
-                    </th>
+                    <td class="id-col">1111111</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -648,9 +640,7 @@
                     @endif
                 </tr>
                 <tr class="@if ($role=='staff') reset-order @endif">
-                    <th class="id-col" scope="row">
-                        11111111
-                    </th>
+                    <td class="id-col">11111111</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -736,9 +726,7 @@
                     @endif
                 </tr>
                 <tr class="order-line">
-                    <th class="id-col" scope="row">
-                        1111112
-                    </th>
+                    <td class="id-col">1111112</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
@@ -824,9 +812,7 @@
                     @endif
                 </tr>
                 <tr class="@if ($role=='staff') reset-order @endif">
-                    <th class="id-col" scope="row">
-                        1111113
-                    </th>
+                    <td class="id-col">1111113</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
                     <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
