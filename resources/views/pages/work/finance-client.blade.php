@@ -1,7 +1,13 @@
 @extends('layouts.app')
 @section('content')
     <main class="page-wrapper">
-        <div class="row sticky-top bg-white">
+        @desktop
+            <div class="row bg-white sticky-top">
+            <script>let gridOffset = 144;</script>
+        @elsedesktop
+            <div class="row bg-white">
+            <script>let gridOffset = 52;</script>
+        @enddesktop
             <h1 class="sr-only">Страница финансов</h1>
             <h2 class="sr-only">Фильтр данных для таблицы по финансам</h2>
             @include('includes.orders-directory-links', ['step'=>'finance', 'role'=>'client'])

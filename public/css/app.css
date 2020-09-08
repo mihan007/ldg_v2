@@ -14645,6 +14645,10 @@ td.accounts-buttons-col {
   cursor: pointer;
 }
 
+.no-data-image-wrapper {
+  height: 500px;
+}
+
 .index-buttons-wrapper {
   display: flex;
   flex-wrap: wrap;
