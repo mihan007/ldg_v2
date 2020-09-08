@@ -33,6 +33,6 @@ $(document).ready(function () {
         info: false,
         autoWidth: false,
         order: [[ 0, 'desc' ]],
-        columns: $('.order-grid-staff:visible').length > 0 ? staffColumns : clientColumns
+        columns: $('.crm-table-staff:visible').length > 0 ? staffColumns : clientColumns
     })
 })
