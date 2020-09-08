@@ -6,7 +6,7 @@
             <script>let gridOffset = 144;</script>
         @elsedesktop
             <div class="row bg-white">
-                <script>let gridOffset = 51;</script>
+                <script>let gridOffset = 50;</script>
         @enddesktop
             <h1 class="sr-only">Страница заявок</h1>
             <h2 class="sr-only">Фильтр данных для таблицы заявок</h2>

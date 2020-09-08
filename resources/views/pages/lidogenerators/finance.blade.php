@@ -7,7 +7,7 @@
             <script>let gridOffset = 144;</script>
         @elsedesktop
             <div class="row bg-white">
-            <script>let gridOffset = 53;</script>
+            <script>let gridOffset = 50;</script>
         @enddesktop
             <h2 class="sr-only">Блок навигации по страницам настроек и управления настройками страницы</h2>
             <div class="col-md-12 offset-block"></div>
