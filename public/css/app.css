@@ -14282,6 +14282,10 @@ input[type=radio].visually-hidden {
   min-width: 1340px;
 }
 
+.no-data-page-wrapper {
+  min-width: auto;
+}
+
 @media (max-width: 767px) {
   .page-wrapper {
     padding-left: 20px;
@@ -14643,10 +14647,6 @@ td.accounts-buttons-col {
 
 .fa-question-circle-o {
   cursor: pointer;
-}
-
-.no-data-image-wrapper {
-  height: 500px;
 }
 
 .index-buttons-wrapper {

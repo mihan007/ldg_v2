@@ -228,10 +228,18 @@ input[type="radio"].visually-hidden {
     min-width: 1340px;
 }
 
+.no-data-page-wrapper {
+    min-width: auto;
+}
+
 @media (max-width: 767px) {
     .page-wrapper {
         padding-left: 20px;
     }
+
+    //.no-data-page-wrapper {
+    //    min-width: auto;
+    //}
 }
 
 .offset-block {
@@ -620,6 +628,9 @@ td.accounts-buttons-col {
     cursor: pointer;
 }
 
-.no-data-image-wrapper {
-    height: 500px;
-}
+
+
+//.no-data-image {
+//    width: 100%;
+//    height: auto;
+//}
