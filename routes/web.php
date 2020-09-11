@@ -160,6 +160,6 @@ Route::get('/lidogenerators/finance-billing', function () {
     return view('pages.lidogenerators.finance-billing');
 })->name('lidogenerators.finance-billing');
 
-Route::get('/no-data', function () {
-    return view('pages.no-data');
-})->name('no-data');
+Route::get('/companies/no-project', function () {
+    return view('pages.companies.no-project');
+})->name('companies/no-project');
