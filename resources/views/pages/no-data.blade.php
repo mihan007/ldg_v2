@@ -163,8 +163,8 @@
                     <img class="no-data-image" src="../img/no-data.png" width="250" height="265"
                          alt="Нет данных для отображения">
                 </div>
-                <div class="mt-2 alert alert-primary d-flex justify-content-between align-items-baseline no-data-alert">Создайте свою первую компанию для лидогенерации
-                    <button class="btn btn-primary add-button w-auto" type="button">Создать</button></div>
+                <div class="mt-3 alert alert-primary d-flex justify-content-between align-items-center no-data-alert">Создайте свою первую компанию для лидогенерации
+                    <button class="ml-2 btn btn-primary add-button w-auto" type="button">Создать</button></div>
             </div>
             @enddesktop
         </div>
