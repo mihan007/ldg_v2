@@ -1,7 +1,7 @@
 <div class="row">
     <h2 class="sr-only">Таблица данных по заявкам</h2>
     <div class="col-md-12 mx-auto">
-        <div class="table-wrapper mb-5">
+        <div class="table-wrapper ">
             <table class="table crm-table common-table order-grid crm-table-{{$role}} @if ($role=='client')
                 table-striped @endif" data-offset="144">
                 <thead>
@@ -899,5 +899,20 @@
                 </tbody>
             </table>
         </div>
+    </div>
+    <div class="col-12 col-sm-11 col-md-9 col-lg-6 text-center mx-auto mb-5">
+        @desktop
+        <div class="no-data-image-wrapper pt-3">
+            <img class="no-data-image" src="../img/no-data.png" width="300" height="315"
+                 alt="Нет данных для отображения">
+        </div>
+        <div class="mt-3 alert alert-primary">Нет данных для отображения с учетом текущих настроек фильтра и периода</div>
+        @elsedesktop
+        <div class="no-data-image-wrapper pt-3">
+            <img class="no-data-image" src="../img/no-data.png" width="280" height="295"
+                 alt="Нет данных для отображения">
+        </div>
+        <p class="mt-2 alert alert-primary">Нет данных для отображения с учетом текущих настроек фильтра и периода</p>
+        @enddesktop
     </div>
 </div>
