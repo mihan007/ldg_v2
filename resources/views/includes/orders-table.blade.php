@@ -900,7 +900,7 @@
             </table>
         </div>
     </div>
-    <div class="col-12 col-sm-11 col-md-9 col-lg-6 text-center mx-auto mb-5">
+    <div class="col-6 col-sm-6 col-md-6 col-lg-6 text-center mx-auto mb-5">
         @desktop
         <div class="no-data-image-wrapper pt-3">
             <img class="no-data-image" src="../img/no-data.png" width="300" height="315"
