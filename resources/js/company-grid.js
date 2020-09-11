@@ -1,7 +1,7 @@
 $(document).ready(function () {
     window.table = $('.company-grid').DataTable({
         "language": {
-            "emptyTable": "Нет данных для отображения с учетом текущих настроек фильтра и периода"
+            "emptyTable": " "
         },
         fixedHeader: {
             headerOffset: 52

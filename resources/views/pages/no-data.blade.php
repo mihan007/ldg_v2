@@ -124,32 +124,13 @@
                             </a>
                         </th>
                     </tr>
-                    <tr class="sum-line">
-                        <th scope="row">
-                            <a data-toggle="tooltip" data-placement="right" data-delay='{"show":"1000", "hide":"1000"}'
-                               title="Подсчитывается по всем компаниям соответствующим фильтру">
-                                <span class="sigma-icon">&#931;</span>Итого / Среднее
-                            </a>
-                        </th>
-                        <th>6000</th>
-                        <th>15500</th>
-                        <th>3000</th>
-                        <th>300</th>
-                        <th>150</th>
-                        <th>45</th>
-                        <th>1500</th>
-                        <th>4000</th>
-                        <th>1000</th>
-                        <th>1000</th>
-                        <th>1000</th>
-                    </tr>
                     </thead>
                     <tbody>
                     </tbody>
                 </table>
             </div>
             @desktop
-            <div class="col-4 col-sm-4 col-md-6 col-lg-4 text-center mx-auto mb-5 mt-n4">
+            <div class="col-4 col-sm-4 col-md-6 col-lg-4 text-center mx-auto mb-5 mt-n5">
                 <div class="no-data-image-wrapper">
                     <img class="no-data-image" src="../img/no-data.png" width="300" height="315"
                          alt="Нет данных для отображения">
@@ -158,7 +139,7 @@
                 <button class="btn btn-primary mb-4 add-button w-auto" type="button">Создать</button>
             </div>
             @elsedesktop
-            <div class="col-3 col-sm-4 col-md-6 col-lg-6 text-center mr-auto mb-5 mt-n4">
+            <div class="col-3 col-sm-4 col-md-6 col-lg-6 text-center mr-auto mb-5 mt-n5">
                 <div class="no-data-image-wrapper">
                     <img class="no-data-image" src="../img/no-data.png" width="250" height="265"
                          alt="Нет данных для отображения">
