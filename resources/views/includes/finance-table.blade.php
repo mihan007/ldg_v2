@@ -190,4 +190,5 @@
             </table>
         </div>
     </div>
+    @include('includes.no-data')
 </div>

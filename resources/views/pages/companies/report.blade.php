@@ -55,6 +55,7 @@
                 <h2 class="sr-only">Таблица данных по компаниям</h2>
                 @include('includes.company-grid')
             </div>
+            @include('includes.no-data')
         </div>
     </main>
 @stop

@@ -402,6 +402,7 @@
                     </table>
                 </div>
             </div>
+            @include('includes.no-data')
         </div>
         @include('includes.modal.reset-modal', [
             'messageHeader' => 'Удаление подключения',

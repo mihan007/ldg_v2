@@ -1,5 +1,8 @@
 $(document).ready(function () {
     window.table = $('.ad-common-grid').DataTable({
+        "language": {
+            "emptyTable": " "
+        },
         fixedHeader: {
             headerOffset: 187
         },

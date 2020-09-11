@@ -14,8 +14,11 @@ $(document).ready(function () {
     };
     $.fn.dataTable.moment('DD.MM.YYYY HH:mm');
     window.table = $('.finance-grid').DataTable({
+        "language": {
+            "emptyTable": " "
+        },
         fixedHeader: {
-            headerOffset: 144
+            headerOffset: gridOffset
         },
         paging: false,
         searching: false,

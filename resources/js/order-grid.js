@@ -25,8 +25,11 @@ $(document).ready(function () {
     ];
 
     window.table = $('.order-grid').DataTable({
+        "language": {
+            "emptyTable": " "
+        },
         fixedHeader: {
-            headerOffset: 144
+            headerOffset: gridOffset
         },
         paging: false,
         searching: false,

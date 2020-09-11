@@ -2,7 +2,13 @@
 @section('content')
     <main class="page-wrapper position-relative">
         <h1 class="sr-only">Страница настроек Лидогенератора</h1>
-        <div class="row sticky-top bg-white">
+        @desktop
+            <div class="row bg-white sticky-top">
+            <script>let gridOffset = 144;</script>
+        @elsedesktop
+            <div class="row bg-white">
+            <script>let gridOffset = 50;</script>
+        @enddesktop
             <h2 class="sr-only">Блок навигации по страницам настроек и управления настройками страницы</h2>
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper font-weight-bold">

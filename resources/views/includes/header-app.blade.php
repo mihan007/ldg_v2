@@ -59,7 +59,7 @@
                     <a class="cog-link dropdown-item" href="{{ route('accounts.users-accounts') }}">
                         <i class="fa fa-cog" aria-hidden="true"></i>Настройки аккаунта
                     </a>
-                    <a class="cog-link dropdown-item" href="{{ route('lidogenerators.lidogenerators-list') }}">
+                    <a class="cog-link dropdown-item" href="{{ route('lidogenerators.lidogenerator-list') }}">
                         <i class="fa fa-cogs" aria-hidden="true"></i>Лидогенераторы
                     </a>
                     <button class="dropdown-item"><i class="fa fa-sign-out" aria-hidden="true"></i>Выйти</button>

@@ -1,5 +1,8 @@
 $(document).ready(function () {
     window.table = $('.users-grid').DataTable({
+        "language": {
+            "emptyTable": " "
+        },
         fixedHeader: {
             headerOffset: 173
         },

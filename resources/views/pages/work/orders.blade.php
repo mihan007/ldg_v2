@@ -1,7 +1,13 @@
 @extends('layouts.app')
 @section('content')
     <main class="page-wrapper crm-main">
-        <div class="row sticky-top bg-white">
+        @desktop
+            <div class="row bg-white sticky-top">
+            <script>let gridOffset = 144;</script>
+        @elsedesktop
+            <div class="row bg-white">
+                <script>let gridOffset = 50;</script>
+        @enddesktop
             <h1 class="sr-only">Страница заявок</h1>
             <h2 class="sr-only">Фильтр данных для таблицы заявок</h2>
             @include('includes.orders-directory-links', ['step'=>'crm', 'role'=>'staff'])
