@@ -79,6 +79,7 @@
                     </table>
                 </div>
             </div>
+            @include('includes.no-data')
         </div>
         @include('includes.payment-wizard')
         @include('includes.modal.payment-reset-modal')

@@ -55,6 +55,7 @@
                             </table>
                         </div>
                     </div>
+                    @include('includes.no-data')
                 </div>
         <div class="toast saved-toast js-saved-toast">
             <div class="toast-body">

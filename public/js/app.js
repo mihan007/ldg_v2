@@ -74580,6 +74580,9 @@ module.exports = function(module) {
 
 $(document).ready(function () {
   window.table = $('.ad-common-grid').DataTable({
+    "language": {
+      "emptyTable": " "
+    },
     fixedHeader: {
       headerOffset: 187
     },
@@ -74602,6 +74605,9 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   window.table = $('.ad-detailed-grid').DataTable({
+    "language": {
+      "emptyTable": " "
+    },
     fixedHeader: {
       headerOffset: 187
     },
@@ -74982,6 +74988,9 @@ $(document).ready(function () {
 
   $.fn.dataTable.moment('DD.MM.YYYY HH:mm');
   window.table = $('.finance-grid').DataTable({
+    "language": {
+      "emptyTable": " "
+    },
     fixedHeader: {
       headerOffset: gridOffset
     },
@@ -75015,6 +75024,9 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   window.table = $('.lidogenerator-grid').DataTable({
+    "language": {
+      "emptyTable": " "
+    },
     fixedHeader: {
       headerOffset: 52
     },
@@ -75198,7 +75210,7 @@ $(document).ready(function () {
   }];
   window.table = $('.order-grid').DataTable({
     "language": {
-      "emptyTable": "Нет данных для отображения с учетом текущих настроек фильтра и периода"
+      "emptyTable": " "
     },
     fixedHeader: {
       headerOffset: gridOffset
@@ -75223,6 +75235,9 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   window.table = $('.orders-source-grid').DataTable({
+    "language": {
+      "emptyTable": " "
+    },
     fixedHeader: {
       headerOffset: 110
     },
@@ -75245,6 +75260,9 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   window.table = $('.project-grid').DataTable({
+    "language": {
+      "emptyTable": " "
+    },
     fixedHeader: {
       headerOffset: 163
     },
@@ -75430,6 +75448,9 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   window.table = $('.users-grid').DataTable({
+    "language": {
+      "emptyTable": " "
+    },
     fixedHeader: {
       headerOffset: 173
     },

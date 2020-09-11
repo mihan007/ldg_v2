@@ -406,6 +406,7 @@
                     </tbody>
                 </table>
             </div>
+            @include('includes.no-data')
         </div>
     </main>
     @include('includes.modal.lidogenerators-invite-modal')

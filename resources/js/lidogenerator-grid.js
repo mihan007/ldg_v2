@@ -1,5 +1,8 @@
 $(document).ready(function () {
     window.table = $('.lidogenerator-grid').DataTable({
+        "language": {
+            "emptyTable": " "
+        },
         fixedHeader: {
             headerOffset: 52
         },

@@ -1,5 +1,8 @@
 $(document).ready(function () {
     window.table = $('.project-grid').DataTable({
+        "language": {
+            "emptyTable": " "
+        },
         fixedHeader: {
             headerOffset: 163
         },

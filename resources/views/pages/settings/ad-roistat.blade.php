@@ -105,6 +105,7 @@
                     </table>
                 </div>
             </div>
+            @include('includes.no-data')
             <div class="col-md-12 ad-detailed-table-wrapper">
                 <h2 class="sr-only">Таблица детальных настроек</h2>
                 <div class="table-wrapper mt-3">
