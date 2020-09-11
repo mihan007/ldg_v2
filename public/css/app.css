@@ -14649,6 +14649,11 @@ td.accounts-buttons-col {
   cursor: pointer;
 }
 
+.no-data-alert {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .index-buttons-wrapper {
   display: flex;
   flex-wrap: wrap;
