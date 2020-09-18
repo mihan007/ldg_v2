@@ -76,6 +76,9 @@
                     </div>
                 </form>
             </div>
+        <div class="col-md-8 billing-image-wrapper">
+{{--            <img class="" src="../img/billing-image.png" width="300" height="315" alt="">--}}
+        </div>
         </div>
     </main>
 @stop
