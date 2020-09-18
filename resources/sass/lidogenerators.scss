@@ -48,18 +48,17 @@
 
 .billing-image-wrapper {
     position: relative;
-    height: 400px;
 }
 
 .billing-image-wrapper::before {
     content: "";
-    background-image: url("/img/billing-image.png");
+    background-image: url("/img/billing-image-600.png");
     background-position: top;
     background-repeat: no-repeat;
     width: 100%;
     height: 500px;
     position: absolute;
     left: 50%;
-    top: -30%;
+    top: -123%;
     transform: translateX(-50%);
 }

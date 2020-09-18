@@ -11,7 +11,7 @@
         </div>
         <div class="row pt-2">
             <h2 class="sr-only">Блок настроек Лидогенератора</h2>
-            <div class="col-md-9 d-flex justify-content-between">
+            <div class="col-md-9 d-flex justify-content-between flex-column">
                 <p>
                     <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                    data-toggle="click-tooltip" data-placement="top" data-title="Система спишет комиссию от
@@ -76,9 +76,7 @@
                     </div>
                 </form>
             </div>
-        <div class="col-md-8 billing-image-wrapper">
-{{--            <img class="" src="../img/billing-image.png" width="300" height="315" alt="">--}}
-        </div>
+            <div class="col-md-8 billing-image-wrapper"></div>
         </div>
     </main>
 @stop
