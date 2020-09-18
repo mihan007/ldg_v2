@@ -41,7 +41,7 @@
                 </p>
             </div>
         </div>
-        <div class="row pt-md-3 billing-image-wrapper">
+        <div class="row pt-md-3 ">
             <div class="col-md-4">
                 <form class="balance-action lidogenerator-balance-form" method="post" action="#" novalidate>
                     <div class="form-group">
@@ -76,7 +76,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-md-8 "></div>
+            <div class="col-md-8 billing-image-wrapper"></div>
         </div>
     </main>
 @stop
