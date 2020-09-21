@@ -13,11 +13,6 @@
             @include('includes.orders-directory-links', ['step'=>'crm', 'role'=>'client'])
             <div class="col-md-12 filter-wrapper">
                 <div class="order-filter">
-                    <select class="custom-select select-item crm-select-item">
-                        <option selected>Все заявки</option>
-                        <option value="1">Целевые заявки</option>
-                        <option value="2">Нецелевые заявки</option>
-                    </select>
                     @include('includes.date-range')
                 </div>
                 <div class="orders-count-wrapper text-center">
@@ -39,7 +34,10 @@
                        data-delay='{"show":"1000", "hide":"1000"}' title="Экспорт заявок в Excel">
                         <i class="fa fa-file-excel-o" aria-hidden="true"></i>
                     </a>
-                    <button type="button" class="btn page-button show-toast">Описание заявки</button>
+                    <button type="button" class="btn page-button show-toast"data-toggle="tooltip" data-placement="top"
+                            data-delay='{"show":"1000", "hide":"1000"}'
+                            title="Подробное описание условий того, какие заявки считаются целевыми и нецелевыми">
+                        Описание условий </button>
                     <div class="toast crm-button js-order-description-toast">
                         <button type="button" class="close ml-2 mb-1 mr-1" data-dismiss="toast">
                             <span aria-hidden="true">&times;</span>
