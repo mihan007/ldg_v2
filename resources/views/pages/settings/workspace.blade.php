@@ -46,7 +46,7 @@
                                 </label>
                                 <div class="input-group">
                                     <input class="form-control base-cost-input" type="number" id="base-cost" min="0"
-                                           max="100000" placeholder="0">
+                                           max="100000" value="0">
                                     <div class="input-group-append">
                                         <span class="input-group-text">
                                             <i class="fa fa-rub" aria-hidden="true"></i>
@@ -59,13 +59,13 @@
                                 <label class="workspace-form-label" for="max-cpl">
                                     6. Максимально допустимый CPL
                                     <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
-                                       data-toggle="click-tooltip" data-placement="top" data-title="Отправим оповещение о
-                                           превышении CPL за прошлые сутки ответственному менеджеру. Оставьте 0 рублей,
-                                           чтобы не получать уведомления"></i>
+                                       data-toggle="click-tooltip" data-placement="top" data-title="Отправим оповещение
+                                       о превышении средней стоимости заявки по всей компании за прошлые сутки
+                                       ответственному менеджеру. Оставьте 0 рублей, чтобы не получать уведомления"></i>
                                 </label>
                                 <div class="input-group">
                                     <input class="form-control max-cpl-input" type="number" id="max-cpl" min="0"
-                                           placeholder="0">
+                                           value="0">
                                     <div class="input-group-append">
                                         <span class="input-group-text">
                                             <i class="fa fa-rub" aria-hidden="true"></i>
@@ -104,7 +104,7 @@
                             </label>
                             <div class="input-group">
                                 <input class="form-control balance-limit-input" type="number" id="balance-limit" min="0"
-                                       placeholder="0">
+                                       value="0">
                                 <div class="input-group-append">
                                     <span class="input-group-text">
                                         <i class="fa fa-rub" aria-hidden="true"></i>
@@ -123,7 +123,7 @@
                                    течение которых клиент может изменить статус заявки"></i>
                             </label>
                             <input class="form-control moderation-period-input" type="number" id="moderation-period"
-                                   placeholder="7" min="1" max="45">
+                                   value="7" min="1" max="45">
                             <div class="invalid-feedback moderation-period-invalid-feedback">Максимальный период
                                 модерации 14 дней
                             </div>
@@ -137,7 +137,7 @@
                             </label>
                             <div class="input-group">
                                 <input class="form-control data-hide-input" type="number" id="data-hide" min="0"
-                                       placeholder="0">
+                                       value="0">
                                 <div class="input-group-append">
                                     <span class="input-group-text">
                                         <i class="fa fa-rub" aria-hidden="true"></i>

@@ -36,7 +36,10 @@
                     </ul>
                 </div>
                 <div class="order-buttons">
-                    <button type="button" class="btn page-button show-toast">Описание заявки</button>
+                    <button type="button" class="btn page-button show-toast" data-toggle="tooltip" data-placement="top"
+                            data-delay='{"show":"1000", "hide":"1000"}'
+                            title="Подробное описание условий того, какие заявки считаются целевыми и нецелевыми">
+                        Описание условий</button>
                     <div class="toast crm-button js-order-description-toast">
                         <button type="button" class="close ml-2 mb-1 mr-1" data-dismiss="toast">
                             <span aria-hidden="true">&times;</span>
