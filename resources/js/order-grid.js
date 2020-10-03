@@ -14,14 +14,14 @@ $(document).ready(function () {
 
     let clientColumns = [
         { 'orderSequence': ['desc', 'asc'] },
-        { "orderable": false },
+        { "orderable": ['desc', 'asc'] },
+        // { 'orderSequence': ['desc', 'asc'] },
+        { "orderable": ['desc', 'asc'] },
         { 'orderSequence': ['desc', 'asc'] },
-        { "orderable": false },
-        { 'orderSequence': ['desc', 'asc'] },
-        { "orderable": false },
-        { "orderable": false },
-        { "orderable": false },
-        { "orderable": false }
+        { "orderable": ['desc', 'asc'] },
+        { "orderable": ['desc', 'asc'] },
+        // { "orderable": false },
+        { "orderable": ['desc', 'asc']  }
     ];
 
     window.table = $('.order-grid').DataTable({

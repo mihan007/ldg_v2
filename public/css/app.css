@@ -14852,6 +14852,10 @@ td.accounts-buttons-col {
   width: 23%;
 }
 
+.info-client-col {
+  width: 30%;
+}
+
 .title-col,
 .client-col,
 .comment-col {
@@ -14867,7 +14871,11 @@ td.accounts-buttons-col {
 }
 
 .status-client-col {
-  width: 13%;
+  width: 15%;
+}
+
+.comment-client-col {
+  width: 18%;
 }
 
 .order-line .non-target-status,
@@ -14882,10 +14890,6 @@ td.accounts-buttons-col {
 
 .moderation-col {
   width: 9%;
-}
-
-.moderation-client-col {
-  width: 7%;
 }
 
 .buttons-col {

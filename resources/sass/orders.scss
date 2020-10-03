@@ -89,6 +89,10 @@
     width: 23%;
 }
 
+.info-client-col {
+    width: 30%;
+}
+
 .title-col,
 .client-col,
 .comment-col {
@@ -104,7 +108,11 @@
 }
 
 .status-client-col {
-    width: 13%;
+    width: 15%;
+}
+
+.comment-client-col {
+    width: 18%;
 }
 
 .order-line .non-target-status,
@@ -121,9 +129,9 @@
     width: 9%;
 }
 
-.moderation-client-col {
-    width: 7%;
-}
+//.moderation-client-col {
+//    width: 7%;
+//}
 
 .buttons-col {
     width: 4%;

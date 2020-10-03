@@ -152,7 +152,8 @@
                             4. Описание соглашения по заявкам
                             <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
                                data-toggle="click-tooltip" data-placement="top" data-title="Соглашение о том, какие
-                                   заявки считаются нецелевыми или целевыми"></i>
+                               заявки считаются нецелевыми или целевыми. Если оставите поле пустым, система не покажет
+                               этот раздел клиенту"></i>
                         </label>
                         <button class="btn description-example-button function-button" data-toggle="tooltip"
                                 data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'

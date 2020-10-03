@@ -75192,21 +75192,19 @@ $(document).ready(function () {
   var clientColumns = [{
     'orderSequence': ['desc', 'asc']
   }, {
-    "orderable": false
+    "orderable": ['desc', 'asc']
+  }, // { 'orderSequence': ['desc', 'asc'] },
+  {
+    "orderable": ['desc', 'asc']
   }, {
     'orderSequence': ['desc', 'asc']
   }, {
-    "orderable": false
+    "orderable": ['desc', 'asc']
   }, {
-    'orderSequence': ['desc', 'asc']
-  }, {
-    "orderable": false
-  }, {
-    "orderable": false
-  }, {
-    "orderable": false
-  }, {
-    "orderable": false
+    "orderable": ['desc', 'asc']
+  }, // { "orderable": false },
+  {
+    "orderable": ['desc', 'asc']
   }];
   window.table = $('.order-grid').DataTable({
     "language": {
