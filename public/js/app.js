@@ -75171,21 +75171,20 @@ $(document).ready(function () {
   var staffColumns = [{
     'orderSequence': ['desc', 'asc']
   }, {
-    "orderable": false
+    "orderable": ['desc', 'asc']
+  }, // { 'orderSequence': ['desc', 'asc'] },
+  {
+    "orderable": ['desc', 'asc']
   }, {
     'orderSequence': ['desc', 'asc']
   }, {
-    "orderable": false
+    "orderable": ['desc', 'asc']
   }, {
-    'orderSequence': ['desc', 'asc']
+    "orderable": ['desc', 'asc']
   }, {
-    "orderable": false
+    "orderable": ['desc', 'asc']
   }, {
-    "orderable": false
-  }, {
-    "orderable": false
-  }, {
-    "orderable": false
+    "orderable": ['desc', 'asc']
   }, {
     "orderable": false
   }];

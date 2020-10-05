@@ -14849,7 +14849,7 @@ td.accounts-buttons-col {
 }
 
 .info-col {
-  width: 23%;
+  width: 27%;
 }
 
 .info-client-col {
@@ -14876,6 +14876,11 @@ td.accounts-buttons-col {
 
 .comment-client-col {
   width: 18%;
+}
+
+.order-client-filter {
+  display: flex;
+  margin-right: 1.2rem;
 }
 
 .order-line .non-target-status,
