@@ -14316,6 +14316,11 @@ input[type=radio].visually-hidden {
   margin-right: 1.2rem;
 }
 
+.small-date-range {
+  padding: 7px 12px;
+  width: auto;
+}
+
 .date-range:hover {
   background-color: #e2e6ea;
   border-color: #dae0e5;
@@ -14849,10 +14854,13 @@ td.accounts-buttons-col {
 }
 
 .info-col {
-  width: 23%;
+  width: 27%;
 }
 
-.title-col,
+.info-client-col {
+  width: 30%;
+}
+
 .client-col,
 .comment-col {
   width: 10%;
@@ -14867,7 +14875,16 @@ td.accounts-buttons-col {
 }
 
 .status-client-col {
-  width: 13%;
+  width: 15%;
+}
+
+.comment-client-col {
+  width: 18%;
+}
+
+.order-client-filter {
+  display: flex;
+  margin-right: 1.2rem;
 }
 
 .order-line .non-target-status,
@@ -14882,10 +14899,6 @@ td.accounts-buttons-col {
 
 .moderation-col {
   width: 9%;
-}
-
-.moderation-client-col {
-  width: 7%;
 }
 
 .buttons-col {
@@ -15781,11 +15794,6 @@ td.ad-buttons-col {
 
 .lidogenerstors-search-form {
   width: 15%;
-}
-
-.lidogenerators-date-range {
-  padding: 7px 12px;
-  width: auto;
 }
 
 .lidogenerators-update-button {

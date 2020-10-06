@@ -75171,42 +75171,37 @@ $(document).ready(function () {
   var staffColumns = [{
     'orderSequence': ['desc', 'asc']
   }, {
-    "orderable": false
+    "orderSequence": ['desc', 'asc']
+  }, {
+    "orderSequence": ['desc', 'asc']
   }, {
     'orderSequence': ['desc', 'asc']
   }, {
-    "orderable": false
+    "orderSequence": ['desc', 'asc']
   }, {
-    'orderSequence': ['desc', 'asc']
+    "orderSequence": ['desc', 'asc']
   }, {
-    "orderable": false
+    "orderSequence": ['desc', 'asc']
   }, {
-    "orderable": false
-  }, {
-    "orderable": false
-  }, {
-    "orderable": false
+    "orderSequence": ['desc', 'asc']
   }, {
     "orderable": false
   }];
   var clientColumns = [{
     'orderSequence': ['desc', 'asc']
   }, {
-    "orderable": false
+    "orderSequence": ['desc', 'asc']
+  }, {
+    "orderSequence": ['desc', 'asc']
   }, {
     'orderSequence': ['desc', 'asc']
   }, {
-    "orderable": false
+    "orderSequence": ['desc', 'asc']
   }, {
-    'orderSequence': ['desc', 'asc']
-  }, {
-    "orderable": false
-  }, {
-    "orderable": false
-  }, {
-    "orderable": false
-  }, {
-    "orderable": false
+    "orderSequence": ['desc', 'asc']
+  }, // { "orderable": false },
+  {
+    "orderSequence": ['desc', 'asc']
   }];
   window.table = $('.order-grid').DataTable({
     "language": {

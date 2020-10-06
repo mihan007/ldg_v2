@@ -12,8 +12,8 @@
             <h2 class="sr-only">Фильтр данных для таблицы заявок</h2>
             @include('includes.orders-directory-links', ['step'=>'crm', 'role'=>'client'])
             <div class="col-md-12 filter-wrapper">
-                <div class="order-filter">
-                    @include('includes.date-range')
+                <div class="order-client-filter">
+                    @include('includes.date-range', ['size'=>'small'])
                 </div>
                 <div class="orders-count-wrapper text-center">
                     <ul class="list-inline mb-0 d-flex justify-content-between">

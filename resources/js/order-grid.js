@@ -1,27 +1,25 @@
 $(document).ready(function () {
     let staffColumns = [
         { 'orderSequence': ['desc', 'asc'] },
-        { "orderable": false },
+        { "orderSequence": ['desc', 'asc'] },
+        { "orderSequence": ['desc', 'asc'] },
         { 'orderSequence': ['desc', 'asc'] },
-        { "orderable": false },
-        { 'orderSequence': ['desc', 'asc'] },
-        { "orderable": false },
-        { "orderable": false },
-        { "orderable": false },
-        { "orderable": false },
+        { "orderSequence": ['desc', 'asc'] },
+        { "orderSequence": ['desc', 'asc'] },
+        { "orderSequence": ['desc', 'asc'] },
+        { "orderSequence": ['desc', 'asc'] },
         { "orderable": false }
     ];
 
     let clientColumns = [
         { 'orderSequence': ['desc', 'asc'] },
-        { "orderable": false },
+        { "orderSequence": ['desc', 'asc'] },
+        { "orderSequence": ['desc', 'asc'] },
         { 'orderSequence': ['desc', 'asc'] },
-        { "orderable": false },
-        { 'orderSequence': ['desc', 'asc'] },
-        { "orderable": false },
-        { "orderable": false },
-        { "orderable": false },
-        { "orderable": false }
+        { "orderSequence": ['desc', 'asc'] },
+        { "orderSequence": ['desc', 'asc'] },
+        // { "orderable": false },
+        { "orderSequence": ['desc', 'asc']  }
     ];
 
     window.table = $('.order-grid').DataTable({
