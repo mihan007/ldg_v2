@@ -14,12 +14,6 @@
                         @endif
                         @if ($role=='client') Время @endif
                     </th>
-{{--                    @if ($role=='staff')--}}
-{{--                        <th class="title-col" scope="col">--}}
-{{--                            <a data-toggle="tooltip" data-placement="top" data-delay='{"show":"1000", "hide":"1000"}'--}}
-{{--                               title="Название страницы или формы заявки">Заголовок</a>--}}
-{{--                        </th>--}}
-{{--                    @endif--}}
                     <th class="info-col @if ($role=='client') info-client-col @endif" scope="col">Информация
                     </th>
                     <th class="phone-col" scope="col">Телефон</th>
@@ -61,11 +55,6 @@
                 <tr class="order-line">
                     <td class="id-col">1</td>
                     <td class="time-col text-left">11.01.2018 13:00:00</td>
-{{--                    @if ($role=='staff')--}}
-{{--                        <td class="title-col">1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod--}}
-{{--                            tempor incididunt ut labore--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="info-col">1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
                     </td>
@@ -117,12 +106,6 @@
                             </div>
                         </td>
                     @endif
-{{--                    @if ($role=='client')--}}
-{{--                        <td class="moderation-client-col text-center">--}}
-{{--                            <span class="moderation-circle circle-green" data-toggle="tooltip" data-placement="top"--}}
-{{--                                  data-delay='{"show":"1000", "hide":"1000"}' title="Согласны"></span>--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="comment-col">4Lorem ipsum dolor
                         @if ($role=='staff')
                             <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
@@ -148,11 +131,6 @@
                 <tr class="@if ($role=='staff') reset-order @endif">
                     <td class="id-col">11</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
-{{--                    @if ($role=='staff')--}}
-{{--                        <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor--}}
-{{--                            incididunt ut labore--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
                     </td>
@@ -203,13 +181,6 @@
                             </div>
                         </td>
                     @endif
-{{--                    @if ($role=='client')--}}
-{{--                        <td class="moderation-client-col text-center">--}}
-{{--                            <span class="moderation-circle circle-yellow" data-toggle="tooltip" data-placement="top"--}}
-{{--                                  data-delay='{"show":"1000", "hide":"1000"}' title="На модерации"--}}
-{{--                                  aria-label="На модерации"></span>--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
                             <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
@@ -235,11 +206,6 @@
                 <tr class="order-line">
                     <td class="id-col">111</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
-{{--                    @if ($role=='staff')--}}
-{{--                        <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor--}}
-{{--                            incididunt ut labore--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
                     </td>
@@ -290,12 +256,6 @@
                             </div>
                         </td>
                     @endif
-{{--                    @if ($role=='client')--}}
-{{--                        <td class="moderation-client-col text-center">--}}
-{{--                            <span class="btn moderation-circle circle-red" data-toggle="tooltip" data-placement="top"--}}
-{{--                                  data-delay='{"show":"1000", "hide":"1000"}' title="Отклонено"></span>--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
                             <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
@@ -321,11 +281,6 @@
                 <tr class="@if ($role=='staff') reset-order @endif">
                     <td class="id-col">1111</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
-{{--                    @if ($role=='staff')--}}
-{{--                        <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor--}}
-{{--                            incididunt ut labore--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
                     </td>
@@ -377,13 +332,6 @@
                             </div>
                         </td>
                     @endif
-{{--                    @if ($role=='client')--}}
-{{--                        <td class="moderation-client-col text-center">--}}
-{{--                            <span class="btn moderation-circle circle-green" data-toggle="tooltip" data-placement="top"--}}
-{{--                                  data-delay='{"show":"1000", "hide":"1000"}' title="Согласны" aria-label="Согласны">--}}
-{{--                            </span>--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
                             <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
@@ -409,11 +357,6 @@
                 <tr class="order-line">
                     <td class="id-col">11111</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
-{{--                    @if ($role=='staff')--}}
-{{--                        <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor--}}
-{{--                            incididunt ut labore--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
                     </td>
@@ -467,14 +410,6 @@
                             </div>
                         </td>
                     @endif
-{{--                    @if ($role=='client')--}}
-{{--                        <td class="moderation-client-col text-center">--}}
-{{--                            <span class="btn moderation-circle circle-yellow" data-toggle="tooltip" data-placement="top"--}}
-{{--                                  data-delay='{"show":"1000", "hide":"1000"}' title="На модерации"--}}
-{{--                                  aria-label="На модерации">--}}
-{{--                            </span>--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
                             <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
@@ -500,11 +435,6 @@
                 <tr class="@if ($role=='staff') reset-order @endif">
                     <td class="id-col">111111</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
-{{--                    @if ($role=='staff')--}}
-{{--                        <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor--}}
-{{--                            incididunt ut labore--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
                     </td>
@@ -555,9 +485,6 @@
                             </div>
                         </td>
                     @endif
-{{--                    @if ($role=='client')--}}
-{{--                        <td class="moderation-client-col text-center"></td>--}}
-{{--                    @endif--}}
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
                             <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
@@ -583,11 +510,6 @@
                 <tr class="order-line">
                     <td class="id-col">1111111</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
-{{--                    @if ($role=='staff')--}}
-{{--                        <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor--}}
-{{--                            incididunt ut labore--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
                     </td>
@@ -638,9 +560,6 @@
                             </div>
                         </td>
                     @endif
-{{--                    @if ($role=='client')--}}
-{{--                        <td class="moderation-client-col text-center"></td>--}}
-{{--                    @endif--}}
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
                             <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
@@ -666,11 +585,6 @@
                 <tr class="@if ($role=='staff') reset-order @endif">
                     <td class="id-col">11111111</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
-{{--                    @if ($role=='staff')--}}
-{{--                        <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor--}}
-{{--                            incididunt ut labore--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
                     </td>
@@ -722,13 +636,6 @@
                             </div>
                         </td>
                     @endif
-{{--                    @if ($role=='client')--}}
-{{--                        <td class="moderation-client-col text-center">--}}
-{{--                            <span class="btn moderation-circle circle-yellow" data-toggle="tooltip" data-placement="top"--}}
-{{--                                  data-delay='{"show":"1000", "hide":"1000"}'--}}
-{{--                                  title="На модерации" aria-label="На модерации"></span>--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
                             <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
@@ -754,11 +661,6 @@
                 <tr class="order-line">
                     <td class="id-col">1111112</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
-{{--                    @if ($role=='staff')--}}
-{{--                        <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor--}}
-{{--                            incididunt ut labore--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
                     </td>
@@ -810,13 +712,6 @@
                             </div>
                         </td>
                     @endif
-{{--                    @if ($role=='client')--}}
-{{--                        <td class="moderation-client-col text-center">--}}
-{{--                            <span class="btn moderation-circle circle-yellow" data-toggle="tooltip" data-placement="top"--}}
-{{--                                  data-delay='{"show":"1000", "hide":"1000"}'--}}
-{{--                                  title="На модерации" aria-label="На модерации"></span>--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
                             <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"
@@ -842,11 +737,6 @@
                 <tr class="@if ($role=='staff') reset-order @endif">
                     <td class="id-col">1111113</td>
                     <td class="text-left time-col">12.02.2020 13:00:00</td>
-{{--                    @if ($role=='staff')--}}
-{{--                        <td class="title-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor--}}
-{{--                            incididunt ut labore--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="info-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore
                     </td>
@@ -897,13 +787,6 @@
                             </div>
                         </td>
                     @endif
-{{--                    @if ($role=='client')--}}
-{{--                        <td class="moderation-client-col text-center">--}}
-{{--                            <span class="btn moderation-circle circle-red" data-toggle="tooltip" data-placement="top"--}}
-{{--                                  data-delay='{"show":"1000", "hide":"1000"}'--}}
-{{--                                  title="Отклонено" aria-label="Отклонено"></span>--}}
-{{--                        </td>--}}
-{{--                    @endif--}}
                     <td class="comment-col">Lorem ipsum dolor
                         @if ($role=='staff')
                             <a class="btn crm-correct-button function-button" href=".js-comment-modal" data-toggle="modal"

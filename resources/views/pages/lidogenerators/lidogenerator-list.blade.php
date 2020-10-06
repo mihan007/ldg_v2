@@ -6,7 +6,7 @@
             <h2 class="sr-only">Фильтр для таблицы данных по компаниям</h2>
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper">
-                @include('includes.date-range', ['role'=>'lidogenerators'])
+                @include('includes.date-range', ['size'=>'small'])
                 <div class="btn-group date-items mb-1">
                     <button class="btn date-item" type="button">Сегодня</button>
                     <button class="btn date-item" type="button">Вчера</button>

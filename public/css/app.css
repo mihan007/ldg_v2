@@ -14316,6 +14316,11 @@ input[type=radio].visually-hidden {
   margin-right: 1.2rem;
 }
 
+.small-date-range {
+  padding: 7px 12px;
+  width: auto;
+}
+
 .date-range:hover {
   background-color: #e2e6ea;
   border-color: #dae0e5;
@@ -14856,7 +14861,6 @@ td.accounts-buttons-col {
   width: 30%;
 }
 
-.title-col,
 .client-col,
 .comment-col {
   width: 10%;
@@ -15790,11 +15794,6 @@ td.ad-buttons-col {
 
 .lidogenerstors-search-form {
   width: 15%;
-}
-
-.lidogenerators-date-range {
-  padding: 7px 12px;
-  width: auto;
 }
 
 .lidogenerators-update-button {

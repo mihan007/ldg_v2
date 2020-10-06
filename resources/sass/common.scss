@@ -270,6 +270,11 @@ input[type="radio"].visually-hidden {
     margin-right: 1.2rem;
 }
 
+.small-date-range {
+    padding: 7px 12px;
+    width: auto;
+}
+
 .date-range:hover {
     background-color: $filter-button-bg-hover;
     border-color: $filter-button-border-hover;
