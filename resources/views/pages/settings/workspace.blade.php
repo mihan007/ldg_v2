@@ -8,7 +8,18 @@
             <div class="col-md-12 offset-block"></div>
             <div class="col-md-12 settings-wrapper border-bottom font-weight-bold">
                 @include('includes.settings-links', ['step'=>'workspace'])
-                <div>
+                <div class="d-flex">
+                    <select class="custom-select select-item settings-select-item">
+                        <option selected>Источник </option>
+                        <option value="1">Источник 1</option>
+                        <option value="2">Источник 2</option>
+                        <option value="3">Источник 3</option>
+                        <option value="4">Источник 4</option>
+                        <option value="5">Источник 5</option>
+                        <option value="6">Источник 6</option>
+                        <option value="7">Источник 7</option>
+                        <option value="8">Источник 8</option>
+                    </select>
                     <select class="custom-select settings-select-item">
                         <option selected>Менеджер</option>
                         <option value="1">Айгуль Шайкенова</option>

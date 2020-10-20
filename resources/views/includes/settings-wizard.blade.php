@@ -21,6 +21,9 @@
                                 <li class="wizard-list-main-item">Получение заявок
                                     <ul>
                                         <li class="wizard-list-item">
+                                            <button class="btn function-button">Ручное добавление заявок</button>
+                                        </li>
+                                        <li class="wizard-list-item">
                                             <button class="btn function-button">Roistat телефония</button>
                                         </li>
                                         <li class="wizard-list-item">
@@ -199,6 +202,32 @@
                                         <input class="form-control wizard-form-input" type="text" id="roistat-phone-cost"
                                                value="Базовая">
                                         <div class="invalid-feedback roistat-phone-cost-invalid-feedback">Сообщение об
+                                            ошибке</div>
+                                    </div>
+                                </div>
+                            </form>
+                            <form class="manual-form" method="post" action="#">
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label" for="manual-name">Имя подключения
+                                    </label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control wizard-form-input" type="text"
+                                               id="manual-name">
+                                        <div class="invalid-feedback manual-name-invalid-feedback">Сообщение об ошибке</div>
+                                    </div>
+                                </div>
+                                <p class="modal-text">Укажите стоимость заявки
+                                    <i class="fa fa-question-circle-o" aria-hidden="true" data-trigger="manual"
+                                       data-toggle="click-tooltip" data-placement="top" data-title="Ваше
+                                          вознаграждение за заявку с этого источника. Можете оставить базовую цену из
+                                          настроек Рабочей области"></i>
+                                </p>
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label" for="manual-cost">Цена</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control wizard-form-input" type="text" id="manual-cost"
+                                               value="Базовая">
+                                        <div class="invalid-feedback manual-cost-invalid-feedback">Сообщение об
                                             ошибке</div>
                                     </div>
                                 </div>
