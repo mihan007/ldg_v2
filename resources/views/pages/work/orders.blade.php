@@ -58,9 +58,6 @@
                             <p>Максимальный срок согласования заявки 7 дней</p>
                         </div>
                     </div>
-{{--                    <a class="btn page-button" href="{{ route('work.orders-client') }}">CRM клиента--}}
-{{--                        <i class="fa fa-external-link" aria-hidden="true"></i>--}}
-{{--                    </a>--}}
                     <select class="custom-select openmodal page-button w-auto">
                         <option selected>Добавить заявку</option>
                         <option value="1" data-modal="js-orders-source-modal">Источник 1</option>
