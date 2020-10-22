@@ -58,7 +58,7 @@
                             <p>Максимальный срок согласования заявки 7 дней</p>
                         </div>
                     </div>
-                    <select class="custom-select openmodal page-button w-auto">
+                    <select class="custom-select openmodal add-order-select-item w-auto">
                         <option selected>Добавить заявку</option>
                         <option value="1" data-modal="js-orders-source-modal">Источник 1</option>
                         <option value="2" data-modal="js-orders-source-modal">Источник 2</option>

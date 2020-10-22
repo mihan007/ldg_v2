@@ -14955,6 +14955,10 @@ td.accounts-buttons-col {
   opacity: 0.9;
 }
 
+.add-order-select-item {
+  margin-right: 1.2rem;
+}
+
 .target-status .custom-select {
   color: green !important;
 }
