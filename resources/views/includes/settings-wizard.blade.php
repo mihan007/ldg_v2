@@ -212,7 +212,7 @@
                                     </label>
                                     <div class="col-sm-8">
                                         <input class="form-control wizard-form-input" type="text"
-                                               id="manual-name">
+                                               value="Подключение вручную [ID]" id="manual-name">
                                         <div class="invalid-feedback manual-name-invalid-feedback">Сообщение об ошибке</div>
                                     </div>
                                 </div>

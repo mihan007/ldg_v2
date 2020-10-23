@@ -186,6 +186,10 @@
     opacity: 0.9;
 }
 
+.add-order-select-item {
+    margin-right: 1.2rem;
+}
+
 //Временно для демонстрации. Стили для обозначения целевых заявок зеленым, другие - красным
  .target-status .custom-select {
     color: $crm-table-target-status !important;

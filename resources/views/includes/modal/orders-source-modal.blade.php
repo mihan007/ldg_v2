@@ -16,8 +16,7 @@
                     </div>
                     <div class="form-group">
                         <label class="sr-only" for="orders-source-info">Информация</label>
-                        <textarea class="form-control" id="orders-source-info" rows="6" placeholder="Информация">
-                        </textarea>
+                        <textarea class="form-control" id="orders-source-info" rows="6" placeholder="Информация"></textarea>
                         <div class="invalid-feedback orders-source-info-invalid-feedback">Сообщение об ошибке</div>
                     </div>
                     <div class="form-group modal-action-buttons">
